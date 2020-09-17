@@ -1,0 +1,278 @@
+
+HEADER
+---------------------------------------------------------------------------------
+
+TIME:
+    201601029-19:5:41.527089357
+VERSION:
+    _G14320
+PROJDIR:
+    apps/robocup_2015
+IN ARG:
+    now
+KB:
+    knowledge_base/knowledge_base_robocup.pl
+USERFUNC:
+    user_functions.pl
+BASACTS:
+    basic_actions.pl
+TEMPLATE:
+    templates.pl
+GLOBAL VARS:
+    global_vars.pl
+
+START DIALOGUE
+---------------------------------------------------------------------------------
+
+TIME:
+    201601029-19:5:41.527163267
+
+SITUATUATIONS
+---------------------------------------------------------------------------------
+
+
+SIT
+=================================================================================
+
+NAME:
+    is
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    All the system working
+INITIME:
+    201601029-19:5:41.528921127
+SCREEN:
+    All the system working
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    These are the options
+INITIME:
+    201601029-19:5:41.528954267
+SCREEN:
+    These are the options
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    in, fo, cp, cl, res, gpsr, demo, see_object, detect_face, memorize_face, recognize_face, see_face, see, ask
+INITIME:
+    201601029-19:5:41.528985261
+SCREEN:
+    in, fo, cp, cl, res, gpsr, demo, see_object, detect_face, memorize_face, recognize_face, see_face, see, ask
+
+SIT
+=================================================================================
+
+NAME:
+    k2(nav)
+TYPE:
+    keyboard
+INPUT:
+    ok
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    none
+NAME:
+    empty
+
+SIT
+=================================================================================
+
+NAME:
+    execute(nav)
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    Executing test: 
+INITIME:
+    201601029-19:5:43.748173475
+SCREEN:
+    Executing test: 
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    navigation_main
+INITIME:
+    201601029-19:5:43.74822402
+SCREEN:
+    navigation_main
+
+SIT
+=================================================================================
+
+NAME:
+    navigation_main
+TYPE:
+    recursive
+
+START DIALOGUE
+---------------------------------------------------------------------------------
+
+TIME:
+    201601029-19:5:43.753885746
+
+SITUATUATIONS
+---------------------------------------------------------------------------------
+
+
+SIT
+=================================================================================
+
+NAME:
+    is
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    say
+INITIME:
+    201601029-19:5:43.758225202
+MSG:
+    Testing follow mode directly.
+
+SIT
+=================================================================================
+
+NAME:
+    followmode
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    switch_gmapping
+switch_gmapping, movement, NAME:
+    switch_gmapping
+switch_gmapping, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    switch_gmapping
+switch_gmapping, movement, NAME:
+    switch_gmapping
+switch_gmapping, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    doesnt_exist
+NAME:
+    switch_gmapping
+switch_gmapping, doesnt_exist, NAME:
+    switch_gmapping
+switch_gmapping, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    doesnt_exist
+NAME:
+    switch_gmapping
+switch_gmapping, doesnt_exist, NAME:
+    switch_gmapping
+switch_gmapping, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    switch_gmapping
+switch_gmapping, movement, NAME:
+    switch_gmapping
+switch_gmapping, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    switch_gmapping
+switch_gmapping, movement, NAME:
+    switch_gmapping
+switch_gmapping, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    doesnt_exist
+NAME:
+    switch_gmapping
+switch_gmapping, doesnt_exist, NAME:
+    switch_gmapping
+switch_gmapping, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    doesnt_exist
+NAME:
+    switch_gmapping
+switch_gmapping, doesnt_exist, NAME:
+    switch_gmapping
+switch_gmapping, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    say
+INITIME:
+    201601029-19:6:36.406999111
+MSG:
+    Following human now.
+
+SIT
+=================================================================================
+
+NAME:
+    follow(learn,gesture_only,_G99170,_G99167)
+TYPE:
+    recursive
+
+START DIALOGUE
+---------------------------------------------------------------------------------
+
+TIME:
+    201601029-19:6:36.418860197
+
+SITUATUATIONS
+---------------------------------------------------------------------------------
+

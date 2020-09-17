@@ -1,0 +1,238 @@
+
+HEADER
+---------------------------------------------------------------------------------
+
+TIME:
+    201609027-17:14:23.272058486
+VERSION:
+    _G21640
+PROJDIR:
+    apps/robocup_2015
+IN ARG:
+    now
+KB:
+    knowledge_base/knowledge_base_robocup.pl
+USERFUNC:
+    user_functions.pl
+BASACTS:
+    basic_actions.pl
+TEMPLATE:
+    templates.pl
+GLOBAL VARS:
+    global_vars.pl
+
+START DIALOGUE
+---------------------------------------------------------------------------------
+
+TIME:
+    201609027-17:14:23.272130966
+
+SITUATUATIONS
+---------------------------------------------------------------------------------
+
+
+SIT
+=================================================================================
+
+NAME:
+    is
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    All the system working
+INITIME:
+    201609027-17:14:23.27515316
+SCREEN:
+    All the system working
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    These are the options
+INITIME:
+    201609027-17:14:23.275185346
+SCREEN:
+    These are the options
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    in, fo, cp, cl, res, gpsr, demo, see_object, detect_face, memorize_face, recognize_face, see_face, see, ask
+INITIME:
+    201609027-17:14:23.275213718
+SCREEN:
+    in, fo, cp, cl, res, gpsr, demo, see_object, detect_face, memorize_face, recognize_face, see_face, see, ask
+
+SIT
+=================================================================================
+
+NAME:
+    k2(ricardo)
+TYPE:
+    keyboard
+INPUT:
+    ok
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    none
+NAME:
+    empty
+
+SIT
+=================================================================================
+
+NAME:
+    execute(ricardo)
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    Executing test: 
+INITIME:
+    201609027-17:14:24.188850402
+SCREEN:
+    Executing test: 
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    ricardo_main
+INITIME:
+    201609027-17:14:24.188877344
+SCREEN:
+    ricardo_main
+
+SIT
+=================================================================================
+
+NAME:
+    ricardo_main
+TYPE:
+    recursive
+
+START DIALOGUE
+---------------------------------------------------------------------------------
+
+TIME:
+    201609027-17:14:24.197024822
+
+SITUATUATIONS
+---------------------------------------------------------------------------------
+
+
+SIT
+=================================================================================
+
+NAME:
+    is
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    say
+INITIME:
+    201609027-17:14:24.197371482
+MSG:
+    Hello world
+
+SIT
+=================================================================================
+
+NAME:
+    op1
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    none
+NAME:
+    empty
+
+SIT
+=================================================================================
+
+NAME:
+    [id==>fs,type==>final]
+TYPE:
+    final
+
+END DIALOGUE
+---------------------------------------------------------------------------------
+
+OUTSYS:
+    []
+TIME:
+    201609027-17:14:26.100002288
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    none
+NAME:
+    empty
+
+SIT
+=================================================================================
+
+NAME:
+    final
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    Dialogue model finished, type ok to try again
+INITIME:
+    201609027-17:14:26.108139991
+SCREEN:
+    Dialogue model finished, type ok to try again
+
+SIT
+=================================================================================
+
+NAME:
+    [id==>fs,type==>final]
+TYPE:
+    final
+
+END DIALOGUE
+---------------------------------------------------------------------------------
+
+OUTSYS:
+    [gpsr==>gpsr_main,speech==>speech_main,robozoo==>robozoo_main,nav==>navigation_main,follow==>follow_main,robozoo==>robozoo_main,eduardo==>eduardo_main,ricardo==>ricardo_main,restaurant==>restaurant_main,test==>test]
+TIME:
+    201609027-17:14:26.110330343

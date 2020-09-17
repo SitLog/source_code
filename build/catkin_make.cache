@@ -1,0 +1,2 @@
+
+-DCATKIN_DEVEL_PREFIX=/home/golem/golem_iimas/rosagents/SitLog/devel -DCMAKE_INSTALL_PREFIX=/home/golem/golem_iimas/rosagents/SitLog/install -G Unix Makefiles

@@ -1,0 +1,198 @@
+
+HEADER
+---------------------------------------------------------------------------------
+
+TIME:
+    20190407-18:38:27.383279561
+VERSION:
+    _G53833
+PROJDIR:
+    apps/german_open_2019
+IN ARG:
+    now
+KB:
+    knowledge_base/knowledge_base_robocup.pl
+USERFUNC:
+    user_functions.pl
+BASACTS:
+    basic_actions.pl
+TEMPLATE:
+    templates.pl
+GLOBAL VARS:
+    global_vars.pl
+
+START DIALOGUE
+---------------------------------------------------------------------------------
+
+TIME:
+    20190407-18:38:27.383425235
+
+SITUATUATIONS
+---------------------------------------------------------------------------------
+
+
+SIT
+=================================================================================
+
+NAME:
+    is
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    All the system working
+INITIME:
+    20190407-18:38:27.388714075
+SCREEN:
+    All the system working
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    These are the options
+INITIME:
+    20190407-18:38:27.388760328
+SCREEN:
+    These are the options
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    in, fo, cp, cl, res, gpsr, demo, see_object, detect_face, memorize_face, recognize_face, see_face, see, ask
+INITIME:
+    20190407-18:38:27.388856649
+SCREEN:
+    in, fo, cp, cl, res, gpsr, demo, see_object, detect_face, memorize_face, recognize_face, see_face, see, ask
+
+SIT
+=================================================================================
+
+NAME:
+    k2(serving_drinks)
+TYPE:
+    keyboard
+INPUT:
+    ok
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    none
+NAME:
+    empty
+
+SIT
+=================================================================================
+
+NAME:
+    execute(serving_drinks)
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    Executing test: 
+INITIME:
+    20190407-18:38:33.189879179
+SCREEN:
+    Executing test: 
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    serving_drinks_main
+INITIME:
+    20190407-18:38:33.189954042
+SCREEN:
+    serving_drinks_main
+
+SIT
+=================================================================================
+
+NAME:
+    serving_drinks_main
+TYPE:
+    recursive
+
+START DIALOGUE
+---------------------------------------------------------------------------------
+
+TIME:
+    20190407-18:38:33.198318719
+
+SITUATUATIONS
+---------------------------------------------------------------------------------
+
+
+SIT
+=================================================================================
+
+NAME:
+    is
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    none
+NAME:
+    empty
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    tiltv
+ANGLE:
+    0.0
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    say
+INITIME:
+    20190407-18:38:34.214572906
+MSG:
+    Hello I am golem, and I will be serving drinks today
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    say
+INITIME:
+    20190407-18:38:38.733730792
+MSG:
+    I will first go to the bar
+
+SIT
+=================================================================================
+
+NAME:
+    search_people_without_drinks(0.0)
+TYPE:
+    yolo_object_detection(0.0,people_and_drinks)

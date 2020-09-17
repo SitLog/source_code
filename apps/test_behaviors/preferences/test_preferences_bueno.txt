@@ -1,0 +1,47 @@
+res(preferences).
+ok.
+'hi golem i like malz'.
+'i like noodles best'.
+'no thanks golem that is ok'.
+'i had a bad day'.
+'bring me something to drink and bisquits'.
+'yes'.
+'no golem noodles is ok'.
+objects([object(malz,0.2,2,0.55,4,5,6,7,8)]).
+objects([object(bisquits,1,2,3,4,5,6,7,8)]).
+objects([object(noodles,1,2,3,4,5,6,7,8),object(coke,1,2,3,4,5,6,7,8)]).
+objects([object(noodles,0.2,2,0.55,4,5,6,7,8)]).
+'yes golem please'.
+'yes golem please'.
+objects([object(coke,0.2,2,0.55,4,5,6,7,8)]).
+
+
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+
+
+res(preferences).
+ok.
+'malz'.
+'noodles'.
+'i had a bad day'.
+'bring me something to drink and bisquits'.
+'yes'.
+objects([object(malz,0.2,2,0.55,4,5,6,7,8)]).
+objects([object(bisquits,1,2,3,4,5,6,7,8)]).
+objects([object(noodles,1,2,3,4,5,6,7,8),object(coke,1,2,3,4,5,6,7,8)]).
+objects([object(noodles,0.2,2,0.55,4,5,6,7,8)]).
+'yes'.
+'yes'.
+objects([object(coke,0.2,2,0.55,4,5,6,7,8)]).
+
+
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+
+
+res(object_manipulation).
+ok.
+status(empty_scene).
+objects([object(noodles,0.2,0.5,0.55,4,5,6,7,8),object(coke,0.2,0.5,0.55,4,5,6,7,8)]).
+objects([object(soup,0.2,0.5,0.55,4,5,6,7,8)]).
+objects([object(malz,0.2,0.5,0.55,4,5,6,7,8)]).
+objects([object(noodles,0.2,0.5,0.55,4,5,6,7,8)]).

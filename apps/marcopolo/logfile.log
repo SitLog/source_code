@@ -1,0 +1,168 @@
+[2020/3/11,0:3:2.182891845]Info-Level 1: Running models from     : models
+[2020/3/11,0:3:2.1829199790000002]Info-Level 1: Project directory       : apps/marcopolo
+[2020/3/11,0:3:2.182933568]Info-Level 1: Knowledge base          : knowledge_base/knowledge_base_robocup.pl
+[2020/3/11,0:3:2.182945251]Info-Level 1: User Functions          : user_functions.pl
+[2020/3/11,0:3:2.182956218]Info-Level 1: Expectation Types       : expectation_types.pl
+[2020/3/11,0:3:2.182967424]Info-Level 1: Basic acts              : basic_actions.pl
+[2020/3/11,0:3:2.182977914]Info-Level 1: Templates               : templates.pl
+[2020/3/11,0:3:2.182988405]Info-Level 1: Running dialogue        : main
+[2020/3/11,0:3:2.182999372]Info-Level 1: Writing debug file to   : logfile.log
+[2020/3/11,0:3:2.183009862]Info-Level 1: Saving log file to      : apps/marcopolo/log
+[2020/3/11,0:3:2.2128105160000002]Info-Level 1: Starting dialogue: main
+[2020/3/11,0:3:2.2128932470000002]Info-Level 1: Saving log in: apps/marcopolo/log/dm.txt
+[2020/3/11,0:3:2.212927579]Info-Level 1: Executing dialogue: main
+[2020/3/11,0:3:2.213845968]Info-Level 1: Defined local vars: []
+[2020/3/11,0:3:2.2140491]All: Situtation: is
+[2020/3/11,0:3:2.214059829]Structs: Executing situtation: _G38786
+[2020/3/11,0:3:2.214074134]Debug: In situation is of type neutral.
+[2020/3/11,0:3:2.21408081]All: Situation to execute [id==> (is),type==>neutral,arcs==>[empty:[initSpeech,say(Hello I am Golem and I will play marco polo with you),apply(initialize_KB,[])]=>behavior]].
+[2020/3/11,0:3:6.770266532]Debug: In situation marcopolo of type recursive.
+[2020/3/11,0:3:6.7702841750000005]All: Situation to execute marcopolo.
+[2020/3/11,0:3:6.770303964]Info-Level 1: Executing dialogue: marcopolo
+[2020/3/11,0:3:6.770409345]Info-Level 1: Defined local vars: []
+[2020/3/11,0:3:6.770517587]All: Situtation: is
+[2020/3/11,0:3:6.770524501]Structs: Executing situtation: _G76216
+[2020/3/11,0:3:6.7705366609999995]Debug: In situation is of type neutral.
+[2020/3/11,0:3:6.770544052]All: Situation to execute [id==> (is),type==>neutral,arcs==>[empty:[robotheight(1.22),set(last_height,1.22),reset_speakerid]=>start]].
+[2020/3/11,0:3:6.795269489]Debug: In situation start of type neutral.
+[2020/3/11,0:3:6.795315742]All: Situation to execute [id==>start,type==>neutral,arcs==>[empty:[say(Marco.),reset_soundloc]=>polo]].
+[2020/3/11,0:3:8.517242431]Info-Level 1: Situation ends
+[2020/3/11,0:3:8.553974628]Debug: In situation polo of type neutral.
+[2020/3/11,0:3:8.554020643]All: Situation to execute [id==>polo,type==>neutral,arcs==>[empty:[sleep,sleep,sleep]=>getdoa]].
+[2020/3/11,0:3:11.55464816]Info-Level 1: Situation ends
+[2020/3/11,0:3:11.575858116]Debug: In situation doas(one,doa(_G79793),_G79795) of type recursive.
+[2020/3/11,0:3:11.575890779]All: Situation to execute doas(one,doa(_G79793),_G79795).
+[2020/3/11,0:3:11.575918197]Info-Level 1: Executing dialogue: doas(one,doa(_G79793),_G79795)
+[2020/3/11,0:3:11.576044559]Info-Level 1: Defined local vars: []
+[2020/3/11,0:3:11.576245307]All: Situtation: is
+[2020/3/11,0:3:11.576253414]Structs: Executing situtation: _G130996
+[2020/3/11,0:3:11.57626605]Debug: In situation is of type doas.
+[2020/3/11,0:3:11.576272964]All: Situation to execute [id==> (is),type==>doas,arcs==>[doas(_G128956):empty=>next(one,_G128956),doas([]):empty=>error]].
+[2020/3/11,0:3:11.583415985]Debug: In situation next(one,[doa(-101.16661730682948),doa(-144.7548491934782)]) of type neutral.
+[2020/3/11,0:3:11.58344388]All: Situation to execute [id==>next(one,[doa(-101.16661730682948),doa(-144.7548491934782)]),type==>neutral,out_arg==>[doa(-101.16661730682948)],arcs==>[empty:empty=>success]].
+[2020/3/11,0:3:11.583743572]Info-Level 1: Situation ends
+[2020/3/11,0:3:11.587018251]Debug: In situation [id==>success,type==>final,in_arg==>[_G227682],diag_mod==>doas(_G227691,_G227682,ok)] of type final.
+[2020/3/11,0:3:11.587047815]All: Situation to execute success.
+[2020/3/11,0:3:11.587121486000001]Info-Level 1: Situation ends
+[2020/3/11,0:3:11.587134599]Info-Level 1: Dialogue ends
+[2020/3/11,0:3:11.587155103]Info-Level 1: .Output []
+[2020/3/11,0:3:15.091043233]Info-Level 1: Situation ends
+[2020/3/11,0:3:15.116175413]Debug: In situation speakerid(_G178770,_G178773,_G178764) of type recursive.
+[2020/3/11,0:3:15.116210699]All: Situation to execute speakerid(_G178770,_G178773,_G178764).
+[2020/3/11,0:3:15.116238832]Info-Level 1: Executing dialogue: speakerid(_G178770,_G178773,_G178764)
+[2020/3/11,0:3:15.116365671]Info-Level 1: Defined local vars: []
+[2020/3/11,0:3:15.116600275]All: Situtation: is
+[2020/3/11,0:3:15.116608619]Structs: Executing situtation: _G253509
+[2020/3/11,0:3:15.116621017]Debug: In situation is of type speakerid.
+[2020/3/11,0:3:15.116627931]All: Situation to execute [id==> (is),type==>speakerid,arcs==>[speaker([_G251246,_G251249]):empty=>next(_G251246,_G251249)]].
+[2020/3/11,0:3:15.14291501]Debug: In situation next(nothing,mid) of type neutral.
+[2020/3/11,0:3:15.142955541]All: Situation to execute [id==>next(nothing,mid),type==>neutral,arcs==>[empty:empty=>error]].
+[2020/3/11,0:3:15.143182277]Info-Level 1: Situation ends
+[2020/3/11,0:3:15.145150423]Debug: In situation [id==>error,type==>final,diag_mod==>speakerid([],[],error)] of type final.
+[2020/3/11,0:3:15.145205497]All: Situation to execute error.
+[2020/3/11,0:3:15.145292758]Info-Level 1: Situation ends
+[2020/3/11,0:3:15.145304441]Info-Level 1: Dialogue ends
+[2020/3/11,0:3:15.145320415]Info-Level 1: .Output []
+[2020/3/11,0:3:21.992949485]Info-Level 1: Situation ends
+[2020/3/11,0:3:22.021795988]Debug: In situation start of type neutral.
+[2020/3/11,0:3:22.021821975]All: Situation to execute [id==>start,type==>neutral,arcs==>[empty:[say(Marco.),reset_soundloc]=>polo]].
+[2020/3/11,0:3:23.748046159]Info-Level 1: Situation ends
+[2020/3/11,0:3:23.785313844]Debug: In situation polo of type neutral.
+[2020/3/11,0:3:23.78534007]All: Situation to execute [id==>polo,type==>neutral,arcs==>[empty:[sleep,sleep,sleep]=>getdoa]].
+[2020/3/11,0:3:26.802436351]Info-Level 1: Situation ends
+[2020/3/11,0:3:26.861249208]Debug: In situation doas(one,doa(_G140129),_G140131) of type recursive.
+[2020/3/11,0:3:26.861297607]All: Situation to execute doas(one,doa(_G140129),_G140131).
+[2020/3/11,0:3:26.861326694]Info-Level 1: Executing dialogue: doas(one,doa(_G140129),_G140131)
+[2020/3/11,0:3:26.861453771]Info-Level 1: Defined local vars: []
+[2020/3/11,0:3:26.861676692]All: Situtation: is
+[2020/3/11,0:3:26.861685037]Structs: Executing situtation: _G214640
+[2020/3/11,0:3:26.861698865]Debug: In situation is of type doas.
+[2020/3/11,0:3:26.861706018]All: Situation to execute [id==> (is),type==>doas,arcs==>[doas(_G212600):empty=>next(one,_G212600),doas([]):empty=>error]].
+[2020/3/11,0:3:26.903648376]Debug: In situation [id==>error,type==>final,diag_mod==>doas(_G170135,_G170138,error)] of type final.
+[2020/3/11,0:3:26.903706312]All: Situation to execute error.
+[2020/3/11,0:3:26.903786659]Info-Level 1: Situation ends
+[2020/3/11,0:3:26.90379858]Info-Level 1: Dialogue ends
+[2020/3/11,0:3:26.903820037]Info-Level 1: .Output []
+[2020/3/11,0:3:33.290157794]Info-Level 1: Situation ends
+[2020/3/11,0:3:33.378872394]Debug: In situation start of type neutral.
+[2020/3/11,0:3:33.378900527]All: Situation to execute [id==>start,type==>neutral,arcs==>[empty:[say(Marco.),reset_soundloc]=>polo]].
+[2020/3/11,0:3:35.098363161]Info-Level 1: Situation ends
+[2020/3/11,0:3:35.131081104]Debug: In situation polo of type neutral.
+[2020/3/11,0:3:35.131108283]All: Situation to execute [id==>polo,type==>neutral,arcs==>[empty:[sleep,sleep,sleep]=>getdoa]].
+[2020/3/11,0:3:38.131689786]Info-Level 1: Situation ends
+[2020/3/11,0:3:38.141994714]Debug: In situation doas(one,doa(_G451796),_G451799) of type recursive.
+[2020/3/11,0:3:38.142026662]All: Situation to execute doas(one,doa(_G451796),_G451799).
+[2020/3/11,0:3:38.142068386]Info-Level 1: Executing dialogue: doas(one,doa(_G451796),_G451799)
+[2020/3/11,0:3:38.14269185]Info-Level 1: Defined local vars: []
+[2020/3/11,0:3:38.19443345]All: Situtation: is
+[2020/3/11,0:3:38.194466352]Structs: Executing situtation: _G216306
+[2020/3/11,0:3:38.194491624]Debug: In situation is of type doas.
+[2020/3/11,0:3:38.19450283]All: Situation to execute [id==> (is),type==>doas,arcs==>[doas(_G214266):empty=>next(one,_G214266),doas([]):empty=>error]].
+[2020/3/11,0:3:38.19907236]Debug: In situation next(one,[doa(-76.83338536974206)]) of type neutral.
+[2020/3/11,0:3:38.199129581]All: Situation to execute [id==>next(one,[doa(-76.83338536974206)]),type==>neutral,out_arg==>[doa(-76.83338536974206)],arcs==>[empty:empty=>success]].
+[2020/3/11,0:3:38.199320316]Info-Level 1: Situation ends
+[2020/3/11,0:3:38.201906919]Debug: In situation [id==>success,type==>final,in_arg==>[_G312245],diag_mod==>doas(_G312254,_G312245,ok)] of type final.
+[2020/3/11,0:3:38.201930522]All: Situation to execute success.
+[2020/3/11,0:3:38.202003717]Info-Level 1: Situation ends
+[2020/3/11,0:3:38.202015161]Info-Level 1: Dialogue ends
+[2020/3/11,0:3:38.202033758]Info-Level 1: .Output []
+[2020/3/11,0:3:41.144613742]Info-Level 1: Situation ends
+[2020/3/11,0:3:41.197090387]Debug: In situation speakerid(_G272883,_G272886,_G272877) of type recursive.
+[2020/3/11,0:3:41.197132349]All: Situation to execute speakerid(_G272883,_G272886,_G272877).
+[2020/3/11,0:3:41.197176218]Info-Level 1: Executing dialogue: speakerid(_G272883,_G272886,_G272877)
+[2020/3/11,0:3:41.197366714]Info-Level 1: Defined local vars: []
+[2020/3/11,0:3:41.197744131]All: Situtation: is
+[2020/3/11,0:3:41.197757005]Structs: Executing situtation: _G347622
+[2020/3/11,0:3:41.197777509]Debug: In situation is of type speakerid.
+[2020/3/11,0:3:41.197789192]All: Situation to execute [id==> (is),type==>speakerid,arcs==>[speaker([_G345359,_G345362]):empty=>next(_G345359,_G345362)]].
+[2020/3/11,0:3:41.201661825]Debug: In situation next(nothing,mid) of type neutral.
+[2020/3/11,0:3:41.201680898]All: Situation to execute [id==>next(nothing,mid),type==>neutral,arcs==>[empty:empty=>error]].
+[2020/3/11,0:3:41.201888799]Info-Level 1: Situation ends
+[2020/3/11,0:3:41.203518152]Debug: In situation [id==>error,type==>final,diag_mod==>speakerid([],[],error)] of type final.
+[2020/3/11,0:3:41.203536987]All: Situation to execute error.
+[2020/3/11,0:3:41.203594923]Info-Level 1: Situation ends
+[2020/3/11,0:3:41.203606367]Info-Level 1: Dialogue ends
+[2020/3/11,0:3:41.203628063]Info-Level 1: .Output []
+[2020/3/11,0:3:48.111779451]Info-Level 1: Situation ends
+[2020/3/11,0:3:48.167039871]Debug: In situation start of type neutral.
+[2020/3/11,0:3:48.167071342]All: Situation to execute [id==>start,type==>neutral,arcs==>[empty:[say(Marco.),reset_soundloc]=>polo]].
+[2020/3/11,0:3:49.883827686]Info-Level 1: Situation ends
+[2020/3/11,0:3:49.944632768]Debug: In situation polo of type neutral.
+[2020/3/11,0:3:49.94466257]All: Situation to execute [id==>polo,type==>neutral,arcs==>[empty:[sleep,sleep,sleep]=>getdoa]].
+[2020/3/11,0:3:52.945267438]Info-Level 1: Situation ends
+[2020/3/11,0:3:53.00999999]Debug: In situation doas(one,doa(_G387768),_G387771) of type recursive.
+[2020/3/11,0:3:53.01003623]All: Situation to execute doas(one,doa(_G387768),_G387771).
+[2020/3/11,0:3:53.010073423]Info-Level 1: Executing dialogue: doas(one,doa(_G387768),_G387771)
+[2020/3/11,0:3:53.010270357]Info-Level 1: Defined local vars: []
+[2020/3/11,0:3:53.010635614]All: Situtation: is
+[2020/3/11,0:3:53.010647296]Structs: Executing situtation: _G462592
+[2020/3/11,0:3:53.010664701]Debug: In situation is of type doas.
+[2020/3/11,0:3:53.01067543]All: Situation to execute [id==> (is),type==>doas,arcs==>[doas(_G460552):empty=>next(one,_G460552),doas([]):empty=>error]].
+[2020/3/11,0:3:53.06735444]Debug: In situation next(one,[doa(-171.1771218089707),doa(-118.0866761074869)]) of type neutral.
+[2020/3/11,0:3:53.067386627]All: Situation to execute [id==>next(one,[doa(-171.1771218089707),doa(-118.0866761074869)]),type==>neutral,out_arg==>[doa(-171.1771218089707)],arcs==>[empty:empty=>success]].
+[2020/3/11,0:3:53.067570924]Info-Level 1: Situation ends
+[2020/3/11,0:3:53.069160699]Debug: In situation [id==>success,type==>final,in_arg==>[_G317018],diag_mod==>doas(_G317027,_G317018,ok)] of type final.
+[2020/3/11,0:3:53.069179773]All: Situation to execute success.
+[2020/3/11,0:3:53.06922698]Info-Level 1: Situation ends
+[2020/3/11,0:3:53.069240331]Info-Level 1: Dialogue ends
+[2020/3/11,0:3:53.069253921]Info-Level 1: .Output []
+[2020/3/11,0:3:58.736131429]Info-Level 1: Situation ends
+[2020/3/11,0:3:58.790715217]Debug: In situation speakerid(_G339375,_G339378,_G339369) of type recursive.
+[2020/3/11,0:3:58.790761232]All: Situation to execute speakerid(_G339375,_G339378,_G339369).
+[2020/3/11,0:3:58.790838241]Info-Level 1: Executing dialogue: speakerid(_G339375,_G339378,_G339369)
+[2020/3/11,0:3:58.791023254]Info-Level 1: Defined local vars: []
+[2020/3/11,0:3:58.791435718]All: Situtation: is
+[2020/3/11,0:3:58.791453361]Structs: Executing situtation: _G414114
+[2020/3/11,0:3:58.791472673]Debug: In situation is of type speakerid.
+[2020/3/11,0:3:58.791482925]All: Situation to execute [id==> (is),type==>speakerid,arcs==>[speaker([_G411851,_G411854]):empty=>next(_G411851,_G411854)]].
+[2020/3/11,0:3:58.796222686]Debug: In situation next(nothing,mid) of type neutral.
+[2020/3/11,0:3:58.796244859]All: Situation to execute [id==>next(nothing,mid),type==>neutral,arcs==>[empty:empty=>error]].
+[2020/3/11,0:3:58.796447038]Info-Level 1: Situation ends
+[2020/3/11,0:3:58.798328638]Debug: In situation [id==>error,type==>final,diag_mod==>speakerid([],[],error)] of type final.
+[2020/3/11,0:3:58.798349142]All: Situation to execute error.
+[2020/3/11,0:3:58.79840517]Info-Level 1: Situation ends
+[2020/3/11,0:3:58.798416852]Info-Level 1: Dialogue ends
+[2020/3/11,0:3:58.798433065]Info-Level 1: .Output []
+[2020/3/11,0:4:5.655754089]Info-Level 1: Situation ends
+[2020/3/11,0:4:5.754550695]Debug: In situation start of type neutral.
+[2020/3/11,0:4:5.754577159]All: Situation to execute [id==>start,type==>neutral,arcs==>[empty:[say(Marco.),reset_soundloc]=>polo]].

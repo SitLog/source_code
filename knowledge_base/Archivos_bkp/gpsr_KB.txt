@@ -1,0 +1,98 @@
+[
+class(top,none,[],[],[]),
+
+class(entity, top, [], [], []),
+
+class(human, entity, [], [], [	
+	[id => emma, [num_id=>11],[]], 
+  	[id => taylor, [num_id=>12], []],
+  	[id => sophia, [num_id=>13], []], 
+  	[id => isabella, [num_id=>14], []], 
+  	[id => ava, [num_id=>15], []],
+  	[id => robin, [num_id=>16], []],  
+  	[id => emily, [num_id=>17], []], 
+  	[id => angel, [num_id=>18], []], 
+  	[id => madison, [num_id=>19], []], 
+  	[id => charlotte, [num_id=>20], []],
+	[id => noah, [num_id=>21],[]], 
+  	[id => liam, [num_id=>22], []],
+  	[id => mason, [num_id=>23], []], 
+  	[id => jacob, [num_id=>24], []], 
+  	[id => william, [num_id=>25], []],
+  	[id => ethan, [num_id=>26], []],  
+  	[id => michael, [num_id=>27], []], 
+  	[id => alexander, [num_id=>28], []], 
+  	[id => james, [num_id=>29], []], 
+  	[id => daniel, [num_id=>30], []],
+  	[id => first, [num_id=>31], []], 
+  	[id => second, [num_id=>32], []]
+   	]),
+
+class(robot, entity, [], [], [	
+  	[id => golem, [in=>exit, attending_to=>nobody, has=>nothing, found=>nothing],[]] 
+   	]),
+
+class(place, entity, [], [], []),
+
+%Rooms
+class(room, place, [], [], [	
+	[id => office, [main_point=>bookshelf, object_path=>[tv_table, bookshelf], human_path=>[op1,op2,op3,op2,op3]],[]], 
+	[id => 'living room', [main_point=>table, object_path=>[tv_table, bookshelf], human_path=>[lp1,lp2,lp3,lp4]],[]], 
+	[id => bedroom, [main_point=>bed, object_path=>[tv_table, bookshelf], human_path=>[bp1,bp2,bed,bp3,bp4]],[]],	
+	[id => kitchen, [main_point=>stove, object_path=>[tv_table, bookshelf], human_path=>[kp1,kp2,kp3]],[]]
+	]),
+
+%Points
+class(points, place, [coordinate=>[0.0,0.0,0.0]], [], [
+	[id => point1,[coordinate=>[0.5,0.0,0.0]],[]]
+	]),
+
+%Locations
+class(location, place, [height=>135.00], [], []),
+
+class(other, location, [], [], [
+	[id => 'book shelf', [position=>bookshelf, name=>'book shelf', height=>82.00], [in=>office]],
+	[id => bed, [position=>bed, name=>bed, height=>38.00], [in=>bedroom]],
+	[id => 'side table', [position=>sidetable, name=>'side table', height=>38.00], [in=>bedroom]],
+	[id => stove,[position=>stove, name=>stove,  height=>76.00],[in=>kitchen]],
+	[id => 'tv table',[position=>tv_table, name=>'tv table', height=>78.00],[in=>'living room']],
+	[id => table, [position=>table, name=>table, height=>81.00],[in=>'living room']]
+]),
+
+%Objetos
+
+class(object, entity, [graspable=>yes], [], []),
+
+class(candy, object, [], [in=>bedroom, is_in=>food], [	
+	[id => caramel, [], []]
+	]),
+
+class(snack, object, [], [in=>office, is_in=>food], [	
+	[id => chili, [],[]]
+	]),
+
+class(food, object, [], [in=>kitchen, is_in=>food], [	
+	[id => kellogs, [],[]],
+	[id => noodles, [],[]]
+	]),
+
+class(toiletry, object, [], [in=>'living room', is_in=>food], [	
+    [id => shoecleaner, [],[]],
+	[id => soap, [],[]]
+	]),
+
+class(container, object, [], [in=>kitchen, is_in=>food], [	
+	[id => bowl, [],[]],
+	[id => tray, [],[]],
+	[id => plate, [],[]]
+	]),
+
+class(drinks, object, [], [in=>kitchen, is_in=>food], [	
+	[id => heineken, [],[]],
+	[id => water, [],[]],
+	[id => juice, [],[]],
+	[id => cream, [],[]],
+	[id => coke, [],[]]
+	])
+
+]	

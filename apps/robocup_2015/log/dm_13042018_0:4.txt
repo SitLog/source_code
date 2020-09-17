@@ -1,0 +1,353 @@
+
+HEADER
+---------------------------------------------------------------------------------
+
+TIME:
+    201804013-0:4:8.484004974
+VERSION:
+    _G52973
+PROJDIR:
+    apps/robocup_2015
+IN ARG:
+    now
+KB:
+    knowledge_base/knowledge_base_robocup.pl
+USERFUNC:
+    user_functions.pl
+BASACTS:
+    basic_actions.pl
+TEMPLATE:
+    templates.pl
+GLOBAL VARS:
+    global_vars.pl
+
+START DIALOGUE
+---------------------------------------------------------------------------------
+
+TIME:
+    201804013-0:4:8.484116315
+
+SITUATUATIONS
+---------------------------------------------------------------------------------
+
+
+SIT
+=================================================================================
+
+NAME:
+    is
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    All the system working
+INITIME:
+    201804013-0:4:8.487879753
+SCREEN:
+    All the system working
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    These are the options
+INITIME:
+    201804013-0:4:8.487921476
+SCREEN:
+    These are the options
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    in, fo, cp, cl, res, gpsr, demo, see_object, detect_face, memorize_face, recognize_face, see_face, see, ask
+INITIME:
+    201804013-0:4:8.487999439
+SCREEN:
+    in, fo, cp, cl, res, gpsr, demo, see_object, detect_face, memorize_face, recognize_face, see_face, see, ask
+
+SIT
+=================================================================================
+
+NAME:
+    k2(restaurant)
+TYPE:
+    keyboard
+INPUT:
+    ok
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    none
+NAME:
+    empty
+
+SIT
+=================================================================================
+
+NAME:
+    execute(restaurant)
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    Executing test: 
+INITIME:
+    201804013-0:4:18.128570318
+SCREEN:
+    Executing test: 
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    restaurant_main
+INITIME:
+    201804013-0:4:18.128610849
+SCREEN:
+    restaurant_main
+
+SIT
+=================================================================================
+
+NAME:
+    restaurant_main
+TYPE:
+    recursive
+
+START DIALOGUE
+---------------------------------------------------------------------------------
+
+TIME:
+    201804013-0:4:18.134478807
+
+SITUATUATIONS
+---------------------------------------------------------------------------------
+
+
+SIT
+=================================================================================
+
+NAME:
+    is
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    none
+NAME:
+    empty
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    tilth
+ANGLE:
+    0.0
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    tiltv
+ANGLE:
+    -15.0
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    say
+INITIME:
+    201804013-0:4:20.556563138
+MSG:
+    Hello everybody my name is Golem
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    say
+INITIME:
+    201804013-0:4:23.723983287
+MSG:
+    I first need to ask, is the bar on my left?
+
+SIT
+=================================================================================
+
+NAME:
+    askbar
+TYPE:
+    listening(yesno)
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    ma
+ANGLE:
+    -90.0
+-90.0, ma, ANGLE:
+    -90.0
+-90.0, movement, NAME:
+    ma
+ANGLE:
+    -90.0
+-90.0, ma, ANGLE:
+    -90.0
+-90.0, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    ma
+ANGLE:
+    -90.0
+-90.0, ma, ANGLE:
+    -90.0
+-90.0, movement, NAME:
+    ma
+ANGLE:
+    -90.0
+-90.0, ma, ANGLE:
+    -90.0
+-90.0, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    doesnt_exist
+NAME:
+    ma
+ANGLE:
+    -90.0
+-90.0, ma, ANGLE:
+    -90.0
+-90.0, doesnt_exist, NAME:
+    ma
+ANGLE:
+    -90.0
+-90.0, ma, ANGLE:
+    -90.0
+-90.0, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    doesnt_exist
+NAME:
+    ma
+ANGLE:
+    -90.0
+-90.0, ma, ANGLE:
+    -90.0
+-90.0, doesnt_exist, NAME:
+    ma
+ANGLE:
+    -90.0
+-90.0, ma, ANGLE:
+    -90.0
+-90.0, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    ma
+ANGLE:
+    -90.0
+-90.0, ma, ANGLE:
+    -90.0
+-90.0, movement, NAME:
+    ma
+ANGLE:
+    -90.0
+-90.0, ma, ANGLE:
+    -90.0
+-90.0, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    ma
+ANGLE:
+    -90.0
+-90.0, ma, ANGLE:
+    -90.0
+-90.0, movement, NAME:
+    ma
+ANGLE:
+    -90.0
+-90.0, ma, ANGLE:
+    -90.0
+-90.0, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    doesnt_exist
+NAME:
+    ma
+ANGLE:
+    -90.0
+-90.0, ma, ANGLE:
+    -90.0
+-90.0, doesnt_exist, NAME:
+    ma
+ANGLE:
+    -90.0
+-90.0, ma, ANGLE:
+    -90.0
+-90.0, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    doesnt_exist
+NAME:
+    ma
+ANGLE:
+    -90.0
+-90.0, ma, ANGLE:
+    -90.0
+-90.0, doesnt_exist, NAME:
+    ma
+ANGLE:
+    -90.0
+-90.0, ma, ANGLE:
+    -90.0
+-90.0, 

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<grammar version="1.0" xml:lang="en-US" mode="voice" root="other" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+  <rule id="other">
+    <one-of>
+      <item> exit2 </item>
+      <item> desk </item>
+      <item> bed </item>
+      <item> bookcase </item>
+      <item> storage shelf </item>
+      <item> exit </item>
+      <item> cupboard </item>
+      <item> couch </item>
+      <item> kitchen table </item>
+      <item> kitchen cabinet </item>
+      <item> couch table </item>
+      <item> tv table </item>
+      <item> sink </item>
+      <item> dining table </item>
+      <item> display case </item>
+      <item> cabinet </item>
+      <item> side table </item>
+      <item> bar </item>
+   </one-of>
+  </rule>
+</grammar>

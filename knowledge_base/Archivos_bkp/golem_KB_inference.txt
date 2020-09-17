@@ -1,0 +1,46 @@
+[
+
+class(top,none,[],[],[]),
+
+class(object,top,[],[],[]),
+
+class(comestible,object,[graspable,not(on_discount)],[],[]),
+
+class(food,comestible,[shelf=>shelf2],[],[]),
+class(cereal,food,[inv=>0],[],[[id=>c1,[brand=>kellogs,original_id=>c1,in=>shelf2],[]]]),
+class('instant food',food,[inv=>1],[],[[id=>i1,[brand=>noodles,original_id=>i1,in=>shelf2],[]]]),
+
+class(drink,comestible,[age=>all,shelf=>shelf1],[],[]),
+class(soda,drink,[inv=>1],[],[[id=>s1,[brand=>coke,original_id=>s1,in=>shelf2],[]]]),
+class(beer,drink,[age=>18,inv=>1],[],[[id=>b1,[brand=>heineken,original_id=>b1,in=>shelf1],[]]]),
+class(bread,comestible,[shelf=>shelf3,inv=>1],[],[[id=>d1,[brand=>bisquits,on_discount,original_id=>d1,in=>shelf3],[]]]),
+
+class(point,top,[],[],[
+    [id=>start,[name=>start],[]],
+    [id=>shelf1,[name=>'the shelf of drinks'],[]],
+    [id=>shelf2,[name=>'the shelf of food'],[]],
+    [id=>shelf3,[name=>'the shelf of bread'],[]]
+    ]),
+
+class(robot,top,[],[],[
+    [id=>golem,[position=>shelf2],[]]
+    ]),
+
+class(states,top,[],[],[]),
+
+class(events,top,[],[],[]),
+class(dialog,events,[],[],[]),
+class(observation,events,[],[],[]),
+class('grasp object',events,[],[],[]),
+
+class(orders,top,[],[],[]),
+
+class(failed_orders,top,[],[],[]),
+
+class(actions,top,[],[],[]),
+class(move,actions,[p=>0.95,c=>30,r=>0],[],[]),
+class(search,actions,[p=>0.85,c=>10,r=>0],[],[]),
+class(grasp,actions,[p=>0.9,c=>30,r=>100],[],[]),
+class(deliver,actions,[p=>0.99,c=>10,r=>500],[],[])
+
+]

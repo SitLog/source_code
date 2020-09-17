@@ -1,0 +1,3 @@
+#!/bin/bash
+
+streamer -f jpeg -o photo.jpeg

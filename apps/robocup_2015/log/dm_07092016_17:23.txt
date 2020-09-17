@@ -1,0 +1,296 @@
+
+HEADER
+---------------------------------------------------------------------------------
+
+TIME:
+    20160907-17:23:54.115119695
+VERSION:
+    _G20899
+PROJDIR:
+    apps/robocup_2015
+IN ARG:
+    now
+KB:
+    knowledge_base/knowledge_base_robocup.pl
+USERFUNC:
+    user_functions.pl
+BASACTS:
+    basic_actions.pl
+TEMPLATE:
+    templates.pl
+GLOBAL VARS:
+    global_vars.pl
+
+START DIALOGUE
+---------------------------------------------------------------------------------
+
+TIME:
+    20160907-17:23:54.11520195
+
+SITUATUATIONS
+---------------------------------------------------------------------------------
+
+
+SIT
+=================================================================================
+
+NAME:
+    is
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    All the system working
+INITIME:
+    20160907-17:23:54.118159055
+SCREEN:
+    All the system working
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    These are the options
+INITIME:
+    20160907-17:23:54.11819005
+SCREEN:
+    These are the options
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    in, fo, cp, cl, res, gpsr, demo, see_object, detect_face, memorize_face, recognize_face, see_face, see, ask
+INITIME:
+    20160907-17:23:54.118216991
+SCREEN:
+    in, fo, cp, cl, res, gpsr, demo, see_object, detect_face, memorize_face, recognize_face, see_face, see, ask
+
+SIT
+=================================================================================
+
+NAME:
+    k2(eduardo)
+TYPE:
+    keyboard
+INPUT:
+    ok
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    none
+NAME:
+    empty
+
+SIT
+=================================================================================
+
+NAME:
+    execute(eduardo)
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    Executing test: 
+INITIME:
+    20160907-17:23:55.04662013
+SCREEN:
+    Executing test: 
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    eduardo_main
+INITIME:
+    20160907-17:23:55.046660184
+SCREEN:
+    eduardo_main
+
+SIT
+=================================================================================
+
+NAME:
+    eduardo_main
+TYPE:
+    recursive
+
+START DIALOGUE
+---------------------------------------------------------------------------------
+
+TIME:
+    20160907-17:23:55.054888963
+
+SITUATUATIONS
+---------------------------------------------------------------------------------
+
+
+SIT
+=================================================================================
+
+NAME:
+    is
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    _G98351
+NAME:
+    initSpeech
+FILE:
+    /home/golem/golem_iimas/rosagents/SitLog/apps/robocup_2015/log_wav/dm_07092016_17:23
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    say
+INITIME:
+    20160907-17:23:55.055477619
+MSG:
+    Hello I am Golem and this is the dialogue model for eduardo
+
+SIT
+=================================================================================
+
+NAME:
+    say([I think,john,wants,pepsi,to drink],_G117915)
+TYPE:
+    recursive
+
+START DIALOGUE
+---------------------------------------------------------------------------------
+
+TIME:
+    20160907-17:23:59.557483196
+
+SITUATUATIONS
+---------------------------------------------------------------------------------
+
+
+SIT
+=================================================================================
+
+NAME:
+    is
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    say
+INITIME:
+    20160907-17:23:59.564486742
+MESSAGE:
+    I think john wants pepsi to drink.
+FINTIME:
+    20160907-17:24:2.582396507
+
+SIT
+=================================================================================
+
+NAME:
+    [id==>success,type==>final,diag_mod==>say(_G123183,ok)]
+TYPE:
+    final
+
+END DIALOGUE
+---------------------------------------------------------------------------------
+
+OUTSYS:
+    []
+TIME:
+    20160907-17:24:2.582866907
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    say
+INITIME:
+    20160907-17:24:2.582954406
+MSG:
+    I finish
+
+SIT
+=================================================================================
+
+NAME:
+    [id==>fs,type==>final]
+TYPE:
+    final
+
+END DIALOGUE
+---------------------------------------------------------------------------------
+
+OUTSYS:
+    []
+TIME:
+    20160907-17:24:4.218981981
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    none
+NAME:
+    empty
+
+SIT
+=================================================================================
+
+NAME:
+    final
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    Dialogue model finished, type ok to try again
+INITIME:
+    20160907-17:24:4.220975875
+SCREEN:
+    Dialogue model finished, type ok to try again
+
+SIT
+=================================================================================
+
+NAME:
+    [id==>fs,type==>final]
+TYPE:
+    final
+
+END DIALOGUE
+---------------------------------------------------------------------------------
+
+OUTSYS:
+    [gpsr==>gpsr_main,speech==>speech_main,robozoo==>robozoo_main,nav==>navigation_main,follow==>follow_main,robozoo==>robozoo_main,eduardo==>eduardo_main,ricardo==>ricardo_main,restaurant==>restaurant_main,test==>test]
+TIME:
+    20160907-17:24:4.23245716

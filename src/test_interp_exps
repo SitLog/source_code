@@ -1,0 +1,95 @@
+/*******************************************************************************
+    SitLog (Situation and Logic) 
+    
+    Copyright (C) 2012 UNAM (Universidad Nacional Autónoma de México)
+    Copyright (C) 2012 Luis Pineda (http://turing.iimas.unam.mx/~lpineda/)
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+*********************************************************************************/
+
+% Tests procedure:
+%
+%	consult(init)
+%	Next information is introduced manualy!
+
+
+S = [
+
+% Variables, constants and grounded predicates
+X,	 
+empty,
+a,
+[a,b],
+p(a),
+					
+%test compound forms
+p(X),
+p(a,X),
+
+% Lists
+(p(X),p(Y)),
+[a,b,p(a),p(a,b),p(X),p(a,X),p(X,Y)],
+(p(a),p(X),[a,p(a),p(X,Y),[a,b],c]),
+
+% Variable and unification
+[a=In_Pars,p(In_Pars)],
+
+% Test local variables
+get(time, T),
+get(count, C),
+get(laps, L),
+[set(count, 100),inc(count, Count)],
+
+% Test global variables
+get(g_time, GT),
+get(g_count, GC),
+get(g_laps, GL),
+[set(g_count, 1000),inc(g_count, Count)],
+
+% test op. on var. defined as Locals and Globals
+% op. must be applied as local var.
+set(dup, 1000),
+
+% Arithmetic ops.
+Sum is 2 + 3,
+
+%test functions
+apply(f1(X,Y),[1, 2]),
+apply(f2(X),[4]),
+apply(f3(X),[6]), 
+apply(f4(X),[10]),
+apply(f5(X),[1]), % value: fs
+apply(f5(X),[2]), % value: is(18)
+apply(f6(X),[1000]), 
+apply(f7(X),[100]) % value: 1100 
+	], assert(test_exps(S)).
+
+test_exps(S), print_list(S).
+
+LV = [time ==> today, count ==> 1, laps ==> 2, dup ==> 500], assert(lvars_test(LV)).
+
+GV = [g_time ==> yesterday, g_count ==> 100, g_laps ==> 200, dup ==> 5000], assert(gvars_test(GV)).
+
+test_exps(S), 
+lvars_test(LV),
+gvars_test(GV),
+eval_list_of_terms(S, [], Vals, LV, Out_Local, GV, Out_Global, History), 
+print_list(Vals), 
+print_list(Out_Local),
+print_list(Out_Global).
+
+
+
+

@@ -1,0 +1,497 @@
+
+HEADER
+---------------------------------------------------------------------------------
+
+TIME:
+    20170609-22:5:52.247406482
+VERSION:
+    _G21404
+PROJDIR:
+    apps/robocup_2015
+IN ARG:
+    now
+KB:
+    knowledge_base/knowledge_base_robocup.pl
+USERFUNC:
+    user_functions.pl
+BASACTS:
+    basic_actions.pl
+TEMPLATE:
+    templates.pl
+GLOBAL VARS:
+    global_vars.pl
+
+START DIALOGUE
+---------------------------------------------------------------------------------
+
+TIME:
+    20170609-22:5:52.247473239
+
+SITUATUATIONS
+---------------------------------------------------------------------------------
+
+
+SIT
+=================================================================================
+
+NAME:
+    is
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    All the system working
+INITIME:
+    20170609-22:5:52.250647783
+SCREEN:
+    All the system working
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    These are the options
+INITIME:
+    20170609-22:5:52.250677824
+SCREEN:
+    These are the options
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    in, fo, cp, cl, res, gpsr, demo, see_object, detect_face, memorize_face, recognize_face, see_face, see, ask
+INITIME:
+    20170609-22:5:52.250704288
+SCREEN:
+    in, fo, cp, cl, res, gpsr, demo, see_object, detect_face, memorize_face, recognize_face, see_face, see, ask
+
+SIT
+=================================================================================
+
+NAME:
+    k2(follow)
+TYPE:
+    keyboard
+INPUT:
+    ok
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    none
+NAME:
+    empty
+
+SIT
+=================================================================================
+
+NAME:
+    execute(follow)
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    Executing test: 
+INITIME:
+    20170609-22:5:54.302321672
+SCREEN:
+    Executing test: 
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    follow_main
+INITIME:
+    20170609-22:5:54.302366018
+SCREEN:
+    follow_main
+
+SIT
+=================================================================================
+
+NAME:
+    follow_main
+TYPE:
+    recursive
+
+START DIALOGUE
+---------------------------------------------------------------------------------
+
+TIME:
+    20170609-22:5:54.310984611
+
+SITUATUATIONS
+---------------------------------------------------------------------------------
+
+
+SIT
+=================================================================================
+
+NAME:
+    is
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    say
+INITIME:
+    20170609-22:5:54.311480998
+MSG:
+    Say follow me when you want to start.
+
+SIT
+=================================================================================
+
+NAME:
+    asktofollow
+TYPE:
+    listening(follow)
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    none
+NAME:
+    empty
+
+SIT
+=================================================================================
+
+NAME:
+    follow(learn,gesture_only,_G96397,_G96400)
+TYPE:
+    recursive
+
+START DIALOGUE
+---------------------------------------------------------------------------------
+
+TIME:
+    20170609-22:6:0.245956897
+
+SITUATUATIONS
+---------------------------------------------------------------------------------
+
+
+SIT
+=================================================================================
+
+NAME:
+    is
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    none
+NAME:
+    empty
+
+SIT
+=================================================================================
+
+NAME:
+    start(learn)
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    robotheight
+HEIGHT:
+    1.4
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    tiltv
+ANGLE:
+    -15.0
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    say
+INITIME:
+    20170609-22:6:1.35228753
+MSG:
+    Stand in front of me six feet away, waving your hands
+
+SIT
+=================================================================================
+
+NAME:
+    see_gesture(waving,nearest,3,_G213730,_G213727)
+TYPE:
+    recursive
+
+START DIALOGUE
+---------------------------------------------------------------------------------
+
+TIME:
+    20170609-22:6:6.14367628
+
+SITUATUATIONS
+---------------------------------------------------------------------------------
+
+
+SIT
+=================================================================================
+
+NAME:
+    wait
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    pause
+NAME:
+    sleep
+
+SIT
+=================================================================================
+
+NAME:
+    gesture_detection(2,1)
+TYPE:
+    detect_gesture(2,1)
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    none
+NAME:
+    empty
+
+SIT
+=================================================================================
+
+NAME:
+    check_result([person(1,114,0,0)])
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    none
+NAME:
+    empty
+
+SIT
+=================================================================================
+
+NAME:
+    [id==>success,type==>final]
+TYPE:
+    final
+
+END DIALOGUE
+---------------------------------------------------------------------------------
+
+OUTSYS:
+    [count==>1]
+TIME:
+    20170609-22:6:7.335026264
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    say
+INITIME:
+    20170609-22:6:7.33668518
+MSG:
+    Perfect I saw you, Now you can start walking and i will follow you
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    switchpose
+POSE:
+    nav
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    avanzar
+WITH DISTANCE TO TARGET:
+    0.9
+0.9, avanzar, WITH DISTANCE TO TARGET:
+    0.9
+0.9, movement, NAME:
+    avanzar
+WITH DISTANCE TO TARGET:
+    0.9
+0.9, avanzar, WITH DISTANCE TO TARGET:
+    0.9
+0.9, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    avanzar
+WITH DISTANCE TO TARGET:
+    0.9
+0.9, avanzar, WITH DISTANCE TO TARGET:
+    0.9
+0.9, movement, NAME:
+    avanzar
+WITH DISTANCE TO TARGET:
+    0.9
+0.9, avanzar, WITH DISTANCE TO TARGET:
+    0.9
+0.9, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    doesnt_exist
+NAME:
+    avanzar
+WITH DISTANCE TO TARGET:
+    0.9
+0.9, avanzar, WITH DISTANCE TO TARGET:
+    0.9
+0.9, doesnt_exist, NAME:
+    avanzar
+WITH DISTANCE TO TARGET:
+    0.9
+0.9, avanzar, WITH DISTANCE TO TARGET:
+    0.9
+0.9, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    doesnt_exist
+NAME:
+    avanzar
+WITH DISTANCE TO TARGET:
+    0.9
+0.9, avanzar, WITH DISTANCE TO TARGET:
+    0.9
+0.9, doesnt_exist, NAME:
+    avanzar
+WITH DISTANCE TO TARGET:
+    0.9
+0.9, avanzar, WITH DISTANCE TO TARGET:
+    0.9
+0.9, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    avanzar
+WITH DISTANCE TO TARGET:
+    0.9
+0.9, avanzar, WITH DISTANCE TO TARGET:
+    0.9
+0.9, movement, NAME:
+    avanzar
+WITH DISTANCE TO TARGET:
+    0.9
+0.9, avanzar, WITH DISTANCE TO TARGET:
+    0.9
+0.9, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    avanzar
+WITH DISTANCE TO TARGET:
+    0.9
+0.9, avanzar, WITH DISTANCE TO TARGET:
+    0.9
+0.9, movement, NAME:
+    avanzar
+WITH DISTANCE TO TARGET:
+    0.9
+0.9, avanzar, WITH DISTANCE TO TARGET:
+    0.9
+0.9, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    doesnt_exist
+NAME:
+    avanzar
+WITH DISTANCE TO TARGET:
+    0.9
+0.9, avanzar, WITH DISTANCE TO TARGET:
+    0.9
+0.9, doesnt_exist, NAME:
+    avanzar
+WITH DISTANCE TO TARGET:
+    0.9
+0.9, avanzar, WITH DISTANCE TO TARGET:
+    0.9
+0.9, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    doesnt_exist
+NAME:
+    avanzar
+WITH DISTANCE TO TARGET:
+    0.9
+0.9, avanzar, WITH DISTANCE TO TARGET:
+    0.9
+0.9, doesnt_exist, NAME:
+    avanzar
+WITH DISTANCE TO TARGET:
+    0.9
+0.9, avanzar, WITH DISTANCE TO TARGET:
+    0.9
+0.9, 

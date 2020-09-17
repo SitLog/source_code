@@ -1,0 +1,1615 @@
+<?xml version="1.0" encoding="utf-8"?>
+<grammar version="1.0" xml:lang="en-US" mode="voice" root="gpsr2015" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+  <rule id="objq">
+    <one-of>
+      <item> <ruleref uri="#sentence_objq_10"/> <ruleref uri="#item"/> <ruleref uri="#sentence_objq_8"/> <ruleref uri="#item"/> <ruleref uri="#sentence_objq_11"/> <ruleref uri="#adjr"/>  </item>
+      <item> <ruleref uri="#sentence_objq_4"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#sentence_objq_14"/> <ruleref uri="#adja"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#sentence_objq_13"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#sentence_objq_2"/> <ruleref uri="#item"/> <ruleref uri="#sentence_objq_3"/>  </item>
+      <item> <ruleref uri="#sentence_objq_14"/> <ruleref uri="#adja"/> <ruleref uri="#sentence_objq_15"/>  </item>
+      <item> <ruleref uri="#sentence_objq_6"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#sentence_objq_2"/> <ruleref uri="#item"/> <ruleref uri="#sentence_objq_12"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#sentence_objq_7"/> <ruleref uri="#item"/> <ruleref uri="#sentence_objq_8"/> <ruleref uri="#item"/> <ruleref uri="#sentence_objq_9"/>  </item>
+      <item> <ruleref uri="#sentence_objq_1"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#sentence_objq_5"/> <ruleref uri="#item"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="connectors_location">
+    <one-of>
+      <item> located </item>
+   </one-of>
+  </rule>
+
+  <rule id="adjr">
+    <one-of>
+      <item> smaller </item>
+      <item> bigger </item>
+      <item> lighter </item>
+      <item> heavier </item>
+   </one-of>
+  </rule>
+
+  <rule id="adjective">
+    <one-of>
+      <item> edible </item>
+      <item> smallest </item>
+      <item> oldest </item>
+      <item> younger </item>
+      <item> more acidic </item>
+      <item> strongest </item>
+      <item> more delicate </item>
+      <item> taller </item>
+      <item> brighter </item>
+      <item> bigger </item>
+      <item> higher </item>
+      <item> tastiest </item>
+      <item> largest </item>
+      <item> most delicate </item>
+      <item> smaller </item>
+      <item> heaviest </item>
+      <item> brightest </item>
+      <item> youngest </item>
+      <item> thinner </item>
+      <item> edibler </item>
+      <item> tastier </item>
+      <item> biggest </item>
+      <item> tallest </item>
+      <item> lightest </item>
+      <item> stronger </item>
+      <item> larger </item>
+      <item> more biodegradable </item>
+      <item> heavier </item>
+      <item> lighter </item>
+      <item> biodegradable </item>
+      <item> darkest </item>
+      <item> darker </item>
+      <item> kosher </item>
+      <item> thinnest </item>
+      <item> kosher </item>
+      <item> highest </item>
+      <item> most acidic </item>
+      <item> older </item>
+   </one-of>
+  </rule>
+
+  <rule id="connectors_it">
+    <one-of>
+      <item> <ruleref uri="#connectors_it1"/>  </item>
+      <item> <ruleref uri="#connectors_it2"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="crowd_s_9">
+    <one-of>
+      <item> person </item>
+   </one-of>
+  </rule>
+
+  <rule id="crowd_s_8">
+    <one-of>
+      <item> child </item>
+   </one-of>
+  </rule>
+
+  <rule id="adja">
+    <one-of>
+      <item> heaviest </item>
+      <item> smallest </item>
+      <item> biggest </item>
+      <item> lightest </item>
+   </one-of>
+  </rule>
+
+  <rule id="go">
+    <one-of>
+      <item> go and </item>
+      <item> go </item>
+   </one-of>
+  </rule>
+
+  <rule id="follow">
+    <one-of>
+      <item> go behind </item>
+      <item> come behind </item>
+      <item> <ruleref uri="#follow_1"/> <ruleref uri="#item"/>  </item>
+      <item> follow </item>
+      <item> go after </item>
+      <item> accompany </item>
+      <item> come after </item>
+      <item> <ruleref uri="#follow_2"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="crowd_s_7">
+    <one-of>
+      <item> woman </item>
+      <item> girl </item>
+   </one-of>
+  </rule>
+
+  <rule id="crowd_s_6">
+    <one-of>
+      <item> boy </item>
+      <item> man </item>
+   </one-of>
+  </rule>
+
+  <rule id="crowd_s_1">
+    <one-of>
+      <item> crowd </item>
+   </one-of>
+  </rule>
+
+  <rule id="find">
+    <one-of>
+      <item> locate </item>
+      <item> look for </item>
+      <item> search  for </item>
+      <item> pinpoint </item>
+      <item> obtain </item>
+      <item> spot </item>
+      <item> find </item>
+      <item> detect </item>
+      <item> identify </item>
+   </one-of>
+  </rule>
+
+  <rule id="crowd_s_3">
+    <one-of>
+      <item> male </item>
+      <item> males </item>
+      <item> men </item>
+   </one-of>
+  </rule>
+
+  <rule id="crowd_s_2">
+    <one-of>
+      <item> adults </item>
+      <item> children </item>
+      <item> boys </item>
+      <item> young </item>
+      <item> girls </item>
+      <item> elders </item>
+   </one-of>
+  </rule>
+
+  <rule id="move">
+    <one-of>
+      <item> get into </item>
+      <item> drive to </item>
+      <item> enter to </item>
+      <item> enter </item>
+      <item> navigate to </item>
+      <item> go to </item>
+      <item> move to </item>
+      <item> reach to </item>
+      <item> walk </item>
+   </one-of>
+  </rule>
+
+  <rule id="connectors_10">
+    <one-of>
+      <item> was a </item>
+   </one-of>
+  </rule>
+
+  <rule id="connectors_13">
+    <one-of>
+      <item> can i </item>
+   </one-of>
+  </rule>
+
+  <rule id="connectors_12">
+    <one-of>
+      <item> are the </item>
+      <item> is the </item>
+   </one-of>
+  </rule>
+
+  <rule id="connectors_15">
+    <one-of>
+      <item> was the </item>
+   </one-of>
+  </rule>
+
+  <rule id="connectors_14">
+    <one-of>
+      <item> of the </item>
+   </one-of>
+  </rule>
+
+  <rule id="connectors_17">
+    <one-of>
+      <item> has the </item>
+      <item> are </item>
+   </one-of>
+  </rule>
+
+  <rule id="quest_a">
+    <one-of>
+      <item> <ruleref uri="#count_4"/>  </item>
+      <item> <ruleref uri="#quest3"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="connectors_19">
+    <one-of>
+      <item> were wearing </item>
+   </one-of>
+  </rule>
+
+  <rule id="connectors_18">
+    <one-of>
+      <item> if the </item>
+   </one-of>
+  </rule>
+
+  <rule id="command_deliver_2">
+    <one-of>
+      <item> <ruleref uri="#command_deliver_1"/> <ruleref uri="#connectors_g"/>  </item>
+      <item> <ruleref uri="#command_deliver_1"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="connectors_it2">
+    <one-of>
+      <item> them </item>
+   </one-of>
+  </rule>
+
+  <rule id="connectors_it1">
+    <one-of>
+      <item> it </item>
+   </one-of>
+  </rule>
+
+  <rule id="crowdq">
+    <one-of>
+      <item> <ruleref uri="#sentence_crowdq_3"/> <ruleref uri="#people"/> <ruleref uri="#sentence_crowdq_4"/>  </item>
+      <item> <ruleref uri="#sentence_crowdq_1"/> <ruleref uri="#people"/> <ruleref uri="#sentence_crowdq_2"/>  </item>
+      <item> <ruleref uri="#sentence_crowdq_5"/> <ruleref uri="#posprs"/> <ruleref uri="#sentence_crowdq_6"/> <ruleref uri="#gprsng"/>  </item>
+      <item> <ruleref uri="#sentence_crowdq_8"/> <ruleref uri="#posppl"/>  </item>
+      <item> <ruleref uri="#sentence_crowdq_8"/> <ruleref uri="#gesture"/>  </item>
+      <item> <ruleref uri="#sentence_crowdq_9"/> <ruleref uri="#gesture"/> <ruleref uri="#sentence_crowdq_10"/> <ruleref uri="#gprsn"/>  </item>
+      <item> <ruleref uri="#sentence_crowdq_7"/> <ruleref uri="#color"/>  </item>
+      <item> <ruleref uri="#sentence_crowdq_9"/> <ruleref uri="#posprs"/> <ruleref uri="#sentence_crowdq_10"/> <ruleref uri="#gprsn"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="observation_2">
+    <one-of>
+      <item> how many people are in the </item>
+   </one-of>
+  </rule>
+
+  <rule id="observation_3">
+    <one-of>
+      <item> how many </item>
+   </one-of>
+  </rule>
+
+  <rule id="observation_1">
+    <one-of>
+      <item> the gender of that person </item>
+      <item> which gesture is performing that person </item>
+      <item> the gesture of that person </item>
+      <item> what gesture is doing that person </item>
+      <item> if the person is male or female </item>
+      <item> the sex of that person </item>
+   </one-of>
+  </rule>
+
+  <rule id="command_single_speak">
+    <one-of>
+      <item> <ruleref uri="#command_speak"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="observation_4">
+    <one-of>
+      <item> how many people in the </item>
+   </one-of>
+  </rule>
+
+  <rule id="find_person">
+    <one-of>
+      <item> <ruleref uri="#find"/> <ruleref uri="#find_person_1"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="crowd_s_d">
+    <one-of>
+      <item> <ruleref uri="#crowd_s_b"/> <ruleref uri="#connectors_c"/> <ruleref uri="#crowd_s_b"/> <ruleref uri="#crowd_s_5"/>  </item>
+      <item> <ruleref uri="#crowd_s_b"/> <ruleref uri="#connectors_c"/> <ruleref uri="#crowd_s_b"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="crowd_s_f">
+    <one-of>
+      <item> <ruleref uri="#crowd_s_b"/>  </item>
+      <item> <ruleref uri="#crowd_s_c"/>  </item>
+      <item> <ruleref uri="#crowd_s_e"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="crowd_s_a">
+    <one-of>
+      <item> <ruleref uri="#crowd_s_2"/>  </item>
+      <item> <ruleref uri="#crowd_s_5"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="person_destiny">
+    <one-of>
+      <item> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#person_destiny_1"/>  </item>
+      <item> <ruleref uri="#connectors_k"/> <ruleref uri="#item"/> <ruleref uri="#connectors_a"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#connectors_k"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#item"/> <ruleref uri="#connectors_a"/> <ruleref uri="#item"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="crowd_s_b">
+    <one-of>
+      <item> <ruleref uri="#crowd_s_4"/>  </item>
+      <item> <ruleref uri="#crowd_s_3"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="connectors_1">
+    <one-of>
+      <item> are in the </item>
+   </one-of>
+  </rule>
+
+  <rule id="command_wp">
+    <one-of>
+      <item> <ruleref uri="#command_single"/> <ruleref uri="#command_double"/> <ruleref uri="#connectors_6"/> <ruleref uri="#command_single"/>  </item>
+      <item> <ruleref uri="#command_double"/> <ruleref uri="#command_single"/> <ruleref uri="#connectors_6"/> <ruleref uri="#command_single"/>  </item>
+      <item> <ruleref uri="#command_single"/> <ruleref uri="#command_single"/> <ruleref uri="#connectors_6"/> <ruleref uri="#command_double"/>  </item>
+      <item> <ruleref uri="#command_double"/> <ruleref uri="#connectors_6"/> <ruleref uri="#command_double"/>  </item>
+      <item> <ruleref uri="#command_double"/> <ruleref uri="#connectors_6"/> <ruleref uri="#command_single"/>  </item>
+      <item> <ruleref uri="#command_single"/> <ruleref uri="#connectors_6"/> <ruleref uri="#command_double"/>  </item>
+      <item> <ruleref uri="#command_double"/>  </item>
+      <item> <ruleref uri="#command_single"/>  </item>
+      <item> <ruleref uri="#command_single"/> <ruleref uri="#connectors_6"/> <ruleref uri="#command_single"/>  </item>
+      <item> <ruleref uri="#command_single"/> <ruleref uri="#command_single"/>  </item>
+      <item> <ruleref uri="#command_single"/> <ruleref uri="#command_single"/> <ruleref uri="#connectors_6"/> <ruleref uri="#command_single"/>  </item>
+      <item> <ruleref uri="#command_single"/> <ruleref uri="#command_single"/> <ruleref uri="#command_single"/> <ruleref uri="#connectors_6"/> <ruleref uri="#command_single"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="report">
+    <one-of>
+      <item> and describe to </item>
+      <item> and inform to </item>
+      <item> and report to </item>
+      <item> and detail to </item>
+   </one-of>
+  </rule>
+
+  <rule id="command_single_find">
+    <one-of>
+      <item> <ruleref uri="#find_person"/>  </item>
+      <item> <ruleref uri="#find_person"/> <ruleref uri="#connectors_3"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#find"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#find"/> <ruleref uri="#item"/> <ruleref uri="#connectors_3"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#find"/> <ruleref uri="#connectors_g"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#find"/> <ruleref uri="#connectors_g"/> <ruleref uri="#item"/> <ruleref uri="#connectors_3"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#find"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#find"/> <ruleref uri="#connectors_g"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#find"/> <ruleref uri="#connectors_g"/> <ruleref uri="#item"/> <ruleref uri="#connectors_a"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#find"/> <ruleref uri="#connectors_g"/> <ruleref uri="#crowd_a_a"/> <ruleref uri="#crowd_s_9"/>  </item>
+      <item> <ruleref uri="#find"/> <ruleref uri="#connectors_g"/> <ruleref uri="#crowd_s_f"/> <ruleref uri="#crowd_s_9"/>  </item>
+      <item> <ruleref uri="#find"/> <ruleref uri="#connectors_g"/> <ruleref uri="#crowd_s_f"/>  </item>
+      <item> <ruleref uri="#connectors_g"/> <ruleref uri="#crowd_a_a"/> <ruleref uri="#crowd_s_9"/> <ruleref uri="#connectors_a"/> <ruleref uri="#item"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="find_gesture_1">
+    <one-of>
+      <item> the calling person </item>
+   </one-of>
+  </rule>
+
+  <rule id="connectors_5">
+    <one-of>
+      <item> the </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_objq_14">
+    <one-of>
+      <item> which is the </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_objq_15">
+    <one-of>
+      <item> object </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_objq_12">
+    <one-of>
+      <item> are in the </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_objq_13">
+    <one-of>
+      <item> how many objects are in the </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_objq_10">
+    <one-of>
+      <item> between the </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_objq_11">
+    <one-of>
+      <item> which one is </item>
+   </one-of>
+  </rule>
+
+  <rule id="item">
+    <one-of>
+      <item> <ruleref uri="location.grxml"/>  </item>
+      <item> <ruleref uri="human.grxml"/>  </item>
+      <item> <ruleref uri="object_category.grxml"/>  </item>
+      <item> <ruleref uri="room.grxml"/>  </item>
+      <item> <ruleref uri="object.grxml"/>  </item>
+      <item> <ruleref uri="#category"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="deliver_2">
+    <one-of>
+      <item> take it to </item>
+      <item> deliver it to </item>
+      <item> take it </item>
+      <item> bring it </item>
+      <item> hand it to </item>
+      <item> put it on </item>
+      <item> carry it </item>
+      <item> place it </item>
+      <item> carry it to </item>
+      <item> put it out </item>
+      <item> deliver it on </item>
+      <item> give it to </item>
+      <item> deliver it </item>
+      <item> bring it to </item>
+      <item> give it </item>
+      <item> hand it </item>
+      <item> place it on </item>
+      <item> put it </item>
+   </one-of>
+  </rule>
+
+  <rule id="connectors_personal">
+    <one-of>
+      <item> her </item>
+      <item> him </item>
+      <item> them </item>
+   </one-of>
+  </rule>
+
+  <rule id="command_single_deliver">
+    <one-of>
+      <item> <ruleref uri="#deliver_2"/> <ruleref uri="#destiny"/>  </item>
+      <item> <ruleref uri="#destiny"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="people">
+    <one-of>
+      <item> <ruleref uri="#gppl"/>  </item>
+      <item> <ruleref uri="#appl"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_objq_4">
+    <one-of>
+      <item> whats the colour of the </item>
+   </one-of>
+  </rule>
+
+  <rule id="crowd_s_5">
+    <one-of>
+      <item> persons </item>
+      <item> people </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_objq_6">
+    <one-of>
+      <item> to which category belong the </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_objq_7">
+    <one-of>
+      <item> do the </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_objq_1">
+    <one-of>
+      <item> where can i find a </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_objq_2">
+    <one-of>
+      <item> how many </item>
+   </one-of>
+  </rule>
+
+  <rule id="crowd_s_4">
+    <one-of>
+      <item> women </item>
+      <item> females </item>
+      <item> female </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_objq_8">
+    <one-of>
+      <item> and </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_objq_9">
+    <one-of>
+      <item> belong to the same category </item>
+   </one-of>
+  </rule>
+
+  <rule id="color_1">
+    <one-of>
+      <item> colour </item>
+      <item> colors </item>
+      <item> color </item>
+      <item> colours </item>
+   </one-of>
+  </rule>
+
+  <rule id="category">
+    <one-of>
+      <item> robot </item>
+      <item> people </item>
+      <item> human </item>
+      <item> location </item>
+      <item> object </item>
+      <item> place </item>
+      <item> room </item>
+      <item> person </item>
+   </one-of>
+  </rule>
+
+  <rule id="destiny">
+    <one-of>
+      <item> <ruleref uri="#person_destiny"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="command_single_take">
+    <one-of>
+      <item> <ruleref uri="#take"/> <ruleref uri="#connectors_g"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#take"/> <ruleref uri="#connectors_g"/> <ruleref uri="#item"/> <ruleref uri="#connectors_b"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#take"/> <ruleref uri="#connectors_b"/> <ruleref uri="#item"/> <ruleref uri="#connectors_g"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#take"/> <ruleref uri="#connectors_it"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="command_single_ask">
+    <one-of>
+      <item> <ruleref uri="#say"/> <ruleref uri="#connectors_5"/> <ruleref uri="#subj_obj3"/> <ruleref uri="#connectors_14"/> <ruleref uri="#crowd_s_9"/> <ruleref uri="#connectors_a"/> <ruleref uri="#item"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="quest4">
+    <one-of>
+      <item> whose </item>
+      <item> who </item>
+      <item> when </item>
+   </one-of>
+  </rule>
+
+  <rule id="quest5">
+    <one-of>
+      <item> in which </item>
+   </one-of>
+  </rule>
+
+  <rule id="quest6">
+    <one-of>
+      <item> to which </item>
+   </one-of>
+  </rule>
+
+  <rule id="quest7">
+    <one-of>
+      <item> do the </item>
+   </one-of>
+  </rule>
+
+  <rule id="quest1">
+    <one-of>
+      <item> what </item>
+      <item> which </item>
+   </one-of>
+  </rule>
+
+  <rule id="quest2">
+    <one-of>
+      <item> where </item>
+   </one-of>
+  </rule>
+
+  <rule id="quest3">
+    <one-of>
+      <item> how </item>
+      <item> how many </item>
+      <item> how much </item>
+   </one-of>
+  </rule>
+
+  <rule id="quest8">
+    <one-of>
+      <item> whats </item>
+      <item> whichs </item>
+   </one-of>
+  </rule>
+
+  <rule id="quest9">
+    <one-of>
+      <item> wheres </item>
+   </one-of>
+  </rule>
+
+  <rule id="connectors_11">
+    <one-of>
+      <item> am i a </item>
+   </one-of>
+  </rule>
+
+  <rule id="deliver">
+    <one-of>
+      <item> <ruleref uri="#deliver_1"/>  </item>
+      <item> <ruleref uri="#deliver_2"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="connectors_28">
+    <one-of>
+      <item> on the </item>
+   </one-of>
+  </rule>
+
+  <rule id="connectors_29">
+    <one-of>
+      <item> are </item>
+      <item> is </item>
+   </one-of>
+  </rule>
+
+  <rule id="command_single_navigate">
+    <one-of>
+      <item> <ruleref uri="#move"/> <ruleref uri="#connectors_5"/> <ruleref uri="#item"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="connectors_20">
+    <one-of>
+      <item> there are </item>
+   </one-of>
+  </rule>
+
+  <rule id="connectors_21">
+    <one-of>
+      <item> are stored in the </item>
+   </one-of>
+  </rule>
+
+  <rule id="connectors_22">
+    <one-of>
+      <item> to the same </item>
+   </one-of>
+  </rule>
+
+  <rule id="connectors_23">
+    <one-of>
+      <item> between  the </item>
+   </one-of>
+  </rule>
+
+  <rule id="connectors_24">
+    <one-of>
+      <item> one is </item>
+   </one-of>
+  </rule>
+
+  <rule id="connectors_25">
+    <one-of>
+      <item> to the </item>
+   </one-of>
+  </rule>
+
+  <rule id="connectors_26">
+    <one-of>
+      <item> there are on the </item>
+   </one-of>
+  </rule>
+
+  <rule id="connectors_27">
+    <one-of>
+      <item> to </item>
+   </one-of>
+  </rule>
+
+  <rule id="gprsn">
+    <one-of>
+      <item> male </item>
+      <item> female </item>
+      <item> boy </item>
+      <item> woman </item>
+      <item> girl </item>
+      <item> man </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_arenaq_4">
+    <one-of>
+      <item> how many </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_arenaq_5">
+    <one-of>
+      <item> are in the </item>
+   </one-of>
+  </rule>
+
+  <rule id="connectors_you">
+    <one-of>
+      <item> you may </item>
+      <item> you can </item>
+      <item> you will </item>
+   </one-of>
+  </rule>
+
+  <rule id="connectors_16">
+    <one-of>
+      <item> a </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_arenaq_1">
+    <one-of>
+      <item> where is located the </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_arenaq_2">
+    <one-of>
+      <item> in which room is the </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_arenaq_3">
+    <one-of>
+      <item> how many doors has the </item>
+   </one-of>
+  </rule>
+
+  <rule id="command_single">
+    <one-of>
+      <item> <ruleref uri="#command_single_take"/>  </item>
+      <item> <ruleref uri="#command_single_speak"/>  </item>
+      <item> <ruleref uri="#command_single_navigate"/>  </item>
+      <item> <ruleref uri="#command_single_deliver"/>  </item>
+      <item> <ruleref uri="#command_single_find"/>  </item>
+      <item> <ruleref uri="#command_single_follow"/>  </item>
+      <item> <ruleref uri="#command_single_guide"/>  </item>
+      <item> <ruleref uri="#command_single_place"/>  </item>
+      <item> <ruleref uri="#command_single_ask"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="command_deliver_1">
+    <one-of>
+      <item> <ruleref uri="#deliver_1"/>  </item>
+      <item> <ruleref uri="#deliver_1"/> <ruleref uri="#connectors_27"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="place">
+    <one-of>
+      <item> place </item>
+      <item> put </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_posppl_1">
+    <one-of>
+      <item> standing or sitting </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_posppl_2">
+    <one-of>
+      <item> standing or lying </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_posppl_3">
+    <one-of>
+      <item> sitting or lying </item>
+   </one-of>
+  </rule>
+
+  <rule id="posprs">
+    <one-of>
+      <item> sitting </item>
+      <item> standing </item>
+      <item> lying </item>
+   </one-of>
+  </rule>
+
+  <rule id="color">
+    <one-of>
+      <item> black </item>
+      <item> white </item>
+      <item> yellow </item>
+      <item> red </item>
+      <item> blue </item>
+      <item> green </item>
+      <item> cyan </item>
+      <item> green </item>
+      <item> white </item>
+      <item> yellow </item>
+      <item> gray </item>
+      <item> magenta </item>
+      <item> purple </item>
+      <item> black </item>
+      <item> orange </item>
+      <item> violet </item>
+      <item> brown </item>
+      <item> pink </item>
+      <item> red </item>
+      <item> blue </item>
+   </one-of>
+  </rule>
+
+  <rule id="crowd_a_b">
+    <one-of>
+      <item> <ruleref uri="#crowd_a_a"/> <ruleref uri="#crowd_a_a"/> <ruleref uri="#crowd_a_a"/> <ruleref uri="#crowd_a_a"/> <ruleref uri="#connectors_c"/> <ruleref uri="#crowd_a_a"/>  </item>
+      <item> <ruleref uri="#crowd_a_a"/> <ruleref uri="#crowd_a_a"/> <ruleref uri="#connectors_c"/> <ruleref uri="#crowd_a_a"/>  </item>
+      <item> <ruleref uri="#crowd_a_a"/> <ruleref uri="#crowd_a_a"/> <ruleref uri="#crowd_a_a"/> <ruleref uri="#connectors_c"/> <ruleref uri="#crowd_a_a"/>  </item>
+      <item> <ruleref uri="#crowd_a_a"/> <ruleref uri="#connectors_c"/> <ruleref uri="#crowd_a_a"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="crowd_a_a">
+    <one-of>
+      <item> <ruleref uri="#crowd_a_9"/>  </item>
+      <item> <ruleref uri="#crowd_a_6"/>  </item>
+      <item> <ruleref uri="#crowd_a_8"/>  </item>
+      <item> <ruleref uri="#crowd_a_7"/>  </item>
+      <item> <ruleref uri="#crowd_a_4"/>  </item>
+      <item> <ruleref uri="#crowd_a_2"/>  </item>
+      <item> <ruleref uri="#crowd_a_5"/>  </item>
+      <item> <ruleref uri="#crowd_a_3"/>  </item>
+      <item> <ruleref uri="#crowd_a_1"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="find_gesture">
+    <one-of>
+      <item> <ruleref uri="#find"/> <ruleref uri="#find_gesture_1"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="gppl">
+    <one-of>
+      <item> boys </item>
+      <item> females </item>
+      <item> girls </item>
+      <item> men </item>
+      <item> women </item>
+      <item> males </item>
+   </one-of>
+  </rule>
+
+  <rule id="command_double">
+    <one-of>
+      <item> <ruleref uri="#command_deliver_1"/> <ruleref uri="#command_destiny"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#command_deliver_1"/> <ruleref uri="#command_destiny"/> <ruleref uri="#item"/> <ruleref uri="#connectors_b"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#command_deliver_2"/> <ruleref uri="#item"/> <ruleref uri="#connectors_27"/> <ruleref uri="#destiny"/>  </item>
+      <item> <ruleref uri="#command_deliver_2"/> <ruleref uri="#item"/> <ruleref uri="#connectors_b"/> <ruleref uri="#item"/> <ruleref uri="#connectors_27"/> <ruleref uri="#destiny"/>  </item>
+      <item> <ruleref uri="#command_deliver_2"/> <ruleref uri="#item"/> <ruleref uri="#connectors_j"/> <ruleref uri="#destiny"/>  </item>
+      <item> <ruleref uri="#command_deliver_2"/> <ruleref uri="#item"/> <ruleref uri="#connectors_b"/> <ruleref uri="#item"/> <ruleref uri="#connectors_j"/> <ruleref uri="#destiny"/>  </item>
+      <item> <ruleref uri="#answer"/> <ruleref uri="#connectors_27"/> <ruleref uri="#item"/> <ruleref uri="#connectors_a"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#command_single_speak"/> <ruleref uri="#connectors_27"/> <ruleref uri="#item"/> <ruleref uri="#connectors_a"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#answer"/> <ruleref uri="#whowhere"/>  </item>
+      <item> <ruleref uri="#command_single_speak"/> <ruleref uri="#whowhere"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="complete_question">
+    <one-of>
+      <item> what brand of cookies came first hydrox or oreo </item>
+      <item> what does the chocolate brand initials m and m stand for </item>
+      <item> what is the highest point in japan </item>
+      <item> do you have dreams </item>
+      <item> who is the emperor of japan </item>
+      <item> what is the name of your team </item>
+      <item> how did oscar from sesame street turn green </item>
+      <item> go to the exit </item>
+      <item> in which city will next years robocup be hosted </item>
+      <item> how many people live in the japan </item>
+      <item> in what object where the ashes of fredric baur buried in </item>
+      <item> which robot is used in the domestic standard platform league </item>
+      <item> why was ted kaczynski called the unabomber </item>
+      <item> who invented the c programming language </item>
+      <item> who invented the first compiler </item>
+      <item> which robot is used in the social standard platform league </item>
+      <item> join the dark side </item>
+      <item> what is your team name </item>
+      <item> how many people live in japan </item>
+      <item> what gender of mosquitoes bite </item>
+      <item> what is the name of the only state in the usa that can be typed on one row of keys </item>
+      <item> what day is today </item>
+      <item> what are the colours of the japanese flag </item>
+      <item> what is your name </item>
+      <item> when was invented the c programming language </item>
+      <item> what city is the capital of the japan </item>
+      <item> what is the only number whose letters are in alphabetical order </item>
+      <item> when was invented the b programming language </item>
+      <item> where the term jaywalker come from </item>
+      <item> which robot is used in the open platform league </item>
+      <item> in which year was robocup at home founded </item>
+      <item> what is a sakura </item>
+      <item> what city is the capital of japan </item>
+      <item> what day is tomorrow </item>
+      <item> what time is it </item>
+      <item> to what inanimate object did france issue a passport </item>
+      <item> where does the term computer bug come from </item>
+   </one-of>
+  </rule>
+
+  <rule id="connectors_8">
+    <one-of>
+      <item> or </item>
+      <item> or a </item>
+   </one-of>
+  </rule>
+
+  <rule id="appl">
+    <one-of>
+      <item> adults </item>
+      <item> elders </item>
+      <item> children </item>
+   </one-of>
+  </rule>
+
+  <rule id="command_single_guide">
+    <one-of>
+      <item> <ruleref uri="#guide"/> <ruleref uri="#item"/> <ruleref uri="#connectors_7"/> <ruleref uri="#item"/> <ruleref uri="#connectors_25"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#guide"/> <ruleref uri="#item"/> <ruleref uri="#connectors_a"/> <ruleref uri="#item"/> <ruleref uri="#connectors_6"/> <ruleref uri="#command_single_guide_1"/>  </item>
+      <item> <ruleref uri="#command_single_guide_2"/> <ruleref uri="#guide"/> <ruleref uri="#item"/> <ruleref uri="#connectors_6"/> <ruleref uri="#command_single_guide_1"/>  </item>
+      <item> <ruleref uri="#guide"/> <ruleref uri="#item"/> <ruleref uri="#connectors_25"/> <ruleref uri="#item"/> <ruleref uri="#command_single_guide_3"/>  </item>
+      <item> <ruleref uri="#guide"/> <ruleref uri="#connectors_personal"/> <ruleref uri="#connectors_25"/> <ruleref uri="#item"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="find_person_1">
+    <one-of>
+      <item> a person </item>
+      <item> someone </item>
+   </one-of>
+  </rule>
+
+  <rule id="subj_obj3">
+    <one-of>
+      <item> pose </item>
+      <item> name </item>
+      <item> gender </item>
+   </one-of>
+  </rule>
+
+  <rule id="subj_obj2">
+    <one-of>
+      <item> category </item>
+   </one-of>
+  </rule>
+
+  <rule id="subj_obj1">
+    <one-of>
+      <item> things </item>
+      <item> objects </item>
+   </one-of>
+  </rule>
+
+  <rule id="gprsng">
+    <one-of>
+      <item> male or female </item>
+      <item> man or woman </item>
+      <item> boy or girl </item>
+   </one-of>
+  </rule>
+
+  <rule id="crowd_a_9">
+    <one-of>
+      <item> pointing right </item>
+   </one-of>
+  </rule>
+
+  <rule id="crowd_a_8">
+    <one-of>
+      <item> pointing left </item>
+   </one-of>
+  </rule>
+
+  <rule id="crowd_a_3">
+    <one-of>
+      <item> standing </item>
+   </one-of>
+  </rule>
+
+  <rule id="crowd_a_2">
+    <one-of>
+      <item> raising arms </item>
+   </one-of>
+  </rule>
+
+  <rule id="crowd_a_1">
+    <one-of>
+      <item> waving </item>
+   </one-of>
+  </rule>
+
+  <rule id="crowd_a_7">
+    <one-of>
+      <item> rising right arm </item>
+      <item> raising right arm </item>
+   </one-of>
+  </rule>
+
+  <rule id="crowd_a_6">
+    <one-of>
+      <item> rising left arm </item>
+      <item> raising left arm </item>
+   </one-of>
+  </rule>
+
+  <rule id="crowd_a_5">
+    <one-of>
+      <item> lying </item>
+      <item> laying </item>
+   </one-of>
+  </rule>
+
+  <rule id="crowd_a_4">
+    <one-of>
+      <item> sitting </item>
+   </one-of>
+  </rule>
+
+  <rule id="count">
+    <one-of>
+      <item> <ruleref uri="#count_1"/> <ruleref uri="#item"/> <ruleref uri="#connectors_2"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#count_2"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#count_3"/> <ruleref uri="#item"/> <ruleref uri="#count_1"/> <ruleref uri="#item"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_objq_5">
+    <one-of>
+      <item> what objects are stored in the </item>
+   </one-of>
+  </rule>
+
+  <rule id="whowhere">
+    <one-of>
+      <item> <ruleref uri="#connectors_g"/> <ruleref uri="#crowd_a_a"/> <ruleref uri="#crowd_s_9"/>  </item>
+      <item> <ruleref uri="#connectors_g"/> <ruleref uri="#crowd_a_a"/> <ruleref uri="#crowd_s_9"/> <ruleref uri="#connectors_a"/> <ruleref uri="#item"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="command_single_guide_2">
+    <one-of>
+      <item> <ruleref uri="#move"/> <ruleref uri="#connectors_5"/> <ruleref uri="#item"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="command_single_place">
+    <one-of>
+      <item> <ruleref uri="place.grxml"/> <ruleref uri="#connectors_g"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="place.grxml"/> <ruleref uri="#connectors_g"/> <ruleref uri="#item"/> <ruleref uri="#connectors_b"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="place.grxml"/> <ruleref uri="#connectors_it"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="command_single_follow">
+    <one-of>
+      <item> <ruleref uri="#follow_2"/> <ruleref uri="#connectors_a"/> <ruleref uri="#item"/> <ruleref uri="#connectors_6"/> <ruleref uri="#follow"/> <ruleref uri="#connectors_personal"/> <ruleref uri="#connectors_25"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#command_single_guide_2"/> <ruleref uri="#follow_2"/> <ruleref uri="#connectors_6"/> <ruleref uri="#follow"/> <ruleref uri="#connectors_personal"/> <ruleref uri="#connectors_25"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#follow"/> <ruleref uri="#item"/> <ruleref uri="#connectors_7"/> <ruleref uri="#item"/> <ruleref uri="#connectors_25"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#guide"/> <ruleref uri="#item"/> <ruleref uri="#connectors_a"/> <ruleref uri="#item"/> <ruleref uri="#connectors_6"/> <ruleref uri="#follow"/> <ruleref uri="#connectors_personal"/> <ruleref uri="#connectors_25"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#command_single_guide_2"/> <ruleref uri="#guide"/> <ruleref uri="#item"/> <ruleref uri="#connectors_6"/> <ruleref uri="#follow"/> <ruleref uri="#connectors_personal"/> <ruleref uri="#connectors_25"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#follow"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="command_speak">
+    <one-of>
+      <item> <ruleref uri="#complete_question"/>  </item>
+      <item> <ruleref uri="#say"/> <ruleref uri="#complete_question"/>  </item>
+      <item> <ruleref uri="#answer"/>  </item>
+      <item> <ruleref uri="#say"/> <ruleref uri="#observation"/>  </item>
+      <item> <ruleref uri="#say"/> <ruleref uri="#data"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="follow_2">
+    <one-of>
+      <item> accompany him </item>
+      <item> accompany her </item>
+      <item> follow him </item>
+      <item> come after him </item>
+      <item> go after her </item>
+      <item> come behind her </item>
+      <item> come behind him </item>
+      <item> come after her </item>
+      <item> follow her </item>
+      <item> go after him </item>
+      <item> <ruleref uri="#find_person"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="guide">
+    <one-of>
+      <item> guide </item>
+      <item> meet </item>
+      <item> escort </item>
+      <item> conduct </item>
+      <item> lead </item>
+      <item> accompany </item>
+      <item> take </item>
+   </one-of>
+  </rule>
+
+  <rule id="follow_1">
+    <one-of>
+      <item> come behind her to the </item>
+      <item> come behind him to the </item>
+      <item> come after her to the </item>
+      <item> go after her to the </item>
+      <item> accompany her to the </item>
+      <item> follow him to the </item>
+      <item> accompany him to the </item>
+      <item> come after him to the </item>
+      <item> go after him to the </item>
+      <item> follow her to the </item>
+      <item> <ruleref uri="#guide"/> <ruleref uri="#item"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="command_destiny">
+    <one-of>
+      <item> <ruleref uri="#destiny"/> <ruleref uri="#connectors_g"/>  </item>
+      <item> <ruleref uri="#destiny"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_objq_3">
+    <one-of>
+      <item> there are </item>
+   </one-of>
+  </rule>
+
+  <rule id="posppl">
+    <one-of>
+      <item> <ruleref uri="#sentence_posppl_3"/>  </item>
+      <item> <ruleref uri="#sentence_posppl_2"/>  </item>
+      <item> <ruleref uri="#sentence_posppl_1"/>  </item>
+      <item> <ruleref uri="#posprs"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="command_single_guide_1">
+    <one-of>
+      <item> <ruleref uri="#guide"/> <ruleref uri="#connectors_personal"/> <ruleref uri="#connectors_25"/> <ruleref uri="#item"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="say">
+    <one-of>
+      <item> say to me </item>
+      <item> tell </item>
+      <item> say </item>
+      <item> speak </item>
+      <item> tell me </item>
+   </one-of>
+  </rule>
+
+  <rule id="command_single_guide_3">
+    <one-of>
+      <item> <ruleref uri="#connectors_you"/> <ruleref uri="#find"/> <ruleref uri="#connectors_personal"/> <ruleref uri="#connectors_a"/> <ruleref uri="#item"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="arenaq">
+    <one-of>
+      <item> <ruleref uri="#sentence_arenaq_3"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#sentence_arenaq_4"/> <ruleref uri="#item"/> <ruleref uri="#sentence_arenaq_5"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#sentence_arenaq_2"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#sentence_arenaq_1"/> <ruleref uri="#item"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="count_5">
+    <one-of>
+      <item> size of the </item>
+   </one-of>
+  </rule>
+
+  <rule id="count_4">
+    <one-of>
+      <item> number of </item>
+   </one-of>
+  </rule>
+
+  <rule id="count_3">
+    <one-of>
+      <item> move to the </item>
+   </one-of>
+  </rule>
+
+  <rule id="count_2">
+    <one-of>
+      <item> count the people at the </item>
+   </one-of>
+  </rule>
+
+  <rule id="count_1">
+    <one-of>
+      <item> count the </item>
+   </one-of>
+  </rule>
+
+  <rule id="belong">
+    <one-of>
+      <item> match </item>
+      <item> correspond </item>
+      <item> belong </item>
+      <item> is part </item>
+   </one-of>
+  </rule>
+
+  <rule id="connectors_9">
+    <one-of>
+      <item> is a </item>
+   </one-of>
+  </rule>
+
+  <rule id="crowd_s_e">
+    <one-of>
+      <item> <ruleref uri="#crowd_s_b"/> <ruleref uri="#connectors_c"/> <ruleref uri="#crowd_s_b"/>  </item>
+      <item> <ruleref uri="#crowd_s_c"/> <ruleref uri="#connectors_c"/> <ruleref uri="#crowd_s_c"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="quest_b">
+    <one-of>
+      <item> <ruleref uri="#quest1"/>  </item>
+      <item> <ruleref uri="#quest4"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="quest_c">
+    <one-of>
+      <item> <ruleref uri="#quest1"/> <ruleref uri="#connectors_12"/>  </item>
+      <item> <ruleref uri="#quest8"/> <ruleref uri="#connectors_5"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="quest_d">
+    <one-of>
+      <item> <ruleref uri="#quest9"/>  </item>
+      <item> <ruleref uri="#quest2"/> <ruleref uri="#connectors_29"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="take">
+    <one-of>
+      <item> pick up </item>
+      <item> take </item>
+      <item> get </item>
+      <item> seize </item>
+      <item> obtain </item>
+      <item> grasp </item>
+      <item> fetch </item>
+      <item> collect </item>
+      <item> retrieve </item>
+      <item> grab </item>
+   </one-of>
+  </rule>
+
+  <rule id="answer">
+    <one-of>
+      <item> solve a question </item>
+      <item> answer a question </item>
+      <item> respond a question </item>
+   </one-of>
+  </rule>
+
+  <rule id="connectors_3">
+    <one-of>
+      <item> in the </item>
+   </one-of>
+  </rule>
+
+  <rule id="connectors_2">
+    <one-of>
+      <item> at the </item>
+   </one-of>
+  </rule>
+
+  <rule id="person_destiny_1">
+    <one-of>
+      <item> me </item>
+   </one-of>
+  </rule>
+
+  <rule id="connectors_4">
+    <one-of>
+      <item> which is in the </item>
+   </one-of>
+  </rule>
+
+  <rule id="connectors_7">
+    <one-of>
+      <item> from the </item>
+   </one-of>
+  </rule>
+
+  <rule id="connectors_6">
+    <one-of>
+      <item> and </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_crowdq_2">
+    <one-of>
+      <item> are in the crowd </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_crowdq_3">
+    <one-of>
+      <item> tell me the number of </item>
+   </one-of>
+  </rule>
+
+  <rule id="deliver_1">
+    <one-of>
+      <item> collect </item>
+      <item> take </item>
+      <item> grasp </item>
+      <item> set </item>
+      <item> obtain </item>
+      <item> put </item>
+      <item> place </item>
+      <item> get </item>
+      <item> carry </item>
+      <item> leave </item>
+      <item> hand over </item>
+      <item> grab </item>
+      <item> seize </item>
+      <item> bring </item>
+      <item> give </item>
+      <item> pick up </item>
+      <item> hand </item>
+      <item> deliver </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_crowdq_1">
+    <one-of>
+      <item> how many </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_crowdq_6">
+    <one-of>
+      <item> person </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_crowdq_7">
+    <one-of>
+      <item> tell me how many people were wearing </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_crowdq_4">
+    <one-of>
+      <item> in the crowd </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_crowdq_5">
+    <one-of>
+      <item> was the </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_crowdq_8">
+    <one-of>
+      <item> how many people in the crowd are </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_crowdq_9">
+    <one-of>
+      <item> tell me if the </item>
+   </one-of>
+  </rule>
+
+  <rule id="polite">
+    <one-of>
+      <item> could you </item>
+      <item> could you please </item>
+      <item> please </item>
+      <item> robot please </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_crowdq_10">
+    <one-of>
+      <item> person was a </item>
+   </one-of>
+  </rule>
+
+  <rule id="crowd_s_c">
+    <one-of>
+      <item> <ruleref uri="#crowd_s_6"/>  </item>
+      <item> <ruleref uri="#crowd_s_7"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="data">
+    <one-of>
+      <item> the time </item>
+      <item> a joke </item>
+      <item> your teams country </item>
+      <item> the date </item>
+      <item> your team name </item>
+      <item> whether you dream or not on electric sheep </item>
+      <item> the day of the month </item>
+      <item> the day of the week </item>
+      <item> your name </item>
+      <item> your teams name </item>
+      <item> something about yourself </item>
+      <item> your team affiliation </item>
+      <item> the name of your team </item>
+      <item> your teams affiliation </item>
+      <item> your team country </item>
+   </one-of>
+  </rule>
+
+  <rule id="connectors_i">
+    <one-of>
+      <item> <ruleref uri="#connectors_6"/>  </item>
+      <item> <ruleref uri="#connectors_6"/> <ruleref uri="#connectors_5"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="connectors_h">
+    <one-of>
+      <item> <ruleref uri="#connectors_1"/>  </item>
+      <item> <ruleref uri="#connectors_21"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="connectors_k">
+    <one-of>
+      <item> <ruleref uri="#connectors_25"/>  </item>
+      <item> <ruleref uri="#connectors_5"/>  </item>
+      <item> <ruleref uri="#connectors_j"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="connectors_j">
+    <one-of>
+      <item> <ruleref uri="#connectors_28"/>  </item>
+      <item> <ruleref uri="#connectors_a"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="observation">
+    <one-of>
+      <item> <ruleref uri="#observation_4"/> <ruleref uri="#item"/> <ruleref uri="#connectors_17"/> <ruleref uri="#crowd_a_a"/>  </item>
+      <item> <ruleref uri="#observation_3"/> <ruleref uri="#item"/> <ruleref uri="#connectors_1"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#observation_2"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#quest3"/> <ruleref uri="#item"/> <ruleref uri="#connectors_26"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#observation_1"/>  </item>
+      <item> <ruleref uri="#quest_c"/> <ruleref uri="#adjective"/> <ruleref uri="#item"/> <ruleref uri="#connectors_j"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#observation_4"/> <ruleref uri="#item"/> <ruleref uri="#connectors_17"/> <ruleref uri="#crowd_s_f"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="connectors_a">
+    <one-of>
+      <item> <ruleref uri="#connectors_2"/>  </item>
+      <item> <ruleref uri="#connectors_3"/>  </item>
+      <item> <ruleref uri="#connectors_4"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="connectors_c">
+    <one-of>
+      <item> <ruleref uri="#connectors_8"/>  </item>
+      <item> <ruleref uri="#connectors_6"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="connectors_b">
+    <one-of>
+      <item> <ruleref uri="#connectors_7"/>  </item>
+      <item> <ruleref uri="#connectors_2"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="connectors_e">
+    <one-of>
+      <item> <ruleref uri="#connectors_15"/>  </item>
+      <item> <ruleref uri="#connectors_12"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="connectors_d">
+    <one-of>
+      <item> <ruleref uri="#connectors_9"/>  </item>
+      <item> <ruleref uri="#connectors_10"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="connectors_g">
+    <one-of>
+      <item> <ruleref uri="#connectors_5"/>  </item>
+      <item> <ruleref uri="#connectors_16"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="connectors_f">
+    <one-of>
+      <item> <ruleref uri="#connectors_1"/>  </item>
+      <item> <ruleref uri="#connectors_17"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="gpsr2015">
+    <one-of>
+      <item> <ruleref uri="#command_wp"/>  </item>
+      <item> <ruleref uri="#polite"/> <ruleref uri="#command_wp"/>  </item>
+      <item> <ruleref uri="#command_wp"/> <ruleref uri="#polite"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="gesture">
+    <one-of>
+      <item> pointing right </item>
+      <item> waving </item>
+      <item> pointing left </item>
+   </one-of>
+  </rule>
+
+</grammar>

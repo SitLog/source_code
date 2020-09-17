@@ -1,0 +1,10 @@
+res(restaurant).
+ok.
+[0.0,0.0,0.0].
+[2,person(1,0.1,0.2,0.3)].
+[0.11,0.22,0.33].
+yes.
+'combo(cheese,corn)'.
+yes.
+'drink(juice)'.
+yes.

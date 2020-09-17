@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<grammar version="1.0" xml:lang="en-US" mode="voice" root="room" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+  <rule id="room">
+    <one-of>
+      <item> living room </item>
+      <item> dining room </item>
+      <item> exit </item>
+      <item> bedroom </item>
+      <item> kitchen </item>
+   </one-of>
+  </rule>
+</grammar>

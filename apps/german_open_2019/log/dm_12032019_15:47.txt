@@ -1,0 +1,232 @@
+
+HEADER
+---------------------------------------------------------------------------------
+
+TIME:
+    201903012-15:47:45.865848779
+VERSION:
+    _G37919
+PROJDIR:
+    apps/german_open_2019
+IN ARG:
+    now
+KB:
+    knowledge_base/knowledge_base_robocup.pl
+USERFUNC:
+    user_functions.pl
+BASACTS:
+    basic_actions.pl
+TEMPLATE:
+    templates.pl
+GLOBAL VARS:
+    global_vars.pl
+
+START DIALOGUE
+---------------------------------------------------------------------------------
+
+TIME:
+    201903012-15:47:45.865940093
+
+SITUATUATIONS
+---------------------------------------------------------------------------------
+
+
+SIT
+=================================================================================
+
+NAME:
+    is
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    All the system working
+INITIME:
+    201903012-15:47:45.8681252
+SCREEN:
+    All the system working
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    These are the options
+INITIME:
+    201903012-15:47:45.868158817
+SCREEN:
+    These are the options
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    in, fo, cp, cl, res, gpsr, demo, see_object, detect_face, memorize_face, recognize_face, see_face, see, ask
+INITIME:
+    201903012-15:47:45.868192911
+SCREEN:
+    in, fo, cp, cl, res, gpsr, demo, see_object, detect_face, memorize_face, recognize_face, see_face, see, ask
+
+SIT
+=================================================================================
+
+NAME:
+    k2(serving_drinks)
+TYPE:
+    keyboard
+INPUT:
+    ok
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    none
+NAME:
+    empty
+
+SIT
+=================================================================================
+
+NAME:
+    execute(serving_drinks)
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    Executing test: 
+INITIME:
+    201903012-15:47:47.945932388
+SCREEN:
+    Executing test: 
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    serving_drinks_main
+INITIME:
+    201903012-15:47:47.946072578
+SCREEN:
+    serving_drinks_main
+
+SIT
+=================================================================================
+
+NAME:
+    serving_drinks_main
+TYPE:
+    recursive
+
+START DIALOGUE
+---------------------------------------------------------------------------------
+
+TIME:
+    201903012-15:47:47.960182666
+
+SITUATUATIONS
+---------------------------------------------------------------------------------
+
+
+SIT
+=================================================================================
+
+NAME:
+    starte
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    say
+INITIME:
+    201903012-15:47:47.967847824
+MSG:
+    Hello everybody my name is Golem
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    say
+INITIME:
+    201903012-15:47:51.223035812
+MSG:
+    I first need to ask, is the bar on my left?
+
+SIT
+=================================================================================
+
+NAME:
+    [id==>fs,type==>final]
+TYPE:
+    final
+
+END DIALOGUE
+---------------------------------------------------------------------------------
+
+OUTSYS:
+    [origin==>[0.0,0.0,0.0],wait_position==>[0.0,0.0,0.0]]
+TIME:
+    201903012-15:47:55.485170841
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    none
+NAME:
+    empty
+
+SIT
+=================================================================================
+
+NAME:
+    final
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    Dialogue model finished, type ok to try again
+INITIME:
+    201903012-15:47:55.491892814
+SCREEN:
+    Dialogue model finished, type ok to try again
+
+SIT
+=================================================================================
+
+NAME:
+    [id==>fs,type==>final]
+TYPE:
+    final
+
+END DIALOGUE
+---------------------------------------------------------------------------------
+
+OUTSYS:
+    [serving_drinks==>serving_drinks_main,test==>test]
+TIME:
+    201903012-15:47:55.493810892

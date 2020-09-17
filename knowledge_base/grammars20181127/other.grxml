@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<grammar version="1.0" xml:lang="en-US" mode="voice" root="other" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+  <rule id="other">
+    <one-of>
+      <item> exit </item>
+      <item> kitchen table </item>
+      <item> bed </item>
+      <item> right table </item>
+      <item> stove </item>
+      <item> fridge </item>
+      <item> balcony table </item>
+      <item> left table </item>
+   </one-of>
+  </rule>
+</grammar>

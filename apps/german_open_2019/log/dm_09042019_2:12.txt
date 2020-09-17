@@ -1,0 +1,1491 @@
+
+HEADER
+---------------------------------------------------------------------------------
+
+TIME:
+    20190409-2:12:7.057767629
+VERSION:
+    _G45592
+PROJDIR:
+    apps/german_open_2019
+IN ARG:
+    now
+KB:
+    knowledge_base/knowledge_base_robocup.pl
+USERFUNC:
+    user_functions.pl
+BASACTS:
+    basic_actions.pl
+TEMPLATE:
+    templates.pl
+GLOBAL VARS:
+    global_vars.pl
+
+START DIALOGUE
+---------------------------------------------------------------------------------
+
+TIME:
+    20190409-2:12:7.057885169
+
+SITUATUATIONS
+---------------------------------------------------------------------------------
+
+
+SIT
+=================================================================================
+
+NAME:
+    is
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    All the system working
+INITIME:
+    20190409-2:12:7.061685323
+SCREEN:
+    All the system working
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    These are the options
+INITIME:
+    20190409-2:12:7.061730861
+SCREEN:
+    These are the options
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    in, fo, cp, cl, res, gpsr, demo, see_object, detect_face, memorize_face, recognize_face, see_face, see, ask
+INITIME:
+    20190409-2:12:7.061826467
+SCREEN:
+    in, fo, cp, cl, res, gpsr, demo, see_object, detect_face, memorize_face, recognize_face, see_face, see, ask
+
+SIT
+=================================================================================
+
+NAME:
+    k2(carry)
+TYPE:
+    keyboard
+INPUT:
+    ok
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    none
+NAME:
+    empty
+
+SIT
+=================================================================================
+
+NAME:
+    execute(carry)
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    Executing test: 
+INITIME:
+    20190409-2:13:26.407166242
+SCREEN:
+    Executing test: 
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    carry_main
+INITIME:
+    20190409-2:13:26.407387971
+SCREEN:
+    carry_main
+
+SIT
+=================================================================================
+
+NAME:
+    carry_main
+TYPE:
+    recursive
+
+START DIALOGUE
+---------------------------------------------------------------------------------
+
+TIME:
+    20190409-2:13:26.442977428
+
+SITUATUATIONS
+---------------------------------------------------------------------------------
+
+
+SIT
+=================================================================================
+
+NAME:
+    is
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    tiltv
+ANGLE:
+    -18.0
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    say
+INITIME:
+    20190409-2:13:27.906885147
+MSG:
+    Hello my name is golem
+
+SIT
+=================================================================================
+
+NAME:
+    detecting_pointig_bag(_G190857)
+TYPE:
+    recursive
+
+START DIALOGUE
+---------------------------------------------------------------------------------
+
+TIME:
+    20190409-2:13:30.995287656
+
+SITUATUATIONS
+---------------------------------------------------------------------------------
+
+
+SIT
+=================================================================================
+
+NAME:
+    is
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    none
+NAME:
+    empty
+
+SIT
+=================================================================================
+
+NAME:
+    recognize
+TYPE:
+    recognize_follow
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    say
+INITIME:
+    20190409-2:13:31.053160667
+MSG:
+    Bad I have not recognize a body
+
+SIT
+=================================================================================
+
+NAME:
+    [id==>error,type==>final,in_arg==>[_G204969],diag_mod==>detecting_pointig_bag(_G204969)]
+TYPE:
+    final
+
+END DIALOGUE
+---------------------------------------------------------------------------------
+
+OUTSYS:
+    []
+TIME:
+    20190409-2:13:34.310875415
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    say
+INITIME:
+    20190409-2:13:34.311189413
+MSG:
+    sorry I did not see you
+
+SIT
+=================================================================================
+
+NAME:
+    detecting_pointig_bag(_G149045)
+TYPE:
+    recursive
+
+START DIALOGUE
+---------------------------------------------------------------------------------
+
+TIME:
+    20190409-2:13:37.097154855
+
+SITUATUATIONS
+---------------------------------------------------------------------------------
+
+
+SIT
+=================================================================================
+
+NAME:
+    is
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    none
+NAME:
+    empty
+
+SIT
+=================================================================================
+
+NAME:
+    recognize
+TYPE:
+    recognize_follow
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    say
+INITIME:
+    20190409-2:13:37.101870775
+MSG:
+    Bad I have not recognize a body
+
+SIT
+=================================================================================
+
+NAME:
+    [id==>error,type==>final,in_arg==>[_G174285],diag_mod==>detecting_pointig_bag(_G174285)]
+TYPE:
+    final
+
+END DIALOGUE
+---------------------------------------------------------------------------------
+
+OUTSYS:
+    []
+TIME:
+    20190409-2:13:40.29925847
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    say
+INITIME:
+    20190409-2:13:40.299460411
+MSG:
+    sorry I did not see you
+
+SIT
+=================================================================================
+
+NAME:
+    detecting_pointig_bag(_G129934)
+TYPE:
+    recursive
+
+START DIALOGUE
+---------------------------------------------------------------------------------
+
+TIME:
+    20190409-2:13:42.812593221
+
+SITUATUATIONS
+---------------------------------------------------------------------------------
+
+
+SIT
+=================================================================================
+
+NAME:
+    is
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    none
+NAME:
+    empty
+
+SIT
+=================================================================================
+
+NAME:
+    recognize
+TYPE:
+    recognize_follow
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    say
+INITIME:
+    20190409-2:13:42.816330432
+MSG:
+    Bad I have not recognize a body
+
+SIT
+=================================================================================
+
+NAME:
+    [id==>error,type==>final,in_arg==>[_G163652],diag_mod==>detecting_pointig_bag(_G163652)]
+TYPE:
+    final
+
+END DIALOGUE
+---------------------------------------------------------------------------------
+
+OUTSYS:
+    []
+TIME:
+    20190409-2:13:45.856514453
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    say
+INITIME:
+    20190409-2:13:45.856826782
+MSG:
+    sorry I did not see you
+
+SIT
+=================================================================================
+
+NAME:
+    detecting_pointig_bag(_G129567)
+TYPE:
+    recursive
+
+START DIALOGUE
+---------------------------------------------------------------------------------
+
+TIME:
+    20190409-2:13:48.364243268
+
+SITUATUATIONS
+---------------------------------------------------------------------------------
+
+
+SIT
+=================================================================================
+
+NAME:
+    is
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    none
+NAME:
+    empty
+
+SIT
+=================================================================================
+
+NAME:
+    recognize
+TYPE:
+    recognize_follow
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    say
+INITIME:
+    20190409-2:13:48.536428928
+MSG:
+    Good I have recognize a body
+
+SIT
+=================================================================================
+
+NAME:
+    see_pointing
+TYPE:
+    see_pointing_follow
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    say
+INITIME:
+    20190409-2:13:51.270037889
+MSG:
+    Please put the bag in my hand
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    switcharm
+ARM:
+    2
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    grasp_bag
+ANGLE:
+    0.0
+DISTANCE:
+    0.5
+
+SIT
+=================================================================================
+
+NAME:
+    [id==>success,type==>final,in_arg==>[_G235871],diag_mod==>detecting_pointig_bag(_G235871)]
+TYPE:
+    final
+
+END DIALOGUE
+---------------------------------------------------------------------------------
+
+OUTSYS:
+    []
+TIME:
+    20190409-2:14:40.24152708
+
+SIT
+=================================================================================
+
+NAME:
+    follow_pose(waving,_G194680)
+TYPE:
+    recursive
+
+START DIALOGUE
+---------------------------------------------------------------------------------
+
+TIME:
+    20190409-2:14:40.256692409
+
+SITUATUATIONS
+---------------------------------------------------------------------------------
+
+
+SIT
+=================================================================================
+
+NAME:
+    is
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    none
+NAME:
+    empty
+
+SIT
+=================================================================================
+
+NAME:
+    recognize_and_follow
+TYPE:
+    recognize_follow
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    robotheight
+HEIGHT:
+    1.1
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    switchpose
+POSE:
+    nav
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    say
+INITIME:
+    20190409-2:14:47.879665851
+MSG:
+    Now I am following you
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    avanzar
+WITH DISTANCE TO TARGET:
+    1.0
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    pause
+NAME:
+    sleep
+
+SIT
+=================================================================================
+
+NAME:
+    check_status
+TYPE:
+    follow_status
+INTERPRETER:
+    follow_status
+INPUT:
+    stopped
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    detener
+
+SIT
+=================================================================================
+
+NAME:
+    find
+TYPE:
+    find_follow
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    robotheight
+HEIGHT:
+    1.1
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    switchpose
+POSE:
+    nav
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    say
+INITIME:
+    20190409-2:14:52.976584672
+MSG:
+    I found you, Now I am following you
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    avanzar
+WITH DISTANCE TO TARGET:
+    1.0
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    pause
+NAME:
+    sleep
+
+SIT
+=================================================================================
+
+NAME:
+    check_status
+TYPE:
+    follow_status
+INTERPRETER:
+    follow_status
+INPUT:
+    stopped
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    detener
+
+SIT
+=================================================================================
+
+NAME:
+    find
+TYPE:
+    find_follow
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    robotheight
+HEIGHT:
+    1.1
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    switchpose
+POSE:
+    nav
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    say
+INITIME:
+    20190409-2:14:59.178150892
+MSG:
+    I found you, Now I am following you
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    avanzar
+WITH DISTANCE TO TARGET:
+    1.0
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    pause
+NAME:
+    sleep
+
+SIT
+=================================================================================
+
+NAME:
+    check_status
+TYPE:
+    follow_status
+INTERPRETER:
+    follow_status
+INPUT:
+    stopped
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    detener
+
+SIT
+=================================================================================
+
+NAME:
+    find
+TYPE:
+    find_follow
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    robotheight
+HEIGHT:
+    1.1
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    switchpose
+POSE:
+    nav
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    say
+INITIME:
+    20190409-2:15:5.405636072
+MSG:
+    I found you, Now I am following you
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    avanzar
+WITH DISTANCE TO TARGET:
+    1.0
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    pause
+NAME:
+    sleep
+
+SIT
+=================================================================================
+
+NAME:
+    check_status
+TYPE:
+    follow_status
+INTERPRETER:
+    follow_status
+INPUT:
+    stopped
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    detener
+
+SIT
+=================================================================================
+
+NAME:
+    find
+TYPE:
+    find_follow
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    robotheight
+HEIGHT:
+    1.1
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    switchpose
+POSE:
+    nav
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    say
+INITIME:
+    20190409-2:15:11.636482
+MSG:
+    I found you, Now I am following you
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    avanzar
+WITH DISTANCE TO TARGET:
+    1.0
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    pause
+NAME:
+    sleep
+
+SIT
+=================================================================================
+
+NAME:
+    check_status
+TYPE:
+    follow_status
+INTERPRETER:
+    follow_status
+INPUT:
+    stopped
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    detener
+
+SIT
+=================================================================================
+
+NAME:
+    find
+TYPE:
+    find_follow
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    robotheight
+HEIGHT:
+    1.1
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    switchpose
+POSE:
+    nav
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    say
+INITIME:
+    20190409-2:15:17.869799375
+MSG:
+    I found you, Now I am following you
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    avanzar
+WITH DISTANCE TO TARGET:
+    1.0
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    pause
+NAME:
+    sleep
+
+SIT
+=================================================================================
+
+NAME:
+    check_status
+TYPE:
+    follow_status
+INTERPRETER:
+    follow_status
+INPUT:
+    stopped
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    detener
+
+SIT
+=================================================================================
+
+NAME:
+    find
+TYPE:
+    find_follow
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    robotheight
+HEIGHT:
+    1.1
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    switchpose
+POSE:
+    nav
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    say
+INITIME:
+    20190409-2:15:24.114924907
+MSG:
+    I found you, Now I am following you
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    avanzar
+WITH DISTANCE TO TARGET:
+    1.0
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    pause
+NAME:
+    sleep
+
+SIT
+=================================================================================
+
+NAME:
+    check_status
+TYPE:
+    follow_status
+INTERPRETER:
+    follow_status
+INPUT:
+    stopped
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    detener
+
+SIT
+=================================================================================
+
+NAME:
+    find
+TYPE:
+    find_follow
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    robotheight
+HEIGHT:
+    1.1
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    switchpose
+POSE:
+    nav
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    say
+INITIME:
+    20190409-2:15:30.36787343
+MSG:
+    I found you, Now I am following you
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    avanzar
+WITH DISTANCE TO TARGET:
+    1.0
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    pause
+NAME:
+    sleep
+
+SIT
+=================================================================================
+
+NAME:
+    check_status
+TYPE:
+    follow_status
+INTERPRETER:
+    follow_status
+INPUT:
+    stopped
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    detener
+
+SIT
+=================================================================================
+
+NAME:
+    find
+TYPE:
+    find_follow
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    robotheight
+HEIGHT:
+    1.1
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    switchpose
+POSE:
+    nav
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    say
+INITIME:
+    20190409-2:15:36.611903905
+MSG:
+    I found you, Now I am following you
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    avanzar
+WITH DISTANCE TO TARGET:
+    1.0
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    pause
+NAME:
+    sleep
+
+SIT
+=================================================================================
+
+NAME:
+    check_status
+TYPE:
+    follow_status
+INTERPRETER:
+    follow_status
+INPUT:
+    stopped
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    detener
+
+SIT
+=================================================================================
+
+NAME:
+    find
+TYPE:
+    find_follow
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    robotheight
+HEIGHT:
+    1.1
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    switchpose
+POSE:
+    nav
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    say
+INITIME:
+    20190409-2:15:42.853448152
+MSG:
+    I found you, Now I am following you
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    avanzar
+WITH DISTANCE TO TARGET:
+    1.0
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    pause
+NAME:
+    sleep
+
+SIT
+=================================================================================
+
+NAME:
+    check_status
+TYPE:
+    follow_status
+INTERPRETER:
+    follow_status
+INPUT:
+    stopped
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    detener
+
+SIT
+=================================================================================
+
+NAME:
+    find
+TYPE:
+    find_follow
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    robotheight
+HEIGHT:
+    1.1
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    switchpose
+POSE:
+    nav
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    say
+INITIME:
+    20190409-2:15:49.102443933
+MSG:
+    I found you, Now I am following you
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    avanzar
+WITH DISTANCE TO TARGET:
+    1.0
+1.0, avanzar, WITH DISTANCE TO TARGET:
+    1.0
+1.0, movement, NAME:
+    avanzar
+WITH DISTANCE TO TARGET:
+    1.0
+1.0, avanzar, WITH DISTANCE TO TARGET:
+    1.0
+1.0, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    avanzar
+WITH DISTANCE TO TARGET:
+    1.0
+1.0, avanzar, WITH DISTANCE TO TARGET:
+    1.0
+1.0, movement, NAME:
+    avanzar
+WITH DISTANCE TO TARGET:
+    1.0
+1.0, avanzar, WITH DISTANCE TO TARGET:
+    1.0
+1.0, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    doesnt_exist
+NAME:
+    avanzar
+WITH DISTANCE TO TARGET:
+    1.0
+1.0, avanzar, WITH DISTANCE TO TARGET:
+    1.0
+1.0, doesnt_exist, NAME:
+    avanzar
+WITH DISTANCE TO TARGET:
+    1.0
+1.0, avanzar, WITH DISTANCE TO TARGET:
+    1.0
+1.0, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    doesnt_exist
+NAME:
+    avanzar
+WITH DISTANCE TO TARGET:
+    1.0
+1.0, avanzar, WITH DISTANCE TO TARGET:
+    1.0
+1.0, doesnt_exist, NAME:
+    avanzar
+WITH DISTANCE TO TARGET:
+    1.0
+1.0, avanzar, WITH DISTANCE TO TARGET:
+    1.0
+1.0, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    avanzar
+WITH DISTANCE TO TARGET:
+    1.0
+1.0, avanzar, WITH DISTANCE TO TARGET:
+    1.0
+1.0, movement, NAME:
+    avanzar
+WITH DISTANCE TO TARGET:
+    1.0
+1.0, avanzar, WITH DISTANCE TO TARGET:
+    1.0
+1.0, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    avanzar
+WITH DISTANCE TO TARGET:
+    1.0
+1.0, avanzar, WITH DISTANCE TO TARGET:
+    1.0
+1.0, movement, NAME:
+    avanzar
+WITH DISTANCE TO TARGET:
+    1.0
+1.0, avanzar, WITH DISTANCE TO TARGET:
+    1.0
+1.0, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    doesnt_exist
+NAME:
+    avanzar
+WITH DISTANCE TO TARGET:
+    1.0
+1.0, avanzar, WITH DISTANCE TO TARGET:
+    1.0
+1.0, doesnt_exist, NAME:
+    avanzar
+WITH DISTANCE TO TARGET:
+    1.0
+1.0, avanzar, WITH DISTANCE TO TARGET:
+    1.0
+1.0, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    doesnt_exist
+NAME:
+    avanzar
+WITH DISTANCE TO TARGET:
+    1.0
+1.0, avanzar, WITH DISTANCE TO TARGET:
+    1.0
+1.0, doesnt_exist, NAME:
+    avanzar
+WITH DISTANCE TO TARGET:
+    1.0
+1.0, avanzar, WITH DISTANCE TO TARGET:
+    1.0
+1.0, 

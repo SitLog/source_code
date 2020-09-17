@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<grammar version="1.0" xml:lang="en-US" mode="voice" root="questions" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+  <rule id="questions">
+    <one-of>	
+      <item> i had a bad day<tag>out.answer="b"</tag></item>
+      <item> i had a good day<tag>out.answer="b"</tag></item>
+      <!-- Orders  -->
+      <item> bring me a coke and something to eat<tag>out.answer="b"</tag></item>
+      <item> bring me malz and something to eat<tag>out.answer="b"</tag></item>
+      <item> bring me noodles and something to drink<tag>out.answer="b"</tag></item>
+      <item> bring me bisquits and something to drink<tag>out.answer="b"</tag></item>
+      <item> bring me something to eat and a coke<tag>out.answer="b"</tag></item>
+      <item> bring me something to eat and malz<tag>out.answer="b"</tag></item>
+      <item> bring me something to drink and noodles<tag>out.answer="b"</tag></item>
+      <item> bring me something to drink and bisquits<tag>out.answer="b"</tag></item>
+      <item> bring me a coke and noodles<tag>out.answer="b"</tag></item>
+      <item> bring me malz and noodles<tag>out.answer="b"</tag></item>
+      <item> bring me a coke and bisquits<tag>out.answer="b"</tag></item>
+      <item> bring me malz and bisquits<tag>out.answer="b"</tag></item>
+      <item> bring me noodles and a coke<tag>out.answer="b"</tag></item>
+      <item> bring me noodles and malz<tag>out.answer="b"</tag></item>
+      <item> bring me bisquits and coke<tag>out.answer="b"</tag></item>
+      <item> bring me bisquits and malz<tag>out.answer="b"</tag></item>
+      <item> bring me something to drink and something to eat<tag>out.answer="b"</tag></item>
+      <item> bring me something to eat and something to drink<tag>out.answer="b"</tag></item>
+      <!-- Same order, different expression  -->
+      <item> i want a coke and something to eat<tag>out.answer="b"</tag></item>
+      <item> i want malz and something to eat<tag>out.answer="b"</tag></item>
+      <item> i want noodles and something to drink<tag>out.answer="b"</tag></item>
+      <item> i want bisquits and something to drink<tag>out.answer="b"</tag></item>
+      <item> i want something to eat and a coke<tag>out.answer="b"</tag></item>
+      <item> i want something to eat and malz<tag>out.answer="b"</tag></item>
+      <item> i want something to drink and noodles<tag>out.answer="b"</tag></item>
+      <item> i want something to drink and bisquits<tag>out.answer="b"</tag></item>
+      <item> i want a coke and noodles<tag>out.answer="b"</tag></item>
+      <item> i want malz and noodles<tag>out.answer="b"</tag></item>
+      <item> i want a coke and bisquits<tag>out.answer="b"</tag></item>
+      <item> i want malz and bisquits<tag>out.answer="b"</tag></item>
+      <item> i want noodles and a coke<tag>out.answer="b"</tag></item>
+      <item> i want noodles and malz<tag>out.answer="b"</tag></item>
+      <item> i want bisquits and coke<tag>out.answer="b"</tag></item>
+      <item> i want bisquits and malz<tag>out.answer="b"</tag></item>
+      <item> i want something to drink and something to eat<tag>out.answer="b"</tag></item>
+      <item> i want something to eat and something to drink<tag>out.answer="b"</tag></item>
+      <!-- Same order, different expression  -->
+      <item> give me a coke and something to eat<tag>out.answer="b"</tag></item>
+      <item> give me malz and something to eat<tag>out.answer="b"</tag></item>
+      <item> give me noodles and something to drink<tag>out.answer="b"</tag></item>
+      <item> give me bisquits and something to drink<tag>out.answer="b"</tag></item>
+      <item> give me something to eat and a coke<tag>out.answer="b"</tag></item>
+      <item> give me something to eat and malz<tag>out.answer="b"</tag></item>
+      <item> give me something to drink and noodles<tag>out.answer="b"</tag></item>
+      <item> give me something to drink and bisquits<tag>out.answer="b"</tag></item>
+      <item> give me a coke and noodles<tag>out.answer="b"</tag></item>
+      <item> give me malz and noodles<tag>out.answer="b"</tag></item>
+      <item> give me a coke and bisquits<tag>out.answer="b"</tag></item>
+      <item> give me malz and bisquits<tag>out.answer="b"</tag></item>
+      <item> give me noodles and a coke<tag>out.answer="b"</tag></item>
+      <item> give me noodles and malz<tag>out.answer="b"</tag></item>
+      <item> give me bisquits and coke<tag>out.answer="b"</tag></item>
+      <item> give me bisquits and malz<tag>out.answer="b"</tag></item>
+      <item> give me something to drink and something to eat<tag>out.answer="b"</tag></item>
+      <item> give me something to eat and something to drink<tag>out.answer="b"</tag></item>
+      <!-- Same order, different expression  -->
+      <item> reach me a coke and something to eat<tag>out.answer="b"</tag></item>
+      <item> reach me malz and something to eat<tag>out.answer="b"</tag></item>
+      <item> reach me noodles and something to drink<tag>out.answer="b"</tag></item>
+      <item> reach me bisquits and something to drink<tag>out.answer="b"</tag></item>
+      <item> reach me something to eat and a coke<tag>out.answer="b"</tag></item>
+      <item> reach me something to eat and malz<tag>out.answer="b"</tag></item>
+      <item> reach me something to drink and noodles<tag>out.answer="b"</tag></item>
+      <item> reach me something to drink and bisquits<tag>out.answer="b"</tag></item>
+      <item> reach me a coke and noodles<tag>out.answer="b"</tag></item>
+      <item> reach me malz and noodles<tag>out.answer="b"</tag></item>
+      <item> reach me a coke and bisquits<tag>out.answer="b"</tag></item>
+      <item> reach me malz and bisquits<tag>out.answer="b"</tag></item>
+      <item> reach me noodles and a coke<tag>out.answer="b"</tag></item>
+      <item> reach me noodles and malz<tag>out.answer="b"</tag></item>
+      <item> reach me bisquits and coke<tag>out.answer="b"</tag></item>
+      <item> reach me bisquits and malz<tag>out.answer="b"</tag></item>
+      <item> reach me something to drink and something to eat<tag>out.answer="b"</tag></item>
+      <item> reach me something to eat and something to drink<tag>out.answer="b"</tag></item>
+      <!-- Same order, different expression  -->
+      <item> hand me a coke and something to eat<tag>out.answer="b"</tag></item>
+      <item> hand me malz and something to eat<tag>out.answer="b"</tag></item>
+      <item> hand me noodles and something to drink<tag>out.answer="b"</tag></item>
+      <item> hand me bisquits and something to drink<tag>out.answer="b"</tag></item>
+      <item> hand me something to eat and a coke<tag>out.answer="b"</tag></item>
+      <item> hand me something to eat and malz<tag>out.answer="b"</tag></item>
+      <item> hand me something to drink and noodles<tag>out.answer="b"</tag></item>
+      <item> hand me something to drink and bisquits<tag>out.answer="b"</tag></item>
+      <item> hand me a coke and noodles<tag>out.answer="b"</tag></item>
+      <item> hand me malz and noodles<tag>out.answer="b"</tag></item>
+      <item> hand me a coke and bisquits<tag>out.answer="b"</tag></item>
+      <item> hand me malz and bisquits<tag>out.answer="b"</tag></item>
+      <item> hand me noodles and a coke<tag>out.answer="b"</tag></item>
+      <item> hand me noodles and malz<tag>out.answer="b"</tag></item>
+      <item> hand me bisquits and coke<tag>out.answer="b"</tag></item>
+      <item> hand me bisquits and malz<tag>out.answer="b"</tag></item>
+      <item> hand me something to drink and something to eat<tag>out.answer="b"</tag></item>
+      <item> hand me something to eat and something to drink<tag>out.answer="b"</tag></item>
+      <!-- More rules  -->
+      <item> yes the malz is ok<tag>out.answer="golem"</tag></item>
+      <item> no i want a coke<tag>out.answer="c"</tag></item>
+      <item> <ruleref uri="#objects"/> </item>
+    </one-of>
+  </rule>
+  
+  <rule id="objects">
+    <one-of>
+      <item> malz </item>
+      <item> coke </item>
+      <item> noodles </item>
+      <item> bisquits </item>
+    </one-of>
+  </rule>
+</grammar>

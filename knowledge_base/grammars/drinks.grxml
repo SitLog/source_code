@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<grammar version="1.0" xml:lang="en-US" mode="voice" root="drinks" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+  <rule id="drinks">
+    <one-of>
+      <item> water </item>
+      <item> malz </item>
+      <item> mixdrink </item>
+      <item> cacao </item>
+      <item> orange juice </item>
+      <item> pepermint tea </item>
+      <item> coke </item>
+   </one-of>
+  </rule>
+</grammar>

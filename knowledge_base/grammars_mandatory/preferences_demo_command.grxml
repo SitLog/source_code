@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<grammar version="1.0" xml:lang="en-US" mode="voice" root="questions" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+  <rule id="questions">
+    <one-of>
+      <!-- Dialogue 3 -->
+      <item>hi golem i like malz<tag>out.answer="b"</tag></item>
+      <!-- Dialogue 6 -->
+      <item>i like noodles best<tag>out.answer="b"</tag></item>
+      <!-- Dialogue 9 -->
+      <item>no thanks golem that is ok<tag>out.answer="b"</tag></item>
+      <!-- Dialogue 11 -->
+      <item>i had a bad day<tag>out.answer="b"</tag></item>
+      <!-- Dialogue 13  -->
+      <item>bring me something to drink and bisquits<tag>out.answer="b"</tag></item>
+      <!-- Dialogue 15  -->
+      <item>yes<tag>out.answer="b"</tag></item>
+      <!-- Dialogue 17  -->
+      <item>no golem noodles is ok<tag>out.answer="b"</tag></item>
+      <!-- Dialogue 28 and 32  -->
+      <item>yes golem please<tag>out.answer="b"</tag></item>
+    </one-of>
+  </rule>
+  
+</grammar>

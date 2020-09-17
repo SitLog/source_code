@@ -1,0 +1,367 @@
+
+HEADER
+---------------------------------------------------------------------------------
+
+TIME:
+    201903012-16:8:2.996492147
+VERSION:
+    _G37601
+PROJDIR:
+    apps/german_open_2019
+IN ARG:
+    now
+KB:
+    knowledge_base/knowledge_base_robocup.pl
+USERFUNC:
+    user_functions.pl
+BASACTS:
+    basic_actions.pl
+TEMPLATE:
+    templates.pl
+GLOBAL VARS:
+    global_vars.pl
+
+START DIALOGUE
+---------------------------------------------------------------------------------
+
+TIME:
+    201903012-16:8:2.996655225
+
+SITUATUATIONS
+---------------------------------------------------------------------------------
+
+
+SIT
+=================================================================================
+
+NAME:
+    is
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    All the system working
+INITIME:
+    201903012-16:8:2.998886585
+SCREEN:
+    All the system working
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    These are the options
+INITIME:
+    201903012-16:8:2.998938083
+SCREEN:
+    These are the options
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    in, fo, cp, cl, res, gpsr, demo, see_object, detect_face, memorize_face, recognize_face, see_face, see, ask
+INITIME:
+    201903012-16:8:2.9990034100000003
+SCREEN:
+    in, fo, cp, cl, res, gpsr, demo, see_object, detect_face, memorize_face, recognize_face, see_face, see, ask
+
+SIT
+=================================================================================
+
+NAME:
+    k2(serving_drinks)
+TYPE:
+    keyboard
+INPUT:
+    ok
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    none
+NAME:
+    empty
+
+SIT
+=================================================================================
+
+NAME:
+    execute(serving_drinks)
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    Executing test: 
+INITIME:
+    201903012-16:8:3.87198615
+SCREEN:
+    Executing test: 
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    serving_drinks_main
+INITIME:
+    201903012-16:8:3.872030973
+SCREEN:
+    serving_drinks_main
+
+SIT
+=================================================================================
+
+NAME:
+    serving_drinks_main
+TYPE:
+    recursive
+
+START DIALOGUE
+---------------------------------------------------------------------------------
+
+TIME:
+    201903012-16:8:3.877793073
+
+SITUATUATIONS
+---------------------------------------------------------------------------------
+
+
+SIT
+=================================================================================
+
+NAME:
+    is
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    none
+NAME:
+    empty
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    say
+INITIME:
+    201903012-16:8:3.894159793
+MSG:
+    Hello I am golem, and I will be serving drinks today.
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    say
+INITIME:
+    201903012-16:8:8.418651103
+MSG:
+    I will first go to the bar.
+
+SIT
+=================================================================================
+
+NAME:
+    move(bar,_G129952)
+TYPE:
+    recursive
+
+START DIALOGUE
+---------------------------------------------------------------------------------
+
+TIME:
+    201903012-16:8:11.083554029
+
+SITUATUATIONS
+---------------------------------------------------------------------------------
+
+
+SIT
+=================================================================================
+
+NAME:
+    is
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    none
+NAME:
+    empty
+
+SIT
+=================================================================================
+
+NAME:
+    verify_case(label,[bar])
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    switcharm
+ARM:
+    0
+0, switcharm, ARM:
+    0
+0, movement, NAME:
+    switcharm
+ARM:
+    0
+0, switcharm, ARM:
+    0
+0, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    switcharm
+ARM:
+    0
+0, switcharm, ARM:
+    0
+0, movement, NAME:
+    switcharm
+ARM:
+    0
+0, switcharm, ARM:
+    0
+0, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    doesnt_exist
+NAME:
+    switcharm
+ARM:
+    0
+0, switcharm, ARM:
+    0
+0, doesnt_exist, NAME:
+    switcharm
+ARM:
+    0
+0, switcharm, ARM:
+    0
+0, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    doesnt_exist
+NAME:
+    switcharm
+ARM:
+    0
+0, switcharm, ARM:
+    0
+0, doesnt_exist, NAME:
+    switcharm
+ARM:
+    0
+0, switcharm, ARM:
+    0
+0, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    switcharm
+ARM:
+    0
+0, switcharm, ARM:
+    0
+0, movement, NAME:
+    switcharm
+ARM:
+    0
+0, switcharm, ARM:
+    0
+0, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    switcharm
+ARM:
+    0
+0, switcharm, ARM:
+    0
+0, movement, NAME:
+    switcharm
+ARM:
+    0
+0, switcharm, ARM:
+    0
+0, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    doesnt_exist
+NAME:
+    switcharm
+ARM:
+    0
+0, switcharm, ARM:
+    0
+0, doesnt_exist, NAME:
+    switcharm
+ARM:
+    0
+0, switcharm, ARM:
+    0
+0, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    doesnt_exist
+NAME:
+    switcharm
+ARM:
+    0
+0, switcharm, ARM:
+    0
+0, doesnt_exist, NAME:
+    switcharm
+ARM:
+    0
+0, switcharm, ARM:
+    0
+0, 

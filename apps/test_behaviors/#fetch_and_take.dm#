@@ -1,0 +1,76 @@
+diag_mod(fetch_and_take(Obj,Org,Dst,User),
+[
+  %% Author: Noe Hdez
+  
+  %% Initial situation. 
+  [
+  id ==> is,
+  type ==> neutral,
+  arcs ==> [
+           empty:[sa(['I will get the',Obj])] => mv(Org)
+           ]
+  ],
+  
+  %% Move to Org
+  [
+  id ==> mv(Place),
+  type ==> recursive,
+  embedded_dm ==> move(Place,_),
+  arcs ==> [
+           success:empty=>apply( when(I_,T_,F_),[Place==Org,see,deliver]),
+	   error  :empty=>error
+           ]
+  ],
+  
+  %% See Obj
+  [
+  id ==> see,
+  type ==> recursive,
+  embedded_dm ==> scan(),
+  arcs ==> [
+           success:empty => take,
+	   error  :empty => see
+           ]  
+  ],
+
+
+  %% Take Obj
+  [
+  id ==> take(See_Object),
+  type ==> recursive,
+  embedded_dm ==> take(Seen_Object,right,_),
+  arcs ==> [
+           success:empty => mv(Dst),
+           error  :[displace => (-0.15)] => take(See_Object) 
+           ]
+  ],
+    
+  
+  %% Deliver Obj
+  [
+  id ==> deliver,
+  type ==> recursive,
+  embedded_dm ==> releave(Obj,Ori,Dst,User_Loc),
+  arcs ==> [
+           success: [get(more_items,Rest)] => check(Rest),
+	   error  : [say(['I could not position the',Obj,' in its correct position']),get(more_items,Rest)] => check(Rest)  
+           ]
+  ],
+  
+  %% Success situation
+  [
+  id ==> success,
+  type ==> final
+  ],
+  
+  %% Error situation
+  [
+  id ==> error,
+  type ==> final
+  ]
+],
+% Local variables
+[
+  more_items ==> []
+]
+).

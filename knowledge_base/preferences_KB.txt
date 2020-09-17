@@ -1,0 +1,28 @@
+[
+class(top,none,[],[],[]),
+class(entity, top, [], [], []),
+class(human, entity, [], [], [
+      [id=>user, [ [bad_day=>>tired,1],[[back_from_work,tired]=>>found_in=>living_room,1],[asked_comestible=>>found_in=>dining_room,2] ],
+	           []]
+]),
+class(object, entity, [  [graspable=>yes,0], [moved_by=>child=>>misplaced,1], [moved_by=>partner=>>misplaced,2]  ], [], []),
+class(comestible,object,[],[],[]),
+class(food,comestible,[['-'=>>loc=>shelf_food,2],['-'=>>loc=>shelf_snacks,3],['-'=>>loc=>shelf_drinks,4],[last_seen=>'-'=>>loc=>'-',1]],[],[
+  [id=>noodles, [],[]],
+  [id=>bisquits,[],[]]
+]),
+class(drink,comestible,[['-'=>>loc=>shelf_drinks,2],['-'=>>loc=>shelf_snacks,3],['-'=>>loc=>shelf_food,4],[last_seen=>'-'=>>loc=>'-',1]], [], [
+  [id=>malz,[],[]],
+  [id=>coke,[],[]]
+]),
+class(point,entity,[],[],[
+  [id=>welcome_point,[ [name=>'welcome_point',0]  ],[]],
+  [id=>living_room, [  [name=>'living room',0]  ],[]],
+  [id=>dining_room, [  [name=>'dining room',0]  ],[]],
+  [id=>shelf_food,  [  [name=>'the shelf of food',0]  ],[]],
+  [id=>shelf_drinks,[  [name=>'the shelf of drinks',0]  ],[]],
+  [id=>shelf_snacks,[  [name=>'the shelf of snacks',0]  ],[]]
+])
+]
+
+

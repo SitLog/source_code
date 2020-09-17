@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<grammar version="1.0" xml:lang="en-US" mode="voice" root="crowd_person" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+  <rule id="crowd_person">
+    <one-of>
+      <item> person_2 </item>
+      <item> person_1 </item>
+   </one-of>
+  </rule>
+</grammar>

@@ -1,0 +1,555 @@
+
+HEADER
+---------------------------------------------------------------------------------
+
+TIME:
+    20191107-20:16:15.784042596
+VERSION:
+    _G36756
+PROJDIR:
+    apps/german_open_2019
+IN ARG:
+    now
+KB:
+    knowledge_base/knowledge_base_robocup.pl
+USERFUNC:
+    user_functions.pl
+BASACTS:
+    basic_actions.pl
+TEMPLATE:
+    templates.pl
+GLOBAL VARS:
+    global_vars.pl
+
+START DIALOGUE
+---------------------------------------------------------------------------------
+
+TIME:
+    20191107-20:16:15.784137964
+
+SITUATUATIONS
+---------------------------------------------------------------------------------
+
+
+SIT
+=================================================================================
+
+NAME:
+    is
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    All the system working
+INITIME:
+    20191107-20:16:15.78719592
+SCREEN:
+    All the system working
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    These are the options
+INITIME:
+    20191107-20:16:15.787270784
+SCREEN:
+    These are the options
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    in, fo, cp, cl, res, gpsr, demo, see_object, detect_face, memorize_face, recognize_face, see_face, see, ask
+INITIME:
+    20191107-20:16:15.787303924
+SCREEN:
+    in, fo, cp, cl, res, gpsr, demo, see_object, detect_face, memorize_face, recognize_face, see_face, see, ask
+
+SIT
+=================================================================================
+
+NAME:
+    k2(garbage)
+TYPE:
+    keyboard
+INPUT:
+    ok
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    none
+NAME:
+    empty
+
+SIT
+=================================================================================
+
+NAME:
+    execute(garbage)
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    Executing test: 
+INITIME:
+    20191107-20:16:27.385499477
+SCREEN:
+    Executing test: 
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    garbage_main
+INITIME:
+    20191107-20:16:27.385546684
+SCREEN:
+    garbage_main
+
+SIT
+=================================================================================
+
+NAME:
+    garbage_main
+TYPE:
+    recursive
+
+START DIALOGUE
+---------------------------------------------------------------------------------
+
+TIME:
+    20191107-20:16:27.388558387
+
+SITUATUATIONS
+---------------------------------------------------------------------------------
+
+
+SIT
+=================================================================================
+
+NAME:
+    detect_door(_G256338)
+TYPE:
+    recursive
+
+START DIALOGUE
+---------------------------------------------------------------------------------
+
+TIME:
+    20191107-20:16:27.389329195
+
+SITUATUATIONS
+---------------------------------------------------------------------------------
+
+
+SIT
+=================================================================================
+
+NAME:
+    wait
+TYPE:
+    waiting_door
+INTERPRETER:
+    detect_door
+INPUT:
+    open
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    none
+NAME:
+    empty
+
+SIT
+=================================================================================
+
+NAME:
+    [id==>success,type==>final,diag_mod==>detect_door(ok)]
+TYPE:
+    final
+
+END DIALOGUE
+---------------------------------------------------------------------------------
+
+OUTSYS:
+    []
+TIME:
+    20191107-20:16:27.652258396
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    none
+NAME:
+    empty
+
+SIT
+=================================================================================
+
+NAME:
+    is
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    say
+INITIME:
+    20191107-20:16:27.659831523
+MSG:
+    Hello, I will take out the garbage
+
+SIT
+=================================================================================
+
+NAME:
+    move(bin1,_G153588)
+TYPE:
+    recursive
+
+START DIALOGUE
+---------------------------------------------------------------------------------
+
+TIME:
+    20191107-20:16:31.130482673
+
+SITUATUATIONS
+---------------------------------------------------------------------------------
+
+
+SIT
+=================================================================================
+
+NAME:
+    is
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    none
+NAME:
+    empty
+
+SIT
+=================================================================================
+
+NAME:
+    verify_case(label,[bin1])
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    switcharm
+ARM:
+    0
+0, switcharm, ARM:
+    0
+0, movement, NAME:
+    switcharm
+ARM:
+    0
+0, switcharm, ARM:
+    0
+0, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    switcharm
+ARM:
+    0
+0, switcharm, ARM:
+    0
+0, movement, NAME:
+    switcharm
+ARM:
+    0
+0, switcharm, ARM:
+    0
+0, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    doesnt_exist
+NAME:
+    switcharm
+ARM:
+    0
+0, switcharm, ARM:
+    0
+0, doesnt_exist, NAME:
+    switcharm
+ARM:
+    0
+0, switcharm, ARM:
+    0
+0, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    doesnt_exist
+NAME:
+    switcharm
+ARM:
+    0
+0, switcharm, ARM:
+    0
+0, doesnt_exist, NAME:
+    switcharm
+ARM:
+    0
+0, switcharm, ARM:
+    0
+0, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    switcharm
+ARM:
+    0
+0, switcharm, ARM:
+    0
+0, movement, NAME:
+    switcharm
+ARM:
+    0
+0, switcharm, ARM:
+    0
+0, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    switcharm
+ARM:
+    0
+0, switcharm, ARM:
+    0
+0, movement, NAME:
+    switcharm
+ARM:
+    0
+0, switcharm, ARM:
+    0
+0, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    doesnt_exist
+NAME:
+    switcharm
+ARM:
+    0
+0, switcharm, ARM:
+    0
+0, doesnt_exist, NAME:
+    switcharm
+ARM:
+    0
+0, switcharm, ARM:
+    0
+0, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    doesnt_exist
+NAME:
+    switcharm
+ARM:
+    0
+0, switcharm, ARM:
+    0
+0, doesnt_exist, NAME:
+    switcharm
+ARM:
+    0
+0, switcharm, ARM:
+    0
+0, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    robotheight
+HEIGHT:
+    1.25
+1.25, robotheight, HEIGHT:
+    1.25
+1.25, movement, NAME:
+    robotheight
+HEIGHT:
+    1.25
+1.25, robotheight, HEIGHT:
+    1.25
+1.25, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    robotheight
+HEIGHT:
+    1.25
+1.25, robotheight, HEIGHT:
+    1.25
+1.25, movement, NAME:
+    robotheight
+HEIGHT:
+    1.25
+1.25, robotheight, HEIGHT:
+    1.25
+1.25, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    doesnt_exist
+NAME:
+    robotheight
+HEIGHT:
+    1.25
+1.25, robotheight, HEIGHT:
+    1.25
+1.25, doesnt_exist, NAME:
+    robotheight
+HEIGHT:
+    1.25
+1.25, robotheight, HEIGHT:
+    1.25
+1.25, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    doesnt_exist
+NAME:
+    robotheight
+HEIGHT:
+    1.25
+1.25, robotheight, HEIGHT:
+    1.25
+1.25, doesnt_exist, NAME:
+    robotheight
+HEIGHT:
+    1.25
+1.25, robotheight, HEIGHT:
+    1.25
+1.25, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    robotheight
+HEIGHT:
+    1.25
+1.25, robotheight, HEIGHT:
+    1.25
+1.25, movement, NAME:
+    robotheight
+HEIGHT:
+    1.25
+1.25, robotheight, HEIGHT:
+    1.25
+1.25, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    robotheight
+HEIGHT:
+    1.25
+1.25, robotheight, HEIGHT:
+    1.25
+1.25, movement, NAME:
+    robotheight
+HEIGHT:
+    1.25
+1.25, robotheight, HEIGHT:
+    1.25
+1.25, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    doesnt_exist
+NAME:
+    robotheight
+HEIGHT:
+    1.25
+1.25, robotheight, HEIGHT:
+    1.25
+1.25, doesnt_exist, NAME:
+    robotheight
+HEIGHT:
+    1.25
+1.25, robotheight, HEIGHT:
+    1.25
+1.25, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    doesnt_exist
+NAME:
+    robotheight
+HEIGHT:
+    1.25
+1.25, robotheight, HEIGHT:
+    1.25
+1.25, doesnt_exist, NAME:
+    robotheight
+HEIGHT:
+    1.25
+1.25, robotheight, HEIGHT:
+    1.25
+1.25, 

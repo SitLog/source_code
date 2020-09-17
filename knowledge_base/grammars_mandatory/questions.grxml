@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<grammar version="1.0" xml:lang="en-US" mode="voice" root="questions" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+  <rule id="questions">
+    <one-of>
+      <item> Who are the inventors of the C programming language<tag>out="The inventors of the C language were Ken Thompson and Dennis Ritchie"</tag></item>
+      <item> Who is the inventor of the Python programming language<tag>out="The inventory of Python was Guido van Rossum"</tag></item>
+      <item> Which robot was the star in the movie Wall-E<tag>out="The star in Wall-E was Wall-E, obvioulsy"</tag></item>
+      <item> Where does the term computer bug come from<tag>out="Computer bug comes from a moth trapped in a relay"</tag></item>
+      <item> What is the name of the round robot in the new Star Wars movie<tag>out="The round robot in Star Wars was BB-8"</tag></item>
+      <item> How many curry sausages are eaten in Germany each year<tag>out="About 800 million currywurst are eaten in Germany every year"</tag></item>
+      <item> Who is president of the galaxy in The Hitchhiker's Guide to the Galaxy<tag>out="The president of the galaxy is Zaphod Beeblebrox"</tag></item>
+      <item> Which robot is the love interest in Wall-E<tag>out="The love interest of Wall-E was EVE"</tag></item>
+      <item> Which company makes ASIMO<tag>out="Honda makes ASIMO"</tag></item>
+      <item> What company makes Big Dog<tag>out="Boston Dynamics makes Big Dog"</tag></item>
+      <item> What is the funny clumsy character of the Star Wars prequels<tag>out="You are referring the Star Wars abomination known as Jar-Jar Binks"</tag></item>
+      <item> How many people live in the Germany<tag>out="A little over 80 million live in Germany"</tag></item>
+      <item> What are the colours of the German flag<tag>out="Th German flag colors are Black red and yellow"</tag></item>
+      <item> What city is the capital of the Germany<tag>out="Berlin is the capital of Germany"</tag></item>
+      <item> How many arms do you have<tag>out="I have two arms"</tag></item>
+      <item> What is the heaviest element<tag>out="Plutonium is the heaviest when measured by mass, but Osmium is the densest"</tag></item>
+      <item> What did Alan Turing create<tag>out="Alan Turing created many things like the Turing machine and the Turing test"</tag></item>
+      <item> Who is the helicopter pilot in the A-Team<tag>out="The A-team helicpoter pilot was Captain Howling Mad Murdock"</tag></item>
+      <item> What Apollo was the last to land on the moon<tag>out="Apollo 17 was the last to land on the moon"</tag></item>
+      <item> Who was the last man to step on the moon<tag>out="Gene Cernan was the last man to step on the moon"</tag></item>
+      <item> In which county is the play of Hamlet set<tag>out="Hamlet was set in Denmark"</tag></item>
+      <item> What are names of Donald Duck's nephews<tag>out="Donald Duck nephew are Huey Dewey and Louie Duck"</tag></item>
+      <item> How many metres are in a mile<tag>out="About 1609 metres are in a mile"</tag></item>
+      <item> Name a dragon in The Lord of the Rings<tag>out="Smaug is probably the most famous dragon in Lord of the Rings"</tag></item>
+      <item> Who is the Chancellor of Germany<tag>out="Angela Merkel is the Chancellor of Germany"</tag></item>
+      <item> Who developed the first industrial robot<tag>out="The father of robotics is the American physicist Joseph Engelberg."</tag></item>
+      <item> What's the difference between a cyborg and an android<tag>out="Cyborgs are biological with electromechanical enhancements while Androids are human-shaped robots."</tag></item>
+      <item> Do you know any cyborg<tag>out="Professor Kevin Warwick has an artificial hand and an electronic wheelchair."</tag></item>
+      <item> In which city is this year's RoboCup hosted<tag>out="This year RoboCup is hosted in Leipzig Germany."</tag></item>
+      <item> Which city hosted last year's RoboCup<tag>out="Last year RobotCup was Hosted in Hefei China."</tag></item>
+      <item> In which city will next year's RoboCup be hosted<tag>out="Next year RoboCup will be hostes in Nagoya Japan"</tag></item>
+      <item> Name the main rivers surrounding Leipzig<tag>out="Leipzig main rivers are the Parthe Pleisse and the White Elster."</tag></item>
+      <item> Where is the zoo of this city located<tag>out="The zoo in this city is near the central station"</tag></item>
+      <item> Where did the peaceful revolution of 1989 start<tag>out="The peaceful revolution started in September 4 1989 in Leipzig at the St. Nicholas Church."</tag></item>
+      <item> Where is the world's oldest trade fair hosted<tag>out="The world's oldest trade fair is in Leipzig."</tag></item>
+      <item> Where is one of the world's largest dark music festivals hosted<tag>out="Leipzig hosts one of the world's largest dark music festivals."</tag></item>
+      <item> Where is Europe's oldest continuous coffee shop hosted<tag>out="Europe's oldest continuous coffee shop is in Leipzig."</tag></item>
+      <item> Name one of the greatest German composers<tag>out="Johann Sebastian Bach was a great German composer."</tag></item>
+      <item> Where is Johann Sebastian Bach buried<tag>out="Johann Sebastian Bach is buried in St. Thomas' Church here in Leipzig."</tag></item>
+      <item> Do you have dreams<tag>out="I dream of Electric Sheeps."</tag></item>
+      <item> Hey what's up<tag>out="I don't know what is up since I've never been there."</tag></item>
+      <item> There are seven days in a week. True or false<tag>out="True. There are seven days in a week."</tag></item>
+      <item> There are eleven days in a week. True or false<tag>out="False. There are seven days in a week not eleven."</tag></item>
+      <item> January has 31 days. True or false<tag>out="True. January has 31 days."</tag></item>
+      <item> January has 28 days. True or false<tag>out="False. January has 31 days not 28."</tag></item>
+      <item> February has 28 days. True or false<tag>out="True. February has 28 days, but in leap-years it has 29."</tag></item>
+      <item> February has 31 days. True or false<tag>out="False. February has either 28 or 29 days depending on the year."</tag></item>
+      <item> What city are you from<tag>out="I am from Mexico City."</tag></item>
+      <item> Who used first the word Robot<tag>out="The word robot was first used by Czech writer Karel Capek."</tag></item>
+      <item> What origin has the word Robot<tag>out="The Czech word robota that means forced work or labour"</tag></item>
+    </one-of>
+  </rule>
+</grammar>

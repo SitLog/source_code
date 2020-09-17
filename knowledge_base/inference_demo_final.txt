@@ -1,0 +1,100 @@
+[
+	class(top,none,[],[],[]),
+	
+	class(object,top,[],[],[]),
+	
+	class(comestible,object,[graspable,not(on_discount)],[],[]),
+
+	class(food,comestible,[shelf=>shelf2],[],[]),
+
+	class(cereal,food,[inv=>1],[],[
+		[id=>c1,[brand=>kellogs,in=>storage,original_id=>c1],[]]
+		]),
+
+	class('instant food',food,[inv=>1],[],[
+		[id=>i1,[brand=>noodles,original_id=>i1,in=>shelf2],[]]
+		]),
+
+	class(drink,comestible,[age=>all,shelf=>shelf1],[],[]),
+
+	class(soda,drink,[inv=>1],[],[
+		[id=>s1,[brand=>coke,original_id=>s1,in=>shelf1],[]]
+		]),
+
+	class(beer,drink,[age=>18,inv=>0],[],[
+		[id=>b1,[brand=>malz,original_id=>b1,in=>shelf1],[]]
+		]),
+
+	class(bread,comestible,[shelf=>shelf3,inv=>1],[],[
+		[id=>d1,[brand=>bisquits,on_discount,original_id=>d1,in=>shelf3],[]]
+		]),
+
+	class(point,top,[],[],[
+		[id=>start,[name=>start],[]],
+		[id=>shelf1,[name=>'the shelf of drinks'],[]],
+		[id=>shelf2,[name=>'the shelf of food'],[]],
+		[id=>shelf3,[name=>'the shelf of bread'],[]]
+		]),
+
+	class(robot,top,[],[],[[id=>golem,[position=>start,left_arm=>free,right_arm=>free],[]]]),
+
+	class(states,top,[],[],[]),class(events,top,[],[],[]),
+
+	class(dialog,events,[],[],[
+		[id=>dialog1,[said_by=>assistant,content=>[bring(coke,shelf1),bring(kellogs,shelf2),bring(noodles,shelf2),bring(bisquits,shelf3)]],[]]
+		]),
+
+	class(observation,events,[],[],[]),
+
+	class('grasp object',events,[],[],[]),
+
+	class(orders,top,[],[],[]),
+
+	class(failed_orders,top,[],[],[]),
+
+	class(actions,top,[],[],[]),
+
+	class(move,actions,[p=>1.0,c=>5,r=>0],[],[
+		[id=>move1,[p=>1.0,c=>0],[from=>start,to=>start]],
+		[id=>move2,[],[from=>start,to=>shelf1]],
+		[id=>move3,[],[from=>start,to=>shelf2]],
+		[id=>move4,[],[from=>start,to=>shelf3]],
+		[id=>move5,[],[from=>shelf1,to=>start]],
+		[id=>move6,[p=>1.0,c=>0],[from=>shelf1,to=>shelf1]],
+		[id=>move7,[],[from=>shelf1,to=>shelf2]],
+		[id=>move8,[],[from=>shelf1,to=>shelf3]],
+		[id=>move9,[],[from=>shelf2,to=>start]],
+		[id=>move10,[],[from=>shelf2,to=>shelf1]],
+		[id=>move11,[p=>1.0,c=>0],[from=>shelf2,to=>shelf2]],
+		[id=>move12,[],[from=>shelf2,to=>shelf3]],
+		[id=>move13,[],[from=>shelf3,to=>start]],
+		[id=>move14,[],[from=>shelf3,to=>shelf1]],
+		[id=>move15,[],[from=>shelf3,to=>shelf2]],
+		[id=>move16,[p=>1.0,c=>0],[from=>shelf3,to=>shelf3]]
+	]),
+
+	class(search,actions,[p=>1.0,c=>5,r=>0],[],[
+		[id=>search1,[],[to=>s1]],
+		[id=>search2,[],[to=>c1]],
+		[id=>search3,[],[to=>i1]],
+		[id=>search4,[],[to=>b1]],
+		[id=>search5,[],[to=>d1]]
+	]),
+
+	class(grasp,actions,[p=>1.0,c=>5,r=>100],[],[
+		[id=>grasp1,[],[to=>s1]],
+		[id=>grasp2,[],[to=>c1]],
+		[id=>grasp3,[],[to=>i1]],
+		[id=>grasp4,[],[to=>b1]],
+		[id=>grasp5,[],[to=>d1]]
+	]),
+
+	class(deliver,actions,[p=>1.0,c=>5,r=>500],[],[
+		[id=>deliver1,[],[to=>s1]],
+		[id=>deliver2,[],[to=>c1]],
+		[id=>deliver3,[],[to=>i1]],
+		[id=>deliver4,[],[to=>b1]],
+		[id=>deliver5,[],[to=>d1]]
+	])
+
+]

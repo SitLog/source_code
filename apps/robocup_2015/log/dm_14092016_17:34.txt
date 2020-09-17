@@ -1,0 +1,184 @@
+
+HEADER
+---------------------------------------------------------------------------------
+
+TIME:
+    201609014-17:34:53.519990682
+VERSION:
+    _G21144
+PROJDIR:
+    apps/robocup_2015
+IN ARG:
+    now
+KB:
+    knowledge_base/knowledge_base_robocup.pl
+USERFUNC:
+    user_functions.pl
+BASACTS:
+    basic_actions.pl
+TEMPLATE:
+    templates.pl
+GLOBAL VARS:
+    global_vars.pl
+
+START DIALOGUE
+---------------------------------------------------------------------------------
+
+TIME:
+    201609014-17:34:53.520109415
+
+SITUATUATIONS
+---------------------------------------------------------------------------------
+
+
+SIT
+=================================================================================
+
+NAME:
+    is
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    All the system working
+INITIME:
+    201609014-17:34:53.524408578
+SCREEN:
+    All the system working
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    These are the options
+INITIME:
+    201609014-17:34:53.524463653
+SCREEN:
+    These are the options
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    in, fo, cp, cl, res, gpsr, demo, see_object, detect_face, memorize_face, recognize_face, see_face, see, ask
+INITIME:
+    201609014-17:34:53.524513483
+SCREEN:
+    in, fo, cp, cl, res, gpsr, demo, see_object, detect_face, memorize_face, recognize_face, see_face, see, ask
+
+SIT
+=================================================================================
+
+NAME:
+    k2(ricardo)
+TYPE:
+    keyboard
+INPUT:
+    ok
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    none
+NAME:
+    empty
+
+SIT
+=================================================================================
+
+NAME:
+    execute(ricardo)
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    Executing test: 
+INITIME:
+    201609014-17:34:54.860564947
+SCREEN:
+    Executing test: 
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    ricardo_main
+INITIME:
+    201609014-17:34:54.86061263
+SCREEN:
+    ricardo_main
+
+SIT
+=================================================================================
+
+NAME:
+    ricardo_main
+TYPE:
+    recursive
+
+START DIALOGUE
+---------------------------------------------------------------------------------
+
+TIME:
+    201609014-17:34:54.872591733
+
+SITUATUATIONS
+---------------------------------------------------------------------------------
+
+
+SIT
+=================================================================================
+
+NAME:
+    is
+TYPE:
+    neutral
+
+SIT
+=================================================================================
+
+NAME:
+    ms([Best model: {moveFromTo(beer,table1,table3,"N"), moveFromTo(coke,shelf,table2,"N"), moveFromTo(pepsi,table2,table3,"N")},Cost ([Weight:Level]): <[1:1]>])
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    none
+NAME:
+    empty
+
+SIT
+=================================================================================
+
+NAME:
+    ms2
+TYPE:
+    neutral
+
+SIT
+=================================================================================
+
+NAME:
+    ms4([Best model: {action(6,drop,coke), action(11,drop,pepsi), action(12,drop,beer), action(2,grab,coke), action(5,grab,pepsi), action(9,grab,beer), action(1,search,coke), action(4,search,pepsi), action(8,search,beer), action(0,move,shelf), action(3,move,table2), action(7,move,table1), action(10,move,table3)},Cost ([Weight:Level]): <[13:1]>])
+TYPE:
+    neutral

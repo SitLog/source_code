@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<grammar version="1.0" xml:lang="en-US" mode="voice" root="human" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+  <rule id="human">
+    <one-of>
+      <item> melissa </item>
+      <item> richard </item>
+      <item> michelle </item>
+      <item> scott </item>
+      <item> david </item>
+      <item> second </item>
+      <item> kimberly </item>
+      <item> lisa </item>
+      <item> amy </item>
+      <item> angie </item>
+      <item> james </item>
+      <item> brian </item>
+      <item> julie </item>
+      <item> michael </item>
+      <item> first </item>
+      <item> mary </item>
+      <item> william </item>
+      <item> elizabeth </item>
+      <item> christopher </item>
+      <item> john </item>
+      <item> jennifer </item>
+      <item> robert </item>
+   </one-of>
+  </rule>
+</grammar>

@@ -1,0 +1,292 @@
+[
+
+class(top,none,[],[],[]),
+
+class(grammar, top, [], [], []),
+
+class(item, grammar, [], [], [	
+
+	[id => i1, [ rule_descriptor=> (item(I-R,X):-human(I-R,X)) ],[]], 
+	[id => i2, [ rule_descriptor=> (item(I-R,X):-object(I-R,X)) ],[]],
+	[id => i3, [ rule_descriptor=> (item(I-R,X):-location(I-R,X)) ],[]],
+	[id => i4, [ rule_descriptor=> (item(I-R,X):-room(I-R,X)) ],[]],
+	[id => i5, [ rule_descriptor=> (item(I-R,X):-object_category(I-R,X)) ],[]],
+	[id => i6, [ rule_descriptor=> (item(I-R,X):-category(I-R,X)) ],[]]
+
+   	]),
+   	
+class(category, grammar, [], [], [	
+
+	[id => cat1, [ rule_descriptor=> category([person|X]-X,class(human)) ],[]], 
+	[id => cat2, [ rule_descriptor=> category([human|X]-X,class(human)) ],[]], 
+	[id => cat3, [ rule_descriptor=> category([people|X]-X,class(human)) ],[]],
+	[id => cat4, [ rule_descriptor=> -category([robot|X]-X,class(robot)) ],[]],
+	[id => cat5, [ rule_descriptor=> category([room|X]-X,class(room)) ],[]],
+	[id => cat6, [ rule_descriptor=> category([location|X]-X,class(location)) ],[]],
+	[id => cat7, [ rule_descriptor=> category([object|X]-X,class(object)) ],[]],
+	[id => cat8, [ rule_descriptor=> category([place|X]-X,class(place)) ],[]]
+
+   	]),
+
+class(verb, grammar, [], [], [	
+
+	[id => v1,  [ rule_descriptor=> move([go,to|X]-X,_) ], []], 
+  	[id => v2,  [ rule_descriptor=> move([navigate,to|X]-X,_) ], []],
+  	[id => v3,  [ rule_descriptor=> move([reach,to|X]-X,_) ], []], 
+  	[id => v4,  [ rule_descriptor=> move([get,into|X]-X,_) ], []],
+  	[id => v5,  [ rule_descriptor=> move([drive,to|X]-X,_) ], []],
+  	[id => v6,  [ rule_descriptor=> move([move,to|X]-X,_) ], []],
+  	[id => v7,  [ rule_descriptor=> move([walk|X]-X,_) ], []],
+  	[id => v8,  [ rule_descriptor=> move([enter|X]-X,_) ], []],
+  	[id => v8a, [ rule_descriptor=> move([enter,to|X]-X,_) ], []],
+
+	[id => v9,  [ rule_descriptor=> go([go|X]-X,_) ], []], 
+  	[id => v10, [ rule_descriptor=> go([go,and|X]-X,_) ], []],
+
+  	[id => v11, [ rule_descriptor=> find([look,for|X]-X,_) ], []], 
+  	[id => v12, [ rule_descriptor=> find([locate|X]-X,_) ], []], 
+  	[id => v13, [ rule_descriptor=> find([find|X]-X,_) ], []],
+  
+	[id => v18, [ rule_descriptor=> take([grasp|X]-X,_) ], []], 
+  	[id => v19, [ rule_descriptor=> take([take|X]-X,_) ], []],
+  	[id => v20, [ rule_descriptor=> take([get|X]-X,_) ], []],
+  	[id => v21, [ rule_descriptor=> take([fetch|X]-X,_) ], []],  
+  	[id => v22, [ rule_descriptor=> take([pick,up|X]-X,_) ], []], 
+  	[id => v23, [ rule_descriptor=> take([seize|X]-X,_) ], []], 
+  	[id => v24, [ rule_descriptor=> take([collect|X]-X,_) ], []],
+  	[id => v25, [ rule_descriptor=> take([grab|X]-X,_) ], []],
+  	[id => v26, [ rule_descriptor=> take([obtain|X]-X,_) ], []],
+  	[id => v26a, [ rule_descriptor=> take([retrieve|X]-X,_) ], []],
+
+
+  	[id => v27, [ rule_descriptor=> deliver_1([bring|X]-X,_) ], []],
+  	[id => v28, [ rule_descriptor=> deliver_1([give|X]-X,_) ], []],
+  	[id => v29, [ rule_descriptor=> deliver_1([deliver|X]-X,_) ], []],
+  	[id => v30, [ rule_descriptor=> deliver_1([take|X]-X,_) ], []],
+  	[id => v31, [ rule_descriptor=> deliver_1([hand|X]-X,_) ], []],
+  	[id => v31a, [ rule_descriptor=> deliver_1([hand,over|X]-X,_) ], []],
+  	[id => v32, [ rule_descriptor=> deliver_1([carry|X]-X,_) ], []],
+  	[id => v32a,[ rule_descriptor=> deliver_1([put|X]-X,_) ], []],
+  	[id => v32b,[ rule_descriptor=> deliver_1([place|X]-X,_) ], []],
+  	[id => v32c,[ rule_descriptor=> deliver_1([grasp|X]-X,_) ], []],
+  	[id => v32d,[ rule_descriptor=> deliver_1([get|X]-X,_) ], []],
+  	[id => v32e,[ rule_descriptor=> deliver_1([grab|X]-X,_) ], []],
+  	[id => v32f,[ rule_descriptor=> deliver_1([seize|X]-X,_) ], []],
+  	[id => v32g,[ rule_descriptor=> deliver_1([obtain|X]-X,_) ], []],
+  	[id => v32h,[ rule_descriptor=> deliver_1([collect|X]-X,_) ], []],
+  	[id => v32i,[ rule_descriptor=> deliver_1([pick,up|X]-X,_) ], []],
+  	[id => v32j,[ rule_descriptor=> deliver_1([leave|X]-X,_) ], []],
+  	[id => v32k,[ rule_descriptor=> deliver_1([set|X]-X,_) ], []],
+
+  	[id => v33, [ rule_descriptor=> deliver_2([bring,it|X]-X,_) ], []],
+  	[id => v34, [ rule_descriptor=> deliver_2([bring,it,to|X]-X,_) ], []],
+  	[id => v35, [ rule_descriptor=> deliver_2([deliver,it|X]-X,_) ], []],
+  	[id => v36, [ rule_descriptor=> deliver_2([deliver,it,to|X]-X,_) ], []],
+  	[id => v37, [ rule_descriptor=> deliver_2([deliver,it,on|X]-X,_) ], []],
+  	[id => v38, [ rule_descriptor=> deliver_2([hand,it|X]-X,_) ], []], 
+  	[id => v39, [ rule_descriptor=> deliver_2([hand,it,to|X]-X,_) ], []], 
+  	[id => v40, [ rule_descriptor=> deliver_2([place,it|X]-X,_) ], []], 
+  	[id => v41, [ rule_descriptor=> deliver_2([place,it,on|X]-X,_) ], []], 
+  	[id => v42, [ rule_descriptor=> deliver_2([put,it|X]-X,_) ], []], 
+  	[id => v43, [ rule_descriptor=> deliver_2([put,it,on|X]-X,_) ], []],   	
+  	[id => v44, [ rule_descriptor=> deliver_2([put,it,out|X]-X,_) ], []],
+  	[id => v45, [ rule_descriptor=> deliver_2([give,it|X]-X,_) ], []],
+  	[id => v46, [ rule_descriptor=> deliver_2([give,it,to|X]-X,_) ], []],   	
+  	[id => v47, [ rule_descriptor=> deliver_2([carry,it|X]-X,_) ], []], 
+  	[id => v48, [ rule_descriptor=> deliver_2([carry,it,to|X]-X,_) ], []],
+  	[id => v49, [ rule_descriptor=> deliver_2([take,it|X]-X,_) ], []], 
+  	[id => v50, [ rule_descriptor=> deliver_2([take,it,to|X]-X,_) ], []],   	  	
+
+  	[id => v51, [ rule_descriptor=> (deliver(X-Y,_):-deliver_1(X-Y,_)) ], []],
+  	[id => v52, [ rule_descriptor=> (deliver(X-Y,_):-deliver_2(X-Y,_)) ], []],
+
+  	[id => v53, [ rule_descriptor=> say([speak|X]-X,_) ], []],
+	[id => v54, [ rule_descriptor=> say([tell|X]-X,_) ], []], 
+	[id => v55, [ rule_descriptor=> say([tell,me|X]-X,_) ], []], 
+  	[id => v56, [ rule_descriptor=> say([say|X]-X,_) ], []],
+  	[id => v57, [ rule_descriptor=> say([say,to,me|X]-X,_) ], []],
+
+  	[id => v58, [ rule_descriptor=> answer([answer,a,question|X]-X,answer) ], []], 
+  	[id => v59, [ rule_descriptor=> answer([respond,a,question|X]-X,answer) ], []], 
+  	[id => v60, [ rule_descriptor=> answer([solve,a,question|X]-X,answer) ], []], 
+
+  	[id => v61, [ rule_descriptor=> report([and,report,to|X]-X,_) ], []],
+  	[id => v62, [ rule_descriptor=> report([and,describe,to|X]-X,_) ], []],
+  	[id => v63, [ rule_descriptor=> report([and,inform,to|X]-X,_) ], []],
+  	[id => v64, [ rule_descriptor=> report([and,detail,to|X]-X,_) ], []],
+
+	[id => v65, [ rule_descriptor=> belong([belong|X]-X,_) ], []],  	
+	[id => v66, [ rule_descriptor=> belong([correspond|X]-X,_) ], []],  
+	[id => v67, [ rule_descriptor=> belong([match|X]-X,_) ], []],  		
+	[id => v68, [ rule_descriptor=> belong([is,part|X]-X,_) ], []], 
+
+	[id => v69, [ rule_descriptor=> guide([guide|X]-X,_) ], []], 
+	[id => v79, [ rule_descriptor=> guide([escort|X]-X,_) ], []], 
+	[id => v71, [ rule_descriptor=> guide([take|X]-X,_) ], []], 
+	[id => v72, [ rule_descriptor=> guide([lead|X]-X,_) ], []], 
+	[id => v73, [ rule_descriptor=> guide([accompany|X]-X,_) ], []], 
+	
+	[id => v75, [ rule_descriptor=> place([place|X]-X,_) ], []], 
+	[id => v76, [ rule_descriptor=> place([put|X]-X,_) ], []], 
+ 
+	[id => v77, [ rule_descriptor=> follow_1([follow,her,to,the|X]-X,_) ], []], 
+	[id => v78, [ rule_descriptor=> follow_1([follow,him,to,the|X]-X,_) ], []], 
+	[id => v79, [ rule_descriptor=> follow_1([go,after,her,to,the|X]-X,_) ], []], 
+	[id => v80, [ rule_descriptor=> follow_1([go,after,him,to,the|X]-X,_) ], []], 
+	[id => v81, [ rule_descriptor=> follow_1([come,after,her,to,the|X]-X,_) ], []], 
+	[id => v81a, [ rule_descriptor=> follow_1([come,behind,her,to,the|X]-X,_) ], []], 
+	[id => v82, [ rule_descriptor=> follow_1([come,after,him,to,the|X]-X,_) ], []], 
+	[id => v82b, [ rule_descriptor=> follow_1([come,behind,him,to,the|X]-X,_) ], []], 
+  	[id => v82c, [ rule_descriptor=> follow_1([accompany,her,to,the|X]-X,_) ], []], 
+  	[id => v82d, [ rule_descriptor=> follow_1([accompany,him,to,the|X]-X,_) ], []], 
+  	[id => v83, [ rule_descriptor=> follow_2([follow,her|X]-X,_) ], []],
+  	[id => v84, [ rule_descriptor=> follow_2([follow,him|X]-X,_) ], []],
+  	[id => v85, [ rule_descriptor=> follow_2([go,after,her|X]-X,_) ], []],
+  	[id => v86, [ rule_descriptor=> follow_2([go,after,him|X]-X,_) ], []],
+  	[id => v87, [ rule_descriptor=> follow_2([come,after,her|X]-X,_) ], []],
+  	[id => v87a, [ rule_descriptor=> follow_2([come,behind,her|X]-X,_) ], []],
+  	[id => v88, [ rule_descriptor=> follow_2([come,after,him|X]-X,_) ], []],
+  	[id => v88a, [ rule_descriptor=> follow_2([come,behind,him|X]-X,_) ], []],
+  	[id => v88d, [ rule_descriptor=> follow_2([accompany,her|X]-X,_) ], []],
+  	[id => v88e, [ rule_descriptor=> follow_2([accompany,him|X]-X,_) ], []],
+
+
+  	[id => v89, [ rule_descriptor=> (follow(X-Y,follow(Item)):-follow_1(X-N1,_),item(N1-Y,Item)) ], []], 
+  	[id => v90, [ rule_descriptor=> (follow(X-Y,follow(until_gesture)):-follow_2(X-Y,_)) ], []],
+  	[id => v91, [ rule_descriptor=> follow([follow|X]-X,_) ], []],
+  	[id => v92, [ rule_descriptor=> follow([go,after|X]-X,_) ], []],
+  	[id => v92a, [ rule_descriptor=> follow([go,behind|X]-X,_) ], []],
+  	[id => v93, [ rule_descriptor=> follow([come,after|X]-X,_) ], []],
+  	[id => v93a, [ rule_descriptor=> follow([come,behind|X]-X,_) ], []],
+  	[id => v93b, [ rule_descriptor=> follow([accompany|X]-X,_) ], []],
+
+
+	[id => v94, [ rule_descriptor=> find_person_1([a,person|X]-X,_) ], []], 
+	[id => v95, [ rule_descriptor=> find_person_1([someone|X]-X,_) ], []], 
+  	[id => v96, [ rule_descriptor=> (find_person(X-Y,_):-find(X-N1,_),find_person_1(N1-Y,_)) ], []],
+
+  	[id => v97, [ rule_descriptor=> find_gesture_1([the,calling,person|X]-X,_) ], []], 
+  	[id => v98, [ rule_descriptor=> (find_gesture(X-Y,_):-find(X-N1,_),find_gesture_1(N1-Y,_)) ], []]
+
+   	]),
+
+class(polite, grammar, [], [], [
+
+	[id => pol1, [rule_descriptor => polite([please|X]-X,_) ],[]],
+	[id => pol2, [rule_descriptor => polite([could,you|X]-X,_) ],[]],
+	[id => pol3, [rule_descriptor => polite([robot,please|X]-X,_) ],[]],
+	[id => pol4, [rule_descriptor => polite([could,you,please|X]-X,_) ],[]]
+
+	]),
+
+class(command, grammar, [], [], [
+
+	[id => command1,  [ rule_descriptor=> (command(X-Y,CMD):-command_wp(X-Y,CMD))],[]],
+	[id => command2,  [ rule_descriptor=> (command(X-Y,CMD):-polite(X-N1,_),command_wp(N1-Y,CMD))],[]]
+
+	]),
+
+class(command_wp, command, [], [], [	
+
+	[id => command_wp1,  [ rule_descriptor=> (command_wp(X-Y,CMD):-command_fndppl(X-Y,CMD))],[]]
+	
+   	]),
+
+class(command_fndppl, command, [], [], [	
+	[id => command_fndppl_1,  [ rule_descriptor=> (command_fndppl(X-Y,find(Info,Item)):-fndppl_sentence_1(X-N1,_),fndppl_info(N1-N2,Info), fndppl_sentence_2(N2-N3,_), item(N3-Y, Item)],[]],
+	[id => command_fndppl_2,  [ rule_descriptor=> (command_fndppl(X-Y,find(Info,Item)):-fndppl_sentence_1(X-N1,_),fndppl_info(N1-N2,Info), fndppl_sentence_3(N2-N3,_), item(N3-Y, Item)],[]],
+	[id => command_fndppl_3,  [ rule_descriptor=> (command_fndppl(X-Y,find(People,Info,Item)):-fndppl_sentence_4(X-N1,_),item(N1-N2,Item), connectors_preps(N2-N3,_), pose_pgenderp(N3-Y,Info)],[]]
+   	]),
+
+class(command_fndobj, command, [], [], [	
+	[id => command_fndobj_1,  [ rule_descriptor=> (command_fndobj(X-Y,find(Place,Item)):-find(X-N1,_),connectors_place(N1-N2,_), item(N2-N3,Item), fndobj_sentence2(N3-N4,_), item(N4-Y,Place)],[]],
+	[id => command_fndobj_2,  [ rule_descriptor=> (command_fndobj(X-Y,count(Item,Place)):-fndobj_sentence_7(X-N1,_),item(N1-N2,Item), fndobj_sentence_4(N2-N3,_), item(N3-Y,Place)],[]],
+   	[id => command_fndobj_3,  [ rule_descriptor=> (command_fndobj(X-Y,find(Place,Adjective)):-fndobj_sentence_3(X-N1,_),adjectives(N1-N2,Adjective), fndobj_sentence_6(N2-N3,_), item(N3-Y,Place)],[]],
+   	[id => command_fndobj_4,  [ rule_descriptor=> (command_fndobj(X-Y,find(Place,Category,Adjective)):-fndobj_sentence_3(X-N1,_),adjectives(N1-N2,Adjective), item(N2-N3,Category), connectors_place(N3-N4,_), item(N4-Y,Place)],[]],
+   	[id => command_fndobj_5,  [ rule_descriptor=> (command_fndobj(X-Y,find(Place,Category)):-find(X-N1,_),connectors_place(N1-N2,_), item(N2-N3,Category), fndobj_sentence_2(N3-N4,_), item(N4-Y,Place)],[]],
+   	[id => command_fndobj_6,  [ rule_descriptor=> (command_fndobj(X-Y,find(Place,Category,Adjective,Count)):-fndobj_sentence8(X-N1,_),adjectives(N1-N2,Adjectives), item(N2-N3,Category), connectors_place(N3-N4,_), item(N4-Y,Place)],[]],
+   	[id => command_fndobj_7,  [ rule_descriptor=> (command_fndobj(X-Y,find(Place,Item,Adjective,Count)):-fndobj_sentence8(X-N1,_),adjectives(N1-N2,Adjectives), item(N2-N3,Item), connectors_place(N3-N4,_), item(N4-Y,Place)],[]],
+   	[id => command_fndobj_8,  [ rule_descriptor=> (command_fndobj(X-Y,find(Place,Category,Count)):-find(X-N1,_),fndobj_sentence9(N1-N2,_), item(N2-N3,Category), fndobj_sentence_2(N3-N4,_), item(N4-Y,Place)],[]]
+   	]),
+
+class(comman_guide, command, [], [], [	
+	[id => command_guide_1,  [ rule_descriptor=> (command_guide(X-Y,guide(Person,PlaceOrigin,PlaceDestiny)):-guide(X-N1,_),item(N1-N2,Person),connectors_place(N3-N4,Info),item(N4-N5,PlaceOrigin),connectors_place(N5-N6,_), item(N6-Y, PlaceDestiny)],[]],
+	[id => command_guide_2,  [ rule_descriptor=> (command_guide(X-Y,guide(Person, find(Person,Place), Item)):-guide_sentence_1(X-N1,_),guide_info(N1-N2,Info), guide_sentence_3(N2-N3,_), item(N3-Y, Item)],[]]
+   	]),
+
+
+class(fndobj_sentence, grammar, [], [], [
+	[id=>fndobj_sentence2,[rule_descriptor=>fndobj_sentence_2([in,the|X]-X,_)],[]],
+	[id=>fndobj_sentence3,[rule_descriptor=>fndobj_sentence_3([tell,me,whats,the|X]-X,_)],[]],
+	[id=>fndobj_sentence4,[rule_descriptor=>fndobj_sentence_4([there,are,on,the|X]-X,_)],[]],
+	[id=>fndobj_sentence5,[rule_descriptor=>fndobj_sentence_5([tell,me,how,many,people,in,the|X]-X,_)],[]],
+	[id=>fndobj_sentence6,[rule_descriptor=>fndobj_sentence_6([object,on,the|X]-X,_)],[]],
+	[id=>fndobj_sentence7,[rule_descriptor=>fndobj_sentence_7([tell,me,how,many|X]-X,_)],[]],
+	[id=>fndobj_sentence8,[rule_descriptor=>fndobj_sentence_8([tell,me,which,are,the,three|X]-X,_)],[]],
+	[id=>fndobj_sentence9,[rule_descriptor=>fndobj_sentence_9([three|X]-X,_)],[]]
+
+	]),
+
+
+class(fndppl_sentence, grammar, [], [], [
+	[id=>fndppl_sentence1,[rule_descriptor=>fndppl_sentence_1([tell,me,the|X]-X,_)],[]],
+	[id=>fndppl_sentence2,[rule_descriptor=>fndppl_sentence_2([of,the,person,at,the|X]-X,_)],[]],
+	[id=>fndppl_sentence3,[rule_descriptor=>fndppl_sentence_3([of,the,person,in,the|X]-X,_)],[]],
+	[id=>fndppl_sentence4,[rule_descriptor=>fndppl_sentence_4([tell,me,how,many,people,in,the|X]-X,_)],[]]
+
+	]),
+
+class(fndppl_info, grammar, [], [], [
+	[id=>fndppl_info1,[rule_descriptor=>fndppl_info([name||X]-X,name)],[]],
+	[id=>fndppl_info2,[rule_descriptor=>fndppl_info([gender|X]-X,gender)],[]],
+	[id=>fndppl_info3,[rule_descriptor=>fndppl_info([pose|X]-X,pose)],[]]
+
+	]),
+
+
+
+class(pose, grammar, [], [], [
+	[id=>pose1,[rule_descriptor=>pose([sitting||X]-X,sitting)],[]],
+	[id=>pose2,[rule_descriptor=>pose([standing|X]-X,standing)],[]],
+	[id=>pose3,[rule_descriptor=>pose([lying,down|X]-X,lying)],[]]
+
+	]),
+
+class(pgenderp, grammar, [], [], [
+	[id=>pgenderp1,[rule_descriptor=>pgenderp([men||X]-X,men)],[]],
+	[id=>pgenderp2,[rule_descriptor=>pgenderp([women|X]-X,women)],[]],
+	[id=>pgenderp3,[rule_descriptor=>pgenderp([boys|X]-X,lying)],[]],
+	[id=>pgenderp4,[rule_descriptor=>pgenderp([girls|X]-X,girls)],[]],
+	[id=>pgenderp5,[rule_descriptor=>pgenderp([male|X]-X,male)],[]],
+	[id=>pgenderp6,[rule_descriptor=>pgenderp([female|X]-X,female)],[]]
+
+	]),
+
+class(pose_pgenderp, grammar, [], [], [
+	[id=>pose_pgenderp1,[rule_descriptor=>pose_pgenderp(X-Y,Info):-pose(X-Y,Info)],[]],
+	[id=>pose_pgenderp2,[rule_descriptor=>pose_pgenderp(X-Y,Info):-pgenderp(X-Y,Info)],[]]
+
+	]),
+
+class(connector, grammar, [], [], [	
+	[id => connectors_preps_1,  [ rule_descriptor=> connectors_preps([are|X]-X,_) ],[]],
+
+	[id => connectors_place_1,  [ rule_descriptor=> connectors_place([the|X]-X,_) ],[]],
+	[id => connectors_place_2,  [ rule_descriptor=> connectors_place([on,the|X]-X,_) ],[]],
+	[id => connectors_place_3,  [ rule_descriptor=> connectors_place([from,the|X]-X,_) ],[]],
+	[id => connectors_place_4,  [ rule_descriptor=> connectors_place([to,the|X]-X,_) ],[]],
+
+	]),
+
+class(adjectives, grammar, [], [], [	
+	[id => adjectives_1,  [ rule_descriptor=> adjectives([biggest|X]-X,biggest) ],[]],
+	[id => adjectives_2,  [ rule_descriptor=> adjectives([largest|X]-X,largest) ],[]],
+	[id => adjectives_3,  [ rule_descriptor=> adjectives([smallest|X]-X,smallest) ],[]],
+	[id => adjectives_4,  [ rule_descriptor=> adjectives([heaviest|X]-X,heaviest) ],[]],
+	[id => adjectives_5,  [ rule_descriptor=> adjectives([lightest|X]-X,lightest) ],[]],
+	[id => adjectives_6,  [ rule_descriptor=> adjectives([thinnest|X]-X,thinnest) ],[]]
+	]),
+
+
+]
+

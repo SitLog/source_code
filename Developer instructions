@@ -1,0 +1,139 @@
+SitLog
+-----------
+
+SitLog: Programming Language for Service Robots
+
+
+Content
+=======
+1. Directory tree
+2. Directory description
+3. File name structure
+4. Dialogue Models coding conventions
+5. Directory and files tree
+
+1. Directory tree
+=================
+SitLog
+||||_apps
+||| |_Project_Directory 
+|||_behaviours
+||_scripts
+|_src
+
+2. Directory description
+========================
+apps directory contains all projects directories, every project directory must include the following files: 
+- basic_actions.pl
+  Definition of every action performed by the dialogue model
+- behavior
+  List of files included into behaviors directory
+- global_vars.pl
+  Definition of global variables for the application
+- main.dm
+  Main dialogue model required by the interpreter in order to run the application
+- models
+  
+- templates.pl
+- user_functions.pl
+
+main.dm is the main dialogue model, can be also included other dialogue models files.
+
+behaviours directory includes 
+
+3. File name structure
+======================
+
+
+
+Files name
+
+
+4. Dialogue Models coding conventions
+=====================================
+
+
+
+Dialogue Model structure
+DM_ID: Dialogue Model ID
+
+diag_mod(DM_ID,
+  
+  [ 
+
+
+
+5. Directory and files tree
+===========================
+
+SitLog
+.
+├── apps
+│   ├── paper
+│   │   ├── basic_actions.pl
+│   │   ├── behavior
+│   │   ├── dm.log
+│   │   ├── global_vars.pl
+│   │   ├── md_main.dm
+│   │   ├── md_wait.dm
+│   │   ├── models
+│   │   ├── templates.pl
+│   │   └── user_functions.pl
+│   └── robocup2012
+│       ├── basic_actions.pl
+│       ├── behavior
+│       ├── dm.log
+│       ├── global_vars.pl
+│       ├── KB.pl
+│       ├── main.dm
+│       ├── models
+│       ├── t1_clean_up
+│       │   ├── clu_main.dm
+│       │   ├── s0_start.dm
+│       │   ├── s1_object.dm
+│       │   └── s2_order.dm
+│       ├── templates.pl
+│       ├── user_functions.pl
+│       └── dm.log
+├── behaviors
+│   ├── ask.dm
+│   ├── clean.dm
+│   ├── detect_person.dm
+│   ├── follow.dm
+│   ├── give.dm
+│   ├── go.dm
+│   ├── identify_person.dm
+│   ├── learn_faces.dm
+│   ├── memorize_person.dm
+│   ├── take.dm
+│   └── wait.dm
+├── Developer instructions
+├── INSTALL
+├── LICENSE
+├── README
+├── scripts
+│   ├── paper
+│   └── robocup2012
+└── src
+    ├── bindings.pl
+    ├── cl_opts.pl
+    ├── communication.pl
+    ├── diag_manager.pl
+    ├── exec_actions.pl
+    ├── gensym.pl
+    ├── history_utilities.pl
+    ├── in_communication.pl
+    ├── init.pl
+    ├── interp_exps.pl
+    ├── interpret_input.pl
+    ├── loggin.pl
+    ├── messages.pl
+    ├── out_communication.pl
+    ├── read_input.pl
+    ├── sets.pl
+    ├── test_interp_exps
+    └── utilities.pl
+
+
+
+
