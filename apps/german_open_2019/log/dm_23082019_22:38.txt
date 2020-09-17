@@ -1,0 +1,440 @@
+
+HEADER
+---------------------------------------------------------------------------------
+
+TIME:
+    201908023-22:38:24.750061035
+VERSION:
+    _G35221
+PROJDIR:
+    apps/german_open_2019
+IN ARG:
+    now
+KB:
+    knowledge_base/knowledge_base_robocup.pl
+USERFUNC:
+    user_functions.pl
+BASACTS:
+    basic_actions.pl
+TEMPLATE:
+    templates.pl
+GLOBAL VARS:
+    global_vars.pl
+
+START DIALOGUE
+---------------------------------------------------------------------------------
+
+TIME:
+    201908023-22:38:24.750178575
+
+SITUATUATIONS
+---------------------------------------------------------------------------------
+
+
+SIT
+=================================================================================
+
+NAME:
+    is
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    All the system working
+INITIME:
+    201908023-22:38:24.753286361
+SCREEN:
+    All the system working
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    These are the options
+INITIME:
+    201908023-22:38:24.753386259
+SCREEN:
+    These are the options
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    in, fo, cp, cl, res, gpsr, demo, see_object, detect_face, memorize_face, recognize_face, see_face, see, ask
+INITIME:
+    201908023-22:38:24.753448486
+SCREEN:
+    in, fo, cp, cl, res, gpsr, demo, see_object, detect_face, memorize_face, recognize_face, see_face, see, ask
+
+SIT
+=================================================================================
+
+NAME:
+    k2(garbage)
+TYPE:
+    keyboard
+INPUT:
+    ok
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    none
+NAME:
+    empty
+
+SIT
+=================================================================================
+
+NAME:
+    execute(garbage)
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    Executing test: 
+INITIME:
+    201908023-22:38:27.166779279
+SCREEN:
+    Executing test: 
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    garbage_main
+INITIME:
+    201908023-22:38:27.166819572
+SCREEN:
+    garbage_main
+
+SIT
+=================================================================================
+
+NAME:
+    garbage_main
+TYPE:
+    recursive
+
+START DIALOGUE
+---------------------------------------------------------------------------------
+
+TIME:
+    201908023-22:38:27.169730186
+
+SITUATUATIONS
+---------------------------------------------------------------------------------
+
+
+SIT
+=================================================================================
+
+NAME:
+    say(SAY: Detect DOOR,_G250701)
+TYPE:
+    recursive
+
+START DIALOGUE
+---------------------------------------------------------------------------------
+
+TIME:
+    201908023-22:38:27.170425415
+
+SITUATUATIONS
+---------------------------------------------------------------------------------
+
+
+SIT
+=================================================================================
+
+NAME:
+    is
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    say
+INITIME:
+    201908023-22:38:27.178508281
+MSG:
+    SAY: Detect DOOR
+
+SIT
+=================================================================================
+
+NAME:
+    [id==>success,type==>final,diag_mod==>say(_G178802,ok)]
+TYPE:
+    final
+
+END DIALOGUE
+---------------------------------------------------------------------------------
+
+OUTSYS:
+    []
+TIME:
+    201908023-22:38:27.180111885
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    say
+INITIME:
+    201908023-22:38:27.180249691
+MSG:
+    Thank you
+
+SIT
+=================================================================================
+
+NAME:
+    is
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    say
+INITIME:
+    201908023-22:38:27.193294048
+MSG:
+    Hello, I will take out the garbage
+
+SIT
+=================================================================================
+
+NAME:
+    say([SAY: Move ,bin1],_G147190)
+TYPE:
+    recursive
+
+START DIALOGUE
+---------------------------------------------------------------------------------
+
+TIME:
+    201908023-22:38:27.218062639
+
+SITUATUATIONS
+---------------------------------------------------------------------------------
+
+
+SIT
+=================================================================================
+
+NAME:
+    is
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    say
+INITIME:
+    201908023-22:38:27.218578815
+MESSAGE:
+    SAY: Move  bin1
+FINTIME:
+    201908023-22:38:27.219357728
+
+SIT
+=================================================================================
+
+NAME:
+    [id==>success,type==>final,diag_mod==>say(_G198938,ok)]
+TYPE:
+    final
+
+END DIALOGUE
+---------------------------------------------------------------------------------
+
+OUTSYS:
+    []
+TIME:
+    201908023-22:38:27.236135482
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    say
+INITIME:
+    201908023-22:38:27.236393928
+MSG:
+    I need someone to hand me the bag, please stand in front of me, I will grasp it
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    robotheight
+HEIGHT:
+    1.4
+1.4, robotheight, HEIGHT:
+    1.4
+1.4, movement, NAME:
+    robotheight
+HEIGHT:
+    1.4
+1.4, robotheight, HEIGHT:
+    1.4
+1.4, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    robotheight
+HEIGHT:
+    1.4
+1.4, robotheight, HEIGHT:
+    1.4
+1.4, movement, NAME:
+    robotheight
+HEIGHT:
+    1.4
+1.4, robotheight, HEIGHT:
+    1.4
+1.4, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    doesnt_exist
+NAME:
+    robotheight
+HEIGHT:
+    1.4
+1.4, robotheight, HEIGHT:
+    1.4
+1.4, doesnt_exist, NAME:
+    robotheight
+HEIGHT:
+    1.4
+1.4, robotheight, HEIGHT:
+    1.4
+1.4, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    doesnt_exist
+NAME:
+    robotheight
+HEIGHT:
+    1.4
+1.4, robotheight, HEIGHT:
+    1.4
+1.4, doesnt_exist, NAME:
+    robotheight
+HEIGHT:
+    1.4
+1.4, robotheight, HEIGHT:
+    1.4
+1.4, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    robotheight
+HEIGHT:
+    1.4
+1.4, robotheight, HEIGHT:
+    1.4
+1.4, movement, NAME:
+    robotheight
+HEIGHT:
+    1.4
+1.4, robotheight, HEIGHT:
+    1.4
+1.4, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    robotheight
+HEIGHT:
+    1.4
+1.4, robotheight, HEIGHT:
+    1.4
+1.4, movement, NAME:
+    robotheight
+HEIGHT:
+    1.4
+1.4, robotheight, HEIGHT:
+    1.4
+1.4, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    doesnt_exist
+NAME:
+    robotheight
+HEIGHT:
+    1.4
+1.4, robotheight, HEIGHT:
+    1.4
+1.4, doesnt_exist, NAME:
+    robotheight
+HEIGHT:
+    1.4
+1.4, robotheight, HEIGHT:
+    1.4
+1.4, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    doesnt_exist
+NAME:
+    robotheight
+HEIGHT:
+    1.4
+1.4, robotheight, HEIGHT:
+    1.4
+1.4, doesnt_exist, NAME:
+    robotheight
+HEIGHT:
+    1.4
+1.4, robotheight, HEIGHT:
+    1.4
+1.4, 
+SIT
+=================================================================================
+
+NAME:
+    detect_person(bin1,2)
+TYPE:
+    person_pose_op

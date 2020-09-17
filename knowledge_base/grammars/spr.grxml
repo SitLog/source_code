@@ -1,0 +1,1187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<grammar version="1.0" xml:lang="en-US" mode="voice" root="spr" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+  <rule id="taxi">
+    <one-of>
+      <item> uber </item>
+      <item> taxi </item>
+      <item> cab </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_delivat_1">
+    <one-of>
+      <item> it to </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_delivat_2">
+    <one-of>
+      <item> at the </item>
+   </one-of>
+  </rule>
+
+  <rule id="follow">
+    <one-of>
+      <item> <ruleref uri="#gobeacon"/> <ruleref uri="#sentence_follow_3"/> <ruleref uri="#item"/> <ruleref uri="#sentence_follow_5"/> <ruleref uri="#vbfollow"/> <ruleref uri="#pron"/> <ruleref uri="#fllwhdst"/>  </item>
+      <item> <ruleref uri="#vbfollow"/> <ruleref uri="#item"/> <ruleref uri="#sentence_follow_1"/> <ruleref uri="#item"/> <ruleref uri="#sentence_follow_2"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#sentence_follow_3"/> <ruleref uri="#item"/> <ruleref uri="#sentence_follow_4"/> <ruleref uri="#item"/> <ruleref uri="#sentence_follow_5"/> <ruleref uri="#vbfollow"/> <ruleref uri="#pron"/> <ruleref uri="#fllwdest"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="phpeopler">
+    <one-of>
+      <item> <ruleref uri="#phpeople"/> <ruleref uri="#sentence_phpeopler_1"/> <ruleref uri="#item"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_gobeacon_1">
+    <one-of>
+      <item> to the </item>
+   </one-of>
+  </rule>
+
+  <rule id="delivto">
+    <one-of>
+      <item> <ruleref uri="#vbdeliver"/> <ruleref uri="#sentence_delivto_1"/> <ruleref uri="#item"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_fndobj_9">
+    <one-of>
+      <item> tell me which are the three </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_fndobj_8">
+    <one-of>
+      <item> three </item>
+   </one-of>
+  </rule>
+
+  <rule id="complexman">
+    <one-of>
+      <item> <ruleref uri="#cmancmd"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_phpeopler_1">
+    <one-of>
+      <item> in the </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_delivme_1">
+    <one-of>
+      <item> it to me </item>
+   </one-of>
+  </rule>
+
+  <rule id="gdcmd">
+    <one-of>
+      <item> <ruleref uri="#gobeacon"/> <ruleref uri="#sentence_gdcmd_3"/> <ruleref uri="#item"/> <ruleref uri="#sentence_gdcmd_5"/> <ruleref uri="#guideto"/>  </item>
+      <item> <ruleref uri="#vbguide"/> <ruleref uri="#item"/> <ruleref uri="#sentence_gdcmd_2"/> <ruleref uri="#item"/> <ruleref uri="#gdwhere"/>  </item>
+      <item> <ruleref uri="#vbguide"/> <ruleref uri="#item"/> <ruleref uri="#sentence_gdcmd_1"/> <ruleref uri="#item"/> <ruleref uri="#sentence_gdcmd_2"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#sentence_gdcmd_3"/> <ruleref uri="#item"/> <ruleref uri="#sentence_gdcmd_4"/> <ruleref uri="#item"/> <ruleref uri="#sentence_gdcmd_5"/> <ruleref uri="#guideto"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="whattosay">
+    <one-of>
+      <item> something about yourself </item>
+      <item> the day of the week </item>
+      <item> your teams country </item>
+      <item> the day of the month </item>
+      <item> your teams name </item>
+      <item> what day is today </item>
+      <item> the time </item>
+      <item> a joke </item>
+      <item> what day is tomorrow </item>
+      <item> your teams affiliation </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_fndobj_1">
+    <one-of>
+      <item> tell me how many </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_fndobj_3">
+    <one-of>
+      <item> the </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_fndobj_2">
+    <one-of>
+      <item> there are on the </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_fndobj_5">
+    <one-of>
+      <item> tell me whats the </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_fndobj_4">
+    <one-of>
+      <item> in the </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_fndobj_7">
+    <one-of>
+      <item> on the </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_fndobj_6">
+    <one-of>
+      <item> object on the </item>
+   </one-of>
+  </rule>
+
+  <rule id="someone">
+    <one-of>
+      <item> <ruleref uri="#whowhere"/>  </item>
+      <item> <ruleref uri="#sentence_someone_1"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="delivat">
+    <one-of>
+      <item> <ruleref uri="#vbdeliver"/> <ruleref uri="#sentence_delivat_1"/> <ruleref uri="#item"/> <ruleref uri="#sentence_delivat_2"/> <ruleref uri="#item"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="cmancmd">
+    <one-of>
+      <item> <ruleref uri="#vbtakeout"/> <ruleref uri="#sentence_cmancmd_1"/> <ruleref uri="#garbage"/>  </item>
+      <item> <ruleref uri="#vbbring"/> <ruleref uri="#sentence_cmancmd_6"/> <ruleref uri="#relpos"/> <ruleref uri="#sentence_cmancmd_1"/> <ruleref uri="#item"/> <ruleref uri="#cmanobjsrc"/>  </item>
+      <item> <ruleref uri="#vbbring"/> <ruleref uri="#sentence_cmancmd_4"/> <ruleref uri="#oprop"/> <ruleref uri="#sentence_cmancmd_5"/> <ruleref uri="#cmanobjsrc"/>  </item>
+      <item> <ruleref uri="#vbbring"/> <ruleref uri="#sentence_cmancmd_4"/> <ruleref uri="#oprop"/> <ruleref uri="#item"/> <ruleref uri="#cmanobjsrc"/>  </item>
+      <item> <ruleref uri="#vbbtake"/> <ruleref uri="#sentence_cmancmd_1"/> <ruleref uri="#item"/> <ruleref uri="#sentence_cmancmd_2"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#vbcleanup"/> <ruleref uri="#sentence_cmancmd_1"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#vbbring"/> <ruleref uri="#sentence_cmancmd_4"/> <ruleref uri="#abspos"/> <ruleref uri="#sentence_cmancmd_5"/> <ruleref uri="#cmanobjsrc"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="cmanobjsrc">
+    <one-of>
+      <item> <ruleref uri="#sentence_cmanobjsrc_1"/> <ruleref uri="#item"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="guide">
+    <one-of>
+      <item> <ruleref uri="#gdcmd"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_gdcmd_4">
+    <one-of>
+      <item> at the </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_gdcmd_5">
+    <one-of>
+      <item> and </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_gdcmd_1">
+    <one-of>
+      <item> from the </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_gdcmd_2">
+    <one-of>
+      <item> to the </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_gdcmd_3">
+    <one-of>
+      <item> meet </item>
+   </one-of>
+  </rule>
+
+  <rule id="item">
+    <one-of>
+      <item> <ruleref uri="human.grxml"/>  </item>
+      <item> <ruleref uri="object_category.grxml"/>  </item>
+      <item> <ruleref uri="room.grxml"/>  </item>
+      <item> <ruleref uri="object.grxml"/>  </item>
+      <item> <ruleref uri="location.grxml"/>  </item>
+      <item> <ruleref uri="#category"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_partyhost_8">
+    <one-of>
+      <item> snacks to </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_partyhost_5">
+    <one-of>
+      <item> to leave </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_partyhost_4">
+    <one-of>
+      <item> and ask </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_partyhost_7">
+    <one-of>
+      <item> drinks to </item>
+   </one-of>
+  </rule>
+
+  <rule id="vbmeet">
+    <one-of>
+      <item> find </item>
+      <item> greet </item>
+      <item> contact </item>
+      <item> face </item>
+   </one-of>
+  </rule>
+
+  <rule id="goplace">
+    <one-of>
+      <item> <ruleref uri="#vbgopl"/> <ruleref uri="#sentence_goplace_1"/> <ruleref uri="#item"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_partyhost_3">
+    <one-of>
+      <item> to </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_partyhost_2">
+    <one-of>
+      <item> and introduce </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_vbdeliver_1">
+    <one-of>
+      <item> deliver </item>
+   </one-of>
+  </rule>
+
+  <rule id="gplace">
+    <one-of>
+      <item> <ruleref uri="#vbplace"/> <ruleref uri="#sentence_place_1"/> <ruleref uri="#item"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="vbfollow">
+    <one-of>
+      <item> follow </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_incomplete_6">
+    <one-of>
+      <item> meet </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_fndobj_10">
+    <one-of>
+      <item> objects on the </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_incomplete_4">
+    <one-of>
+      <item> to </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_incomplete_3">
+    <one-of>
+      <item> me the </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_incomplete_1">
+    <one-of>
+      <item> is at the </item>
+   </one-of>
+  </rule>
+
+  <rule id="category">
+    <one-of>
+      <item> robot </item>
+      <item> people </item>
+      <item> human </item>
+      <item> room </item>
+      <item> place </item>
+      <item> location </item>
+      <item> person </item>
+      <item> object </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_fllwdest_1">
+    <one-of>
+      <item> to the </item>
+   </one-of>
+  </rule>
+
+  <rule id="vbbtake">
+    <one-of>
+      <item> bring </item>
+      <item> take </item>
+   </one-of>
+  </rule>
+
+  <rule id="vbspeak">
+    <one-of>
+      <item> say </item>
+      <item> tell </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_goroom_1">
+    <one-of>
+      <item> to the </item>
+   </one-of>
+  </rule>
+
+  <rule id="pron">
+    <one-of>
+      <item> my </item>
+      <item> your </item>
+      <item> we </item>
+      <item> their </item>
+      <item> me </item>
+      <item> hers </item>
+      <item> our </item>
+      <item> they </item>
+      <item> theirs </item>
+      <item> its </item>
+      <item> his </item>
+      <item> mine </item>
+      <item> yours </item>
+      <item> her </item>
+      <item> you </item>
+      <item> it </item>
+      <item> he </item>
+      <item> she </item>
+      <item> us </item>
+      <item> him </item>
+      <item> ours </item>
+      <item> them </item>
+      <item> i </item>
+      <item> you </item>
+      <item> her </item>
+   </one-of>
+  </rule>
+
+  <rule id="delivme">
+    <one-of>
+      <item> <ruleref uri="#vbdeliver"/> <ruleref uri="#sentence_delivme_1"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_vbgor_1">
+    <one-of>
+      <item> enter </item>
+   </one-of>
+  </rule>
+
+  <rule id="vbgor">
+    <one-of>
+      <item> <ruleref uri="#sentence_vbgor_1"/>  </item>
+      <item> <ruleref uri="#vbgopl"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="fllmeet">
+    <one-of>
+      <item> <ruleref uri="#sentence_fllmeet_2"/>  </item>
+      <item> <ruleref uri="#sentence_fllmeet_1"/> <ruleref uri="#item"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="pgenderp">
+    <one-of>
+      <item> men </item>
+      <item> male </item>
+      <item> female </item>
+      <item> boys </item>
+      <item> girls </item>
+      <item> women </item>
+   </one-of>
+  </rule>
+
+  <rule id="pgenders">
+    <one-of>
+      <item> boy </item>
+      <item> male person </item>
+      <item> man </item>
+      <item> girl </item>
+      <item> woman </item>
+      <item> female person </item>
+   </one-of>
+  </rule>
+
+  <rule id="pose">
+    <one-of>
+      <item> standing </item>
+      <item> sitting </item>
+      <item> lying down </item>
+   </one-of>
+  </rule>
+
+  <rule id="deliver">
+    <one-of>
+      <item> <ruleref uri="#vbbring"/> <ruleref uri="#sentence_deliver_5"/> <ruleref uri="#item"/> <ruleref uri="#sentence_deliver_7"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#vbbtake"/> <ruleref uri="#sentence_deliver_3"/> <ruleref uri="#item"/> <ruleref uri="#sentence_deliver_7"/> <ruleref uri="#item"/> <ruleref uri="#sentence_deliver_8"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#takefrom"/> <ruleref uri="#sentence_deliver_1"/> <ruleref uri="#gplace"/>  </item>
+      <item> <ruleref uri="#takefrom"/> <ruleref uri="#sentence_deliver_1"/> <ruleref uri="#delivat"/>  </item>
+      <item> <ruleref uri="#take"/> <ruleref uri="#sentence_deliver_1"/> <ruleref uri="#vbplace"/> <ruleref uri="#sentence_deliver_2"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#takefrom"/> <ruleref uri="#sentence_deliver_1"/> <ruleref uri="#delivme"/>  </item>
+      <item> <ruleref uri="#goplace"/> <ruleref uri="#vbfind"/> <ruleref uri="#sentence_deliver_3"/> <ruleref uri="#item"/> <ruleref uri="#sentence_deliver_1"/> <ruleref uri="place.grxml"/>  </item>
+      <item> <ruleref uri="#goplace"/> <ruleref uri="#vbfind"/> <ruleref uri="#sentence_deliver_3"/> <ruleref uri="#item"/> <ruleref uri="#sentence_deliver_1"/> <ruleref uri="#delivme"/>  </item>
+      <item> <ruleref uri="#takefrom"/> <ruleref uri="#sentence_deliver_1"/> <ruleref uri="#vbplace"/> <ruleref uri="#sentence_deliver_2"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#vbplace"/> <ruleref uri="#sentence_deliver_3"/> <ruleref uri="#item"/> <ruleref uri="#sentence_deliver_4"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#vbdeliver"/> <ruleref uri="#sentence_deliver_3"/> <ruleref uri="#item"/> <ruleref uri="#sentence_deliver_6"/> <ruleref uri="#someone"/>  </item>
+      <item> <ruleref uri="#vbbring"/> <ruleref uri="#sentence_deliver_5"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#vbbtake"/> <ruleref uri="#sentence_deliver_9"/> <ruleref uri="#luggage"/> <ruleref uri="#sentence_deliver_8"/> <ruleref uri="#taxi"/>  </item>
+      <item> <ruleref uri="#goplace"/> <ruleref uri="#vbfind"/> <ruleref uri="#sentence_deliver_3"/> <ruleref uri="#item"/> <ruleref uri="#sentence_deliver_1"/> <ruleref uri="#delivat"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_delivto_1">
+    <one-of>
+      <item> it to </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_follow_5">
+    <one-of>
+      <item> and </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_follow_4">
+    <one-of>
+      <item> at the </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_goplace_1">
+    <one-of>
+      <item> to the </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_follow_1">
+    <one-of>
+      <item> from the </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_follow_3">
+    <one-of>
+      <item> meet </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_follow_2">
+    <one-of>
+      <item> to the </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_whowhere_1">
+    <one-of>
+      <item> the person </item>
+   </one-of>
+  </rule>
+
+  <rule id="fndppl">
+    <one-of>
+      <item> <ruleref uri="#goroom"/> <ruleref uri="#findp"/> <ruleref uri="#sentence_fndppl_3"/> <ruleref uri="#talk"/>  </item>
+      <item> <ruleref uri="#sentence_fndppl_6"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#sentence_fndppl_10"/> <ruleref uri="#item"/> <ruleref uri="#sentence_fndppl_11"/> <ruleref uri="#pose"/>  </item>
+      <item> <ruleref uri="#sentence_fndppl_10"/> <ruleref uri="#item"/> <ruleref uri="#sentence_fndppl_11"/> <ruleref uri="#pgenderp"/>  </item>
+      <item> <ruleref uri="#sentence_fndppl_9"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#talk"/> <ruleref uri="#sentence_fndppl_1"/> <ruleref uri="#whowhere"/>  </item>
+      <item> <ruleref uri="#sentence_fndppl_8"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#findp"/> <ruleref uri="#sentence_fndppl_2"/> <ruleref uri="#item"/> <ruleref uri="#sentence_fndppl_3"/> <ruleref uri="#talk"/>  </item>
+      <item> <ruleref uri="#sentence_fndppl_7"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#sentence_fndppl_4"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#sentence_fndppl_5"/> <ruleref uri="#item"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_whowhere_2">
+    <one-of>
+      <item> in the </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_fndppl_10">
+    <one-of>
+      <item> tell me how many people in the </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_fndppl_11">
+    <one-of>
+      <item> are </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_partyhost_6">
+    <one-of>
+      <item> and </item>
+   </one-of>
+  </rule>
+
+  <rule id="gobeacon">
+    <one-of>
+      <item> <ruleref uri="#vbgopl"/> <ruleref uri="#sentence_gobeacon_1"/> <ruleref uri="#item"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="luggage">
+    <one-of>
+      <item> valise </item>
+      <item> baggage </item>
+      <item> trolley </item>
+      <item> bag </item>
+      <item> suitcase </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_partyhost_1">
+    <one-of>
+      <item> at the </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_deliver_3">
+    <one-of>
+      <item> the </item>
+   </one-of>
+  </rule>
+
+  <rule id="fndobj">
+    <one-of>
+      <item> <ruleref uri="#sentence_fndobj_5"/> <ruleref uri="#oprop"/> <ruleref uri="#sentence_fndobj_6"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#sentence_fndobj_5"/> <ruleref uri="#oprop"/> <ruleref uri="#item"/> <ruleref uri="#sentence_fndobj_7"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#sentence_fndobj_9"/> <ruleref uri="#oprop"/> <ruleref uri="#sentence_fndobj_10"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#sentence_fndobj_1"/> <ruleref uri="#item"/> <ruleref uri="#sentence_fndobj_2"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#sentence_fndobj_9"/> <ruleref uri="#oprop"/> <ruleref uri="#item"/> <ruleref uri="#sentence_fndobj_7"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#vbfind"/> <ruleref uri="#sentence_fndobj_3"/> <ruleref uri="#item"/> <ruleref uri="#sentence_fndobj_4"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#vbfind"/> <ruleref uri="#sentence_fndobj_8"/> <ruleref uri="#item"/> <ruleref uri="#sentence_fndobj_4"/> <ruleref uri="room.grxml"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_deliver_8">
+    <one-of>
+      <item> to the </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_deliver_1">
+    <one-of>
+      <item> and </item>
+   </one-of>
+  </rule>
+
+  <rule id="findp">
+    <one-of>
+      <item> <ruleref uri="#vbfind"/> <ruleref uri="#sentence_findp_2"/> <ruleref uri="#pose"/>  </item>
+      <item> <ruleref uri="#vbfind"/> <ruleref uri="#sentence_findp_2"/> <ruleref uri="#gesture"/>  </item>
+      <item> <ruleref uri="#vbfind"/> <ruleref uri="#sentence_findp_1"/> <ruleref uri="#pgenders"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_fndppl_6">
+    <one-of>
+      <item> tell me the pose of the person at the </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_fndppl_7">
+    <one-of>
+      <item> tell me the name of the person in the </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_fndppl_4">
+    <one-of>
+      <item> tell me the name of the person at the </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_fndppl_5">
+    <one-of>
+      <item> tell me the gender of the person at the </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_fndppl_2">
+    <one-of>
+      <item> in the </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_fndppl_3">
+    <one-of>
+      <item> and </item>
+   </one-of>
+  </rule>
+
+  <rule id="garbage">
+    <one-of>
+      <item> garbage </item>
+      <item> litter </item>
+      <item> junk </item>
+      <item> debris </item>
+      <item> trash </item>
+      <item> waste </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_fndppl_1">
+    <one-of>
+      <item> to </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_fndppl_8">
+    <one-of>
+      <item> tell me the gender of the person in the </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_fndppl_9">
+    <one-of>
+      <item> tell me the pose of the person in the </item>
+   </one-of>
+  </rule>
+
+  <rule id="gdwhere">
+    <one-of>
+      <item> <ruleref uri="#sentence_gdwhere_4"/> <ruleref uri="#pron"/> <ruleref uri="#sentence_gdwhere_2"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#sentence_gdwhere_3"/> <ruleref uri="#pron"/> <ruleref uri="#sentence_gdwhere_2"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#sentence_gdwhere_1"/> <ruleref uri="#pron"/> <ruleref uri="#sentence_gdwhere_2"/> <ruleref uri="#item"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="takefrom">
+    <one-of>
+      <item> <ruleref uri="#take"/> <ruleref uri="#sentence_takefrom_1"/> <ruleref uri="#item"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="speak">
+    <one-of>
+      <item> <ruleref uri="#vbspeak"/> <ruleref uri="#whattosay"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_takefrom_1">
+    <one-of>
+      <item> from the </item>
+   </one-of>
+  </rule>
+
+  <rule id="question">
+    <one-of>
+      <item> can i visit the hotel de glace in summer </item>
+      <item> when was the mounted police formed </item>
+      <item> what was the first computer bug </item>
+      <item> when was the first computer with a hard disk drive launched </item>
+      <item> whats the name of the bear cub exported from canada to the london zoo in 1915 </item>
+      <item> is mark zuckerberg a robot </item>
+      <item> how small can a nanobot be </item>
+      <item> what does moravecs paradox state </item>
+      <item> what is the worlds largest coin </item>
+      <item> what is a nanobot </item>
+      <item> name 3 famous male canadians </item>
+      <item> what year was canada invaded by the usa for the second time </item>
+      <item> how big was the first hard disk drive </item>
+      <item> whats the longest street in the world </item>
+      <item> which program do jedi use to open pdf files </item>
+      <item> when was the royal canadian mounted police formed </item>
+      <item> who invented the compiler </item>
+      <item> name 3 famous female canadians </item>
+      <item> are self driving cars safe </item>
+      <item> why wasnt tron nominated for an award by the motion picture academy </item>
+      <item> name all of the robots on mars </item>
+      <item> what is the a i knowledge engineering bottleneck </item>
+      <item> who is the worlds first android </item>
+      <item> who is considered to be the first computer programmer </item>
+      <item> whats the origin of the comic sans font </item>
+      <item> why is canada named canada </item>
+      <item> where is the hotel de glace located </item>
+      <item> what is a chatbot </item>
+      <item> what else is montreal called </item>
+      <item> how many tons of ice are required to build the hotel de glace </item>
+      <item> who created the python programming language </item>
+      <item> why is elon musk is worried about ais impact on humanity </item>
+      <item> whos the most handsome person in ca </item>
+      <item> do you think robots are a threat to humanity </item>
+      <item> how long is yonge street in ontario </item>
+      <item> what is a mechanical knight </item>
+      <item> where is canadas only desert </item>
+      <item> who is the inventor of the apple i microcomputer </item>
+      <item> how big is canadas only desert </item>
+      <item> what does captcha stands for </item>
+      <item> where was the blackberry smartphone developed </item>
+      <item> what country holds the record for the most gold medals at the winter olympics </item>
+      <item> how many tons of snow are required to build the hotel de glace </item>
+      <item> who created the c programming language </item>
+      <item> in what year was canada invaded by the usa for the first time </item>
+      <item> who coined the term beatlemania </item>
+      <item> how many time zones are there in canada </item>
+      <item> which was the first computer with a hard disk drive </item>
+      <item> what was the first computer in pass the turing test </item>
+      <item> how big is the rcmp </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_cmancmd_2">
+    <one-of>
+      <item> to the </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_deliver_6">
+    <one-of>
+      <item> to </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_cmancmd_1">
+    <one-of>
+      <item> the </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_cmancmd_6">
+    <one-of>
+      <item> me the object </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_cmancmd_4">
+    <one-of>
+      <item> me the </item>
+   </one-of>
+  </rule>
+
+  <rule id="vbtake">
+    <one-of>
+      <item> get </item>
+      <item> take </item>
+      <item> pick up </item>
+      <item> grasp </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_incomplete_7">
+    <one-of>
+      <item> and </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_followout_3">
+    <one-of>
+      <item> and </item>
+   </one-of>
+  </rule>
+
+  <rule id="partyhost">
+    <one-of>
+      <item> <ruleref uri="#vbmeet"/> <ruleref uri="#item"/> <ruleref uri="#sentence_partyhost_1"/> <ruleref uri="#item"/> <ruleref uri="#sentence_partyhost_4"/> <ruleref uri="#pron"/> <ruleref uri="#sentence_partyhost_5"/>  </item>
+      <item> <ruleref uri="#vbmeet"/> <ruleref uri="#item"/> <ruleref uri="#sentence_partyhost_1"/> <ruleref uri="#item"/> <ruleref uri="#sentence_partyhost_6"/> <ruleref uri="#vbguide"/> <ruleref uri="#pron"/> <ruleref uri="#sentence_partyhost_3"/> <ruleref uri="#item"/> <ruleref uri="#taxi"/>  </item>
+      <item> <ruleref uri="#vbmeet"/> <ruleref uri="#item"/> <ruleref uri="#sentence_partyhost_1"/> <ruleref uri="#item"/> <ruleref uri="#sentence_partyhost_2"/> <ruleref uri="#pron"/> <ruleref uri="#sentence_partyhost_3"/> <ruleref uri="#item"/> <ruleref uri="#sentence_partyhost_1"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#vbmeet"/> <ruleref uri="#item"/> <ruleref uri="#sentence_partyhost_1"/> <ruleref uri="#door"/> <ruleref uri="#sentence_partyhost_2"/> <ruleref uri="#pron"/> <ruleref uri="#sentence_partyhost_3"/> <ruleref uri="#phpeopler"/>  </item>
+      <item> <ruleref uri="#vbserve"/> <ruleref uri="#sentence_partyhost_8"/> <ruleref uri="#phpeopler"/>  </item>
+      <item> <ruleref uri="#vbserve"/> <ruleref uri="#sentence_partyhost_7"/> <ruleref uri="#phpeopler"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="guideto">
+    <one-of>
+      <item> <ruleref uri="#vbguide"/> <ruleref uri="#pron"/> <ruleref uri="#sentence_guideto_1"/> <ruleref uri="#item"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_followout_4">
+    <one-of>
+      <item> back </item>
+   </one-of>
+  </rule>
+
+  <rule id="vbdeliver">
+    <one-of>
+      <item> <ruleref uri="#sentence_vbdeliver_1"/>  </item>
+      <item> <ruleref uri="#vbbring"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="door">
+    <one-of>
+      <item> back entrance </item>
+      <item> rear door </item>
+      <item> front door </item>
+      <item> main entrance </item>
+      <item> front entrance </item>
+      <item> main door </item>
+      <item> back door </item>
+      <item> rear entrance </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_cmancmd_5">
+    <one-of>
+      <item> object </item>
+   </one-of>
+  </rule>
+
+  <rule id="vbserve">
+    <one-of>
+      <item> serve </item>
+      <item> arrange </item>
+      <item> provide </item>
+      <item> distribute </item>
+      <item> give </item>
+      <item> deliver </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_fllmeet_2">
+    <one-of>
+      <item> find a person </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_followout_2">
+    <one-of>
+      <item> at the </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_fllmeet_1">
+    <one-of>
+      <item> meet </item>
+   </one-of>
+  </rule>
+
+  <rule id="oprop">
+    <one-of>
+      <item> heaviest </item>
+      <item> thinnest </item>
+      <item> lightest </item>
+      <item> largest </item>
+      <item> smallest </item>
+      <item> biggest </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_followout_1">
+    <one-of>
+      <item> meet </item>
+   </one-of>
+  </rule>
+
+  <rule id="whowhere">
+    <one-of>
+      <item> <ruleref uri="#sentence_whowhere_1"/> <ruleref uri="#gesture"/> <ruleref uri="#sentence_whowhere_2"/> <ruleref uri="#item"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_cmanobjsrc_1">
+    <one-of>
+      <item> from the </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_someone_1">
+    <one-of>
+      <item> me </item>
+   </one-of>
+  </rule>
+
+  <rule id="phpeople">
+    <one-of>
+      <item> all the children </item>
+      <item> everyone </item>
+      <item> all the women </item>
+      <item> all the men </item>
+      <item> all the elders </item>
+      <item> all the guests </item>
+      <item> all the people </item>
+   </one-of>
+  </rule>
+
+  <rule id="relpos">
+    <one-of>
+      <item> under </item>
+      <item> behind </item>
+      <item> above </item>
+      <item> at the right of </item>
+      <item> on top of </item>
+      <item> at the left of </item>
+   </one-of>
+  </rule>
+
+  <rule id="vbplace">
+    <one-of>
+      <item> place </item>
+      <item> put </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_deliver_9">
+    <one-of>
+      <item> my </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_take_1">
+    <one-of>
+      <item> the </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_deliver_7">
+    <one-of>
+      <item> from the </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_deliver_4">
+    <one-of>
+      <item> on the </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_deliver_5">
+    <one-of>
+      <item> me the </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_deliver_2">
+    <one-of>
+      <item> it on the </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_answer_1">
+    <one-of>
+      <item> answer a question </item>
+   </one-of>
+  </rule>
+
+  <rule id="vbtakeout">
+    <one-of>
+      <item> take out </item>
+      <item> dump </item>
+   </one-of>
+  </rule>
+
+  <rule id="vbguide">
+    <one-of>
+      <item> take </item>
+      <item> lead </item>
+      <item> escort </item>
+      <item> guide </item>
+      <item> accompany </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_findp_1">
+    <one-of>
+      <item> a </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_findp_2">
+    <one-of>
+      <item> a person </item>
+   </one-of>
+  </rule>
+
+  <rule id="vbbring">
+    <one-of>
+      <item> give </item>
+      <item> bring </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_guideto_1">
+    <one-of>
+      <item> to the </item>
+   </one-of>
+  </rule>
+
+  <rule id="take">
+    <one-of>
+      <item> <ruleref uri="#vbtake"/> <ruleref uri="#sentence_take_1"/> <ruleref uri="#item"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="fllwdest">
+    <one-of>
+      <item> <ruleref uri="#fllwhdst"/>  </item>
+      <item> <ruleref uri="#sentence_fllwdest_1"/> <ruleref uri="#item"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_gdwhere_4">
+    <one-of>
+      <item> you will find </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_gdwhere_3">
+    <one-of>
+      <item> you can find </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_gdwhere_2">
+    <one-of>
+      <item> at the </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_gdwhere_1">
+    <one-of>
+      <item> you may find </item>
+   </one-of>
+  </rule>
+
+  <rule id="answer">
+    <one-of>
+      <item> <ruleref uri="#sentence_answer_1"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="vbfind">
+    <one-of>
+      <item> locate </item>
+      <item> look for </item>
+      <item> find </item>
+   </one-of>
+  </rule>
+
+  <rule id="vbcleanup">
+    <one-of>
+      <item> neaten </item>
+      <item> clean out </item>
+      <item> clean up </item>
+      <item> tidy op </item>
+      <item> order </item>
+   </one-of>
+  </rule>
+
+  <rule id="fllwhdst">
+    <one-of>
+      <item> <ruleref uri="#sentence_fllwhdst_1"/> <ruleref uri="#item"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="polite">
+    <one-of>
+      <item> could you </item>
+      <item> please </item>
+      <item> robot please </item>
+      <item> could you please </item>
+   </one-of>
+  </rule>
+
+  <rule id="vbgopl">
+    <one-of>
+      <item> navigate </item>
+      <item> go </item>
+   </one-of>
+  </rule>
+
+  <rule id="goroom">
+    <one-of>
+      <item> <ruleref uri="#vbgopl"/> <ruleref uri="#sentence_goroom_1"/> <ruleref uri="#item"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_place_1">
+    <one-of>
+      <item> it on the </item>
+   </one-of>
+  </rule>
+
+  <rule id="followout">
+    <one-of>
+      <item> <ruleref uri="#sentence_followout_1"/> <ruleref uri="#item"/> <ruleref uri="#sentence_followout_2"/> <ruleref uri="#item"/> <ruleref uri="#vbfollow"/> <ruleref uri="#pron"/> <ruleref uri="#sentence_followout_3"/> <ruleref uri="#goroom"/>  </item>
+      <item> <ruleref uri="#sentence_followout_1"/> <ruleref uri="#item"/> <ruleref uri="#sentence_followout_2"/> <ruleref uri="#item"/> <ruleref uri="#vbfollow"/> <ruleref uri="#pron"/> <ruleref uri="#sentence_followout_3"/> <ruleref uri="#vbguide"/> <ruleref uri="#pron"/> <ruleref uri="#sentence_followout_4"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="abspos">
+    <one-of>
+      <item> left most </item>
+      <item> right most </item>
+   </one-of>
+  </rule>
+
+  <rule id="sentence_fllwhdst_1">
+    <one-of>
+      <item> to the </item>
+   </one-of>
+  </rule>
+
+  <rule id="man">
+    <one-of>
+      <item> <ruleref uri="#deliver"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="incomplete">
+    <one-of>
+      <item> <ruleref uri="#vbfollow"/> <ruleref uri="#item"/> <ruleref uri="#sentence_incomplete_1"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#sentence_incomplete_6"/> <ruleref uri="#item"/> <ruleref uri="#sentence_incomplete_7"/> <ruleref uri="#vbguide"/> <ruleref uri="#pron"/>  </item>
+      <item> <ruleref uri="#vbbring"/> <ruleref uri="#sentence_incomplete_3"/> <ruleref uri="#item"/>  </item>
+      <item> <ruleref uri="#gobeacon"/> <ruleref uri="#sentence_incomplete_6"/> <ruleref uri="#item"/> <ruleref uri="#sentence_incomplete_7"/> <ruleref uri="#vbguide"/> <ruleref uri="#pron"/>  </item>
+      <item> <ruleref uri="#vbdeliver"/> <ruleref uri="#item"/> <ruleref uri="#sentence_incomplete_4"/> <ruleref uri="#someone"/>  </item>
+      <item> <ruleref uri="#vbguide"/> <ruleref uri="#item"/> <ruleref uri="#sentence_incomplete_1"/> <ruleref uri="#item"/> <ruleref uri="#item"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="talk">
+    <one-of>
+      <item> <ruleref uri="#speak"/>  </item>
+      <item> <ruleref uri="#answer"/>  </item>
+   </one-of>
+  </rule>
+
+  <rule id="gesture">
+    <one-of>
+      <item> pointing to the right </item>
+      <item> raising their left arm </item>
+      <item> waving </item>
+      <item> raising their right arm </item>
+      <item> pointing to the left </item>
+   </one-of>
+  </rule>
+
+</grammar>

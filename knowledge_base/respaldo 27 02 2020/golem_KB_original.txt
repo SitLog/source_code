@@ -1,0 +1,125 @@
+[
+class(top, none, [], [], []),
+
+class(entity, top, [], [], []),
+
+class(human, entity, [], [], [
+	[id=>brian,[num_id=>1, gender=>men, oldest=>1, youngest=>20, smallest=>1, biggest=>20, highest=>20, tallest=>20, heaviest=>20, lightest=>1],[]],
+	[id=>michael,[num_id=>2, gender=>men, oldest=>2, youngest=>19, smallest=>2, biggest=>19, highest=>19, tallest=>19, heaviest=>19, lightest=>2],[]],
+	[id=>christopher,[num_id=>3, gender=>men, oldest=>3, youngest=>18, smallest=>3, biggest=>18, highest=>18, tallest=>18, heaviest=>18, lightest=>3],[]],
+	[id=>william,[num_id=>4, gender=>men, oldest=>4, youngest=>17, smallest=>4, biggest=>17, highest=>17, tallest=>17, heaviest=>17, lightest=>4],[]],
+	[id=>john,[num_id=>5, gender=>men, oldest=>5, youngest=>16, smallest=>5, biggest=>16, highest=>16, tallest=>16, heaviest=>16, lightest=>5,favorite_drink=>coffe],[]],
+	[id=>david,[num_id=>6, gender=>men, oldest=>6, youngest=>15, smallest=>6, biggest=>15, highest=>15, tallest=>15, heaviest=>15, lightest=>6],[]],
+	[id=>james,[num_id=>7, gender=>men, oldest=>7, youngest=>14, smallest=>7, biggest=>14, highest=>14, tallest=>14, heaviest=>14, lightest=>7],[]],
+	[id=>robert,[num_id=>8, gender=>men, oldest=>8, youngest=>13, smallest=>8, biggest=>13, highest=>13, tallest=>13, heaviest=>13, lightest=>8],[]],
+	[id=>scott,[num_id=>9, gender=>men, oldest=>9, youngest=>12, smallest=>9, biggest=>12, highest=>12, tallest=>12, heaviest=>12, lightest=>9],[]],
+	[id=>richard,[num_id=>10, gender=>men, oldest=>10, youngest=>11, smallest=>10, biggest=>11, highest=>11, tallest=>11, heaviest=>11, lightest=>10],[]],
+	[id=>angie,[num_id=>11, gender=>women, oldest=>11, youngest=>10, smallest=>11, biggest=>10, highest=>10, tallest=>10, heaviest=>10, lightest=>11],[]],
+	[id=>mary,[num_id=>12, gender=>women, oldest=>12, youngest=>9, smallest=>12, biggest=>9, highest=>9, tallest=>9, heaviest=>9, lightest=>12],[]],
+	[id=>amy,[num_id=>13, gender=>women, oldest=>13, youngest=>8, smallest=>13, biggest=>8, highest=>8, tallest=>8, heaviest=>8, lightest=>13],[]],
+	[id=>kimberly,[num_id=>14, gender=>women, oldest=>14, youngest=>7, smallest=>14, biggest=>7, highest=>7, tallest=>7, heaviest=>7, lightest=>14],[]],
+	[id=>lisa,[num_id=>15, gender=>women, oldest=>15, youngest=>6, smallest=>15, biggest=>6, highest=>6, tallest=>6, heaviest=>6, lightest=>15],[]],
+	[id=>melissa,[num_id=>16, gender=>women, oldest=>16, youngest=>5, smallest=>16, biggest=>5, highest=>5, tallest=>5, heaviest=>5, lightest=>16],[]],
+	[id=>michelle,[num_id=>17, gender=>women, oldest=>17, youngest=>4, smallest=>17, biggest=>4, highest=>4, tallest=>4, heaviest=>4, lightest=>17],[]],
+	[id=>jennifer,[num_id=>18, gender=>women, oldest=>18, youngest=>3, smallest=>18, biggest=>3, highest=>3, tallest=>3, heaviest=>3, lightest=>18],[]],
+	[id=>elizabeth,[num_id=>19, gender=>women, oldest=>19, youngest=>2, smallest=>19, biggest=>2, highest=>2, tallest=>2, heaviest=>2, lightest=>19],[]],
+	[id=>julie,[num_id=>20, gender=>women, oldest=>20, youngest=>1, smallest=>20, biggest=>1, highest=>1, tallest=>1, heaviest=>1, lightest=>20],[]],
+	[id=>first,[num_id=>31, gender=>men, oldest=>110, youngest=>210, smallest=>110, biggest=>210, highest=>210, tallest=>210, heaviest=>210, lightest=>110],[]],
+	[id=>second,[num_id=>32, gender=>men, oldest=>120, youngest=>220, smallest=>120, biggest=>220, highest=>220, tallest=>220, heaviest=>220, lightest=>120],[]]
+	]),
+
+class(robot, entity, [], [], [
+	[id=>golem,[in=>waiting_position, attending_to=>nobody, has=>nothing],[]]
+	]),
+	
+class(party, entity, [], [], [
+	[id=>the_party,[new_guest=>_,guests=>[john],sit_places=>[sofa,chair,smallchair],free_places=>_],[]]
+	]),
+
+class(place, entity, [], [], []),
+
+class(room, place, [], [], [
+	[id=>bedroom,[name=>bedroom, doors=>2, smallest=>4, biggest=>1, main_point=>desk, object_path=>[desk,bookshelf,stove], human_path=>[desk,bookshelf,stove]],[]],
+	[id=>kitchen,[name=>kitchen, doors=>0, smallest=>1, biggest=>4, main_point=>stove, object_path=>[stove,washbasin,dining_table], human_path=>[stove,washbasin,dining_table]],[]],
+	[id=>'living room',[name=>'living room', doors=>0, smallest=>2, biggest=>3, main_point=>bookshelf, object_path=>[bookshelf,washbasin,cabinet], human_path=>[bookshelf,washbasin,cabinet]],[]],
+	[id=>'dining room',[name=>'dining room', doors=>2, smallest=>3, biggest=>2, main_point=>dining_table, object_path=>[dining_table,desk,bookshelf], human_path=>[dining_table,desk,bookshelf]],[]],
+	[id=>exit,[name=>exit, doors=>0, smallest=>5, biggest=>5, main_point=>exit, object_path=>[exit], human_path=>[exit]],[]],
+	[id=>corridor,[name=>corridor, doors=>0, smallest=>4, biggest=>2, main_point=>cabinet, object_path=>[cabinet,dining_table,desk], human_path=>[cabinet,dining_table,desk]],[]],
+	[id=>bathroom,[name=>bathroom, doors=>0, smallest=>4, biggest=>2, main_point=>washbasin, object_path=>[washbasin,bookshelf,cabinet], human_path=>[washbasin,bookshelf,cabinet]],[]]
+	]),
+
+class(points, place, [coordinate=>[0.0,0.0,0.0]], [], [
+	[id=>point1,[coordinate=>[0.5,0.0,0.0]],[]]
+	]),
+
+class(location, place, [height=>135], [], []),
+
+class(other, location, [], [], [
+	[id=>desk,[amount=>1, position=>desk, name=>desk, height=>90],[in_room=>bedroom]],
+	[id=>'dining table',[amount=>1, position=>dining_table, name=>'dining table', height=>90],[in_room=>'dining room']],
+	[id=>stove,[amount=>1, position=>stove, name=>stove, height=>90],[in_room=>kitchen]],
+	[id=>cabinet,[amount=>1, position=>cabinet, name=>cabinet, height=>90],[in_room=>corridor]],
+	[id=>bookshelf,[amount=>1, position=>bookshelf, name=>bookshelf, height=>90],[in_room=>'living room']],
+	[id=>washbasin,[amount=>1, position=>washbasin, name=>washbasin, height=>90],[in_room=>bathroom]],
+	[id=>exit,[amount=>1, position=>exit, name=>exit, height=>95],[in_room=>exit]],
+	[id=>exit2,[amount=>1, position=>exit2, name=>exit2, height=>95],[in_room=>exit]]
+	]),
+
+class(object, entity, [graspable=>yes], [], []),
+
+class(toiletries, object, [], [in_room=>bathroom, in_location=>washbasin], [
+	[id=>bodymoisture,[object_mode=>moped, amount=>1, color=>gray, smallest=>4, biggest=>25, lightest=>4, heaviest=>25],[]],
+	[id=>shoecleaner,[object_mode=>moped, amount=>1, color=>brown, smallest=>5, biggest=>24, lightest=>5, heaviest=>24],[]]
+	]),
+
+class(snacks, object, [], [in_room=>'living room', in_location=>bookshelf], [
+	[id=>bisquits,[object_mode=>moped, amount=>1, color=>blue, smallest=>14, biggest=>15, lightest=>14, heaviest=>15],[]],
+	[id=>chips,[object_mode=>moped, amount=>1, color=>blue, smallest=>15, biggest=>14, lightest=>15, heaviest=>14],[]]
+	]),
+
+class(drinks, object, [], [in_room=>kitchen, in_location=>stove], [
+	[id=>malz,[object_mode=>moped, amount=>1, color=>brown, smallest=>28, biggest=>1, lightest=>28, heaviest=>1],[]],
+	[id=>coke,[object_mode=>moped, amount=>1, color=>red, smallest=>22, biggest=>7, lightest=>22, heaviest=>7],[]],
+	[id=>valle,[object_mode=>moped, amount=>1, color=>colorful, smallest=>21, biggest=>8, lightest=>21, heaviest=>8],[]],
+	[id=>jumex,[object_mode=>moped, amount=>1, color=>blue, smallest=>20, biggest=>9, lightest=>20, heaviest=>9],[]],
+	[id=>coffee,[object_mode=>moped, amount=>1, color=>blue, smallest=>19, biggest=>10, lightest=>19, heaviest=>10],[]]
+	]),
+
+class(food, object, [], [in_room=>kitchen, in_location=>stove], [
+	[id=>cheese,[object_mode=>moped, amount=>1, color=>green, smallest=>16, biggest=>13, lightest=>16, heaviest=>13],[]],
+	[id=>soup,[object_mode=>moped, amount=>1, color=>white, smallest=>18, biggest=>11, lightest=>18, heaviest=>11],[]],
+	[id=>noodles,[object_mode=>moped, amount=>1, color=>colorful, smallest=>18, biggest=>11, lightest=>18, heaviest=>11],[]],
+	[id=>cheese,[object_mode=>moped, amount=>1, color=>colorful, smallest=>18, biggest=>11, lightest=>18, heaviest=>11],[]],
+	[id=>kellogs,[object_mode=>moped, amount=>1, color=>brown, smallest=>18, biggest=>11, lightest=>18, heaviest=>11],[]]
+	]),
+
+class(fruits, object, [], [in_room=>'dining room', in_location=>dining_table], [
+	[id=>apple,[object_mode=>moped, amount=>1, color=>red, smallest=>25, biggest=>4, heaviest=>25, lightest=>4],[]],
+	[id=>melon,[object_mode=>moped, amount=>1, color=>green, smallest=>12, biggest=>17, heaviest=>12, lightest=>17],[]]
+	]),
+
+class(cutlery, object, [], [in_room=>'dining room', in_location=>dining_table], [
+	[id=>knife,[object_mode=>moped, amount=>1, color=>silver, smallest=>25, biggest=>4, heaviest=>25, lightest=>4],[]],
+	[id=>napkin,[object_mode=>moped, amount=>1, color=>white, smallest=>12, biggest=>17, heaviest=>12, lightest=>17],[]]
+	]),
+
+class(tableware, object, [], [in_room=>'dining room', in_location=>dining_table], [
+	[id=>bowl,[object_mode=>moped, amount=>1, color=>red, smallest=>25, biggest=>4, heaviest=>25, lightest=>4],[]],
+	[id=>glass,[object_mode=>moped, amount=>1, color=>green, smallest=>12, biggest=>17, heaviest=>12, lightest=>17],[]]
+	]),
+
+class(container, object, [], [in_room=>kitchen, in_location=>stove], [
+	[id=>box,[object_mode=>moped, amount=>1, color=>yellow, smallest=>6, biggest=>23, heaviest=>6, lightest=>23],[]],
+	[id=>tray,[object_mode=>moped, amount=>1, color=>white, smallest=>23, biggest=>6, heaviest=>23, lightest=>6],[]],
+	[id=>bag,[object_mode=>moped, amount=>1, color=>'red and brown', smallest=>7, biggest=>22, heaviest=>7, lightest=>22],[]]
+	]),
+
+class(crowd, entity, [], [], [
+	[id=>crowd,[persons=>0, men=>0, women=>0, children=>0, adults=>0, elders=>0, boys=>0, girls=>0],[]]
+	]),
+
+class(crowd_person, entity, [], [], [
+	[id=>person_1,[gender=>men, pose=>sitting, gesture=>waving, age=>18, color=>blue],[]],
+	[id=>person_2,[gender=>men, pose=>sitting, gesture=>waving, age=>18, color=>blue],[]]
+	])
+]

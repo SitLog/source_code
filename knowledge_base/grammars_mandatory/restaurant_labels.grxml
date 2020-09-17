@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<grammar version="1.0" xml:lang="en-US" mode="voice" root="labels" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+  <rule id="labels">
+    <one-of>
+      <item> <ruleref uri="restaurant_tables.grxml"/> <tag>out=rules.latest()</tag> </item>
+      <item> <ruleref uri="restaurant_pickups.grxml"/> <tag>out=rules.latest()</tag> </item>
+    </one-of>
+  </rule>
+</grammar>

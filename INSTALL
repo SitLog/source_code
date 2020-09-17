@@ -1,0 +1,20 @@
+
+SitLog
+-----------
+
+SitLog: Programming Language for Service Robots
+
+Requirements
+============
+
+1. Swi Prolog
+  $ sudo apt-get install swi-prolog
+
+2. Give execution permission to scripts
+
+  $ cd scripts/
+  $ chmod a+x paper
+  $ chmod a+x robocup2012
+
+
+

@@ -1,0 +1,32 @@
+[
+	 id ==> getlocation,
+	 type ==> listening(location),
+	 arcs ==> [
+	                said(H): [say(['Delivering to '),lasertiltv(-60.0)] => going_to_door(H),
+	                said(nothing): empty => getlocation
+		  ]
+    ],
+    [
+	 id ==> getlocation,
+	 type ==> neutral,
+	 arcs ==> [
+	                empty:[listening(X)] => check_list(X)
+	                
+		  ]
+    ],
+    [
+	 id ==> check_list(nothing),
+	 type ==> neutral,
+	 arcs ==> [
+	                empty:empty => getlocation
+	                
+		  ]
+    ],
+    [
+	 id ==> check_list(X),
+	 type ==> neutral,
+	 arcs ==> [
+	                empty:[say(['Delivering to ', X]),lasertiltv(-60.0)] => going_to_door
+	                
+		  ]
+    ],

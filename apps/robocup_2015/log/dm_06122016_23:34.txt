@@ -1,0 +1,264 @@
+
+HEADER
+---------------------------------------------------------------------------------
+
+TIME:
+    20161206-23:34:12.401767015
+VERSION:
+    _G21881
+PROJDIR:
+    apps/robocup_2015
+IN ARG:
+    now
+KB:
+    knowledge_base/knowledge_base_robocup.pl
+USERFUNC:
+    user_functions.pl
+BASACTS:
+    basic_actions.pl
+TEMPLATE:
+    templates.pl
+GLOBAL VARS:
+    global_vars.pl
+
+START DIALOGUE
+---------------------------------------------------------------------------------
+
+TIME:
+    20161206-23:34:12.401840925
+
+SITUATUATIONS
+---------------------------------------------------------------------------------
+
+
+SIT
+=================================================================================
+
+NAME:
+    is
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    All the system working
+INITIME:
+    20161206-23:34:12.404731512
+SCREEN:
+    All the system working
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    These are the options
+INITIME:
+    20161206-23:34:12.404762268
+SCREEN:
+    These are the options
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    in, fo, cp, cl, res, gpsr, demo, see_object, detect_face, memorize_face, recognize_face, see_face, see, ask
+INITIME:
+    20161206-23:34:12.40478897
+SCREEN:
+    in, fo, cp, cl, res, gpsr, demo, see_object, detect_face, memorize_face, recognize_face, see_face, see, ask
+
+SIT
+=================================================================================
+
+NAME:
+    k2(ricardo)
+TYPE:
+    keyboard
+INPUT:
+    ok
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    none
+NAME:
+    empty
+
+SIT
+=================================================================================
+
+NAME:
+    execute(ricardo)
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    Executing test: 
+INITIME:
+    20161206-23:34:14.051395177
+SCREEN:
+    Executing test: 
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    ricardo_main
+INITIME:
+    20161206-23:34:14.051425457
+SCREEN:
+    ricardo_main
+
+SIT
+=================================================================================
+
+NAME:
+    ricardo_main
+TYPE:
+    recursive
+
+START DIALOGUE
+---------------------------------------------------------------------------------
+
+TIME:
+    20161206-23:34:14.059786319
+
+SITUATUATIONS
+---------------------------------------------------------------------------------
+
+
+SIT
+=================================================================================
+
+NAME:
+    ms1
+TYPE:
+    neutral
+
+SIT
+=================================================================================
+
+NAME:
+    ms([Best model: {moveFromTo(s1,shelf3,start,"N"), moveFromTo(i1,shelf1,shelf2,"N")},Cost ([Weight:Level]): <[1:1]>])
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    none
+NAME:
+    empty
+
+SIT
+=================================================================================
+
+NAME:
+    ms2
+TYPE:
+    neutral
+
+SIT
+=================================================================================
+
+NAME:
+    ms4([Best model: {action(6,drop,s1), action(8,drop,i1), action(1,grab,s1), action(4,grab,i1), action(0,search,s1), action(3,search,i1), action(2,move,shelf1), action(5,move,start), action(7,move,shelf2)},Cost ([Weight:Level]): <[9:1]>])
+TYPE:
+    neutral
+
+SIT
+=================================================================================
+
+NAME:
+    ms3([Best model: {action(6,drop,s1), action(8,drop,i1), action(1,grab,s1), action(4,grab,i1), action(0,search,s1), action(3,search,i1), action(2,move,shelf1), action(5,move,start), action(7,move,shelf2)},Cost ([Weight:Level]): <[9:1]>])
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    say
+INITIME:
+    20161206-23:34:14.266075611
+MESSAGE:
+    Best model: {action(6,drop,s1), action(8,drop,i1), action(1,grab,s1), action(4,grab,i1), action(0,search,s1), action(3,search,i1), action(2,move,shelf1), action(5,move,start), action(7,move,shelf2)} Cost ([Weight:Level]): <[9:1]>
+FINTIME:
+    20161206-23:34:40.533942937
+
+SIT
+=================================================================================
+
+NAME:
+    [id==>fs,type==>final]
+TYPE:
+    final
+
+END DIALOGUE
+---------------------------------------------------------------------------------
+
+OUTSYS:
+    []
+TIME:
+    20161206-23:34:40.535272836
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    none
+NAME:
+    empty
+
+SIT
+=================================================================================
+
+NAME:
+    final
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    Dialogue model finished, type ok to try again
+INITIME:
+    20161206-23:34:40.541955232
+SCREEN:
+    Dialogue model finished, type ok to try again
+
+SIT
+=================================================================================
+
+NAME:
+    [id==>fs,type==>final]
+TYPE:
+    final
+
+END DIALOGUE
+---------------------------------------------------------------------------------
+
+OUTSYS:
+    [gpsr==>gpsr_main,speech==>speech_main,robozoo==>robozoo_main,nav==>navigation_main,follow==>follow_main,robozoo==>robozoo_main,eduardo==>eduardo_main,ricardo==>ricardo_main,restaurant==>restaurant_main,test==>test]
+TIME:
+    20161206-23:34:40.543897628

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<grammar version="1.0" xml:lang="en-US" mode="voice" root="commands" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+  <rule id="objects">
+    <one-of>
+      <item> <ruleref uri="food.grxml"/> </item>
+      <item> <ruleref uri="drinks.grxml"/> </item>
+    </one-of>
+  </rule>
+
+  <rule id="commands">
+    <one-of>
+      <item> <ruleref uri="#bring_syn"/> <ruleref uri="#objects"/> <tag>out="combo('"+rules.latest()</tag> <ruleref uri="#conjs"/> <ruleref uri="#objects"/> <tag>out+= "','" + rules.latest() +"')"</tag></item>
+      <item> <ruleref uri="#bring_syn"/> <ruleref uri="#objects"/> <tag>out="drink('"+rules.latest()+"')"</tag> </item>
+    </one-of>
+  </rule>
+  <rule id="bring_syn">
+    <one-of>
+      <item> bring me a</item>
+      <item> bring me </item>
+      <item> bring us </item>
+      <item> bring us a </item>
+    </one-of>
+  </rule>
+  <rule id="conjs">
+    <one-of>
+      <item> and </item>
+      <item> and a </item>
+      <item> with </item>
+      <item> with a </item>
+      <item> as well as </item>
+      <item> as well as a </item>
+    </one-of>
+  </rule>
+</grammar>

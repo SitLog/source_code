@@ -1,0 +1,394 @@
+
+HEADER
+---------------------------------------------------------------------------------
+
+TIME:
+    201903024-18:7:55.101699352
+VERSION:
+    _G38767
+PROJDIR:
+    apps/german_open_2019
+IN ARG:
+    now
+KB:
+    knowledge_base/knowledge_base_robocup.pl
+USERFUNC:
+    user_functions.pl
+BASACTS:
+    basic_actions.pl
+TEMPLATE:
+    templates.pl
+GLOBAL VARS:
+    global_vars.pl
+
+START DIALOGUE
+---------------------------------------------------------------------------------
+
+TIME:
+    201903024-18:7:55.101788759
+
+SITUATUATIONS
+---------------------------------------------------------------------------------
+
+
+SIT
+=================================================================================
+
+NAME:
+    is
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    All the system working
+INITIME:
+    201903024-18:7:55.104000329
+SCREEN:
+    All the system working
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    These are the options
+INITIME:
+    201903024-18:7:55.104037523
+SCREEN:
+    These are the options
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    in, fo, cp, cl, res, gpsr, demo, see_object, detect_face, memorize_face, recognize_face, see_face, see, ask
+INITIME:
+    201903024-18:7:55.104073762
+SCREEN:
+    in, fo, cp, cl, res, gpsr, demo, see_object, detect_face, memorize_face, recognize_face, see_face, see, ask
+
+SIT
+=================================================================================
+
+NAME:
+    k2(serving_drinks)
+TYPE:
+    keyboard
+INPUT:
+    halt
+halt, INPUT:
+    halt
+
+SIT
+=================================================================================
+
+NAME:
+    k2(serving_drinks)
+TYPE:
+    keyboard
+INPUT:
+    exit
+exit, INPUT:
+    halt
+
+SIT
+=================================================================================
+
+NAME:
+    k2(serving_drinks)
+TYPE:
+    keyboard
+INPUT:
+    end_of_file
+end_of_file, INPUT:
+    end_of_file
+
+SIT
+=================================================================================
+
+NAME:
+    k2(serving_drinks)
+TYPE:
+    keyboard
+INPUT:
+    end_of_file
+end_of_file, INPUT:
+    end_of_file
+
+SIT
+=================================================================================
+
+NAME:
+    k2(serving_drinks)
+TYPE:
+    keyboard
+INPUT:
+    end_of_file
+end_of_file, INPUT:
+    end_of_file
+
+SIT
+=================================================================================
+
+NAME:
+    k2(serving_drinks)
+TYPE:
+    keyboard
+INPUT:
+    ok
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    none
+NAME:
+    empty
+
+SIT
+=================================================================================
+
+NAME:
+    execute(serving_drinks)
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    Executing test: 
+INITIME:
+    201903024-18:8:6.577787876
+SCREEN:
+    Executing test: 
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    serving_drinks_main
+INITIME:
+    201903024-18:8:6.57783699
+SCREEN:
+    serving_drinks_main
+
+SIT
+=================================================================================
+
+NAME:
+    serving_drinks_main
+TYPE:
+    recursive
+
+START DIALOGUE
+---------------------------------------------------------------------------------
+
+TIME:
+    201903024-18:8:6.581053256
+
+SITUATUATIONS
+---------------------------------------------------------------------------------
+
+
+SIT
+=================================================================================
+
+NAME:
+    is
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    tiltv
+ANGLE:
+    -30.0
+-30.0, tiltv, ANGLE:
+    -30.0
+-30.0, movement, NAME:
+    tiltv
+ANGLE:
+    -30.0
+-30.0, tiltv, ANGLE:
+    -30.0
+-30.0, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    tiltv
+ANGLE:
+    -30.0
+-30.0, tiltv, ANGLE:
+    -30.0
+-30.0, movement, NAME:
+    tiltv
+ANGLE:
+    -30.0
+-30.0, tiltv, ANGLE:
+    -30.0
+-30.0, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    doesnt_exist
+NAME:
+    tiltv
+ANGLE:
+    -30.0
+-30.0, tiltv, ANGLE:
+    -30.0
+-30.0, doesnt_exist, NAME:
+    tiltv
+ANGLE:
+    -30.0
+-30.0, tiltv, ANGLE:
+    -30.0
+-30.0, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    doesnt_exist
+NAME:
+    tiltv
+ANGLE:
+    -30.0
+-30.0, tiltv, ANGLE:
+    -30.0
+-30.0, doesnt_exist, NAME:
+    tiltv
+ANGLE:
+    -30.0
+-30.0, tiltv, ANGLE:
+    -30.0
+-30.0, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    tiltv
+ANGLE:
+    -30.0
+-30.0, tiltv, ANGLE:
+    -30.0
+-30.0, movement, NAME:
+    tiltv
+ANGLE:
+    -30.0
+-30.0, tiltv, ANGLE:
+    -30.0
+-30.0, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    tiltv
+ANGLE:
+    -30.0
+-30.0, tiltv, ANGLE:
+    -30.0
+-30.0, movement, NAME:
+    tiltv
+ANGLE:
+    -30.0
+-30.0, tiltv, ANGLE:
+    -30.0
+-30.0, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    doesnt_exist
+NAME:
+    tiltv
+ANGLE:
+    -30.0
+-30.0, tiltv, ANGLE:
+    -30.0
+-30.0, doesnt_exist, NAME:
+    tiltv
+ANGLE:
+    -30.0
+-30.0, tiltv, ANGLE:
+    -30.0
+-30.0, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    doesnt_exist
+NAME:
+    tiltv
+ANGLE:
+    -30.0
+-30.0, tiltv, ANGLE:
+    -30.0
+-30.0, doesnt_exist, NAME:
+    tiltv
+ANGLE:
+    -30.0
+-30.0, tiltv, ANGLE:
+    -30.0
+-30.0, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    say
+INITIME:
+    201903024-18:8:10.454890489
+MSG:
+    Hello I am golem, and I will be serving drinks today.
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    say
+INITIME:
+    201903024-18:8:10.455037593
+MSG:
+    I will first go to the bar.
+
+SIT
+=================================================================================
+
+NAME:
+    move(bar,_G116524)
+TYPE:
+    recursive
+
+START DIALOGUE
+---------------------------------------------------------------------------------
+
+TIME:
+    201903024-18:8:10.604918718
+
+SITUATUATIONS
+---------------------------------------------------------------------------------
+

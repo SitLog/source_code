@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<grammar version="1.0" xml:lang="en-US" mode="voice" root="questions" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+  <rule id="questions">
+    <one-of>	
+      <item> i will put a coke a heineken noodles and bisquits<tag>out.answer="b"</tag></item>
+      <item> do you have a bread product on sale <tag>out.answer="b"</tag></item>
+      <item> do you have mexican fritters<tag>out.answer="golem"</tag></item>
+      <item> do you have beer <tag>out.answer="c"</tag></item>
+      <item> do you have a drink for all ages <tag>out.answer="d"</tag></item>
+      <item> do you have cereal <tag>out.answer="e"</tag></item>
+	  <item> bring me a coke <tag>out.answer="e"</tag></item>
+	  <item> bring me a heineken <tag>out.answer="e"</tag></item>
+	  <item> bring me noodles <tag>out.answer="e"</tag></item>
+	  <item> bring me kellogs <tag>out.answer="e"</tag></item>
+	  <item> bring me bisquits <tag>out.answer="e"</tag></item>
+	  <item> golem bring me kellogs and a coke <tag>out.answer="e"</tag></item>
+      <item> no <tag>out.answer="f"</tag></item>
+    </one-of>
+  </rule>
+</grammar>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<grammar version="1.0" xml:lang="en-US" mode="voice" root="questions" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+  <rule id="questions">
+    <one-of>
+      <item> do you have a bread product on sale <tag>out.answer="berlin"</tag></item>
+      <item> do you have toilet paper <tag>out.answer="golem"</tag></item>
+      <item> do you have beer <tag>out.answer="to kick ass"</tag></item>
+      <item> do you have a drink for all ages <tag>out.answer="to kick ass"</tag></item>
+      <item> do you have cereal <tag>out.answer="to kick ass"</tag></item>
+      <item> no <tag>out.answer="to kick ass"</tag></item>
+      <item> bring me a coke <tag>out.answer="b"</tag></item>
+    </one-of>
+  </rule>
+</grammar>

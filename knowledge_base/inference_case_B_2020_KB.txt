@@ -1,0 +1,104 @@
+[
+	class(top,none,[],[],[]),
+	
+	class(object,top,[],[],[]),
+   
+        class(place,top,[],[],[]),
+
+	class(drinks,object,[],[ [associated_shelf=>shelf1,0] ],[
+		[id=>coke,[],[ [last_corroborated_position=>none,0] ]],
+		[id=>heineken,[],[ [last_corroborated_position=>shelf1,0] ]]
+		]),
+
+	class(food,object,[],[ [associated_shelf=>shelf2,0] ],[
+		[id=>noodles,[],[ [last_corroborated_position=>left_arm,0] ]],
+		[id=>kellogs,[],[ [last_corroborated_position=>none,0] ]]
+		]),
+
+        class(bread,object,[],[ [associated_shelf=>shelf3,0] ],[
+		[id=>bisquits,[],[ [last_corroborated_position=>none,0] ]]
+		]),
+
+	class(shelf,place,[],[],[
+		[id=>shelf1,[
+			[name=>'the shelf of drinks',0],
+	                [original_reported=>[coke,heineken],0],
+			[was_observed=>yes,0],
+			[belief=>none,0],
+			[observed_objects=>[heineken,noodles],0],
+			[unseen_objects=>[coke],0],
+			[misplaced_objects=>[noodles],0],
+			[missing_objects=>[coke],0],
+			[objects_after_manipulation=>none,0]
+			],[ [associated_class=>drinks,0] ]],
+		[id=>shelf2,[
+			[name=>'the shelf of food',0],
+			[original_reported=>[noodles,kellogs],0],
+			[was_observed=>no,0],
+			[belief=>[kellogs,coke],0],
+			[observed_objects=>none,0],
+			[unseen_objects=>none,0],
+			[misplaced_objects=>none,0],
+			[missing_objects=>none,0],
+			[objects_after_manipulation=>none,0] 
+			],[ [associated_class=>food,0] ]],
+		[id=>shelf3,[
+			[name=>'the shelf of bread',0],
+			[original_reported=>[bisquits],0],
+			[was_observed=>no,0],
+			[belief=>[bisquits],0],
+			[observed_objects=>none,0],
+			[unseen_objects=>none,0],
+			[misplaced_objects=>none,0],
+			[missing_objects=>none,0],
+			[objects_after_manipulation=>none,0] 
+			],[ [associated_class=>bread,0] ]]
+		]),
+
+	class(robot,top,[],[],[[id=>golem,[ [position=>shelf2,0] , [left_arm=>noodles,0] , [right_arm=>free,0] ],[]]]),
+
+	class(lists_of_control,top,[],[],[
+		[id=>all_misplaced_objects,[ [list=>[noodles],0] ],[]],
+		[id=>observed_shelves,[ [list=>[shelf1],0] ],[]],
+		[id=>pending_tasks,[ [list=>[coke,noodles],0] ],[]],
+		[id=>pending_client_orders,[ [list=>[coke],0] ],[]]
+		]),
+
+	class(actions,top,[],[],[]),
+
+	class(move,actions,[ [probability=>95,0] ],[],[
+		[id=>move1,[ [cost=>0,0] ],[ [from=>start,0] , [to=>start,0] ]],
+		[id=>move2,[ [cost=>1,0] ],[ [from=>start,0] , [to=>shelf1,0] ]],
+		[id=>move3,[ [cost=>2,0] ],[ [from=>start,0] , [to=>shelf2,0] ]],
+		[id=>move4,[ [cost=>3,0] ],[ [from=>start,0] , [to=>shelf3,0] ]],
+		[id=>move5,[ [cost=>1,0] ],[ [from=>shelf1,0] , [to=>start,0] ]],
+		[id=>move6,[ [cost=>0,0] ],[ [from=>shelf1,0] , [to=>shelf1,0] ]],
+		[id=>move7,[ [cost=>1,0] ],[ [from=>shelf1,0] , [to=>shelf2,0] ]],
+		[id=>move8,[ [cost=>2,0] ],[ [from=>shelf1,0] , [to=>shelf3,0] ]],
+		[id=>move9,[ [cost=>2,0] ],[ [from=>shelf2,0] , [to=>start,0] ]],
+		[id=>move10,[ [cost=>1,0] ],[ [from=>shelf2,0] , [to=>shelf1,0] ]],
+		[id=>move11,[ [cost=>0,0] ],[ [from=>shelf2,0] , [to=>shelf2,0] ]],
+		[id=>move12,[ [cost=>1,0] ],[ [from=>shelf2,0] , [to=>shelf3,0] ]],
+		[id=>move13,[ [cost=>3,0] ],[ [from=>shelf3,0] , [to=>start,0] ]],
+		[id=>move14,[ [cost=>2,0] ],[ [from=>shelf3,0] , [to=>shelf1,0] ]],
+		[id=>move15,[ [cost=>1,0] ],[ [from=>shelf3,0] , [to=>shelf2,0] ]],
+		[id=>move16,[ [cost=>0,0] ],[ [from=>shelf3,0] , [to=>shelf3,0] ]]
+	]),
+
+	class(take,actions,[ [cost=>5,0] ],[],[
+		[id=>take1,[ [probability=>85,0] ],[ [to=>coke,0] ]],
+		[id=>take2,[ [probability=>20,0] ],[ [to=>heineken,0] ]],
+		[id=>take3,[ [probability=>80,0] ],[ [to=>noodles,0] ]],
+		[id=>take4,[ [probability=>80,0] ],[ [to=>kellogs,0] ]],
+		[id=>take5,[ [probability=>15,0] ],[ [to=>bisquits,0] ]]
+	]),
+
+	class(deliver,actions,[ [probability=>98,0] , [cost=>1,0] ],[],[
+		[id=>deliver1,[],[ [to=>coke,0] ]],
+		[id=>deliver2,[],[ [to=>heineken,0] ]],
+		[id=>deliver3,[],[ [to=>noodles,0] ]],
+		[id=>deliver4,[],[ [to=>kellogs,0] ]],
+		[id=>deliver5,[],[ [to=>bisquits,0] ]]
+	])
+
+]

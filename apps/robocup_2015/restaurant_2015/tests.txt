@@ -1,0 +1,1 @@
+res(restaurant). ok. [0.0,0.0,0.0]. [person(1.0,22.3,3.3,4.4)]. [person(1.0,22.3,3.3,4.4)]. [3,person(1.0,22.3,3.3,4.4)]. [32.0,4.5,6.7]. 'drinks'. yes. [person(1.0,22.3,3.3,4.4)]. [3,person(1.0,22.3,3.3,4.4)]. [62.0,14.5,16.7]. 'one'. yes. [person(1.0,22.3,3.3,4.4)]. [2,person(1.0,22.3,3.3,4.4)]. 'one'. yes. 'drink(coke)'. yes. 'combo(coke,cereal)'. yes.

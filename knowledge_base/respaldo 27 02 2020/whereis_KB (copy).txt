@@ -1,0 +1,69 @@
+[
+class(top,none,[],[],[]),
+class(locations, top, [], [],[]),
+class(bedroom,locations,
+	[
+		[directions_bar=>'walk to the hallway and continue to the bedroom',0],
+		[directions_hallway=>'is the next room through the door',0],
+		[directions_bedroom=>'we are in the bedroom',0],
+		[directions_livingroom=>'walk to the kitchen and then go through the door',0],
+		[directions_kitchen=>'walk through the door',0]
+	]
+	,[],[	
+	[id=>bed,[[fine_directions=>'at the right of the sidetable',0]],[]],
+    [id=>desk,[[fine_directions=>'in the corner near to the footboard of the bed',0]],[]],	
+	[id=>sidetable,[[fine_directions=>'at the left of the bed',0]],[]]
+    ]),
+
+class(bar,locations,
+	[
+		[directions_bar=>'we are in the bar',0],
+		[directions_hallway=>'walk to the bar in the next room',0],
+		[directions_bedroom=>'walk through the door pass the hallway and continue to the bar',0],
+		[directions_livingroom=>'walk toward the entrance reach the hallway and turn to the left',0],
+		[directions_kitchen=>'walk through the opening then turn to the right, reach the hallway and finaly turn to the left',0]
+	]
+	,[],[	
+	[id=>bartable,[[fine_directions=>'at the left of the sofa',0]],[]],
+	[id=>sofa,[[fine_directions=>'at the left of the cupboard',0]],[]],
+	[id=>cupboard,[[fine_directions=>'at the right side of the sofa',0]],[]]
+    ]),
+
+class(kitchen,locations,
+	[
+		[directions_bar=>'walk to the hallway and continue to the bedroom then turn to the right and go through the door',0],
+		[directions_hallway=>'go to the next room through the door then turn to the right and walk forward',0],
+		[directions_bedroom=>'go through the door in front of the side tale',0],
+		[directions_livingroom=>'walk through the opening at the right of the bookcase',0],
+		[directions_kitchen=>'we are in the kitchen',0]
+	],[],[	
+	[id=>kitchentable,[[fine_directions=>'in the center of the room',0]],[]],
+	[id=>kitchencabinet,[[fine_directions=>'at the left of the dishwasher',0]],[]],
+	[id=>dishwaher,[[fine_directions=>'at the right of the kitchen cabinet',0]],[]],
+	[id=>cabinet,[[fine_directions=>'in the farthest corner from the door',0]],[]],
+    [id=>whitedrawer,[[fine_directions=>'in one of the corners of the wall shared with the living room, the one that is not near the doors',0]],[]],
+    [id=>trashcan,[[fine_directions=>'in the corner near to the door',0]],[]]
+    ]),
+
+class(livingroom,locations,
+	[
+		[directions_bar=>'walk through the opening then turn right and continue',0],
+		[directions_hallway=>'walk in the opposite direction of the entrance',0],
+		[directions_bedroom=>'go through the door in front of the side tale then walk through the opening at the right',0],
+		[directions_livingroom=>'we are in the living room',0],
+		[directions_kitchen=>'walk through the opening at the left of the trash can',0]
+	],[],[
+	[id=>tv,[[fine_directions=>'between the tv table and the sideboard',0]],[]],	
+	[id=>tvtable,[[fine_directions=>'at the left of the tv',0]],[]],
+	[id=>bookcase,[[fine_directions=>'at the left of the entrance to the kitchen',0]],[]],
+	[id=>couch,[[fine_directions=>'in the corner next to the exit door',0]],[]],
+	[id=>leftarmchair,[[fine_directions=>'at the left of the coffee table',0]],[]],
+	[id=>rightarmchair,[[fine_directions=>'at the right of the coffe table',0]],[]],
+	[id=>coffeetable,[[fine_directions=>'in the middle of the couch and the armchairs',0]],[]],
+    [id=>sideboard,[[fine_directions=>'at the right of the tevee,0]],[]],
+    [id=>hightable,[[fine_directions=>'in the corner of wall shared with th kitchen',0]],[]],
+	[id=>trashbin,[[fine_directions=>'at the left of the tevee table',0]],[]],
+	[id=>coathanger,[[fine_directions=>'besides the exit door and near the left armchair',0]],[]]
+    ]),
+class(hallway,locations,[],[],[])
+]

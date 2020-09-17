@@ -1,0 +1,598 @@
+
+HEADER
+---------------------------------------------------------------------------------
+
+TIME:
+    20160506-18:34:16.060213804
+VERSION:
+    _G18631
+PROJDIR:
+    apps/robocup_2015
+IN ARG:
+    now
+KB:
+    knowledge_base/knowledge_base_robocup.pl
+USERFUNC:
+    user_functions.pl
+BASACTS:
+    basic_actions.pl
+TEMPLATE:
+    templates.pl
+GLOBAL VARS:
+    global_vars.pl
+
+START DIALOGUE
+---------------------------------------------------------------------------------
+
+TIME:
+    20160506-18:34:16.060286045
+
+SITUATUATIONS
+---------------------------------------------------------------------------------
+
+
+SIT
+=================================================================================
+
+NAME:
+    is
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    All the system working
+INITIME:
+    20160506-18:34:16.06322956
+SCREEN:
+    All the system working
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    These are the options
+INITIME:
+    20160506-18:34:16.063263893
+SCREEN:
+    These are the options
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    in, fo, cp, cl, res, gpsr, demo, see_object, detect_face, memorize_face, recognize_face, see_face, see, ask
+INITIME:
+    20160506-18:34:16.063293218
+SCREEN:
+    in, fo, cp, cl, res, gpsr, demo, see_object, detect_face, memorize_face, recognize_face, see_face, see, ask
+
+SIT
+=================================================================================
+
+NAME:
+    k2(restaurant)
+TYPE:
+    keyboard
+INPUT:
+    ok
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    none
+NAME:
+    empty
+
+SIT
+=================================================================================
+
+NAME:
+    execute(restaurant)
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    Executing test: 
+INITIME:
+    20160506-18:34:18.0106287
+SCREEN:
+    Executing test: 
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    restaurant_main
+INITIME:
+    20160506-18:34:18.010682344
+SCREEN:
+    restaurant_main
+
+SIT
+=================================================================================
+
+NAME:
+    restaurant_main
+TYPE:
+    recursive
+
+START DIALOGUE
+---------------------------------------------------------------------------------
+
+TIME:
+    20160506-18:34:18.018478631
+
+SITUATUATIONS
+---------------------------------------------------------------------------------
+
+
+SIT
+=================================================================================
+
+NAME:
+    is
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    none
+NAME:
+    empty
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    tilth
+ANGLE:
+    0.0
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    tiltv
+ANGLE:
+    0.0
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    say
+INITIME:
+    20160506-18:34:20.03352189
+MSG:
+    Hello everybody my name is Golem
+
+SIT
+=================================================================================
+
+NAME:
+    guided_tour(learn,restaurant,_G96357,_G96360)
+TYPE:
+    recursive
+
+START DIALOGUE
+---------------------------------------------------------------------------------
+
+TIME:
+    20160506-18:34:23.008387565
+
+SITUATUATIONS
+---------------------------------------------------------------------------------
+
+
+SIT
+=================================================================================
+
+NAME:
+    is
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    none
+NAME:
+    empty
+
+SIT
+=================================================================================
+
+NAME:
+    follow(learn,gesture_only,_G112312,_G112309)
+TYPE:
+    recursive
+
+START DIALOGUE
+---------------------------------------------------------------------------------
+
+TIME:
+    20160506-18:34:23.085389375
+
+SITUATUATIONS
+---------------------------------------------------------------------------------
+
+
+SIT
+=================================================================================
+
+NAME:
+    is
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    none
+NAME:
+    empty
+
+SIT
+=================================================================================
+
+NAME:
+    start(learn)
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    tiltv
+ANGLE:
+    -10.0
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    say
+INITIME:
+    20160506-18:34:24.137974262
+MSG:
+    Stand in front of me six feet away, waving your hands
+
+SIT
+=================================================================================
+
+NAME:
+    see_gesture(waving,nearest,3,_G288930,_G288927)
+TYPE:
+    recursive
+
+START DIALOGUE
+---------------------------------------------------------------------------------
+
+TIME:
+    20160506-18:34:28.817144632
+
+SITUATUATIONS
+---------------------------------------------------------------------------------
+
+
+SIT
+=================================================================================
+
+NAME:
+    wait
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    pause
+NAME:
+    sleep
+
+SIT
+=================================================================================
+
+NAME:
+    gesture_detection(2,1)
+TYPE:
+    detect_gesture(2,1)
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    none
+NAME:
+    empty
+
+SIT
+=================================================================================
+
+NAME:
+    check_result(no_gesture_detected)
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    none
+NAME:
+    empty
+
+SIT
+=================================================================================
+
+NAME:
+    wait
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    pause
+NAME:
+    sleep
+
+SIT
+=================================================================================
+
+NAME:
+    gesture_detection(2,1)
+TYPE:
+    detect_gesture(2,1)
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    none
+NAME:
+    empty
+
+SIT
+=================================================================================
+
+NAME:
+    check_result([person(2,167,2,0)])
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    none
+NAME:
+    empty
+
+SIT
+=================================================================================
+
+NAME:
+    [id==>success,type==>final]
+TYPE:
+    final
+
+END DIALOGUE
+---------------------------------------------------------------------------------
+
+OUTSYS:
+    [count==>2]
+TIME:
+    20160506-18:34:31.529617071
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    say
+INITIME:
+    20160506-18:34:31.533107042
+MSG:
+    Perfect I saw you, Now you can start walking and i will follow you
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    switchpose
+POSE:
+    nav
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    avanzar
+WITH DISTANCE TO TARGET:
+    1.5
+1.5, avanzar, WITH DISTANCE TO TARGET:
+    1.5
+1.5, movement, NAME:
+    avanzar
+WITH DISTANCE TO TARGET:
+    1.5
+1.5, avanzar, WITH DISTANCE TO TARGET:
+    1.5
+1.5, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    avanzar
+WITH DISTANCE TO TARGET:
+    1.5
+1.5, avanzar, WITH DISTANCE TO TARGET:
+    1.5
+1.5, movement, NAME:
+    avanzar
+WITH DISTANCE TO TARGET:
+    1.5
+1.5, avanzar, WITH DISTANCE TO TARGET:
+    1.5
+1.5, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    doesnt_exist
+NAME:
+    avanzar
+WITH DISTANCE TO TARGET:
+    1.5
+1.5, avanzar, WITH DISTANCE TO TARGET:
+    1.5
+1.5, doesnt_exist, NAME:
+    avanzar
+WITH DISTANCE TO TARGET:
+    1.5
+1.5, avanzar, WITH DISTANCE TO TARGET:
+    1.5
+1.5, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    doesnt_exist
+NAME:
+    avanzar
+WITH DISTANCE TO TARGET:
+    1.5
+1.5, avanzar, WITH DISTANCE TO TARGET:
+    1.5
+1.5, doesnt_exist, NAME:
+    avanzar
+WITH DISTANCE TO TARGET:
+    1.5
+1.5, avanzar, WITH DISTANCE TO TARGET:
+    1.5
+1.5, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    avanzar
+WITH DISTANCE TO TARGET:
+    1.5
+1.5, avanzar, WITH DISTANCE TO TARGET:
+    1.5
+1.5, movement, NAME:
+    avanzar
+WITH DISTANCE TO TARGET:
+    1.5
+1.5, avanzar, WITH DISTANCE TO TARGET:
+    1.5
+1.5, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    avanzar
+WITH DISTANCE TO TARGET:
+    1.5
+1.5, avanzar, WITH DISTANCE TO TARGET:
+    1.5
+1.5, movement, NAME:
+    avanzar
+WITH DISTANCE TO TARGET:
+    1.5
+1.5, avanzar, WITH DISTANCE TO TARGET:
+    1.5
+1.5, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    doesnt_exist
+NAME:
+    avanzar
+WITH DISTANCE TO TARGET:
+    1.5
+1.5, avanzar, WITH DISTANCE TO TARGET:
+    1.5
+1.5, doesnt_exist, NAME:
+    avanzar
+WITH DISTANCE TO TARGET:
+    1.5
+1.5, avanzar, WITH DISTANCE TO TARGET:
+    1.5
+1.5, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    doesnt_exist
+NAME:
+    avanzar
+WITH DISTANCE TO TARGET:
+    1.5
+1.5, avanzar, WITH DISTANCE TO TARGET:
+    1.5
+1.5, doesnt_exist, NAME:
+    avanzar
+WITH DISTANCE TO TARGET:
+    1.5
+1.5, avanzar, WITH DISTANCE TO TARGET:
+    1.5
+1.5, 
+SIT
+=================================================================================
+
+NAME:
+    see_gesture(hand_up,nearest,3,_G482702,_G482699)
+TYPE:
+    recursive
+
+START DIALOGUE
+---------------------------------------------------------------------------------
+
+TIME:
+    20160506-18:35:9.079868555
+
+SITUATUATIONS
+---------------------------------------------------------------------------------
+

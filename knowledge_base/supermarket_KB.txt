@@ -1,0 +1,35 @@
+[
+
+class(top,none,[],[],[]),
+
+class(comestible, top, [graspable,not(on_discount)], [], []),
+
+class(food, comestible, [], [], []),
+
+class(cereal, food, [inv=>0,shelf=>shelf], [], [	
+	[id => c1, [brand=>kellogs],[]]
+   	]),
+
+class(drink, comestible, [age=>all], [], []),
+
+class(soda, drink, [inv=>1,shelf=>shelf], [], [	
+	[id => s1, [brand=>coke],[]]
+   	]),
+
+class(beer, drink, [age=>18,inv=>1,shelf=>sh2], [], [	
+	[id => b1, [brand=>heineken],[]]
+   	]),
+   	
+class(bread, comestible, [inv=>1,shelf=>shelf], [], [	
+	[id => d1, [brand=>bisquits,on_discount],[]]
+   	]),
+
+class(states, top, [], [], []),
+
+class(events, top, [], [], []),
+
+class(orders, top, [], [], []),
+
+class(failed_orders, top, [], [], [])
+
+]

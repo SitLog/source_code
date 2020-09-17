@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<grammar version="1.0" xml:lang="en-US" mode="voice" root="food" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+  <rule id="food">
+    <one-of>
+      <item> green paprika </item>
+      <item> pepper </item>
+      <item> salt </item>
+      <item> kiwi </item>
+      <item> noodles </item>
+      <item> apple </item>
+      <item> lemon </item>
+      <item> tomato </item>
+   </one-of>
+  </rule>
+</grammar>

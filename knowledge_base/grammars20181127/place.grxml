@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<grammar version="1.0" xml:lang="en-US" mode="voice" root="place" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+  <rule id="place">
+    <one-of>
+      <item> <ruleref uri="points.grxml"/> </item>
+      <item> <ruleref uri="room.grxml"/> </item>
+      <item> <ruleref uri="location.grxml"/> </item>
+   </one-of>
+  </rule>
+</grammar>

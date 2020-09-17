@@ -1,0 +1,79 @@
+diag_mod(check_item_locations(Items,User_Loc),
+[
+  %% Author: Noe Hdez
+  
+  %% Initial situation. 
+  %% Get objects for checking their positions
+  [
+  id ==> is,
+  type ==> neutral,
+  arcs ==> [
+           empty:[
+	          assign(Objs,apply(get_objs_then_substract_order(C_,I_),[comestible,Items]))
+		 ] => check(Objs)
+           ]
+  ],
+  
+  %% No objects to check their positions
+  [
+  id ==> check([]),
+  type ==> neutral,
+  arcs ==> [
+           empty:[say('All objects I saw are in the correct position')] => success
+           ]
+  ],
+  
+  %% Check the location of Head
+  [
+  id ==> check([Head|More])
+  type ==> neutral,
+  prog ==> [set(more_items,More)],
+  arcs ==> [
+           empty:empty => apply( is_last_seen_correct(H_,M_),[Head,More] )
+           ]  
+  ],
+
+
+  %% Ask user to reposition object
+  [
+  id ==> ask_to_reposition(Obj,Origin,Dest),
+  type ==> recursive,
+  embedded_dm ==> ask(Obj, ' is not in the right place. Do you want me to take the ',Obj,' to is correct shelf?'], yesno, false, 1, Answer, _),
+  arcs ==> [
+           success:[get(more_items,More)]
+		       => apply(when(I_,T_,F_),[Answer==yes,
+						fetch_take(Obj,Origin,Dest),
+						check(More)]),
+           error  :empty => ask_to_reposition(Obj,Origin,Dest)
+           ]
+  ],
+    
+  
+  %% Fetch and tacke the object to the right position
+  [
+  id ==> fetch_take(Obj,Ori,Dst,User_Loc),
+  type ==> recursive,
+  embedded_dm ==> fetch_and_take(Obj,Ori,Dst,User_Loc),
+  arcs ==> [
+           success: [get(more_items,Rest)] => check(Rest),
+	   error  : [say(['I could not position the',Obj,' in its correct position']),get(more_items,Rest)] => check(Rest)  
+           ]
+  ],
+  
+  %% Success situation
+  [
+  id ==> success,
+  type ==> final
+  ],
+  
+  %% Error situation
+  [
+  id ==> error,
+  type ==> final
+  ]
+],
+% Local variables
+[
+  more_items ==> []
+]
+).

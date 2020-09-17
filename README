@@ -1,0 +1,48 @@
+SitLog - Situation and Logic
+----------------------------
+
+This is a declarative situation-oriented logical language for programming
+situated service robot’s tasks. SitLog can also be seen as a behavior 
+engineering specification formalism to support action selection by autonomous 
+agents during the execution of complex tasks. The language combines the 
+Recursive Transition Network formalism, extended with functions to express 
+dynamic and contextualized task structure, with a functional language to 
+express control and content information. SitLog’s programs are expressed in
+the standard Prolog’s notation permitting the declarative specification and
+direct interpretation of complex applications in a modular and compact form.
+
+Installation
+------------
+Read INSTALL for detailed instructions.  
+
+Execution
+---------
+
+Execute the following command to run dummy example:
+
+  $ ./scripts/paper test
+
+Note: The execution log appears into dm.log inside apps/paper/
+
+Execute the following command to run the 'Clean Up' RoboCup@Home 2012 rulebook application:
+
+  $ ./scripts/robocup2012 test
+
+The expectations appears every time but the value of variables depends on KB.pl and values given by the user.
+
+A recommended interaction is as follow:
+
+  |: open.
+  |: arrive.
+  |: room(kitchen).
+  |: arrive.
+  |: object([[coke,1,1,1,1,1,1,1,1],[mineral,1,1,1,1,1,1,1,1]]).
+  |: stopped.
+  |: object.
+  |: object([[mineral,1,1,1,1,1,1,1,1]]).
+  |: stopped.
+  |: object.
+  |: arrive.
+  |: arrive.
+
+The execution log appears into dm.log inside apps/robocup2012/ 

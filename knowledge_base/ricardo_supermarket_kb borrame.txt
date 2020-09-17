@@ -1,0 +1,31 @@
+[
+class(top,none,[],[],[]),
+class(entity, top, [], [], []),
+class(place, entity, [], [], []),
+class(human, entity, [], [], [
+      [id=>user,[],[]]
+]),
+class(robot, entity, [], [], [
+	[id=>golem,[in=>front_desk, attending_to=>nobody, has=>nothing],[]]
+	]),
+class(object, entity, [ ], [], []),
+class(comestible,object,[],[],[]),
+class(food,comestible,[],[],[ [id=>noodles, [],[]],
+  [id=>bisquits,[],[]]
+]),
+class(drink,comestible,[], [], [
+  [id=>coke,[],[]],
+  [id=>malz,[],[]]
+]),
+class(room, place, [], [], [
+	[id=>warehouse,[name=>warehouse, main_point=>front_desk, object_path=>[shelf_drinks,shelf_food,shelf_snacks] ],[]]
+	]),
+class(location,place,[],[],[
+  [id=>'wainting_position', [  name=>'wainting position',position=>waiting_position  ],[in_room=>warehouse]],
+  [id=>'shelf_food',  [  name=>'shelf food', position=>shelf_food  ],[in_room=>warehouse]],
+  [id=>shelf_drinks,[  name=>'shelf drinks', position=>shelf_drinks   ],[in_room=>warehouse]],
+  [id=>shelf_snacks,[  name=>'shelf snacks', position=>shelf_snacks   ],[in_room=>warehouse]]
+])
+]
+
+

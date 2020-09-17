@@ -1,0 +1,272 @@
+
+HEADER
+---------------------------------------------------------------------------------
+
+TIME:
+    201609014-19:7:1.165689706
+VERSION:
+    _G21144
+PROJDIR:
+    apps/robocup_2015
+IN ARG:
+    now
+KB:
+    knowledge_base/knowledge_base_robocup.pl
+USERFUNC:
+    user_functions.pl
+BASACTS:
+    basic_actions.pl
+TEMPLATE:
+    templates.pl
+GLOBAL VARS:
+    global_vars.pl
+
+START DIALOGUE
+---------------------------------------------------------------------------------
+
+TIME:
+    201609014-19:7:1.165766
+
+SITUATUATIONS
+---------------------------------------------------------------------------------
+
+
+SIT
+=================================================================================
+
+NAME:
+    is
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    All the system working
+INITIME:
+    201609014-19:7:1.168786287
+SCREEN:
+    All the system working
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    These are the options
+INITIME:
+    201609014-19:7:1.168821334
+SCREEN:
+    These are the options
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    in, fo, cp, cl, res, gpsr, demo, see_object, detect_face, memorize_face, recognize_face, see_face, see, ask
+INITIME:
+    201609014-19:7:1.168851613
+SCREEN:
+    in, fo, cp, cl, res, gpsr, demo, see_object, detect_face, memorize_face, recognize_face, see_face, see, ask
+
+SIT
+=================================================================================
+
+NAME:
+    k2(ricardo)
+TYPE:
+    keyboard
+INPUT:
+    ok
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    none
+NAME:
+    empty
+
+SIT
+=================================================================================
+
+NAME:
+    execute(ricardo)
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    Executing test: 
+INITIME:
+    201609014-19:7:2.181343078
+SCREEN:
+    Executing test: 
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    ricardo_main
+INITIME:
+    201609014-19:7:2.1814200870000002
+SCREEN:
+    ricardo_main
+
+SIT
+=================================================================================
+
+NAME:
+    ricardo_main
+TYPE:
+    recursive
+
+START DIALOGUE
+---------------------------------------------------------------------------------
+
+TIME:
+    201609014-19:7:2.194249629
+
+SITUATUATIONS
+---------------------------------------------------------------------------------
+
+
+SIT
+=================================================================================
+
+NAME:
+    is
+TYPE:
+    neutral
+
+SIT
+=================================================================================
+
+NAME:
+    ms([Best model: {moveFromTo(beer,table1,table3,"N"), moveFromTo(burrito,shelf,table3,"N"), moveFromTo(coke,shelf,table2,"N"), moveFromTo(pepsi,table2,table3,"N")},Cost ([Weight:Level]): <[1:1]>])
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    none
+NAME:
+    empty
+
+SIT
+=================================================================================
+
+NAME:
+    ms2
+TYPE:
+    neutral
+
+SIT
+=================================================================================
+
+NAME:
+    ms4([Best model: {action(6,drop,coke), action(10,drop,pepsi), action(15,drop,burrito), action(16,drop,beer), action(2,grab,burrito), action(4,grab,coke), action(8,grab,pepsi), action(13,grab,beer), action(1,search,burrito), action(3,search,coke), action(7,search,pepsi), action(12,search,beer), action(0,move,shelf), action(5,move,table2), action(9,move,table3), action(11,move,table1), action(14,move,table3)},Cost ([Weight:Level]): <[17:1]>])
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    none
+NAME:
+    empty
+
+SIT
+=================================================================================
+
+NAME:
+    ms3([Best model: {action(6,drop,coke), action(10,drop,pepsi), action(15,drop,burrito), action(16,drop,beer), action(2,grab,burrito), action(4,grab,coke), action(8,grab,pepsi), action(13,grab,beer), action(1,search,burrito), action(3,search,coke), action(7,search,pepsi), action(12,search,beer), action(0,move,shelf), action(5,move,table2), action(9,move,table3), action(11,move,table1), action(14,move,table3)},Cost ([Weight:Level]): <[17:1]>])
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    say
+INITIME:
+    201609014-19:8:4.665184974
+MESSAGE:
+    Best model: {action(6,drop,coke), action(10,drop,pepsi), action(15,drop,burrito), action(16,drop,beer), action(2,grab,burrito), action(4,grab,coke), action(8,grab,pepsi), action(13,grab,beer), action(1,search,burrito), action(3,search,coke), action(7,search,pepsi), action(12,search,beer), action(0,move,shelf), action(5,move,table2), action(9,move,table3), action(11,move,table1), action(14,move,table3)} Cost ([Weight:Level]): <[17:1]>
+FINTIME:
+    201609014-19:8:51.143353939
+
+SIT
+=================================================================================
+
+NAME:
+    [id==>fs,type==>final]
+TYPE:
+    final
+
+END DIALOGUE
+---------------------------------------------------------------------------------
+
+OUTSYS:
+    []
+TIME:
+    201609014-19:8:51.144623756
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    none
+NAME:
+    empty
+
+SIT
+=================================================================================
+
+NAME:
+    final
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    Dialogue model finished, type ok to try again
+INITIME:
+    201609014-19:8:51.154007673
+SCREEN:
+    Dialogue model finished, type ok to try again
+
+SIT
+=================================================================================
+
+NAME:
+    [id==>fs,type==>final]
+TYPE:
+    final
+
+END DIALOGUE
+---------------------------------------------------------------------------------
+
+OUTSYS:
+    [gpsr==>gpsr_main,speech==>speech_main,robozoo==>robozoo_main,nav==>navigation_main,follow==>follow_main,robozoo==>robozoo_main,eduardo==>eduardo_main,ricardo==>ricardo_main,restaurant==>restaurant_main,test==>test]
+TIME:
+    201609014-19:8:51.157445192

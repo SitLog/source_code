@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<grammar version="1.0" xml:lang="en-US" mode="voice" root="human" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+  <rule id="human">
+    <one-of>
+      <item> patricia </item>
+      <item> deborah </item>
+      <item> debra </item>
+      <item> mary </item>
+      <item> karen </item>
+      <item> linda </item>
+      <item> james </item>
+      <item> cynthia </item>
+      <item> first </item>
+      <item> second </item>
+      <item> susan </item>
+      <item> donna </item>
+      <item> robert </item>
+      <item> steven </item>
+      <item> john </item>
+      <item> thomas </item>
+      <item> michael </item>
+      <item> david </item>
+      <item> richard </item>
+      <item> barbara </item>
+      <item> william </item>
+      <item> mark </item>
+   </one-of>
+  </rule>
+</grammar>

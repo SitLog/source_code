@@ -1,0 +1,20 @@
+[2018/5/18,19:33:30.920955181]Info-Level 1: Running models from     : models
+[2018/5/18,19:33:30.920988321]Info-Level 1: Project directory       : apps/test_behaviors
+[2018/5/18,19:33:30.92099595]Info-Level 1: Knowledge base          : knowledge_base/knowledge_base_robocup.pl
+[2018/5/18,19:33:30.921002149]Info-Level 1: User Functions          : user_functions.pl
+[2018/5/18,19:33:30.92100811]Info-Level 1: Expectation Types       : expectation_types.pl
+[2018/5/18,19:33:30.92101407]Info-Level 1: Basic acts              : basic_actions.pl
+[2018/5/18,19:33:30.921019554]Info-Level 1: Templates               : templates.pl
+[2018/5/18,19:33:30.921025276]Info-Level 1: Running dialogue        : main
+[2018/5/18,19:33:30.921030759]Info-Level 1: Writing debug file to   : logfile.log
+[2018/5/18,19:33:30.921036243]Info-Level 1: Saving log file to      : apps/test_behaviors/log
+[2018/5/18,19:33:30.973832845]Info-Level 1: Starting dialogue: main
+[2018/5/18,19:33:30.973931789]Info-Level 1: Saving log in: apps/test_behaviors/log/dm.txt
+[2018/5/18,19:33:30.973962068]Info-Level 1: Executing dialogue: main
+[2018/5/18,19:33:30.974299907]Info-Level 1: Defined local vars: [see_object==>see_object_main,detect_face==>detect_face_main,memorize_face==>memorize_face_main,recognize_face==>recognize_face_main,see_face==>see_face_main,detect_head==>detect_head_main,see_person==>see_person_main,see_gesture==>see_gesture_main,see==>see_main,tilt==>tilt_main,scan==>scan_main,find==>find_main,approach_person==>approach_person_main,move==>move_main,move_nb==>move_main_nonblock,detect_door==>detect_door_main,follow==>follow_main,take==>take_main,approach_object==>approach_object_main,grasp==>grasp_main,deliver==>deliver_main,approach_plane==>approach_plane_main,approach_surface==>approach_surface_main,relieve==>relieve_main,ask==>ask_main,answer==>answer_main,say==>say_main,guide==>guide_main,execute==>execute_main,consult_kb==>consult_kb_main,point==>point_main,prompt==>prompt_main,detect_body==>detect_body_main,memorize_body==>memorize_body_main,recognize_body==>recognize_body_main,describe_body==>describe_body_main,see_body==>see_body_main,gpsr==>gpsr_main,egpsr==>egpsr_main,rips==>rips_main,inference==>inference_main,object_manipulation==>object_manipulation_main,set_table_up==>set_table_up_main,date==>date_main,gender==>gender_main,pose==>pose_main,time==>time_main,qr==>qr_main,plane==>plane_main,answer_question==>answer_question_main,person_recognition_test==>person_recognition_test_main,soft_biometrics==>soft_biometrics_main,supermarket==>supermarket_main,follow_with_clothes==>follow_with_clothes_main,speech_and_person==>speech_and_person_main,inspection==>inspection_main,test_students==>test_students_main,tk==>take([coke,0,0.4,0.7,1,1,1,1,1],-20,right,_G60886),give==>give(coke,1),learn==>learn_faces,oid==>identify_object(_G60942),doa==>doa_main,test==>test,parse==>parse_main,mood==>mood_main]
+[2018/5/18,19:33:30.974888324]All: Situtation: is
+[2018/5/18,19:33:30.974898576]Structs: Executing situtation: _G127751
+[2018/5/18,19:33:30.974911689]Debug: In situation is of type neutral.
+[2018/5/18,19:33:30.974938154]All: Situation to execute [id==> (is),type==>neutral,arcs==>[empty:[screen(All the system working),screen(These are the options),screen(in, fo, cp, cl, res, gpsr, demo, see_object, detect_face, memorize_face, recognize_face, see_face, see, ask)]=>apply(model_to_execute(_G125803,_G125806,_G125809),[k1,k2,model.pl])]].
+[2018/5/18,19:33:30.979861736]Debug: In situation k1 of type keyboard.
+[2018/5/18,19:33:30.979872941]All: Situation to execute [id==>k1,type==>keyboard,arcs==>[res(_G170182):[screen(Input ok to execute ),get(_G170182,_G170185),screen(_G170185)]=>k2(_G170182)]].

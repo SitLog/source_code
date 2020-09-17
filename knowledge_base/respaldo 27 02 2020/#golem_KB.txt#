@@ -1,0 +1,29 @@
+[
+class(top,none,[],[],[]),
+class(entity,top,[],[],[]),
+class(human,entity,[],[],
+  [
+    [id=>user,[[bad_day=>>tired,1],[[back_from_work,tired]=>>found_in=>living_room,1],[asked_comestible=>>found_in=>dining_room,2],[back_from_work,0],[bad_day,0],[asked_comestible,0]],[]]
+  ]),
+class(object,entity,[[graspable=>yes,0],[moved_by=>child=>>misplaced,1],[moved_by=>partner=>>misplaced,2]],[],[]),
+class(comestible,object,[],[],[]),
+class(food,comestible,[[ (-)=>>loc=>shelf_food,2],[ (-)=>>loc=>shelf_snacks,3],[ (-)=>>loc=>shelf_drinks,4],[last_seen=> (-)=>>loc=> (-),1],[ (-)=>>to_serve=>noodles,1],[ (-)=>>to_serve=>bisquits,2],[asked=>noodles,0]],[],
+  [
+    [id=>noodles,[[ (-)=>>loc=>shelf_snacks,2],[ (-)=>>loc=>shelf_food,3]],[]],
+    [id=>bisquits,[[last_seen=>shelf_food,0]],[]]
+  ]),
+class(drink,comestible,[[ (-)=>>loc=>shelf_drinks,2],[ (-)=>>loc=>shelf_snacks,3],[ (-)=>>loc=>shelf_food,4],[last_seen=> (-)=>>loc=> (-),1],[ (-)=>>to_serve=>malz,1],[ (-)=>>to_serve=>coke,2],[asked=>malz,0]],[],
+  [
+    [id=>coke,[[last_seen=>shelf_snacks,0]],[]],
+    [id=>malz,[],[]]
+  ]),
+class(point,entity,[],[],
+  [
+    [id=>welcome_point,[[name=>welcome_point,0]],[]],
+    [id=>living_room,[[name=>'living room',0]],[]],
+    [id=>dining_room,[[name=>'dining room',0]],[]],
+    [id=>shelf_food,[[name=>'the shelf of food',0]],[]],
+    [id=>shelf_drinks,[[name=>'the shelf of drinks',0]],[]],
+    [id=>shelf_snacks,[[name=>'the shelf of snacks',0]],[]]
+  ])
+]

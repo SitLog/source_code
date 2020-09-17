@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<grammar version="1.0" xml:lang="en-US" mode="voice" root="entity" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+  <rule id="entity">
+    <one-of>
+      <item> <ruleref uri="place.grxml"/> </item>
+      <item> <ruleref uri="human.grxml"/> </item>
+      <item> <ruleref uri="crowd.grxml"/> </item>
+      <item> <ruleref uri="crowd_person.grxml"/> </item>
+      <item> <ruleref uri="object.grxml"/> </item>
+      <item> <ruleref uri="robot.grxml"/> </item>
+   </one-of>
+  </rule>
+</grammar>

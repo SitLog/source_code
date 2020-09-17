@@ -1,0 +1,606 @@
+
+HEADER
+---------------------------------------------------------------------------------
+
+TIME:
+    201603015-18:48:49.551764965
+VERSION:
+    _G16020
+PROJDIR:
+    apps/robocup_2015
+IN ARG:
+    now
+KB:
+    knowledge_base/knowledge_base_robocup.pl
+USERFUNC:
+    user_functions.pl
+BASACTS:
+    basic_actions.pl
+TEMPLATE:
+    templates.pl
+GLOBAL VARS:
+    global_vars.pl
+
+START DIALOGUE
+---------------------------------------------------------------------------------
+
+TIME:
+    201603015-18:48:49.551842451
+
+SITUATUATIONS
+---------------------------------------------------------------------------------
+
+
+SIT
+=================================================================================
+
+NAME:
+    is
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    All the system working
+INITIME:
+    201603015-18:48:49.55339384
+SCREEN:
+    All the system working
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    These are the options
+INITIME:
+    201603015-18:48:49.553422689
+SCREEN:
+    These are the options
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    in, fo, cp, cl, res, gpsr, demo, see_object, detect_face, memorize_face, recognize_face, see_face, see, ask
+INITIME:
+    201603015-18:48:49.55344963
+SCREEN:
+    in, fo, cp, cl, res, gpsr, demo, see_object, detect_face, memorize_face, recognize_face, see_face, see, ask
+
+SIT
+=================================================================================
+
+NAME:
+    k2(nav)
+TYPE:
+    keyboard
+INPUT:
+    ok
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    none
+NAME:
+    empty
+
+SIT
+=================================================================================
+
+NAME:
+    execute(nav)
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    Executing test: 
+INITIME:
+    201603015-18:48:50.582907915
+SCREEN:
+    Executing test: 
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    display
+MESSAGE:
+    navigation_main
+INITIME:
+    201603015-18:48:50.582948207
+SCREEN:
+    navigation_main
+
+SIT
+=================================================================================
+
+NAME:
+    navigation_main
+TYPE:
+    recursive
+
+START DIALOGUE
+---------------------------------------------------------------------------------
+
+TIME:
+    201603015-18:48:50.589483261
+
+SITUATUATIONS
+---------------------------------------------------------------------------------
+
+
+SIT
+=================================================================================
+
+NAME:
+    is
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    say
+INITIME:
+    201603015-18:48:50.593790769
+MSG:
+    Please tell me which waypoint to go first: A or B.
+
+SIT
+=================================================================================
+
+NAME:
+    asking
+TYPE:
+    listening(waypoints)
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    say
+INITIME:
+    201603015-18:49:1.490274429
+MSG:
+    Could not understand you. Please tell me which waypoint to go first: A or B.
+
+SIT
+=================================================================================
+
+NAME:
+    asking
+TYPE:
+    listening(waypoints)
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    say
+INITIME:
+    201603015-18:49:14.610990524
+MSG:
+    Could not understand you. Please tell me which waypoint to go first: A or B.
+
+SIT
+=================================================================================
+
+NAME:
+    asking
+TYPE:
+    listening(waypoints)
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    say
+INITIME:
+    201603015-18:49:27.717909574
+MSG:
+    Could not understand you. Please tell me which waypoint to go first: A or B.
+
+SIT
+=================================================================================
+
+NAME:
+    asking
+TYPE:
+    listening(waypoints)
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    say
+INITIME:
+    201603015-18:49:40.612325191
+MSG:
+    Could not understand you. Please tell me which waypoint to go first: A or B.
+
+SIT
+=================================================================================
+
+NAME:
+    asking
+TYPE:
+    listening(waypoints)
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    none
+NAME:
+    empty
+
+SIT
+=================================================================================
+
+NAME:
+    setupnav(B)
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    say
+INITIME:
+    201603015-18:49:51.50159645
+MSG:
+    Going to waypoint A.
+
+SIT
+=================================================================================
+
+NAME:
+    move(B,_G216484)
+TYPE:
+    recursive
+
+START DIALOGUE
+---------------------------------------------------------------------------------
+
+TIME:
+    201603015-18:49:53.644022941
+
+SITUATUATIONS
+---------------------------------------------------------------------------------
+
+
+SIT
+=================================================================================
+
+NAME:
+    is
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    none
+NAME:
+    empty
+
+SIT
+=================================================================================
+
+NAME:
+    verify_case(label,[B])
+TYPE:
+    neutral
+
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    robotheight
+HEIGHT:
+    1.42
+1.42, robotheight, HEIGHT:
+    1.42
+1.42, movement, NAME:
+    robotheight
+HEIGHT:
+    1.42
+1.42, robotheight, HEIGHT:
+    1.42
+1.42, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    robotheight
+HEIGHT:
+    1.42
+1.42, robotheight, HEIGHT:
+    1.42
+1.42, movement, NAME:
+    robotheight
+HEIGHT:
+    1.42
+1.42, robotheight, HEIGHT:
+    1.42
+1.42, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    doesnt_exist
+NAME:
+    robotheight
+HEIGHT:
+    1.42
+1.42, robotheight, HEIGHT:
+    1.42
+1.42, doesnt_exist, NAME:
+    robotheight
+HEIGHT:
+    1.42
+1.42, robotheight, HEIGHT:
+    1.42
+1.42, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    doesnt_exist
+NAME:
+    robotheight
+HEIGHT:
+    1.42
+1.42, robotheight, HEIGHT:
+    1.42
+1.42, doesnt_exist, NAME:
+    robotheight
+HEIGHT:
+    1.42
+1.42, robotheight, HEIGHT:
+    1.42
+1.42, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    robotheight
+HEIGHT:
+    1.42
+1.42, robotheight, HEIGHT:
+    1.42
+1.42, movement, NAME:
+    robotheight
+HEIGHT:
+    1.42
+1.42, robotheight, HEIGHT:
+    1.42
+1.42, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    robotheight
+HEIGHT:
+    1.42
+1.42, robotheight, HEIGHT:
+    1.42
+1.42, movement, NAME:
+    robotheight
+HEIGHT:
+    1.42
+1.42, robotheight, HEIGHT:
+    1.42
+1.42, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    doesnt_exist
+NAME:
+    robotheight
+HEIGHT:
+    1.42
+1.42, robotheight, HEIGHT:
+    1.42
+1.42, doesnt_exist, NAME:
+    robotheight
+HEIGHT:
+    1.42
+1.42, robotheight, HEIGHT:
+    1.42
+1.42, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    doesnt_exist
+NAME:
+    robotheight
+HEIGHT:
+    1.42
+1.42, robotheight, HEIGHT:
+    1.42
+1.42, doesnt_exist, NAME:
+    robotheight
+HEIGHT:
+    1.42
+1.42, robotheight, HEIGHT:
+    1.42
+1.42, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    switchpose
+POSE:
+    nav
+nav, switchpose, POSE:
+    nav
+nav, movement, NAME:
+    switchpose
+POSE:
+    nav
+nav, switchpose, POSE:
+    nav
+nav, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    switchpose
+POSE:
+    nav
+nav, switchpose, POSE:
+    nav
+nav, movement, NAME:
+    switchpose
+POSE:
+    nav
+nav, switchpose, POSE:
+    nav
+nav, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    doesnt_exist
+NAME:
+    switchpose
+POSE:
+    nav
+nav, switchpose, POSE:
+    nav
+nav, doesnt_exist, NAME:
+    switchpose
+POSE:
+    nav
+nav, switchpose, POSE:
+    nav
+nav, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    doesnt_exist
+NAME:
+    switchpose
+POSE:
+    nav
+nav, switchpose, POSE:
+    nav
+nav, doesnt_exist, NAME:
+    switchpose
+POSE:
+    nav
+nav, switchpose, POSE:
+    nav
+nav, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    switchpose
+POSE:
+    nav
+nav, switchpose, POSE:
+    nav
+nav, movement, NAME:
+    switchpose
+POSE:
+    nav
+nav, switchpose, POSE:
+    nav
+nav, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    movement
+NAME:
+    switchpose
+POSE:
+    nav
+nav, switchpose, POSE:
+    nav
+nav, movement, NAME:
+    switchpose
+POSE:
+    nav
+nav, switchpose, POSE:
+    nav
+nav, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    doesnt_exist
+NAME:
+    switchpose
+POSE:
+    nav
+nav, switchpose, POSE:
+    nav
+nav, doesnt_exist, NAME:
+    switchpose
+POSE:
+    nav
+nav, switchpose, POSE:
+    nav
+nav, 
+BASIC_ACT
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TYPE:
+    doesnt_exist
+NAME:
+    switchpose
+POSE:
+    nav
+nav, switchpose, POSE:
+    nav
+nav, doesnt_exist, NAME:
+    switchpose
+POSE:
+    nav
+nav, switchpose, POSE:
+    nav
+nav, 
+SIT
+=================================================================================
+
+NAME:
+    go_to_point([B])
+TYPE:
+    neutral

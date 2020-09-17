@@ -1,0 +1,115 @@
+[
+class(top,none,[],[],[]),
+
+class(entity, top, [], [], []),
+
+class(human, entity, [], [], [	
+	[id => emma, [num_id=>11],[]], 
+  	[id => taylor, [num_id=>12], []],
+  	[id => sophia, [num_id=>13], []], 
+  	[id => isabella, [num_id=>14], []], 
+  	[id => ava, [num_id=>15], []],
+  	[id => robin, [num_id=>16], []],  
+  	[id => emily, [num_id=>17], []], 
+  	[id => angel, [num_id=>18], []], 
+  	[id => madison, [num_id=>19], []], 
+  	[id => charlotte, [num_id=>20], []],
+	[id => noah, [num_id=>21],[]], 
+  	[id => liam, [num_id=>22], []],
+  	[id => mason, [num_id=>23], []], 
+  	[id => jacob, [num_id=>24], []], 
+  	[id => william, [num_id=>25], []],
+  	[id => ethan, [num_id=>26], []],  
+  	[id => michael, [num_id=>27], []], 
+  	[id => alexander, [num_id=>28], []], 
+  	[id => james, [num_id=>29], []], 
+  	[id => daniel, [num_id=>30], []],
+  	[id => first, [num_id=>31], []], 
+  	[id => second, [num_id=>32], []]
+   	]),
+
+class(robot, entity, [], [], [	
+  	[id => golem, [in=>exit, attending_to=>nobody, has=>nothing],[]] 
+   	]),
+
+class(place, entity, [], [], []),
+
+%Rooms
+class(room, place, [], [], [	
+	[id => office, [main_point=>desk, object_path=>[desk,drawer,oo1,desk,drawer,oo1], human_path=>[op1,op2,op3,op2,op3]],[]], 
+	[id => 'living room', [main_point=>living_table, object_path=>[tv_stand,living_shelf,living_table,living_table,living_shelf,tv_stand], human_path=>[lp1,lp2,lp3,lp4]],[]], 
+	[id => corridor, [main_point=>cabinet, object_path=>[cabinet,co1,cabinet,co1,cabinet,co1], human_path=>[cp1,cp2,cp3,cp4,cp5]],[]], 
+	[id => bedroom, [main_point=>bed, object_path=>[bedside,bedside,bed,bo1,bedside,bedside], human_path=>[bp1,bp2,bed,bp3,bp4]],[]],	
+	[id => kitchen, [main_point=>bar, object_path=>[coffe_table,bookcase,bar,cupboard,sink,sideshelf], human_path=>[kp1,kp2,kp3]],[]]
+	]),
+
+%Points
+class(points, place, [coordinate=>[0.0,0.0,0.0]], [], [
+	[id => point1,[coordinate=>[0.5,0.0,0.0]],[]]
+	]),
+
+%Locations
+
+class(location, place, [height=>135.00], [], []),
+
+class(other, location, [], [], [
+	[id => drawer,[position=>drawer, height=>82.00],[in=>office]],
+	[id => desk,[position=>desk, height=>74.00],[in=>office]],
+	[id => bed,[position=>bed, height=>38.00],[in=>bedroom]],
+	[id => bedside,[position=>bedside, height=>76.00],[in=>bedroom]],
+	[id => bar,[position=>bar, height=>76.00],[in=>kitchen]],
+	[id => cupboard,[position=>cupboard, height=>82.00],[in=>kitchen]],	
+	[id => sink,[position=>sink, height=>94.00],[in=>kitchen]],
+	[id => sideshelf,[position=>sideshelf, height=>76.00],[in=>kitchen]],
+	[id => bookcase,[position=>bookcase, height=>76.00],[in=>kitchen]],
+	[id => 'dining table',[position=>dining_table, height=>74.00],[in=>kitchen]],
+	[id => 'tv stand',[position=>tv_stand, height=>78.00],[in=>'living room']],
+	[id => 'living shelf',[position=>living_shelf, height=>81.00],[in=>'living room']],
+	[id => 'living table',[position=>living_table, height=>45.00],[in=>'living room']],
+	[id => cabinet,[position=>cabinet, height=>78.00],[in=>corridor]]
+]),
+
+%Objetos
+
+class(object, entity, [graspable=>yes], [], []),
+
+class(candy, object, [], [in=>bedroom, is_in=>food], [	
+	[id => 'choco syrup', [],[]],
+	[id => bisquits, [],[]],
+	[id => 'baby sweets',[],[]],
+	[id => egg, [graspable=>no],[]]
+	]),
+
+class(snack, object, [], [in=>office, is_in=>food], [	
+	[id => chips, [],[]],
+	[id => pretzels, [graspable=>no],[]],
+	[id => pringles, [],[]]
+	]),
+
+class(food, object, [], [in=>kitchen, is_in=>food], [	
+	[id => apple, [],[]],
+	[id => paprika, [],[]],
+	[id => 'pumper nickel', [],[]]
+	]),
+
+class(toiletry, object, [], [in=>'living room', is_in=>food], [	
+	[id => shampoo, [],[]],
+	[id => soap, [],[]],
+	[id => cloth, [],[]],
+	[id => sponge, [],[]]
+	]),
+
+class(container, object, [], [in=>kitchen, is_in=>food], [	
+	[id => bowl, [],[]],
+	[id => tray, [],[]],
+	[id => plate, [],[]]
+	]),
+
+class(drink, object, [], [in=>kitchen, is_in=>food], [	
+	[id => beer, [],[]],
+	[id => 'coconut milk', [],[]],
+	[id => coke, [],[]],
+	[id => tea, [],[]]
+	])
+
+]	

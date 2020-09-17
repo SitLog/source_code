@@ -1,0 +1,19 @@
+main: (is,[day(tuesday)]:
+      [date(monday),next_date(tuesday)])
+main: (is,[tuesday,'not ok']:([day(tuesday)]:
+      [date(monday),next_date(tuesday)]))
+       [wait: (is,loop:[1])
+        wait: (fs2,empty:empty)]
+main: (rs,fs2:screen(Cont. recursive sit))
+       [wait: (is,tuesday:[1])
+        wait: (fs1,empty:empty)]
+main: (rs,fs1:screen(Back to initial sit))
+main: (is,[day(monday)]:
+      [date(tuesday),next_date(monday)])
+main: (is,[monday,ok]:([day(monday)]:
+      [date(tuesday),next_date(monday)]))
+main: (is,finish:screen(Good Bye))
+main: (fs,empty:empty)
+
+Out Arg: monday
+Out Global Vars: [g_count_fs1==>1,g_count_fs2==>1]

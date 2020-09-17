@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<grammar version="1.0" xml:lang="en-US" mode="voice" root="table" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+  <rule id="table">
+    <one-of>
+      <item> coffe table </item>
+      <item> kitchen table </item>
+      <item> side table </item>
+   </one-of>
+  </rule>
+</grammar>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<grammar version="1.0" xml:lang="en-US" mode="voice" root="care" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+  <rule id="care">
+    <one-of>
+      <item> soap </item>
+      <item> toothpaste </item>
+      <item> shower gel </item>
+   </one-of>
+  </rule>
+</grammar>

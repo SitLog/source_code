@@ -1,0 +1,230 @@
+[
+
+class(top,none,[],[],[]),
+
+
+class(grammar, top, [], [], []),
+
+
+class(item, grammar, [], [], [	
+	[id => i1, [ rule_descriptor=> (item(I-R,X):-human(I-R,X)) ],[]], 
+	[id => i2, [ rule_descriptor=> (item(I-R,X):-object(I-R,X)) ],[]],
+	[id => i3, [ rule_descriptor=> (item(I-R,X):-location(I-R,X)) ],[]],
+	[id => i4, [ rule_descriptor=> (item(I-R,X):-room(I-R,X)) ],[]],
+	[id => i5, [ rule_descriptor=> (item(I-R,X):-object_category(I-R,X)) ],[]]
+   	]),
+
+
+class(verb, grammar, [], [], [	
+
+	[id => v1,  [ rule_descriptor=> move([go,to|X]-X,_) ], []], 
+  	[id => v2,  [ rule_descriptor=> move([navigate,to|X]-X,_) ], []],
+  	[id => v3,  [ rule_descriptor=> move([reach,to|X]-X,_) ], []], 
+  	[id => v4,  [ rule_descriptor=> move([get,into|X]-X,_) ], []],
+
+	[id => v5,  [ rule_descriptor=> go([go|X]-X,_) ], []], 
+  	[id => v6,  [ rule_descriptor=> go([go,and|X]-X,_) ], []],
+
+  	[id => v7,  [ rule_descriptor=> find([look,for|X]-X,_) ], []], 
+  	[id => v8,  [ rule_descriptor=> find([find|X]-X,_) ], []],
+  	[id => v8a,  [ rule_descriptor=> find([detect|X]-X,_) ], []],
+
+	[id => v9,  [ rule_descriptor=> take([grasp|X]-X,_) ], []], 
+  	[id => v10, [ rule_descriptor=> take([take|X]-X,_) ], []],
+  	[id => v11, [ rule_descriptor=> take([get|X]-X,_) ], []], 
+
+  	[id => v12, [ rule_descriptor=> deliver([bring,it,to|X]-X,_) ], []],
+	[id => v13, [ rule_descriptor=> deliver([carry,it,to|X]-X,_) ], []], 
+  	[id => v14, [ rule_descriptor=> deliver([deliver,it,to|X]-X,_) ], []],
+  	[id => v15, [ rule_descriptor=> deliver([take,it,to|X]-X,_) ], []], 
+
+  	[id => v16, [ rule_descriptor=> say([speak|X]-X,_) ], []],
+	[id => v17, [ rule_descriptor=> say([tell|X]-X,_) ], []], 
+  	[id => v18, [ rule_descriptor=> say([say|X]-X,_) ], []],
+
+  	[id => v19, [ rule_descriptor=> answer([answer,a,question|X]-X,answer) ], []], 
+
+  	[id => v20, [ rule_descriptor=> report([and,report,to|X]-X,_) ], []],
+
+	[id => v21, [ rule_descriptor=> follow_1([follow,her,to,the|X]-X,_) ], []], 
+  	[id => v22, [ rule_descriptor=> follow_2([follow,her|X]-X,_) ], []],
+  	[id => v23, [ rule_descriptor=> (follow(X-Y,follow(Item)):-follow_1(X-N1,_),item(N1-Y,Item)) ], []], 
+  	[id => v24, [ rule_descriptor=> (follow(X-Y,follow(until_gesture)):-follow_2(X-Y,_)) ], []],
+
+	[id => v25, [ rule_descriptor=> find_person_1([a,person|X]-X,_) ], []], 
+  	[id => v26, [ rule_descriptor=> (find_person(X-Y,_):-find(X-N1,_),find_person_1(N1-Y,_)) ], []],
+
+  	[id => v27, [ rule_descriptor=> find_gesture_1([the,calling,person|X]-X,_) ], []], 
+  	[id => v28, [ rule_descriptor=> (find_gesture(X-Y,_):-find(X-N1,_),find_gesture_1(N1-Y,_)) ], []]
+
+   	]),
+
+
+class(connector, grammar, [], [], [	
+	[id => c1,  [ rule_descriptor=> connectors_1([are,in,the|X]-X,_) ],[]], 
+	[id => c2,  [ rule_descriptor=> connectors_2([at,the|X]-X,_) ],[]],
+	[id => c3,  [ rule_descriptor=> connectors_3([in,the|X]-X,_) ],[]],
+	[id => c4,  [ rule_descriptor=> connectors_4([which,is,in,the|X]-X,_) ],[]],
+	[id => c5,  [ rule_descriptor=> connectors_5([the|X]-X,_) ],[]],
+	[id => c6,  [ rule_descriptor=> connectors_6([and|X]-X,_) ],[]], 
+	[id => c7,  [ rule_descriptor=> connectors_7([from,the|X]-X,_) ],[]],
+
+	[id => c8,  [ rule_descriptor=> (connectors_a(I-R,_):-connectors_2(I-R,_)) ],[]],
+	[id => c9,  [ rule_descriptor=> (connectors_a(I-R,_):-connectors_3(I-R,_)) ],[]],
+	[id => c10, [ rule_descriptor=> (connectors_a(I-R,_):-connectors_4(I-R,_)) ],[]],
+	[id => c11, [ rule_descriptor=> (connectors_b(I-R,_):-connectors_2(I-R,_)) ],[]], 
+	[id => c12, [ rule_descriptor=> (connectors_b(I-R,_):-connectors_7(I-R,_)) ],[]]	
+   	]),
+
+
+class(data, grammar, [], [], [	
+	[id => d1,  [ rule_descriptor=> data([your,name|X]-X,'your name') ],[]], 
+	[id => d2,  [ rule_descriptor=> data([the,name,of,your,team|X]-X,'name of your team') ],[]],
+	[id => d3,  [ rule_descriptor=> data([the,time|X]-X,'the time') ],[]],
+	[id => d4,  [ rule_descriptor=> data([what,time,is,it|X]-X,'the time') ],[]],
+	[id => d5,  [ rule_descriptor=> data([the,date|X]-X,'the date') ],[]],
+	[id => d6,  [ rule_descriptor=> data([what,day,is,today|X]-X,'what day is today') ],[]], 
+	[id => d7,  [ rule_descriptor=> data([what,day,is,tomorrow|X]-X,'what day is tomorrow') ],[]],
+	[id => d8,  [ rule_descriptor=> data([the,day,of,the,month|X]-X,'day of the month') ],[]],
+	[id => d9,  [ rule_descriptor=> data([the,day,of,the,week|X]-X,'day of the week') ],[]]	
+   	]),
+
+
+class(observation, grammar, [], [], [	
+	[id => o1,   [ rule_descriptor=> observation_1([the,gesture,of,that,person|X]-X,person_gesture) ],[]], 
+	[id => o2,   [ rule_descriptor=> observation_1([which,gesture,is,performing,that,person|X]-X,person_gesture) ],[]],
+	[id => o3,   [ rule_descriptor=> observation_1([what,gesture,is,doing,that,person|X]-X,person_gesture) ],[]],
+	[id => o4,   [ rule_descriptor=> observation_1([the,gender,of,that,person|X]-X,person_gender) ],[]],
+	[id => o5,   [ rule_descriptor=> observation_1([if,the,person,is,male,or,female|X]-X,person_gender) ],[]],
+	[id => o6,   [ rule_descriptor=> observation_1([the,sex,of,that,person|X]-X,person_gender) ],[]], 
+	[id => o7,   [ rule_descriptor=> observation_2([how,many,people,are,in,the|X]-X,_) ],[]],
+	[id => o8,   [ rule_descriptor=> observation_3([how,many|X]-X,_) ],[]],
+
+	[id => o9,   [ rule_descriptor=> (observation(X-Y,watch(Observation)):-observation_1(X-Y,Observation)) ],[]],
+	[id => o10,  [ rule_descriptor=> (observation(X-Y,count(persons,Item)):-observation_2(X-N1,_),item(N1-Y,Item)) ],[]],
+	[id => o11,  [ rule_descriptor=> (observation(X-Y,count(Item1,Item2)):-observation_3(X-N1,_),item(N1-N2,Item1),connectors_1(N2-N3,_),item(N3-Y,Item2)) ],[]], 
+	
+	[id => o12,  [ rule_descriptor=> count_1([count,the|X]-X,_) ],[]],
+	[id => o13,  [ rule_descriptor=> count_2([count,the,people,at,the|X]-X,_) ],[]],
+	[id => o14,  [ rule_descriptor=> count_3([move,to,the|X]-X,_) ],[]],
+	
+	[id => o15,  [ rule_descriptor=> (count(X-Y,count(Item1,Item2)):-count_1(X-N1,_),item(N1-N2,Item1),connectors_2(N2-N3,_),item(N3-Y,Item2)) ],[]],
+	[id => o16,  [ rule_descriptor=> (count(X-Y,count(Item2,Item1)):-count_3(X-N1,_),item(N1-N2,Item1),count_1(N2-N3,_),item(N3-Y,Item2)) ],[]], 
+	[id => o17,  [ rule_descriptor=> (count(X-Y,count(persons,Item1)):-count_2(X-N1,_),item(N1-Y,Item1)) ],[]]		
+   	]),
+
+
+class(destiny, grammar, [], [], [	
+	[id => dty1, [ rule_descriptor=> person_destiny_1([me|X]-X,_) ],[]], 
+	[id => dty2, [ rule_descriptor=> (person_destiny(X-Y,destiny(me)):-person_destiny_1(X-Y,_)) ],[]],
+	[id => dty3, [ rule_descriptor=> (person_destiny(X-Y,destiny(Item1,Item2)):-item(X-N1,Item1),connectors_a(N1-N2,_),item(N2-Y,Item2)) ],[]],
+	[id => dty4, [ rule_descriptor=> (destiny(X-Y,Destiny):-person_destiny(X-Y,Destiny)) ],[]],
+	[id => dty5, [ rule_descriptor=> (destiny(X-Y,destiny(Item1)):-connectors_5(X-N1,_),item(N1-Y,Item1)) ],[]]
+   	]),
+
+
+class(interaction, grammar, [], [], [	
+	[id => int1, [ rule_descriptor=> (interact(X-Y,say(Item1)):-say(X-N1,_),data(N1-Y,Item1)) ],[]], 
+	[id => int2, [ rule_descriptor=> (interact(X-Y,say(Item1)):-say(X-N1,_),observation(N1-Y,Item1)) ],[]],
+	[id => int3, [ rule_descriptor=> (interact(X-Y,Command):-answer(X-Y,Command)) ],[]],
+	[id => int4, [ rule_descriptor=> (interact(X-Y,Command):-follow(X-Y,Command)) ],[]]
+   	]),
+
+
+class(command, grammar, [], [], [	
+	[id => command1,  [ rule_descriptor=> (command(X-Y,[find(Item2,Item1)]):-move(X-N1,_),connectors_5(N1-N2,_),item(N2-N3,Item1),connectors_6(N3-N4,_),find(N4-N5,_),connectors_5(N5-N6,_),item(N6-Y,Item2)) ],[]], 
+	[id => command2,  [ rule_descriptor=> (command(X-Y,[find(person,Item1),INTERACT]):-move(X-N1,_),connectors_5(N1-N2,_),item(N2-N3,Item1),find_person(N3-N4,_),connectors_6(N4-N5,_),interact(N5-Y,INTERACT)) ],[]],
+	[id => command3,  [ rule_descriptor=> (command(X-Y,[take(Item1,Item2),deliver(Item1,Destiny)]):-take(X-N1,_),connectors_5(N1-N2,_),item(N2-N3,Item1),connectors_b(N3-N4,_),item(N4-N5,Item2),connectors_6(N5-N6,_),deliver(N6-N7,_),destiny(N7-Y,Destiny)) ],[]],
+	[id => command4,  [ rule_descriptor=> (command(X-Y,[find(person,_),INTERACT]):-find_person(X-N1,_),connectors_6(N1-N2,_),interact(N2-Y,INTERACT)) ],[]],
+	[id => command5,  [ rule_descriptor=> (command(X-Y,[find(person,Item1),INTERACT]):-find_person(X-N1,_),connectors_3(N1-N2,_),item(N2-N3,Item1),connectors_6(N3-N4,_),interact(N4-Y,INTERACT)) ],[]],
+	[id => command6,  [ rule_descriptor=> (command(X-Y,[find(gesture,Item1),INTERACT]):-find_gesture(X-N1,_),connectors_3(N1-N2,_),item(N2-N3,Item1),connectors_6(N3-N4,_),interact(N4-Y,INTERACT)) ],[]], 
+	[id => command7,  [ rule_descriptor=> (command(X-Y,[find(Item1,_)]):-go(X-N1,_),find(N1-N2,_),connectors_5(N2-N3,_),item(N3-Y,Item1)) ],[]],
+	[id => command8,  [ rule_descriptor=> (command(X-Y,[find(person,_),INTERACT]):-go(X-N1,_),find_person(N1-N2,_),connectors_6(N2-N3,_),interact(N3-Y,INTERACT)) ],[]],
+	[id => command9,  [ rule_descriptor=> (command(X-Y,[report(Observation,Destiny)]):-say(X-N1,_),destiny(N1-N2,Destiny),observation(N2-Y,Observation)) ],[]],
+	[id => command10, [ rule_descriptor=> (command(X-Y,[move(Item1)]):-move(X-N1,_),connectors_5(N1-N2,_),item(N2-Y,Item1)) ],[]],
+	[id => command11,  [ rule_descriptor=> (command(X-Y,[take(Item1,Item2),find(person,_)]):-take(X-N1,_),connectors_5(N1-N2,_),item(N2-N3,Item1),connectors_b(N3-N4,_),item(N4-N5,Item2),connectors_6(N5-N6,_),find_person(N6-N7,_)) ],[]],
+	[id => command12, [ rule_descriptor=> (command(X-Y,[report(Count,Destiny)]):-count(X-N1,Count),report(N1-N2,_),destiny(N2-Y,Destiny)) ],[]]
+   	])
+
+
+]	
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

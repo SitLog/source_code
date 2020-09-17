@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<grammar version="1.0" xml:lang="en-US" mode="voice" root="questions" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+  <rule id="questions">
+    <one-of>
+      <item> what is the capital of this state <tag>out="The capital of this state is Victoria City."</tag></item>
+      <item> what is the color of the sky <tag>out="The color of the sky is blue."</tag></item>
+      <item> who discovered america <tag>out="Christopher Collumbus discovered America."</tag></item>
+      <item> how are you doing today <tag>out="I am doing fine, thank you."</tag></item>
+      <item> when did you have your last maintenance <tag>out="I had my last maintenance this morning."</tag></item>
+      <item> how many rooms does this arena have <tag>out="This arena has four rooms."</tag></item>
+      <item> do you fancy the other robot <tag>out="I am not ready for a commitment."</tag></item>
+      <item> who was the best soccer player ever <tag>out="The best soccer player ever was Pele."</tag></item>
+      <item> how do you like your coffee <tag>out="I do not drink coffee."</tag></item>
+      <item> are you feeling warm in this room <tag>out="Yes, I feel very warm in this room."</tag></item>
+      <item> what is your favorite movie <tag>out="My favorite movie is Blade Runner."</tag></item>
+      <item> how tall are you <tag>out="My height is one meter, thirty five centimeters."</tag></item>
+      <item> what is your favorite science fiction novel <tag>out="My favorite novel is: Do Androids Dream of Electric Sheep by Phillip Dick."</tag></item>
+      <item> where do you come from <tag>out="I come from Mexico City."</tag></item>
+      <item> would you like to drive your own car <tag>out="I do not have a drivers license."</tag></item>
+    </one-of>
+  </rule>
+</grammar>

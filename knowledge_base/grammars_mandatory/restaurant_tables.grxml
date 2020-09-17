@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<grammar version="1.0" xml:lang="en-US" mode="voice" root="labels" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+  <rule id="labels">
+    <one-of>
+      <item> <ruleref uri="#tables"/> one <tag>out="table one"</tag></item>
+      <item> <ruleref uri="#tables"/> two <tag>out="table two"</tag></item>
+      <item> <ruleref uri="#tables"/> three <tag>out="table three"</tag></item>
+    </one-of>
+  </rule>
+  <rule id="tables">
+    <one-of>
+      <item> table </item>
+      <item> </item>
+    </one-of>
+  </rule>
+</grammar>
