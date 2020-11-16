@@ -56,7 +56,7 @@ You are ready to run SitLog programs in test mode!
 Now, we describe the execution of the sample code 
 found in [sample_main.dm](https://github.com/SitLog/source_code/blob/master/apps/test_behaviors/sample/sample_main.dm), whose diagrammatic representation is given below.
 
-![Diagrammatic representation of sample dialoge model](apps/test_behaviors/sample/m_diagram.jpg)
+![Diagrammatic representation of sample dialoge model](apps/test_behaviors/sample/dm_diagram.jpg)
 
 Open a terminal, change the directory to the one having this repository and run:
 
