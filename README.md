@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # SitLog
 SitLog is a declarative situation-oriented logical language for programming situated service robots’ tasks. The formalism is task and domain independent and can be used in a wide variety of settings. SitLog can also be seen as a behavior engineering specification and interpretation formalism to support action selection by autonomous agents during the execution of complex tasks. For more details see the paper [SitLog: A Programming Language for Service Robot Tasks](https://doi.org/10.5772/56906).
 
@@ -52,7 +51,19 @@ The final setting that must be perfomed to have SitLog running is to add an envi
     export SITLOG_HOME=/path_in_your_computer/source_code/
 
 
-You are ready to run SitLog programs in test mode. Now, we are going to describe the execution of the sample code 
-=======
-# source_code
->>>>>>> 27349e4aadfcdc1d50ed6993f6d9d8f3872342e1
+You are ready to run SitLog programs in test mode. Now, we describe the execution of the sample code 
+found in [sample_main.dm](https://github.com/SitLog/source_code/blob/master/apps/test_behaviors/sample/sample_main.dm), whose diagrammatic representation is given below.
+
+Open a terminal, change the directory to the one having this repository and run:
+
+    $ ./scripts/test_behaviors test
+
+
+Since the execution mode is test, you will be prompted to enter the dialogue model to be run by Sitlog. So, type
+
+    |: res(sample).
+
+
+Type ```ok.``` as a confirmation.
+
+Next, 
