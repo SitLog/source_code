@@ -8,7 +8,7 @@
       <item> do you have a drink for all ages <tag>out.answer="to kick ass"</tag></item>
       <item> do you have cereal <tag>out.answer="to kick ass"</tag></item>
       <item> no <tag>out.answer="to kick ass"</tag></item>
-      <item> bring me a coke <tag>out.answer="b"</tag></item>
+      <item> bring me a coke please <tag>out.answer="b"</tag></item>
     </one-of>
   </rule>
 </grammar>

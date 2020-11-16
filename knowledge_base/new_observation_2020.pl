@@ -16,6 +16,7 @@
 new_observation_dlic(KB,ObservedShelf=>ObservedObjects,NewKB10):-
 	
 	%Loading beliefs from KB
+	nl,write('El shelf observado es:'),nl,write(ObservedShelf), nl,
 	object_property_value(ObservedShelf,original_reported,KB,Reported),
 	write('According to the report these objects should be in the shelf and belongs to the class of the shelf: '),write(Reported),nl,
 

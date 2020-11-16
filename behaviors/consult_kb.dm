@@ -159,7 +159,7 @@ diag_mod(consult_kb(Kind, In_Par, Out_Par, Status),
 		 id ==> kind_of_consult(update_kb_demo,[Location,ListObjects]),		
 		 type ==> neutral,
 		 arcs ==> [		
-				empty : apply( update_kb_demo_dlic(_,_), [Location,ListObjects] ) => success 
+				empty : apply( update_kb_demo_dlic(L_,LO_), [Location,ListObjects] ) => success 
 			  ]		  		
 		],
 

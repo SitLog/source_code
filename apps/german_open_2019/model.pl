@@ -1,1 +1,1 @@
-receptionist.
+demo_supermarket.

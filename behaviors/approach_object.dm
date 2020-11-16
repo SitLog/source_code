@@ -35,6 +35,20 @@ diag_mod(approach_object(In_Parameters, Out_Parameters, Status),
 				check(object(Object_ID, X, Y, Z, O1, O2, O3, O4, Conf), Polar_Coord, apply(reachable(A, D), [Polar_Coord, get(in_range, Range)]))
 			  ]
 		],
+
+		% Particular case of compare when only the object's name is given
+		[
+		 id ==> compare(ObjectName),
+		type ==> recursive,
+		out_arg ==> [See_Status],
+		embedded_dm ==> see_object([ObjectName], object, [ObjectInfo], See_Status),
+		arcs ==> [		
+				% See objects and compare again
+				success:empty => compare(ObjectInfo),
+				% The object is lost from scene: try to recover it
+				error:empty => error
+			  ]
+		],
 	    	
 		% Object already in grasping or delivery distance
 		[ 
@@ -107,6 +121,22 @@ diag_mod(approach_object(In_Parameters, Out_Parameters, Status),
 				error:empty => scan(Object_ID)
 			  ]
 		],
+		
+		
+		%% Particular case of see when only the object's name is given
+		
+		[
+		 id ==> see_object(ObjectName),
+		 type ==> recursive,
+		 embedded_dm ==> see_object([ObjectName], object, [ObjectInfo], See_Status),
+		 arcs ==> [		
+				% See objects and compare again
+				success:empty => compare(ObjectInfo),
+				% The object is lost from scene: try to recover it
+				error:empty => scan(ObjectName)
+			  ]
+		],
+		
 
 		% Tilt to recover the object again
 		[

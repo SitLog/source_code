@@ -6,35 +6,71 @@ diag_mod(demo_supermarket_main,
 	[  
       		id ==> move_origin,
       		type ==> recursive,
-		embedded_dm ==> move(front_desk,_),
-		  		arcs ==> [
-        			success : empty => is,
-        			error : say('Restart my navigation system') => is
-			]
+		embedded_dm ==> move(welcome_point,_),
+		arcs ==> [
+        		 success : empty => is,
+        		 error : say('Restart my navigation system') => is
+			 ]
     	],
 
     	[
       		id ==> is,	
       		type ==> neutral,
-      		arcs ==>  [
-                	empty : [apply(initialize_KB_supermarket_ricardo,[]),
-                        	robotheight(1.30),set(last_height,1.30),tiltv(0.0),set(last_tilt,0.0),
-                        	say('Hello. My name is Golem and I am an assistant in the supermarket.')
-                        	] => receive_comand
-                ]
+      		arcs ==> [
+                	 empty : [apply(initialize_KB_supermarket_ricardo,[]),
+                        	 tiltv(0.0),set(last_tilt,0.0),
+                        	 say('Hello my name is Golem and I am an assistant in the supermarket')
+                        	 ] => receive_comand
+                         ]
     ],	
     
     %Receive the command and translate it to Conversation Obligations (Golem's command).
     [  
       		id ==> receive_comand,
       		type ==> recursive,
-      		embedded_dm ==> ask('What do you want me to do?',supermarket_command,false,1, Resp,_),
+      		embedded_dm ==> ask('What can I do for you?',supermarket_command,false,1, Resp,_),
       		arcs ==> [
-        		success: [ say(['The command is ', Res]), assign(ConversationObligations, apply(rsupermarket_parser(_),[Resp]))
-        		         ] => dispatch( apply(action_reasoner_demo(S), [ConversationObligations]) ),
-        		error : empty => error
+        	         success: [
+			     apply(when(_,_,_),
+				   [
+				       Resp=='bring me a coke please',
+				       say('ok I will bring it to you'),
+				       empty
+				   ]),
+			     assign(Obligations, apply(rsupermarket_parser(_),[Resp]))
+        		          ] => receive_more_commands(Obligations),%dispatch( apply(action_reasoner_demo(_),[Obligations]) ),
+        		 error : empty => fs
         							
       			 ]
+    ],
+
+    [
+	id ==> receive_more_commands(Obligations),
+	type ==> recursive,
+	embedded_dm ==> ask('Anything else?',supermarket_command,false,1, Resp,_),
+	arcs ==> [
+	    success: empty => answer_more_commands(Resp,Obligations),
+	    error  : empty => fs
+	         ]
+    ],
+
+    [
+	id ==> answer_more_commands(no,Ob),
+	type ==> neutral,
+	arcs ==> [
+	         empty : empty => dispatch(apply(action_reasoner_demo(_),[Ob]))
+	    ]
+    ],
+
+    [
+	id ==> answer_more_commands(Resp,Ob),
+	type ==> neutral,
+	arcs ==> [
+	    empty:[
+		assign(MoreOb,apply(rsupermarket_parser(_),[Resp])),
+		append(Ob,MoreOb,NewOb)
+		  ] => receive_more_commands(NewOb)
+	    ]
     ],
     		       
         
@@ -42,11 +78,10 @@ diag_mod(demo_supermarket_main,
     	[
 		id ==> dispatch([]),
      		type ==> recursive,
-     		embedded_dm ==> say('Going to waiting position', _),
+     		embedded_dm ==> say('Your request has been completed good bye', _),
      		arcs ==> [
-			         % Move robot to waiting position for next round
-		  	         success:empty => move,
-		  	         error  :empty => move
+			         success:empty => fs,
+		  	         error  :empty => fs
 		         ]
       	],
       	
@@ -70,57 +105,9 @@ diag_mod(demo_supermarket_main,
 		embedded_dm ==> error_manager_demo(Current_Task, Remaining_Tasks, New_Tasks),
       		arcs ==> [
 		         success : empty => dispatch(New_Tasks),
-       	 	         error   : [say(['There is an error I cannot recover from ', 'Going to waiting position'])] => move 
+       	 	         error   : say('There is an error I cannot recover from aborting task') => fs
 		         ]
        	],
-
-  % Move to waiting position
-    	[  
-      		id ==> move,
-      		type ==> recursive,
-    		embedded_dm ==> move(wainting_position,_),
-      		arcs ==> [
-        		  success : empty =>  fs, %[get(right_arm, Obj_right), apply(reset_error_counters,[])] => apply(  when(If, True, False), [Obj_right == free,success,say_release]  ),
-        		 error   : empty => fs %[apply(reset_error_counters,[]), say('I will try again')] => move				
-                         ]
-     	],
-     	
-     	
-     	% Say an object is held
-     	[  
-      		id ==> say_release,
-      		type ==> neutral,
-      		arcs ==> [
-        		 empty : [say(['I got an object in my right hand', 'I will give it to you'])]
-        		       => release_obj
-                         ]
-     	],
-     	
-     	
-     	% Release held object
-     	[  
-      		id ==> release_obj,
-      		type ==> recursive,
-    		embedded_dm ==> relieve_arg(0.0, 0.5, right, _),
-      		arcs ==> [
-        		 success : empty => success,
-        		 error   : empty => release_obj
-                         ]
-     	],
-     	
-
-        % Success
-       	[
-      		id ==> success,
-     		type ==> final
-    	],
-    	
-
-        % Error
-    	[
-      		id ==> error,
-     		type ==> final
-    	],
 
 	%Final Situation
        	[

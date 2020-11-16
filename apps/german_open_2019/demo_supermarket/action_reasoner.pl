@@ -41,30 +41,61 @@ construct_commands_demo(find(object(X),place(Y)),[
 	say(['Here is the ', Obj_Name],_)
 	]).
 
-%Move(location)	
-construct_commands_demo(move(location(Loc)),[
-	consult_kb(value_object_property, [Loc,name], NameLoc, _),
-	say(['I will move to the', NameLoc],_),
+
+%Move(start)
+construct_commands_demo(move(start),[
+	consult_kb(value_object_property, [start,name], NameLoc, _),
+	say(['I will move to', NameLoc],_),
 	consult_kb(value_object_property, [Loc,position], Position, _),
 	move(Position,_),
-	consult_kb(change_object_property, [golem,in,Position], _, _),
-	say('Ready',_)
+	consult_kb(change_object_property, [golem,position,Position], _, _)
 	]).
 
-construct_commands_demo(scan(object(X)),[
-	say(['I will search for the', X], _),	
-	scan(object, Z, [0.0], [-30.0], object, FoundObjects, false, false, _),
-	consult_kb(value_object_property, [golem,in],Position, _),
-	consult_kb(update_kb_demo, [Position,FoundObjects], _, _), 
-	say(['The kb was updated '],_)
-	]).
-	
-%Answer
-construct_commands_demo(answer,[
-	answer_question
+
+%Move(location)	
+construct_commands_demo(move(Loc),[
+	consult_kb(value_object_property, [Loc,name], NameLoc, _),
+	say(['I will move to', NameLoc],_),
+	consult_kb(value_object_property, [Loc,position], Position, _),
+	move(Position,_),
+	consult_kb(change_object_property, [golem,position,Position], _, _),
+	scan(object, X, [0.0], [-30.0], object, FoundObjects, false, false, _),
+	consult_kb(value_object_property, [golem,position],Position, _),
+	consult_kb(update_kb_demo, [Position,FoundObjects], _, _)
 	]).
 
-		
+
+%Grasp(X,right)
+construct_commands_demo(grasp(X,right),[
+	take(X, right, _, _),
+	consult_kb(change_object_property, [golem,right_arm,X], _, _)
+	]).
+
+
+%Grasp(X,left)
+construct_commands_demo(grasp(X,left),[
+	take(X, left, _, _),
+	consult_kb(change_object_property, [golem,left_arm,X], _, _)
+	]).
+
+
+%Deliver(Object,right)
+construct_commands_demo(deliver(Object,right),[	
+	say(['I will deliver the',Object],_),
+	relieve_arg(-20.0, 0.5, right, _),
+	consult_kb(change_object_property, [golem,right_arm,free], _, _)	    
+	]).
+
+
+
+%Deliver(Object,left)
+construct_commands_demo(deliver(Object,left),[
+	say(['I will deliver the',Object],_),    
+	relieve_arg(20.0, 0.5, left, _),
+	consult_kb(change_object_property, [golem,left_arm,free], _, _)	    
+	]).
+
+
 %DEFAULT
 construct_commands_demo(X,[say('Sorry, I dont know how to resolve the command demo',_)]).
 

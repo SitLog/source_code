@@ -1561,11 +1561,109 @@ find_value_propty([_|Tail],Value,Org):-
         
 %%%%%%%%%%%%%%%%%FUNCIONES DE USUARIO PARA LA DEMO DLIC %%%%%%%%%%%%%%%%%%%%
 update_kb_demo_dlic(Location,ListObjects):-
-        open_kb(KB),
-        new_observation_dlic(KB,Location=>ListObjects,NewKB1)
-	save_kb(NewKB1),
+        open_kb(KB), 
+        getNameListObjects(ListObjects, ListNames),
+        new_observation_dlic(KB,Location=>ListNames,NewKB),
+	save_kb(NewKB),
 	assign_func_value(empty).
-       
+
+daily_life_inference_cicle_demo(Object,Diagnosis,Decision,Plan):-
+        open_kb(KB),
+        golem_daily_life_inference_cycle(KB,Object,NewKB,Diagnosis,Decision,Plan), 
+        %nl,write('Diagnosis:'),write(Diagnosis), 
+        save_kb(NewKB),
+	assign_func_value(empty).
+
+
+%% Parser to get the dialogue expressing the diagnosis
+diagnosis_parser(Diagnosis,Dialogue):-
+        diagnosis_parser_tmp(Diagnosis,[],Dialogue),
+        assign_func_value(empty).
+    
+diagnosis_parser_tmp([],Dialogue,Dialogue).
+
+diagnosis_parser_tmp([move(Loc)|More],Tmp,Dialogue):-
+        open_kb(KB),
+	object_property_value(Loc,name,KB,NameLoc),
+        append(Tmp,['went to',NameLoc],NewTmp),
+	diagnosis_parser_tmp(More,NewTmp,Dialogue).
+
+diagnosis_parser_tmp([place([Item])|More],Tmp,Dialogue):-
+        append(Tmp,['then placed the',Item],NewTmp),
+	diagnosis_parser_tmp(More,NewTmp,Dialogue).
+
+diagnosis_parser_tmp([place([Item1,Item2])|More],Tmp,Dialogue):-
+        append(Tmp,['then placed the',Item1,'and the',Item2],NewTmp),
+	diagnosis_parser_tmp(More,NewTmp,Dialogue).
+
+diagnosis_parser_tmp([place(Lst)|More],Tmp,Dialogue):-
+        place_tmp_func(Lst,NewLst),
+        append(Tmp,['then placed'|NewLst],NewTmp),
+	diagnosis_parser_tmp(More,NewTmp,Dialogue).
+
+place_tmp_func([],[]).
+
+place_tmp_func([Item1,Item2],['the',Item1,'and the',Item2]).
+
+place_tmp_func([H|T],['the',H|NewT]):-
+        place_tmp_func(T|NewT).
+
+
+%% Parser to get the dialogue expressing the decision
+decision_parser(Decision,Dialogue):-
+        decision_parser_tmp(Decision,[],Dialogue),
+        assign_func_value(empty).
+
+decision_parser_tmp([],Dialogue,Dialogue).
+
+decision_parser_tmp([bring(Item1),rearrange(Item2)],Tmp,Dialogue):-
+        append(Tmp,['bring the',Item1,'to the client and place the',Item2,'on the correct shelf'],Dialogue).
+
+decision_parser_tmp([bring(Item)|More],Tmp,Dialogue):-
+        append(Tmp,['bring the',Item,'to the client'],NewTmp),
+	decision_parser_tmp(More,NewTmp,Dialogue).
+
+decision_parser_tmp([rearrange(Item)|More],Tmp,Dialogue):-
+        append(Tmp,['place the',Item,'on the correct shelf'],NewTmp),
+	decision_parser_tmp(More,NewTmp,Dialogue).
+
+
+%% Parser to get the dialogue expressing the plan
+plan_parser(Plan,Dialogue):-
+        plan_parser_tmp(Plan,[],Dialogue),
+        assign_func_value(empty).
+
+plan_parser_tmp([],Dialogue,Dialogue).
+
+plan_parser_tmp([grasp(Obj1,Arm1),move(Loc),deliver(Obj2,Arm2)|More],Tmp,Dialogue):-
+        open_kb(KB),
+	object_property_value(Loc,name,KB,NameLoc),
+	append(Tmp,['take the',Obj1,'with my',Arm1,'hand then move to',NameLoc,'and there deliver the',Obj2,'in my',Arm2,'hand'],NewTmp),
+	plan_parser_tmp(More,NewTmp,Dialogue).
+
+plan_parser_tmp([grasp(Obj,Arm)|More],Tmp,Dialogue):-
+        append(Tmp,['take the',Obj,'with my',Arm,'hand'],NewTmp),
+	plan_parser_tmp(More,NewTmp,Dialogue).
+
+plan_parser_tmp([move(Loc)|More],Tmp,Dialogue):-
+        open_kb(KB),
+	object_property_value(Loc,name,KB,NameLoc),
+	append(Tmp,['move to',NameLoc],NewTmp),
+	plan_parser_tmp(More,NewTmp,Dialogue).
+
+plan_parser_tmp([deliver(Obj,Arm)|More],Tmp,Dialogue):-
+        append(Tmp,['deliver the',Obj,'in my',Arm,'hand'],NewTmp),
+        plan_parser_tmp(More,NewTmp,Dialogue).
+
+
+%Get only the name values from the List object seen in the Scan
+%getNameListObjects(X, OutputList).
+getNameListObjects([], []).
+
+getNameListObjects([object(X,_,_,_,_,_,_,_,_)|Xs], [X|ListNames]):-   
+  getNameListObjects(Xs, ListNames).
+
+
 
 %%%%%%%%%%%%%%%%% List parser for property_extention %%%%%%%%%%%%%%%%%%
 list_parser([],[]).
@@ -3146,10 +3244,8 @@ ddp_verify_in_which_hand_is_the_object(_,_,_,left).
 
 %% ==> Supermarket Demo
 %% Parser
-rsupermarket_parser('bring me a coke'):-
-%%   assign_func_value([find(object(coke)),take(object(coke)),deliver(destiny(human(user),location(front_desk)))]).
-%%assign_func_value([find(object(coke)), take(object(coke),Status), deliver(destiny(coke,location(waiting_point)))]).
-assign_func_value([move(location(shelf_drinks)),scan(object(coke)),take(object(coke)),deliver(destiny(coke,location(waiting_point)))]).
+rsupermarket_parser('bring me a coke please'):-
+    assign_func_value([move(shelf_drinks), grasp(coke,left),move(start),deliver(coke,left)]).
 
 
 rsupermarket_parser('bring me a coke and a bag of crisps'):-

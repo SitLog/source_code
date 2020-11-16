@@ -5,7 +5,7 @@
 % Author: Carlos Ricardo Cruz Mendoza
 %
 %
-diag_mod(error_manager(Current_task, Remaining_tasks, Res_tasks),
+diag_mod(error_manager_demo(Current_task, Remaining_tasks, Res_tasks),
 [
     % Initial situation. Golem performs a big case intruction to analyze the type of error that occurred
     [
@@ -154,13 +154,29 @@ diag_mod(error_manager(Current_task, Remaining_tasks, Res_tasks),
     % Case TAKE: not_found error in the take behaviour  
     [
     id ==> analyze_error( take(Obj, Arm, _, not_found) ),
-    type ==> recursive,
-    out_arg==> [Tasks],
-    embedded_dm ==> take_not_found(Obj, Arm, Remaining_tasks, Tasks),
+    type ==> neutral,
+    out_arg==> [Tasks],    
+    %embedded_dm ==> take_not_found(Obj, Arm, Remaining_tasks, Tasks),
     arcs ==> [
-             success : empty => success,
-             error : empty => error
-             ]
+        empty : [
+	        apply( daily_life_inference_cicle_demo(_,_,_,_), [Obj,Diagnosis,Decision,ConversationObligations] ),
+	         %%% Diagnosis
+	         apply(diagnosis_parser(_,_),[Diagnosis,Say_Diagnosis]),
+		 say('My diagnosis for the current situation is'),
+		 say('The human assistant'),
+		 say(Say_Diagnosis),
+                 %%% Decision
+		 apply(decision_parser(_,_),[Decision,Say_Decision]),
+		 say('My decision is to'),
+		 say(Say_Decision),
+		 %%% Plan
+		 apply(plan_parser(_,_),[ConversationObligations,Say_Plan]),
+		 say('The plan that I will execute is to'),
+		 say(Say_Plan),
+		 %%%
+		 assign(Tasks,apply(action_reasoner_demo(_),[ConversationObligations]))
+		]
+		=> success                                     ]
     ], 
     
     % Case TAKE: navigation_error in the take behaviour  
@@ -258,14 +274,14 @@ diag_mod(error_manager(Current_task, Remaining_tasks, Res_tasks),
     id ==> success,
     type ==> final,
     in_arg ==> [Tasks],
-    diag_mod ==> error_manager(_, _, Tasks)
+    diag_mod ==> error_manager_demo(_, _, Tasks)
     ],
     
     % Final situation : error
     [
     id ==> error,
     type ==> final,
-    diag_mod ==> error_manager(_, _, [])
+    diag_mod ==> error_manager_demo(_, _, [])
     ]
 ],
 
