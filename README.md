@@ -51,8 +51,12 @@ The final setting that must be perfomed to have SitLog running is to add an envi
     export SITLOG_HOME=/path_in_your_computer/source_code/
 
 
-You are ready to run SitLog programs in test mode. Now, we describe the execution of the sample code 
+You are ready to run SitLog programs in test mode!
+
+Now, we describe the execution of the sample code 
 found in [sample_main.dm](https://github.com/SitLog/source_code/blob/master/apps/test_behaviors/sample/sample_main.dm), whose diagrammatic representation is given below.
+
+![Diagrammatic representation of sample dialoge model](apps/test_behaviors/sample/m_diagram.jpg)
 
 Open a terminal, change the directory to the one having this repository and run:
 
@@ -66,4 +70,7 @@ Since the execution mode is test, you will be prompted to enter the dialogue mod
 
 Type ```ok.``` as a confirmation.
 
-Next, 
+The ```sample_main.dm``` file is loaded and the first situation is considered, it asks us to enter the expectation that is met. So, we type
+
+    [day(tuesday)].
+

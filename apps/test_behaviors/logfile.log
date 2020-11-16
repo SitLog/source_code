@@ -1,20 +1,20 @@
-[2020/10/20,1:48:45.861704111]Info-Level 1: Running models from     : models
-[2020/10/20,1:48:45.861726999]Info-Level 1: Project directory       : apps/test_behaviors
-[2020/10/20,1:48:45.861735582]Info-Level 1: Knowledge base          : knowledge_base/knowledge_base_robocup.pl
-[2020/10/20,1:48:45.861742734]Info-Level 1: User Functions          : user_functions.pl
-[2020/10/20,1:48:45.861749649]Info-Level 1: Expectation Types       : expectation_types.pl
-[2020/10/20,1:48:45.861756324]Info-Level 1: Basic acts              : basic_actions.pl
-[2020/10/20,1:48:45.861762762]Info-Level 1: Templates               : templates.pl
-[2020/10/20,1:48:45.861769676]Info-Level 1: Running dialogue        : main
-[2020/10/20,1:48:45.861776113]Info-Level 1: Writing debug file to   : logfile.log
-[2020/10/20,1:48:45.86178255]Info-Level 1: Saving log file to      : apps/test_behaviors/log
-[2020/10/20,1:48:45.945076704]Info-Level 1: Starting dialogue: main
-[2020/10/20,1:48:45.945164203]Info-Level 1: Saving log in: apps/test_behaviors/log/dm.txt
-[2020/10/20,1:48:45.945226907]Info-Level 1: Executing dialogue: main
-[2020/10/20,1:48:45.948261737]Info-Level 1: Defined local vars: [carry==>carry_main,see_object==>see_object_main,detect_face==>detect_face_main,memorize_face==>memorize_face_main,recognize_face==>recognize_face_main,see_face==>see_face_main,detect_head==>detect_head_main,see_person==>see_person_main,see_gesture==>see_gesture_main,see==>see_main,tilt==>tilt_main,scan==>scan_main,find==>find_main,approach_person==>approach_person_main,move==>move_main,move_nb==>move_main_nonblock,detect_door==>detect_door_main,follow==>follow_main,take==>take_main,approach_object==>approach_object_main,grasp==>grasp_main,deliver==>deliver_main,approach_plane==>approach_plane_main,approach_surface==>approach_surface_main,relieve==>relieve_main,ask==>ask_main,answer==>answer_main,say==>say_main,guide==>guide_main,execute==>execute_main,consult_kb==>consult_kb_main,point==>point_main,prompt==>prompt_main,detect_body==>detect_body_main,memorize_body==>memorize_body_main,recognize_body==>recognize_body_main,describe_body==>describe_body_main,see_body==>see_body_main,gpsr==>gpsr_main,egpsr==>egpsr_main,rips==>rips_main,inference==>inference_main,preferences==>preferences_main,object_manipulation==>object_manipulation_main,clean_up==>clean_up_main,set_table_up==>set_table_up_main,date==>date_main,gender==>gender_main,pose==>pose_main,time==>time_main,qr==>qr_main,plane==>plane_main,answer_question==>answer_question_main,person_recognition_test==>person_recognition_test_main,soft_biometrics==>soft_biometrics_main,supermarket==>supermarket_main,follow_with_clothes==>follow_with_clothes_main,speech_and_person==>speech_and_person_main,inspection==>inspection_main,recepcionist==>recepcionist_main,test_students==>test_students_main,tk==>take([coke,0,0.4,0.7,1,1,1,1,1],-20,right,_G60680),give==>give(coke,1),learn==>learn_faces,oid==>identify_object(_G60736),doa==>doa_main,test==>test,parse==>parse_main,mood==>mood_main,sample==>sample_main,lead==>lead_main,detect_face_cs==>detect_face_cognitive_main,prueba==>prueba_main,find_say==>test_find_and_say_main,openpose==>openpose_main,whereiam==>whereiam_main]
-[2020/10/20,1:48:45.948731422]All: Situtation: is
-[2020/10/20,1:48:45.948742866]Structs: Executing situtation: _G139245
-[2020/10/20,1:48:45.948758125]Debug: In situation is of type neutral.
-[2020/10/20,1:48:45.948775529]All: Situation to execute [id==> (is),type==>neutral,arcs==>[empty:[screen(All the system working),screen(These are the options),screen(in, fo, cp, cl, res, gpsr, demo, see_object, detect_face, memorize_face, recognize_face, see_face, see, ask)]=>apply(model_to_execute(_G137297,_G137300,_G137303),[k1,k2,model.pl])]].
-[2020/10/20,1:48:45.951859474]Debug: In situation k1 of type keyboard.
-[2020/10/20,1:48:45.9518857]All: Situation to execute [id==>k1,type==>keyboard,arcs==>[res(_G214856):[screen(Input ok to execute ),get(_G214856,_G214859),screen(_G214859)]=>k2(_G214856)]].
+[2020/11/16,7:16:53.844365358]Info-Level 1: Running models from     : models
+[2020/11/16,7:16:53.844406843]Info-Level 1: Project directory       : apps/test_behaviors
+[2020/11/16,7:16:53.844415187]Info-Level 1: Knowledge base          : knowledge_base/knowledge_base_robocup.pl
+[2020/11/16,7:16:53.844422101]Info-Level 1: User Functions          : user_functions.pl
+[2020/11/16,7:16:53.8444283]Info-Level 1: Expectation Types       : expectation_types.pl
+[2020/11/16,7:16:53.844434738]Info-Level 1: Basic acts              : basic_actions.pl
+[2020/11/16,7:16:53.844450235]Info-Level 1: Templates               : templates.pl
+[2020/11/16,7:16:53.844456434]Info-Level 1: Running dialogue        : main
+[2020/11/16,7:16:53.844462394]Info-Level 1: Writing debug file to   : logfile.log
+[2020/11/16,7:16:53.844468355]Info-Level 1: Saving log file to      : apps/test_behaviors/log
+[2020/11/16,7:16:53.889564037]Info-Level 1: Starting dialogue: main
+[2020/11/16,7:16:53.889662027]Info-Level 1: Saving log in: apps/test_behaviors/log/dm.txt
+[2020/11/16,7:16:53.889714002]Info-Level 1: Executing dialogue: main
+[2020/11/16,7:16:53.892657995]Info-Level 1: Defined local vars: [carry==>carry_main,see_object==>see_object_main,detect_face==>detect_face_main,memorize_face==>memorize_face_main,recognize_face==>recognize_face_main,see_face==>see_face_main,detect_head==>detect_head_main,see_person==>see_person_main,see_gesture==>see_gesture_main,see==>see_main,tilt==>tilt_main,scan==>scan_main,find==>find_main,approach_person==>approach_person_main,move==>move_main,move_nb==>move_main_nonblock,detect_door==>detect_door_main,follow==>follow_main,take==>take_main,approach_object==>approach_object_main,grasp==>grasp_main,deliver==>deliver_main,approach_plane==>approach_plane_main,approach_surface==>approach_surface_main,relieve==>relieve_main,ask==>ask_main,answer==>answer_main,say==>say_main,guide==>guide_main,execute==>execute_main,consult_kb==>consult_kb_main,point==>point_main,prompt==>prompt_main,detect_body==>detect_body_main,memorize_body==>memorize_body_main,recognize_body==>recognize_body_main,describe_body==>describe_body_main,see_body==>see_body_main,gpsr==>gpsr_main,egpsr==>egpsr_main,rips==>rips_main,inference==>inference_main,preferences==>preferences_main,object_manipulation==>object_manipulation_main,clean_up==>clean_up_main,set_table_up==>set_table_up_main,date==>date_main,gender==>gender_main,pose==>pose_main,time==>time_main,qr==>qr_main,plane==>plane_main,answer_question==>answer_question_main,person_recognition_test==>person_recognition_test_main,soft_biometrics==>soft_biometrics_main,supermarket==>supermarket_main,follow_with_clothes==>follow_with_clothes_main,speech_and_person==>speech_and_person_main,inspection==>inspection_main,recepcionist==>recepcionist_main,test_students==>test_students_main,tk==>take([coke,0,0.4,0.7,1,1,1,1,1],-20,right,_G60742),give==>give(coke,1),learn==>learn_faces,oid==>identify_object(_G60798),doa==>doa_main,test==>test,parse==>parse_main,mood==>mood_main,sample==>sample_main,lead==>lead_main,detect_face_cs==>detect_face_cognitive_main,prueba==>prueba_main,find_say==>test_find_and_say_main,openpose==>openpose_main,whereiam==>whereiam_main]
+[2020/11/16,7:16:53.893123149]All: Situtation: is
+[2020/11/16,7:16:53.893134593]Structs: Executing situtation: _G139369
+[2020/11/16,7:16:53.893149852]Debug: In situation is of type neutral.
+[2020/11/16,7:16:53.893157482]All: Situation to execute [id==> (is),type==>neutral,arcs==>[empty:[screen(All the system working),screen(These are the options),screen(in, fo, cp, cl, res, gpsr, demo, see_object, detect_face, memorize_face, recognize_face, see_face, see, ask)]=>apply(model_to_execute(_G137421,_G137424,_G137427),[k1,k2,model.pl])]].
+[2020/11/16,7:16:53.896156311]Debug: In situation k1 of type keyboard.
+[2020/11/16,7:16:53.896170616]All: Situation to execute [id==>k1,type==>keyboard,arcs==>[res(_G214980):[screen(Input ok to execute ),get(_G214980,_G214983),screen(_G214983)]=>k2(_G214980)]].
