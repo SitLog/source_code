@@ -1566,7 +1566,7 @@ concat([P1|Rest],Acc,Res):-
 
 %%%%%%%%%%%%%%%%%% GPSR Action Reasoner %%%%%%%%%%%%%%%%%%%%%%%%
 
-:- consult('$GOLEM_IIMAS_HOME/rosagents/SitLog/apps/test_behaviors/gpsr/action_reasoner.pl').
+:- consult('$SITLOG_HOME/apps/test_behaviors/gpsr/action_reasoner.pl').
 
 get_logic_form(In):-
     gpsr_command_2015(In,Out),

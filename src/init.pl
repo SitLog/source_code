@@ -53,12 +53,12 @@ dm_version('ene_051012').
 :- consult(exec_actions).
 :- consult(history_utilities).
 :- consult(kb_manager).
-:- consult('$GOLEM_IIMAS_HOME/rosagents/SitLog/knowledge_base/change_KB.pl').
-:- consult('$GOLEM_IIMAS_HOME/rosagents/SitLog/knowledge_base/parser.pl').
-:- consult('$GOLEM_IIMAS_HOME/rosagents/SitLog/knowledge_base/cognitive_model.pl').
-:- consult('$GOLEM_IIMAS_HOME/rosagents/SitLog/knowledge_base/diagnostician.pl').
-:- consult('$GOLEM_IIMAS_HOME/rosagents/SitLog/knowledge_base/decision_maker.pl').
-:- consult('$GOLEM_IIMAS_HOME/rosagents/SitLog/knowledge_base/planner.pl').
+:- consult('$SITLOG_HOME/knowledge_base/change_KB.pl').
+:- consult('$SITLOG_HOME/knowledge_base/parser.pl').
+:- consult('$SITLOG_HOME/knowledge_base/cognitive_model.pl').
+:- consult('$SITLOG_HOME/knowledge_base/diagnostician.pl').
+:- consult('$SITLOG_HOME/knowledge_base/decision_maker.pl').
+:- consult('$SITLOG_HOME/knowledge_base/planner.pl').
 
 %% % File with connection information to execute communicate models with algorithms
 :- consult(communication). 

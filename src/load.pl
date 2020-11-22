@@ -9,7 +9,7 @@
 :- use_module(exec_actions).
 :- use_module(history_utilities).
 :- use_module(kb_manager).
-:- use_module('$GOLEM_IIMAS_HOME/rosagents/SitLog/knowledge_base/change_KB.pl').
+:- use_module('$SITLOG_HOME/knowledge_base/change_KB.pl').
 
 :- use_module(communication).
 :- use_module(in_communication).

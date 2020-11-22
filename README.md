@@ -25,7 +25,7 @@ SitLog interpreter is written in Prolog and SitLog’s programs follow closely t
       default-jdk junit
 
 
-   3. Open another terminal and change the directory to where the downloaded file in step 1 is located. After that run the commands:
+   3. Open another terminal and change the directory to where the downloaded file in step 1 is located. Then run the commands:
 
     $ tar zxvf pl-6.6.6.tar.gz
     $ cd pl-6.6.6/src
@@ -37,10 +37,9 @@ SitLog interpreter is written in Prolog and SitLog’s programs follow closely t
 At this point, a basic version of swipl has been installed, however, some extra packages are missing so we run the next commands to install them.
 
     $ cd ../packages
-    Note: In the next step, a Java compilation error may ocurr.
-          Simply ignore it since we can proceed with a successful
-	  compilation and installation of swipl executing the rest
-	  of the instructions.
+    Note: Despite a Java compilation error while executing the next
+          step, we can proceed with the rest of the instructions
+          to successfully install swipl.
     $ ./configure
     $ make
     $ sudo make install
@@ -53,12 +52,14 @@ The final setting that must be perfomed to have SitLog running is to add an envi
 
 You are ready to run SitLog programs in test mode!
 
+## Sample dialogue model
+
 Now, we describe the execution of the sample code 
 found in [sample_main.dm](https://github.com/SitLog/source_code/blob/master/apps/test_behaviors/sample/sample_main.dm), whose diagrammatic representation is given below.
 
 ![Diagrammatic representation of sample dialoge model](apps/test_behaviors/sample/dm_diagram.jpg)
 
-Open a terminal, change the directory to the one having this repository and run:
+Open a terminal, change the directory to the one with this repository and run:
 
     $ ./scripts/test_behaviors test
 
@@ -68,7 +69,7 @@ Since the execution mode is test, you will be prompted to enter the dialogue mod
     |: res(sample).
 
 
-Type ```ok.``` as a confirmation.
+Type ```ok.``` as confirmation.
 
 The ```sample_main.dm``` file is loaded and the first situation is considered, it asks us to enter the expectation that is met. So, we type
 

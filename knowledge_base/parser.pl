@@ -186,16 +186,16 @@ add_production_rules([_:H|T]):-
 	
 
 open_parser_kb(KB):-
-	getenv('GOLEM_IIMAS_HOME',GOLEM_IIMAS_HOME),
-	atomic_concat(GOLEM_IIMAS_HOME,'/rosagents/SitLog/knowledge_base/parser_KB.txt',KBPATH),
+	getenv('SITLOG_HOME',SITLOG_HOME),
+	atomic_concat(SITLOG_HOME,'/knowledge_base/parser_KB.txt',KBPATH),
 	open(KBPATH,read,Stream),
 	readclauses(Stream,X),
 	close(Stream),
 	atom_to_term_conversion(X,KB).
 
 open_parser_kb_general(KB):-
-	getenv('GOLEM_IIMAS_HOME',GOLEM_IIMAS_HOME),
-	atomic_concat(GOLEM_IIMAS_HOME,'/rosagents/SitLog/knowledge_base/parser_KB_general.txt',KBPATH),
+	getenv('SITLOG_HOME',SITLOG_HOME),
+	atomic_concat(SITLOG_HOME,'/knowledge_base/parser_KB_general.txt',KBPATH),
 	open(KBPATH,read,Stream),
 	readclauses(Stream,X),
 	close(Stream),

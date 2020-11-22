@@ -10,8 +10,8 @@
 
 open_kb(Path,KB):-
         print('Loading KB from '),print(Path),nl,
-	getenv('GOLEM_IIMAS_HOME',GOLEM_IIMAS_HOME),
-	atomic_concat(GOLEM_IIMAS_HOME,Path,KBPATH),
+	getenv('SITLOG_HOME',SITLOG_HOME),
+	atomic_concat(SITLOG_HOME,Path,KBPATH),
 	open(KBPATH,read,Stream),
 	readclauses(Stream,X),
 	close(Stream),

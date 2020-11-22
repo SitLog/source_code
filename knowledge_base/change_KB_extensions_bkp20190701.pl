@@ -7,8 +7,8 @@
 
 open_original_kb(KB):-
     print('originalkb'),nl,
-	getenv('GOLEM_IIMAS_HOME',GOLEM_IIMAS_HOME),
-	atomic_concat(GOLEM_IIMAS_HOME,'/rosagents/SitLog/knowledge_base/golem_KB_original.txt',KBPATH),
+	getenv('SITLOG_HOME',SITLOG_HOME),
+	atomic_concat(SITLOG_HOME,'/knowledge_base/golem_KB_original.txt',KBPATH),
 	open(KBPATH,read,Stream),
 	readclauses(Stream,X),
 	close(Stream),
@@ -16,8 +16,8 @@ open_original_kb(KB):-
 	
 open_supermarket_kb(KB):-
     print('supermarketkb'),nl,
-	getenv('GOLEM_IIMAS_HOME',GOLEM_IIMAS_HOME),
-	atomic_concat(GOLEM_IIMAS_HOME,'/rosagents/SitLog/knowledge_base/supermarket_KB.txt',KBPATH),
+	getenv('SITLOG_HOME',SITLOG_HOME),
+	atomic_concat(SITLOG_HOME,'/knowledge_base/supermarket_KB.txt',KBPATH),
 	open(KBPATH,read,Stream),
 	readclauses(Stream,X),
 	close(Stream),
@@ -25,8 +25,8 @@ open_supermarket_kb(KB):-
 	
 open_inference_kb(KB):-
     print('inferencekb'),nl,
-	getenv('GOLEM_IIMAS_HOME',GOLEM_IIMAS_HOME),
-	atomic_concat(GOLEM_IIMAS_HOME,'/rosagents/SitLog/knowledge_base/inference_KB.txt',KBPATH),
+	getenv('SITLOG_HOME',SITLOG_HOME),
+	atomic_concat(SITLOG_HOME,'/knowledge_base/inference_KB.txt',KBPATH),
 	open(KBPATH,read,Stream),
 	readclauses(Stream,X),
 	close(Stream),
@@ -34,8 +34,8 @@ open_inference_kb(KB):-
 	
 open_preferences_kb(KB):-
     print('kb'),nl,
-	getenv('GOLEM_IIMAS_HOME',GOLEM_IIMAS_HOME),
-	atomic_concat(GOLEM_IIMAS_HOME,'/rosagents/SitLog/knowledge_base/preferences_KB.txt',KBPATH),
+	getenv('SITLOG_HOME',SITLOG_HOME),
+	atomic_concat(SITLOG_HOME,'/knowledge_base/preferences_KB.txt',KBPATH),
 	open(KBPATH,read,Stream),
 	readclauses(Stream,X),
 	close(Stream),
@@ -43,8 +43,8 @@ open_preferences_kb(KB):-
 
 open_gpsr_kb(KB):-
     print('kb gpsr'),nl,
-	getenv('GOLEM_IIMAS_HOME',GOLEM_IIMAS_HOME),
-	atomic_concat(GOLEM_IIMAS_HOME,'/rosagents/SitLog/knowledge_base/gpsr_KB.txt',KBPATH),
+	getenv('SITLOG_HOME',SITLOG_HOME),
+	atomic_concat(SITLOG_HOME,'/knowledge_base/gpsr_KB.txt',KBPATH),
 	open(KBPATH,read,Stream),
 	readclauses(Stream,X),
 	close(Stream),
@@ -52,8 +52,8 @@ open_gpsr_kb(KB):-
 
 open_whereis_kb(KB):-
         print('kb where is this'),nl,
-        getenv('GOLEM_IIMAS_HOME',GOLEM_IIMAS_HOME),
-        atomic_concat(GOLEM_IIMAS_HOME,'/rosagents/SitLog/knowledge_base/whereis_KB.txt',KBPATH),
+        getenv('SITLOG_HOME',SITLOG_HOME),
+        atomic_concat(SITLOG_HOME,'/knowledge_base/whereis_KB.txt',KBPATH),
         open(KBPATH,read,Stream),
         readclauses(Stream,X),
         close(Stream),
@@ -62,16 +62,16 @@ open_whereis_kb(KB):-
 
 open_kb(KB):-
     print('kb'),nl,
-	getenv('GOLEM_IIMAS_HOME',GOLEM_IIMAS_HOME),
-	atomic_concat(GOLEM_IIMAS_HOME,'/rosagents/SitLog/knowledge_base/golem_KB.txt',KBPATH),
+	getenv('SITLOG_HOME',SITLOG_HOME),
+	atomic_concat(SITLOG_HOME,'/knowledge_base/golem_KB.txt',KBPATH),
 	open(KBPATH,read,Stream),
 	readclauses(Stream,X),
 	close(Stream),
 	atom_to_term_conversion(X,KB).
 
 save_kb(KB):- 
-	getenv('GOLEM_IIMAS_HOME',GOLEM_IIMAS_HOME),
-	atomic_concat(GOLEM_IIMAS_HOME,'/rosagents/SitLog/knowledge_base/golem_KB.txt',KBPATH),
+	getenv('SITLOG_HOME',SITLOG_HOME),
+	atomic_concat(SITLOG_HOME,'/knowledge_base/golem_KB.txt',KBPATH),
 	open(KBPATH,write,Stream),
 	writeq(Stream,KB),
 	close(Stream).

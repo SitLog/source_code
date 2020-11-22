@@ -1767,13 +1767,13 @@ concat([P1|Rest],Acc,Res):-
   paste_command(Rest,Net,Res).
 
 %%%%%%%%%%%%%%%%%% DEMO Action Reasoner %%%%%%%%%%%%%%%%%%%%%%%%
-:- consult('$GOLEM_IIMAS_HOME/rosagents/SitLog/apps/german_open_2019/demo_supermarket/action_reasoner.pl').
+:- consult('$SITLOG_HOME/apps/german_open_2019/demo_supermarket/action_reasoner.pl').
 
 
 
 %%%%%%%%%%%%%%%%%% GPSR Action Reasoner %%%%%%%%%%%%%%%%%%%%%%%%
 
-:- consult('$GOLEM_IIMAS_HOME/rosagents/SitLog/apps/test_behaviors/gpsr/action_reasoner.pl').
+:- consult('$SITLOG_HOME/apps/test_behaviors/gpsr/action_reasoner.pl').
 
 get_logic_form(In):-
     gpsr_command_2015(In,Out),
@@ -2781,16 +2781,16 @@ ddp_explain_assistant_actions([move('storage')|T],[say(['the assistant went to',
     
     
 
-%:- consult('$GOLEM_IIMAS_HOME/rosagents/SitLog/apps/test_behaviors/gpsr/action_reasoner.pl').
+%:- consult('$SITLOG_HOME/apps/test_behaviors/gpsr/action_reasoner.pl').
 
-%:- consult('$GOLEM_IIMAS_HOME/rosagents/SitLog/apps/robocup_2015/ricardo/ETR_P_User_Functions.pl').
-%:- consult('$GOLEM_IIMAS_HOME/rosagents/SitLog/apps/robocup_2015/ricardo/ETR_P_Transform_DB_To_ASP.pl').
-%:- consult('$GOLEM_IIMAS_HOME/rosagents/SitLog/apps/robocup_2015/ricardo/ETR_P_Preparation_For_Diagnosis.pl').
-%:- consult('$GOLEM_IIMAS_HOME/rosagents/SitLog/apps/robocup_2015/ricardo/ETR_P_Diagnosis.pl').
-%:- consult('$GOLEM_IIMAS_HOME/rosagents/SitLog/apps/robocup_2015/ricardo/ETR_P_Return.pl').
-%:- consult('$GOLEM_IIMAS_HOME/rosagents/SitLog/apps/robocup_2015/ricardo/RAFV_planner.pl').
-%:- consult('$GOLEM_IIMAS_HOME/rosagents/SitLog/apps/robocup_2015/ricardo/user_functions_b.pl').
-%:- consult('$GOLEM_IIMAS_HOME/rosagents/SitLog/apps/robocup_2015/ricardo/RAFV_create_asp_from_prolog.pl').
+%:- consult('$SITLOG_HOME/apps/robocup_2015/ricardo/ETR_P_User_Functions.pl').
+%:- consult('$SITLOG_HOME/apps/robocup_2015/ricardo/ETR_P_Transform_DB_To_ASP.pl').
+%:- consult('$SITLOG_HOME/apps/robocup_2015/ricardo/ETR_P_Preparation_For_Diagnosis.pl').
+%:- consult('$SITLOG_HOME/apps/robocup_2015/ricardo/ETR_P_Diagnosis.pl').
+%:- consult('$SITLOG_HOME/apps/robocup_2015/ricardo/ETR_P_Return.pl').
+%:- consult('$SITLOG_HOME/apps/robocup_2015/ricardo/RAFV_planner.pl').
+%:- consult('$SITLOG_HOME/apps/robocup_2015/ricardo/user_functions_b.pl').
+%:- consult('$SITLOG_HOME/apps/robocup_2015/ricardo/RAFV_create_asp_from_prolog.pl').
 
 %%%%%%%%%%%%%%%%%%%%
 %Copiar hasta aqui
