@@ -69,9 +69,34 @@ Since the execution mode is test, you will be prompted to enter the dialogue mod
     |: res(sample).
 
 
-Type ```ok.``` as confirmation.
+Type ```ok.``` as confirmation. The ```sample_main.dm``` file is loaded.
 
-The ```sample_main.dm``` file is loaded and the first situation is considered, it asks us to enter the expectation that is met. So, we type
+Initially the value of ```in_arg``` is undefined, moreover, the variable ```count_init``` is assigned to 1 and the first situation is considered, it asks us to enter the expectation that is met. So, we type
 
     [day(tuesday)].
 
+This matches the second arc, so the local variable ```day``` is set to ```tuesday```, the initial situation is considered again and the value of ```in_arg``` is set to ```monday```. Next, the variable ```count_init``` is assigned to 2 and the expectation that is met has to be manually typed as follows:
+
+   [tuesday,'not ok'].
+
+The third arc is matched, so the last transition is retrieved from the execution history and the control is given to the situation ```rs```, since the values of ```in_arg``` and ```day``` are different. Also, the value of ```in_arg``` is updated to ```tuesday```. Next, the variable ```count_rec``` is assigned to 1 and the execution flow is passed to the embedded dialogue model [sample_wait.dm](https://github.com/SitLog/source_code/blob/master/apps/test_behaviors/sample/sample_wait.dm). Its initial situation is considered, and the expectation that is met waits to be typed.
+
+   loop.
+
+This corresponds to the second arc, so the variable ```g_count_fs2``` is assigned to 1, the final situation ```fs2``` is reached and the execution flow is back to the embedding situation ```rs```. Thus, its second arc is matched, the text ```'Cont. recursive sit'``` is printed on the screen and the situation ```rs``` is considered again. The variable ```count_rec``` is assigned to 2 and the execution flow is passed to the embedded dialogue model *sample_wait.dm*. The expectation of its initial situacion has to be typed as follows.
+
+   tuesday.
+
+Since the value of ```in_arg``` was piped  from one dialogue model the other, the first arc is matched. So, the variable ```g_count_fs1``` is assigned to 1, the final situation ```fs1``` is reached and the execution flow is back to the embedding situation ```rs```. Here, the expectation of the first arc is satisfied, the text ```'Back to initial sit'``` is printed on the screen and the control is passed to the situation ```is```. The variable ```count_init``` is assigned to 3 and the expectation that is met has to be typed as follows:
+
+   [day(monday)].
+
+The second arc is matched, this implies that the local variable ```day``` is set to ```monday```, the initial situation is considered again and the value of ```in_arg``` is now ```monday```. The variable ```count_init``` is assigned to 4 and the user is prompted for next the expectation that is met.
+
+   [monday,ok].
+
+The third arc is matched, next the last transition is retrieved from the execution history and the inistial situation is run again, since the values of ```in_arg``` and ```day``` are the same. Also the value of ```in_arg``` is updated to ```tuesday```. Next, the variable ```count_rec``` is assigned to 5 and the expectation that is met has to be typed.
+
+   finish.
+
+The first arc is matched, so the text ```Good bye``` is printed on screen and the control is passed to the final situation ```fs```, ending execution of the sample dialogue model.
