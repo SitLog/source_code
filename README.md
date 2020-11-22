@@ -100,7 +100,7 @@ The second arc is matched, this implies that the local variable ```day``` is set
     [monday,ok].
 
 
-The third arc is matched, next the last transition is retrieved from the execution history and the inistial situation is run again, since the values of ```in_arg``` and ```day``` are the same. Also the value of ```in_arg``` is updated to ```tuesday```. Next, the variable ```count_rec``` is assigned to 5 and the expectation that is met has to be typed.
+The third arc is matched, next the last transition is retrieved from the execution history and the inistial situation is run again, since the values of ```in_arg``` and ```day``` are the same. Also the value of ```in_arg``` is updated to ```tuesday```. Next, the variable ```count_init``` is assigned to 5 and the expectation that is met has to be typed.
 
     finish.
 
