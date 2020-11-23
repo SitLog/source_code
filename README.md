@@ -85,24 +85,27 @@ The third arc is matched, so the last transition is retrieved from the execution
     loop.
 
 
-This corresponds to the second arc, so the variable ```g_count_fs2``` is assigned to 1, the final situation ```fs2``` is reached and the execution flow is back to the embedding situation ```rs```. Thus, its second arc is matched, the text ```'Cont. recursive sit'``` is printed on the screen and the situation ```rs``` is considered again. The variable ```count_rec``` is assigned to 2 and the execution flow is passed to the embedded dialogue model *sample_wait.dm*. The expectation of its initial situacion has to be typed as follows.
+This corresponds to the second arc, so the variable ```g_count_fs2``` is assigned to 1, the final situation ```fs2``` is reached and the execution flow is back to the embedding situation ```rs```. Thus, its second arc is matched, the text ```'Cont. recursive sit'``` is printed on the screen and the situation ```rs``` is considered again. The variable ```count_rec``` is assigned to 2 and the execution flow is passed to the embedded dialogue model ```sample_wait.dm```. The expectation of its initial situacion has to be typed, e.g.,
 
     tuesday.
 
 
-Since the value of ```in_arg``` was piped  from one dialogue model the other, the first arc is matched. So, the variable ```g_count_fs1``` is assigned to 1, the final situation ```fs1``` is reached and the execution flow is back to the embedding situation ```rs```. Here, the expectation of the first arc is satisfied, the text ```'Back to initial sit'``` is printed on the screen and the control is passed to the situation ```is```. The variable ```count_init``` is assigned to 3 and the expectation that is met has to be typed as follows:
+Since the value of ```in_arg``` was piped  from one dialogue model to the other, the first arc is matched. So, the variable ```g_count_fs1``` is assigned to 1, the final situation ```fs1``` is reached and the execution flow is back to the embedding situation ```rs```. Here, the expectation of the first arc is satisfied, the text ```'Back to initial sit'``` is printed on the screen and the control is passed to the situation ```is```. The variable ```count_init``` is assigned to 3 and the expectation that is met has to be typed, e.g.,
 
     [day(monday)].
 
 
-The second arc is matched, this implies that the local variable ```day``` is set to ```monday```, the initial situation is considered again and the value of ```in_arg``` is now ```monday```. The variable ```count_init``` is assigned to 4 and the user is prompted for next the expectation that is met.
+The second arc is matched, this implies that the local variable ```day``` is set to ```monday```, the initial situation is considered again and the value of ```in_arg``` is now ```monday```. The variable ```count_init``` is assigned to 4 and the user is prompted for the next expectation that is met.
 
     [monday,ok].
 
 
-The third arc is matched, next the last transition is retrieved from the execution history and the inistial situation is run again, since the values of ```in_arg``` and ```day``` are the same. Also the value of ```in_arg``` is updated to ```tuesday```. Next, the variable ```count_init``` is assigned to 5 and the expectation that is met has to be typed.
+The third arc is matched, then the last transition is retrieved from the execution history and the initial situation is run again, since the values of ```in_arg``` and ```day``` are the same, namely ```monday```. Before leaving the current situation, the value of ```in_arg``` is updated to ```tuesday```. Next, within the initial situation ```is``` the variable ```count_init``` is assigned to 5 and the expectation that is met has to be typed.
 
     finish.
 
 
-The first arc is matched, so the text ```Good bye``` is printed on screen and the control is passed to the final situation ```fs```, ending execution of the sample dialogue model.
+The first arc is matched, so the text ```Good bye``` is printed on the screen and the control is passed to the final situation ```fs```, ending the execution of the sample dialogue model.
+
+## Relevant code
+The layout of the code for the deliverative inference demo is found [here](https://github.com/SitLog/source_code/tree/master/apps/german_open_2019/demo_supermarket). The one for the conceptual inference demo is shown [here](https://github.com/SitLog/source_code/tree/master/apps/test_behaviors/preferences).
