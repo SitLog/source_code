@@ -1,91 +1,20 @@
-[2020/11/22,7:44:31.079048871]Info-Level 1: Running models from     : models
-[2020/11/22,7:44:31.079070568]Info-Level 1: Project directory       : apps/test_behaviors
-[2020/11/22,7:44:31.079078197]Info-Level 1: Knowledge base          : knowledge_base/knowledge_base_robocup.pl
-[2020/11/22,7:44:31.079084873]Info-Level 1: User Functions          : user_functions.pl
-[2020/11/22,7:44:31.079090833]Info-Level 1: Expectation Types       : expectation_types.pl
-[2020/11/22,7:44:31.079097032]Info-Level 1: Basic acts              : basic_actions.pl
-[2020/11/22,7:44:31.079103231]Info-Level 1: Templates               : templates.pl
-[2020/11/22,7:44:31.07910943]Info-Level 1: Running dialogue        : main
-[2020/11/22,7:44:31.079115152]Info-Level 1: Writing debug file to   : logfile.log
-[2020/11/22,7:44:31.079121112]Info-Level 1: Saving log file to      : apps/test_behaviors/log
-[2020/11/22,7:44:31.123103618]Info-Level 1: Starting dialogue: main
-[2020/11/22,7:44:31.123199462]Info-Level 1: Saving log in: apps/test_behaviors/log/dm.txt
-[2020/11/22,7:44:31.123260498]Info-Level 1: Executing dialogue: main
-[2020/11/22,7:44:31.126239299]Info-Level 1: Defined local vars: [carry==>carry_main,see_object==>see_object_main,detect_face==>detect_face_main,memorize_face==>memorize_face_main,recognize_face==>recognize_face_main,see_face==>see_face_main,detect_head==>detect_head_main,see_person==>see_person_main,see_gesture==>see_gesture_main,see==>see_main,tilt==>tilt_main,scan==>scan_main,find==>find_main,approach_person==>approach_person_main,move==>move_main,move_nb==>move_main_nonblock,detect_door==>detect_door_main,follow==>follow_main,take==>take_main,approach_object==>approach_object_main,grasp==>grasp_main,deliver==>deliver_main,approach_plane==>approach_plane_main,approach_surface==>approach_surface_main,relieve==>relieve_main,ask==>ask_main,answer==>answer_main,say==>say_main,guide==>guide_main,execute==>execute_main,consult_kb==>consult_kb_main,point==>point_main,prompt==>prompt_main,detect_body==>detect_body_main,memorize_body==>memorize_body_main,recognize_body==>recognize_body_main,describe_body==>describe_body_main,see_body==>see_body_main,gpsr==>gpsr_main,egpsr==>egpsr_main,rips==>rips_main,inference==>inference_main,preferences==>preferences_main,object_manipulation==>object_manipulation_main,clean_up==>clean_up_main,set_table_up==>set_table_up_main,date==>date_main,gender==>gender_main,pose==>pose_main,time==>time_main,qr==>qr_main,plane==>plane_main,answer_question==>answer_question_main,person_recognition_test==>person_recognition_test_main,soft_biometrics==>soft_biometrics_main,supermarket==>supermarket_main,follow_with_clothes==>follow_with_clothes_main,speech_and_person==>speech_and_person_main,inspection==>inspection_main,recepcionist==>recepcionist_main,test_students==>test_students_main,tk==>take([coke,0,0.4,0.7,1,1,1,1,1],-20,right,_G60742),give==>give(coke,1),learn==>learn_faces,oid==>identify_object(_G60798),doa==>doa_main,test==>test,parse==>parse_main,mood==>mood_main,sample==>sample_main,lead==>lead_main,detect_face_cs==>detect_face_cognitive_main,prueba==>prueba_main,find_say==>test_find_and_say_main,openpose==>openpose_main,whereiam==>whereiam_main]
-[2020/11/22,7:44:31.126697063]All: Situtation: is
-[2020/11/22,7:44:31.12670803]Structs: Executing situtation: _G139369
-[2020/11/22,7:44:31.126723051]Debug: In situation is of type neutral.
-[2020/11/22,7:44:31.126730442]All: Situation to execute [id==> (is),type==>neutral,arcs==>[empty:[screen(All the system working),screen(These are the options),screen(in, fo, cp, cl, res, gpsr, demo, see_object, detect_face, memorize_face, recognize_face, see_face, see, ask)]=>apply(model_to_execute(_G137421,_G137424,_G137427),[k1,k2,model.pl])]].
-[2020/11/22,7:44:31.12953186]Debug: In situation k1 of type keyboard.
-[2020/11/22,7:44:31.129543066]All: Situation to execute [id==>k1,type==>keyboard,arcs==>[res(_G214980):[screen(Input ok to execute ),get(_G214980,_G214983),screen(_G214983)]=>k2(_G214980)]].
-[2020/11/22,7:44:33.566915035]Info-Level 1: Situation ends
-[2020/11/22,7:44:33.578347206]Debug: In situation k2(sample) of type keyboard.
-[2020/11/22,7:44:33.578379631]All: Situation to execute [id==>k2(sample),type==>keyboard,arcs==>[ok:empty=>execute(sample)]].
-[2020/11/22,7:44:33.57862854]Info-Level 1: Situation ends
-[2020/11/22,7:44:33.585029602]Debug: In situation execute(sample) of type neutral.
-[2020/11/22,7:44:33.585059642]All: Situation to execute [id==>execute(sample),type==>neutral,arcs==>[empty:[get(sample,_G164207),screen(Executing test: ),screen(_G164207)]=>rtest(_G164207)]].
-[2020/11/22,7:44:33.585537433]Info-Level 1: Situation ends
-[2020/11/22,7:44:33.592101335]Debug: In situation sample_main of type recursive.
-[2020/11/22,7:44:33.592116594]All: Situation to execute sample_main.
-[2020/11/22,7:44:33.592137336]Info-Level 1: Executing dialogue: sample_main
-[2020/11/22,7:44:33.59249258]Info-Level 1: Defined local vars: [day==>monday,count_init==>0,count_rec==>0]
-[2020/11/22,7:44:33.602568626]All: Situtation: is
-[2020/11/22,7:44:33.602600574]Structs: Executing situtation: _G242402
-[2020/11/22,7:44:33.602623224]Debug: In situation is of type speech.
-[2020/11/22,7:44:33.602641105000004]All: Situation to execute [id==> (is),type==>speech,in_arg==>_G228370,out_arg==>apply(when(_G228373,_G228376,_G228379),[_G228370==monday,tuesday,monday]),prog==>[inc(count_init,_G228382)],arcs==>[finish:screen(Good Bye)=>fs,[day(_G228385)]:[date(get(day,_G228388)),next_date(set(day,_G228385))]=> (is),[get(day,_G228391),apply(f(_G228385),[_G228370])]:[apply(g(_G228385),[_G228394])]=>apply(h(_G228385,_G228388),[_G228370,_G228391])]].
-[2020/11/22,7:44:33.60550642]Debug: In situation is of type speech.
-[2020/11/22,7:44:33.605527877]All: Situation to execute [id==> (is),type==>speech,in_arg==>_G315038,out_arg==>apply(when(_G315041,_G315044,_G315047),[_G315038==monday,tuesday,monday]),prog==>[inc(count_init,_G315050)],arcs==>[finish:screen(Good Bye)=>fs,[day(_G315053)]:[date(get(day,_G315056)),next_date(set(day,_G315053))]=> (is),[get(day,_G315059),apply(f(_G315053),[_G315038])]:[apply(g(_G315053),[_G315062])]=>apply(h(_G315053,_G315056),[_G315038,_G315059])]].
-[2020/11/22,7:44:33.607951402]Info-Level 1: Situation ends
-[2020/11/22,7:44:33.610044479]Debug: In situation sample_wait of type recursive.
-[2020/11/22,7:44:33.610054731]All: Situation to execute sample_wait.
-[2020/11/22,7:44:33.610075235]Info-Level 1: Executing dialogue: sample_wait
-[2020/11/22,7:44:33.626285076]Info-Level 1: Defined local vars: []
-[2020/11/22,7:44:33.626556633999996]All: Situtation: is
-[2020/11/22,7:44:33.62656641]Structs: Executing situtation: _G326121
-[2020/11/22,7:44:33.626587152]Debug: In situation is of type speech.
-[2020/11/22,7:44:33.626604795]All: Situation to execute [id==> (is),type==>speech,in_arg==>_G324293,arcs==>[_G324293:[inc(g_count_fs1,_G324296)]=>fs1,loop:[inc(g_count_fs2,_G324299)]=>fs2]].
-[2020/11/22,7:44:33.627832889]Debug: In situation [id==>fs2,type==>final] of type final.
-[2020/11/22,7:44:33.627846956]All: Situation to execute fs2.
-[2020/11/22,7:44:33.62787199]Info-Level 1: Situation ends
-[2020/11/22,7:44:33.627879619]Info-Level 1: Dialogue ends
-[2020/11/22,7:44:33.627889633]Info-Level 1: .Output []
-[2020/11/22,7:44:33.628080606]Info-Level 1: Situation ends
-[2020/11/22,7:44:33.630120515]Debug: In situation sample_wait of type recursive.
-[2020/11/22,7:44:33.630133152]All: Situation to execute sample_wait.
-[2020/11/22,7:44:33.630152463]Info-Level 1: Executing dialogue: sample_wait
-[2020/11/22,7:44:33.630468845]Info-Level 1: Defined local vars: []
-[2020/11/22,7:44:33.630688428]All: Situtation: is
-[2020/11/22,7:44:33.630696535]Structs: Executing situtation: _G510359
-[2020/11/22,7:44:33.630708694]Debug: In situation is of type speech.
-[2020/11/22,7:44:33.63072586]All: Situation to execute [id==> (is),type==>speech,in_arg==>_G508531,arcs==>[_G508531:[inc(g_count_fs1,_G508534)]=>fs1,loop:[inc(g_count_fs2,_G508537)]=>fs2]].
-[2020/11/22,7:44:33.647764205]Debug: In situation [id==>fs1,type==>final] of type final.
-[2020/11/22,7:44:33.647783756]All: Situation to execute fs1.
-[2020/11/22,7:44:33.647810935]Info-Level 1: Situation ends
-[2020/11/22,7:44:33.647826194]Info-Level 1: Dialogue ends
-[2020/11/22,7:44:33.647836446]Info-Level 1: .Output []
-[2020/11/22,7:44:33.648055076]Info-Level 1: Situation ends
-[2020/11/22,7:44:33.649729251]Debug: In situation is of type speech.
-[2020/11/22,7:44:33.649749755]All: Situation to execute [id==> (is),type==>speech,in_arg==>_G395014,out_arg==>apply(when(_G395017,_G395020,_G395023),[_G395014==monday,tuesday,monday]),prog==>[inc(count_init,_G395026)],arcs==>[finish:screen(Good Bye)=>fs,[day(_G395029)]:[date(get(day,_G395032)),next_date(set(day,_G395029))]=> (is),[get(day,_G395035),apply(f(_G395029),[_G395014])]:[apply(g(_G395029),[_G395038])]=>apply(h(_G395029,_G395032),[_G395014,_G395035])]].
-[2020/11/22,7:44:33.671446561]Info-Level 1: Situation ends
-[2020/11/22,7:44:33.673257827]Debug: In situation is of type speech.
-[2020/11/22,7:44:33.673270225]All: Situation to execute [id==> (is),type==>speech,in_arg==>_G350274,out_arg==>apply(when(_G350277,_G350280,_G350283),[_G350274==monday,tuesday,monday]),prog==>[inc(count_init,_G350286)],arcs==>[finish:screen(Good Bye)=>fs,[day(_G350289)]:[date(get(day,_G350292)),next_date(set(day,_G350289))]=> (is),[get(day,_G350295),apply(f(_G350289),[_G350274])]:[apply(g(_G350289),[_G350298])]=>apply(h(_G350289,_G350292),[_G350274,_G350295])]].
-[2020/11/22,7:44:33.703370094]Info-Level 1: Situation ends
-[2020/11/22,7:44:33.705176591]Debug: In situation is of type speech.
-[2020/11/22,7:44:33.705190896]All: Situation to execute [id==> (is),type==>speech,in_arg==>_G416233,out_arg==>apply(when(_G416236,_G416239,_G416242),[_G416233==monday,tuesday,monday]),prog==>[inc(count_init,_G416245)],arcs==>[finish:screen(Good Bye)=>fs,[day(_G416248)]:[date(get(day,_G416251)),next_date(set(day,_G416248))]=> (is),[get(day,_G416254),apply(f(_G416248),[_G416233])]:[apply(g(_G416248),[_G416257])]=>apply(h(_G416248,_G416251),[_G416233,_G416254])]].
-[2020/11/22,7:44:33.785716772]Info-Level 1: Situation ends
-[2020/11/22,7:44:33.78734374]Debug: In situation [id==>fs,type==>final] of type final.
-[2020/11/22,7:44:33.787358283]All: Situation to execute fs.
-[2020/11/22,7:44:33.787384748]Info-Level 1: Situation ends
-[2020/11/22,7:44:33.787391901]Info-Level 1: Dialogue ends
-[2020/11/22,7:44:33.787402629]Info-Level 1: .Output [day==>monday,count_init==>5,count_rec==>2]
-[2020/11/22,7:44:33.788840532]Info-Level 1: Situation ends
-[2020/11/22,7:44:33.790609598]Debug: In situation final of type neutral.
-[2020/11/22,7:44:33.790620803]All: Situation to execute [id==>final,type==>neutral,arcs==>[empty:screen(Dialogue model finished, type ok to try again)=>fs]].
-[2020/11/22,7:44:33.790816307]Info-Level 1: Situation ends
-[2020/11/22,7:44:33.792536735]Debug: In situation [id==>fs,type==>final] of type final.
-[2020/11/22,7:44:33.792548179]All: Situation to execute fs.
-[2020/11/22,7:44:33.792571067]Info-Level 1: Situation ends
-[2020/11/22,7:44:33.792577505]Info-Level 1: Dialogue ends
-[2020/11/22,7:44:33.79258728]Info-Level 1: .Output [carry==>carry_main,see_object==>see_object_main,detect_face==>detect_face_main,memorize_face==>memorize_face_main,recognize_face==>recognize_face_main,see_face==>see_face_main,detect_head==>detect_head_main,see_person==>see_person_main,see_gesture==>see_gesture_main,see==>see_main,tilt==>tilt_main,scan==>scan_main,find==>find_main,approach_person==>approach_person_main,move==>move_main,move_nb==>move_main_nonblock,detect_door==>detect_door_main,follow==>follow_main,take==>take_main,approach_object==>approach_object_main,grasp==>grasp_main,deliver==>deliver_main,approach_plane==>approach_plane_main,approach_surface==>approach_surface_main,relieve==>relieve_main,ask==>ask_main,answer==>answer_main,say==>say_main,guide==>guide_main,execute==>execute_main,consult_kb==>consult_kb_main,point==>point_main,prompt==>prompt_main,detect_body==>detect_body_main,memorize_body==>memorize_body_main,recognize_body==>recognize_body_main,describe_body==>describe_body_main,see_body==>see_body_main,gpsr==>gpsr_main,egpsr==>egpsr_main,rips==>rips_main,inference==>inference_main,preferences==>preferences_main,object_manipulation==>object_manipulation_main,clean_up==>clean_up_main,set_table_up==>set_table_up_main,date==>date_main,gender==>gender_main,pose==>pose_main,time==>time_main,qr==>qr_main,plane==>plane_main,answer_question==>answer_question_main,person_recognition_test==>person_recognition_test_main,soft_biometrics==>soft_biometrics_main,supermarket==>supermarket_main,follow_with_clothes==>follow_with_clothes_main,speech_and_person==>speech_and_person_main,inspection==>inspection_main,recepcionist==>recepcionist_main,test_students==>test_students_main,tk==>take([coke,0,0.4,0.7,1,1,1,1,1],-20,right,_G123330),give==>give(coke,1),learn==>learn_faces,oid==>identify_object(_G123386),doa==>doa_main,test==>test,parse==>parse_main,mood==>mood_main,sample==>sample_main,lead==>lead_main,detect_face_cs==>detect_face_cognitive_main,prueba==>prueba_main,find_say==>test_find_and_say_main,openpose==>openpose_main,whereiam==>whereiam_main]
-[2020/11/22,7:44:33.793049097]Info-Level 1: Ending dialogue: main
-[2020/11/22,7:44:33.793691873]Info-Level 1: History: _G632538.
+[2020/11/24,4:12:40.322047233]Info-Level 1: Running models from     : models
+[2020/11/24,4:12:40.322096347]Info-Level 1: Project directory       : apps/test_behaviors
+[2020/11/24,4:12:40.32210803]Info-Level 1: Knowledge base          : knowledge_base/knowledge_base_robocup.pl
+[2020/11/24,4:12:40.322116613]Info-Level 1: User Functions          : user_functions.pl
+[2020/11/24,4:12:40.322124481]Info-Level 1: Expectation Types       : expectation_types.pl
+[2020/11/24,4:12:40.322132349]Info-Level 1: Basic acts              : basic_actions.pl
+[2020/11/24,4:12:40.322140216]Info-Level 1: Templates               : templates.pl
+[2020/11/24,4:12:40.322148561]Info-Level 1: Running dialogue        : main
+[2020/11/24,4:12:40.322156429]Info-Level 1: Writing debug file to   : logfile.log
+[2020/11/24,4:12:40.322164058]Info-Level 1: Saving log file to      : apps/test_behaviors/log
+[2020/11/24,4:12:40.394942283]Info-Level 1: Starting dialogue: main
+[2020/11/24,4:12:40.395043373]Info-Level 1: Saving log in: apps/test_behaviors/log/dm.txt
+[2020/11/24,4:12:40.395113945]Info-Level 1: Executing dialogue: main
+[2020/11/24,4:12:40.39811778]Info-Level 1: Defined local vars: [carry==>carry_main,see_object==>see_object_main,detect_face==>detect_face_main,memorize_face==>memorize_face_main,recognize_face==>recognize_face_main,see_face==>see_face_main,detect_head==>detect_head_main,see_person==>see_person_main,see_gesture==>see_gesture_main,see==>see_main,tilt==>tilt_main,scan==>scan_main,find==>find_main,approach_person==>approach_person_main,move==>move_main,move_nb==>move_main_nonblock,detect_door==>detect_door_main,follow==>follow_main,take==>take_main,approach_object==>approach_object_main,grasp==>grasp_main,deliver==>deliver_main,approach_plane==>approach_plane_main,approach_surface==>approach_surface_main,relieve==>relieve_main,ask==>ask_main,answer==>answer_main,say==>say_main,guide==>guide_main,execute==>execute_main,consult_kb==>consult_kb_main,point==>point_main,prompt==>prompt_main,detect_body==>detect_body_main,memorize_body==>memorize_body_main,recognize_body==>recognize_body_main,describe_body==>describe_body_main,see_body==>see_body_main,gpsr==>gpsr_main,egpsr==>egpsr_main,rips==>rips_main,inference==>inference_main,preferences==>preferences_main,object_manipulation==>object_manipulation_main,clean_up==>clean_up_main,set_table_up==>set_table_up_main,date==>date_main,gender==>gender_main,pose==>pose_main,time==>time_main,qr==>qr_main,plane==>plane_main,answer_question==>answer_question_main,person_recognition_test==>person_recognition_test_main,soft_biometrics==>soft_biometrics_main,supermarket==>supermarket_main,follow_with_clothes==>follow_with_clothes_main,speech_and_person==>speech_and_person_main,inspection==>inspection_main,recepcionist==>recepcionist_main,test_students==>test_students_main,tk==>take([coke,0,0.4,0.7,1,1,1,1,1],-20,right,_G60742),give==>give(coke,1),learn==>learn_faces,oid==>identify_object(_G60798),doa==>doa_main,test==>test,parse==>parse_main,mood==>mood_main,sample==>sample_main,lead==>lead_main,detect_face_cs==>detect_face_cognitive_main,prueba==>prueba_main,find_say==>test_find_and_say_main,openpose==>openpose_main,whereiam==>whereiam_main]
+[2020/11/24,4:12:40.398565769]All: Situtation: is
+[2020/11/24,4:12:40.398576736]Structs: Executing situtation: _G139369
+[2020/11/24,4:12:40.398599863]Debug: In situation is of type neutral.
+[2020/11/24,4:12:40.398607254]All: Situation to execute [id==> (is),type==>neutral,arcs==>[empty:[screen(All the system working),screen(These are the options),screen(in, fo, cp, cl, res, gpsr, demo, see_object, detect_face, memorize_face, recognize_face, see_face, see, ask)]=>apply(model_to_execute(_G137421,_G137424,_G137427),[k1,k2,model.pl])]].
+[2020/11/24,4:12:40.40152049]Debug: In situation k1 of type keyboard.
+[2020/11/24,4:12:40.401546239]All: Situation to execute [id==>k1,type==>keyboard,arcs==>[res(_G214980):[screen(Input ok to execute ),get(_G214980,_G214983),screen(_G214983)]=>k2(_G214980)]].
