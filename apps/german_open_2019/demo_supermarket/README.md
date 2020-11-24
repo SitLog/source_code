@@ -7,4 +7,19 @@ The code that implements the deliberative inference demo, involving abduction, d
 - [user_functions.pl](https://github.com/SitLog/source_code/blob/master/apps/test_behaviors/user_functions.pl): several user functions needed in the deliberative inference demo are defined here, such as: the supermarket conversation parser, the call of the search space algorithms and the update of the KB.
 - [ricardo_supermarket_kb.txt](https://github.com/SitLog/source_code/blob/master/knowledge_base/ricardo_supermarket_kb.txt): holds the KB for the deliberative inference demo.
 - The code that implements the search space algorithms to determine the diagnosis, decision-making and planning is found in the files: [daily_life_inference_cycle_2020.pl](https://github.com/SitLog/source_code/blob/master/knowledge_base/daily_life_inference_cycle_2020.pl), [diagnosis_2020.pl](https://github.com/SitLog/source_code/blob/master/knowledge_base/diagnosis_2020.pl), [decision_maker_2020.pl](https://github.com/SitLog/source_code/blob/master/knowledge_base/decision_maker_2020.pl), [planner_2020.pl](https://github.com/SitLog/source_code/blob/master/knowledge_base/planner_2020.pl) and [
-new_observation_2020.pl](https://github.com/SitLog/source_code/blob/master/knowledge_base/new_observation_2020.pl).  
+new_observation_2020.pl](https://github.com/SitLog/source_code/blob/master/knowledge_base/new_observation_2020.pl).
+
+If the demo wants to be run on SitLog test mode, you can enter the following instructions when prompted by the interpreter.
+
+    res(demo_supermarket).
+    ok.
+    'bring me a coke please'.
+    'no'.
+    objects([object(noodles,0.2,2,0.55,4,5,6,7,8),object(malz,0.2,2,0.55,4,5,6,7,8)]).
+    objects([object(noodles,0.2,2,0.55,4,5,6,7,8),object(malz,0.2,2,0.55,4,5,6,7,8)]).
+    objects([object(noodles,0.2,2,0.55,4,5,6,7,8),object(malz,0.2,2,0.55,4,5,6,7,8)]).
+    objects([object(kellogs,0.2,2,0.55,4,5,6,7,8)]).
+    objects([object(kellogs,0.2,2,0.55,4,5,6,7,8),object(noodles,0.2,2,0.55,4,5,6,7,8)]).
+    objects([object(coke,0.2,2,0.55,4,5,6,7,8)]).
+    objects([object(coke,0.2,2,0.55,4,5,6,7,8)]).
+
