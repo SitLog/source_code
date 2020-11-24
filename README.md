@@ -107,5 +107,3 @@ The third arc is matched, then the last transition is retrieved from the executi
 
 The first arc is matched, so the text ```Good bye``` is printed on the screen and the control is passed to the final situation ```fs```, ending the execution of the sample dialogue model.
 
-## Relevant code
-The layout of the code for the deliberative inference demo is found [here](https://github.com/SitLog/source_code/tree/master/apps/german_open_2019/demo_supermarket). The one for the conceptual inference demo is shown [here](https://github.com/SitLog/source_code/tree/master/apps/test_behaviors/preferences).
