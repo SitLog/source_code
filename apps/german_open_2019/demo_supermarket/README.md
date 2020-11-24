@@ -1,3 +1,8 @@
-# Delivereative inference demo
-
+# Deliberative inference demo
 The code that implements the deliberative inference demo, involving abduction, decision-making and planning, is within the files:
+
+- (demo_supermarket_main.dm)[https://github.com/SitLog/source_code/blob/master/apps/german_open_2019/demo_supermarket/demo_supermarket_main.dm]: the initial and final interactions between the human and the robot are defined here, as well as the dispatcher for the actions in the task and the error manager is called in case something goes wrong.
+- (action_reasoner.pl)[https://github.com/SitLog/source_code/blob/master/apps/german_open_2019/demo_supermarket/action_reasoner.pl]: the code in this file interprets the respective actions to be carried out given the obligations in the task.
+- (error_manager_demo.dm)[https://github.com/SitLog/source_code/blob/master/apps/german_open_2019/demo_supermarket/error_manager_demo.dm]: when an error arises this code is called to make a case analysis on the possible errors and make a recovery accordingly. Here the *daily life inference* cycle is considered when the robot attempts to take an object that is not found in the current shelf.
+- (user_functions.pl)[https://github.com/SitLog/source_code/blob/master/apps/test_behaviors/user_functions.pl]: several user functions nedded in the deliberative inference demo are defined here, such as: the supermarket parser, the call of the search space algorithms and the update of the KB.
+- (ricardo_supermarket_kb.txt)[https://github.com/SitLog/source_code/blob/master/knowledge_base/ricardo_supermarket_kb.txt]: holds the KB for the deliberative inference demo.
