@@ -14,6 +14,24 @@ diag_mod(relieve_arg(Ang, Dist, Hand, Status),
 [
 
 		[
+		 id ==> is,
+		 type ==> neutral,
+		 arcs ==> [		
+                 	empty:[
+                 	      assign(Change,get(change_height,_)),
+                 	      assign(NewHeight,apply( when(_,_,_), 
+                                               [Change,
+                                                get(tbl_height,_),
+                                                get(last_height,_)
+                                               ])
+                                     ),
+                               robotheight(NewHeight),
+		               set(last_height,NewHeight) 
+			      ] => relieving
+			   ]
+		 ],
+		 
+		 [
 		 id ==> relieving,
 		 type ==> neutral,
 		 arcs ==> [		
@@ -42,6 +60,9 @@ diag_mod(relieve_arg(Ang, Dist, Hand, Status),
 	    ], 
 
 	% List of Local Variables
-	[]
+	[
+	 change_height ==> true,
+	 tbl_height ==> 1.41
+	]
 
    ). 

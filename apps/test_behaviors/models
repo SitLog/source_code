@@ -137,9 +137,9 @@
 %Inspection
 'inspection/inspection_main.dm'.
 
-%% New demo sample code
-'sample/sample_main.dm'.
-'sample/sample_wait.dm'.
+%% New example demo
+'example/example_main.dm'.
+'example/example_wait.dm'.
 
 %Preferencces
 'preferences/preferences_main.dm'.

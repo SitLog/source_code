@@ -9,7 +9,7 @@ The code that implements the deliberative inference demo, involving abduction, d
 - The code that implements the search space algorithms to determine the diagnosis, decision-making and planning is found in the files: [daily_life_inference_cycle_2020.pl](https://github.com/SitLog/source_code/blob/master/knowledge_base/daily_life_inference_cycle_2020.pl), [diagnosis_2020.pl](https://github.com/SitLog/source_code/blob/master/knowledge_base/diagnosis_2020.pl), [decision_maker_2020.pl](https://github.com/SitLog/source_code/blob/master/knowledge_base/decision_maker_2020.pl), [planner_2020.pl](https://github.com/SitLog/source_code/blob/master/knowledge_base/planner_2020.pl) and [
 new_observation_2020.pl](https://github.com/SitLog/source_code/blob/master/knowledge_base/new_observation_2020.pl).
 
-If the demo wants to be run on SitLog test mode, run the command ```./scripts/german_open_2019 test``` on a terminal with present directory the source of this repository (also see the instructions [here](https://github.com/SitLog/source_code#sitlog)). Then you can enter the following answers when prompted by the interpreter.
+If the demo wants to be executed on SitLog test mode, run the command ```./scripts/german_open_2019 test``` on a terminal with present directory the source of this repository (see also the instructions [here](https://github.com/SitLog/source_code#sitlog)). Then you can enter the following answers when prompted by the interpreter.
 
     res(demo_supermarket).
     ok.

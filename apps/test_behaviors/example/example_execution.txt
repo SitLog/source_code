@@ -1,0 +1,21 @@
+res(example).
+ok.
+[day(monday)].
+[ok].
+loop.
+loop.
+tuesday.
+['not ok'].
+finish.
+
+-----------------------------------
+res(example).
+ok.
+[day(tuesday)].
+[tuesday,'not ok'].
+loop.
+tuesday.
+[day(monday)].
+[monday,ok].
+finish.
+

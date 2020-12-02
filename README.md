@@ -52,12 +52,12 @@ The final setting that must be perfomed to have SitLog running is to add an envi
 
 You are ready to run SitLog programs in test mode!
 
-## Sample dialogue model
+## Example dialogue model
 
-Now, we describe the execution of the sample code 
-found in [sample_main.dm](https://github.com/SitLog/source_code/blob/master/apps/test_behaviors/sample/sample_main.dm), whose diagrammatic representation is given below.
+Now, we describe the execution of the example code 
+found in [example_main.dm](https://github.com/SitLog/source_code/blob/master/apps/test_behaviors/example/example_main.dm), whose diagrammatic representation is given below.
 
-![Diagrammatic representation of sample dialoge model](apps/test_behaviors/sample/dm_diagram.jpg)
+![Diagrammatic representation of example dialoge model](apps/test_behaviors/example/dm_diagram.jpg)
 
 Open a terminal, change the directory to the one with this repository and run:
 
@@ -66,10 +66,10 @@ Open a terminal, change the directory to the one with this repository and run:
 
 Since the execution mode is test, you will be prompted to enter the dialogue model to be run by Sitlog. So, type
 
-    |: res(sample).
+    |: res(example).
 
 
-Type ```ok.``` as confirmation. The ```sample_main.dm``` file is loaded.
+Type ```ok.``` as confirmation. The ```example_main.dm``` file is loaded.
 
 Initially the value of ```in_arg``` is undefined, moreover, the variable ```count_init``` is assigned to 1 and the first situation is considered, it asks us to enter the expectation that is met. So, we type
 
@@ -80,12 +80,12 @@ This matches the second arc, so the local variable ```day``` is set to ```tuesda
     [tuesday,'not ok'].
 
 
-The third arc is matched, so the last transition is retrieved from the execution history and the control is given to the situation ```rs```, since the values of ```in_arg``` and ```day``` are different. Also, the value of ```in_arg``` is updated to ```tuesday```. Next, the variable ```count_rec``` is assigned to 1 and the execution flow is passed to the embedded dialogue model [sample_wait.dm](https://github.com/SitLog/source_code/blob/master/apps/test_behaviors/sample/sample_wait.dm). Its initial situation is considered, and the expectation that is met waits to be typed.
+The third arc is matched, so the last transition is retrieved from the execution history and the control is given to the situation ```rs```, since the values of ```in_arg``` and ```day``` are different. Also, the value of ```in_arg``` is updated to ```tuesday```. Next, the variable ```count_rec``` is assigned to 1 and the execution flow is passed to the embedded dialogue model [example_wait.dm](https://github.com/SitLog/source_code/blob/master/apps/test_behaviors/example/example_wait.dm). Its initial situation is considered, and the expectation that is met waits to be typed.
 
     loop.
 
 
-This corresponds to the second arc, so the variable ```g_count_fs2``` is assigned to 1, the final situation ```fs2``` is reached and the execution flow is back to the embedding situation ```rs```. Thus, its second arc is matched, the text ```'Cont. recursive sit'``` is printed on the screen and the situation ```rs``` is considered again. The variable ```count_rec``` is assigned to 2 and the execution flow is passed to the embedded dialogue model ```sample_wait.dm```. The expectation of its initial situacion has to be typed, e.g.,
+This corresponds to the second arc, so the variable ```g_count_fs2``` is assigned to 1, the final situation ```fs2``` is reached and the execution flow is back to the embedding situation ```rs```. Thus, its second arc is matched, the text ```'Cont. recursive sit'``` is printed on the screen and the situation ```rs``` is considered again. The variable ```count_rec``` is assigned to 2 and the execution flow is passed to the embedded dialogue model ```example_wait.dm```. The expectation of its initial situacion has to be typed, e.g.,
 
     tuesday.
 
@@ -105,5 +105,5 @@ The third arc is matched, then the last transition is retrieved from the executi
     finish.
 
 
-The first arc is matched, so the text ```Good bye``` is printed on the screen and the control is passed to the final situation ```fs```, ending the execution of the sample dialogue model.
+The first arc is matched, so the text ```Good bye``` is printed on the screen and the control is passed to the final situation ```fs```, ending the execution of the example dialogue model.
 

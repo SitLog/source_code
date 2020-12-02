@@ -82,7 +82,7 @@ construct_commands_demo(grasp(X,left),[
 %Deliver(Object,right)
 construct_commands_demo(deliver(Object,right),[	
 	say(['I will deliver the',Object],_),
-	relieve_arg(-20.0, 0.5, right, _),
+	relieve_arg(-20.0, 0.45, right, _),
 	consult_kb(change_object_property, [golem,right_arm,free], _, _)	    
 	]).
 
@@ -91,7 +91,7 @@ construct_commands_demo(deliver(Object,right),[
 %Deliver(Object,left)
 construct_commands_demo(deliver(Object,left),[
 	say(['I will deliver the',Object],_),    
-	relieve_arg(20.0, 0.5, left, _),
+	relieve_arg(20.0, 0.45, left, _),
 	consult_kb(change_object_property, [golem,left_arm,free], _, _)	    
 	]).
 

@@ -1,20 +1,1227 @@
-[2020/11/24,4:12:47.41601324]Info-Level 1: Running models from     : models
-[2020/11/24,4:12:47.416043758]Info-Level 1: Project directory       : apps/german_open_2019
-[2020/11/24,4:12:47.416051387]Info-Level 1: Knowledge base          : knowledge_base/knowledge_base_robocup.pl
-[2020/11/24,4:12:47.416057586]Info-Level 1: User Functions          : user_functions.pl
-[2020/11/24,4:12:47.416063547]Info-Level 1: Expectation Types       : expectation_types.pl
-[2020/11/24,4:12:47.416069507]Info-Level 1: Basic acts              : basic_actions.pl
-[2020/11/24,4:12:47.416075229]Info-Level 1: Templates               : templates.pl
-[2020/11/24,4:12:47.41608119]Info-Level 1: Running dialogue        : main
-[2020/11/24,4:12:47.416086673]Info-Level 1: Writing debug file to   : logfile.log
-[2020/11/24,4:12:47.416092395]Info-Level 1: Saving log file to      : apps/german_open_2019/log
-[2020/11/24,4:12:47.461191892]Info-Level 1: Starting dialogue: main
-[2020/11/24,4:12:47.461288928]Info-Level 1: Saving log in: apps/german_open_2019/log/dm.txt
-[2020/11/24,4:12:47.461340665]Info-Level 1: Executing dialogue: main
-[2020/11/24,4:12:47.463135242]Info-Level 1: Defined local vars: [dishwasher==>dishwasher_main,receptionist==>receptionist_main,serving_drinks==>serving_drinks_main,carry==>carry_main,garbage==>garbage_main,whereis==>where_is_main,handme==>hand_me_that_main,demo_supermarket==>demo_supermarket_main,test==>test]
-[2020/11/24,4:12:47.463624954]All: Situtation: is
-[2020/11/24,4:12:47.463637351]Structs: Executing situtation: _G95998
-[2020/11/24,4:12:47.463652849]Debug: In situation is of type neutral.
-[2020/11/24,4:12:47.463660001]All: Situation to execute [id==> (is),type==>neutral,arcs==>[empty:[screen(All the system working),screen(These are the options),screen(in, fo, cp, cl, res, gpsr, demo, see_object, detect_face, memorize_face, recognize_face, see_face, see, ask)]=>apply(model_to_execute(_G94050,_G94053,_G94056),[k1,k2,model.pl])]].
-[2020/11/24,4:12:47.470063924]Debug: In situation k1 of type keyboard.
-[2020/11/24,4:12:47.470088481]All: Situation to execute [id==>k1,type==>keyboard,arcs==>[res(_G79962):[screen(Input ok to execute ),get(_G79962,_G79965),screen(_G79965)]=>k2(_G79962)]].
+[2020/11/20,3:54:0.631709814]Info-Level 1: Running models from     : models
+[2020/11/20,3:54:0.631731748]Info-Level 1: Project directory       : apps/german_open_2019
+[2020/11/20,3:54:0.631739854]Info-Level 1: Knowledge base          : knowledge_base/knowledge_base_robocup.pl
+[2020/11/20,3:54:0.631746768]Info-Level 1: User Functions          : user_functions.pl
+[2020/11/20,3:54:0.631752967]Info-Level 1: Expectation Types       : expectation_types.pl
+[2020/11/20,3:54:0.631768703]Info-Level 1: Basic acts              : basic_actions.pl
+[2020/11/20,3:54:0.63177514]Info-Level 1: Templates               : templates.pl
+[2020/11/20,3:54:0.631781101]Info-Level 1: Running dialogue        : main
+[2020/11/20,3:54:0.6317873]Info-Level 1: Writing debug file to   : logfile.log
+[2020/11/20,3:54:0.63179326]Info-Level 1: Saving log file to      : apps/german_open_2019/log
+[2020/11/20,3:54:0.681794881]Info-Level 1: Starting dialogue: main
+[2020/11/20,3:54:0.681878089]Info-Level 1: Saving log in: apps/german_open_2019/log/dm.txt
+[2020/11/20,3:54:0.681921958]Info-Level 1: Executing dialogue: main
+[2020/11/20,3:54:0.683758735]Info-Level 1: Defined local vars: [dishwasher==>dishwasher_main,receptionist==>receptionist_main,serving_drinks==>serving_drinks_main,carry==>carry_main,garbage==>garbage_main,whereis==>where_is_main,handme==>hand_me_that_main,demo_supermarket==>demo_supermarket_main,test==>test]
+[2020/11/20,3:54:0.684278964]All: Situtation: is
+[2020/11/20,3:54:0.684292793]Structs: Executing situtation: _G96184
+[2020/11/20,3:54:0.684310436]Debug: In situation is of type neutral.
+[2020/11/20,3:54:0.684319972]All: Situation to execute [id==> (is),type==>neutral,arcs==>[empty:[screen(All the system working),screen(These are the options),screen(in, fo, cp, cl, res, gpsr, demo, see_object, detect_face, memorize_face, recognize_face, see_face, see, ask)]=>apply(model_to_execute(_G94236,_G94239,_G94242),[k1,k2,model.pl])]].
+[2020/11/20,3:54:0.69089055]Debug: In situation k1 of type keyboard.
+[2020/11/20,3:54:0.690915822]All: Situation to execute [id==>k1,type==>keyboard,arcs==>[res(_G80148):[screen(Input ok to execute ),get(_G80148,_G80151),screen(_G80151)]=>k2(_G80148)]].
+[2020/11/20,3:54:2.533582687]Info-Level 1: Situation ends
+[2020/11/20,3:54:2.538906574]Debug: In situation k2(demo_supermarket) of type keyboard.
+[2020/11/20,3:54:2.538935899]All: Situation to execute [id==>k2(demo_supermarket),type==>keyboard,arcs==>[ok:empty=>execute(demo_supermarket)]].
+[2020/11/20,3:54:2.539170026]Info-Level 1: Situation ends
+[2020/11/20,3:54:2.541101932]Debug: In situation execute(demo_supermarket) of type neutral.
+[2020/11/20,3:54:2.541125774]All: Situation to execute [id==>execute(demo_supermarket),type==>neutral,arcs==>[empty:[get(demo_supermarket,_G208294),screen(Executing test: ),screen(_G208294)]=>rtest(_G208294)]].
+[2020/11/20,3:54:2.541483879]Info-Level 1: Situation ends
+[2020/11/20,3:54:2.549223423]Debug: In situation demo_supermarket_main of type recursive.
+[2020/11/20,3:54:2.54925704]All: Situation to execute demo_supermarket_main.
+[2020/11/20,3:54:2.54928255]Info-Level 1: Executing dialogue: demo_supermarket_main
+[2020/11/20,3:54:2.549521684]Info-Level 1: Defined local vars: []
+[2020/11/20,3:54:2.549689531]All: Situtation: is
+[2020/11/20,3:54:2.549697875]Structs: Executing situtation: _G205147
+[2020/11/20,3:54:2.549721717]Debug: In situation move(welcome_point,_G204577) of type recursive.
+[2020/11/20,3:54:2.549731254]All: Situation to execute move(welcome_point,_G204577).
+[2020/11/20,3:54:2.549752235]Info-Level 1: Executing dialogue: move(welcome_point,_G204577)
+[2020/11/20,3:54:2.549977302]Info-Level 1: Defined local vars: []
+[2020/11/20,3:54:2.550319433]All: Situtation: is
+[2020/11/20,3:54:2.550328493]Structs: Executing situtation: _G255255
+[2020/11/20,3:54:2.550343275]Debug: In situation is of type neutral.
+[2020/11/20,3:54:2.550350904]All: Situation to execute [id==> (is),type==>neutral,arcs==>[empty:apply(verify_type_of_move(_G251647,_G251650,_G251653),[welcome_point,_G251656,_G251659])=>verify_case(_G251656,_G251659)]].
+[2020/11/20,3:54:2.586639881]Debug: In situation verify_case(label,[welcome_point]) of type neutral.
+[2020/11/20,3:54:2.586678504]All: Situation to execute [id==>verify_case(label,[welcome_point]),type==>neutral,arcs==>[empty:[switcharm(0),robotheight(1.25),set(last_height,1.25),switchpose(nav)]=>go_to_point(apply(from_labels_to_coordinates(_G186857),[[welcome_point]]))]].
+[2020/11/20,3:54:2.589425802]Info-Level 1: Situation ends
+[2020/11/20,3:54:2.66159749]Debug: In situation go_to_point([welcome_point]) of type neutral.
+[2020/11/20,3:54:2.661630153]All: Situation to execute [id==>go_to_point([welcome_point]),type==>neutral,arcs==>[empty:navigate(welcome_point,_G250991)=>verify_result(_G250991,[])]].
+[2020/11/20,3:54:2.6618995659999998]Info-Level 1: Situation ends
+[2020/11/20,3:54:2.773351192]Debug: In situation verify_result(ok,[]) of type neutral.
+[2020/11/20,3:54:2.773392677]All: Situation to execute [id==>verify_result(ok,[]),type==>neutral,arcs==>[empty:empty=>go_to_point([])]].
+[2020/11/20,3:54:2.773569822]Info-Level 1: Situation ends
+[2020/11/20,3:54:2.928867816]Debug: In situation go_to_point([]) of type neutral.
+[2020/11/20,3:54:2.928901433]All: Situation to execute [id==>go_to_point([]),type==>neutral,arcs==>[empty:switchpose(grasp)=>success]].
+[2020/11/20,3:54:2.929133415]Info-Level 1: Situation ends
+[2020/11/20,3:54:3.021666765]Debug: In situation [id==>success,type==>final,diag_mod==>move(_G439997,ok)] of type final.
+[2020/11/20,3:54:3.021708965]All: Situation to execute success.
+[2020/11/20,3:54:3.021762132]Info-Level 1: Situation ends
+[2020/11/20,3:54:3.021770715]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:3.021788597]Info-Level 1: .Output []
+[2020/11/20,3:54:3.04132843]Debug: In situation is of type neutral.
+[2020/11/20,3:54:3.041360139]All: Situation to execute [id==> (is),type==>neutral,arcs==>[empty:[apply(initialize_KB_supermarket_ricardo,[]),tiltv(0.0),set(last_tilt,0.0),say(Hello my name is Golem and I am an assistant in the supermarket)]=>receive_comand]].
+[2020/11/20,3:54:3.04341793]Info-Level 1: Situation ends
+[2020/11/20,3:54:3.049553871]Debug: In situation ask(What can I do for you?,supermarket_command,false,1,_G468160,_G468163) of type recursive.
+[2020/11/20,3:54:3.049589872]All: Situation to execute ask(What can I do for you?,supermarket_command,false,1,_G468160,_G468163).
+[2020/11/20,3:54:3.049620866]Info-Level 1: Executing dialogue: ask(What can I do for you?,supermarket_command,false,1,_G468160,_G468163)
+[2020/11/20,3:54:3.04988265]Info-Level 1: Defined local vars: [count==>0]
+[2020/11/20,3:54:3.050124883]All: Situtation: is
+[2020/11/20,3:54:3.050136327]Structs: Executing situtation: _G618555
+[2020/11/20,3:54:3.050151109]Debug: In situation is of type neutral.
+[2020/11/20,3:54:3.050170898]All: Situation to execute [id==> (is),type==>neutral,arcs==>[empty:say(What can I do for you?)=>listen_command]].
+[2020/11/20,3:54:3.054528474]Debug: In situation listen_command of type listening(supermarket_command).
+[2020/11/20,3:54:3.054551601]All: Situation to execute [id==>listen_command,type==>listening(supermarket_command),arcs==>[said(_G709173):empty=>apply(check_not_empty_hypothesys(_G709176,_G709179),[_G709173,false])]].
+[2020/11/20,3:54:3.083020925]Info-Level 1: Situation ends
+[2020/11/20,3:54:3.087367534]Debug: In situation confirm_hypothesis(bring me a coke please,false) of type neutral.
+[2020/11/20,3:54:3.087389945]All: Situation to execute [id==>confirm_hypothesis(bring me a coke please,false),type==>neutral,out_arg==>[bring me a coke please],arcs==>[empty:empty=>success]].
+[2020/11/20,3:54:3.087519645]Info-Level 1: Situation ends
+[2020/11/20,3:54:3.091863155]Debug: In situation [id==>success,type==>final,in_arg==>[_G518484],diag_mod==>ask(_G518508,_G518511,_G518514,_G518517,_G518484,ok)] of type final.
+[2020/11/20,3:54:3.091894626]All: Situation to execute success.
+[2020/11/20,3:54:3.091945409]Info-Level 1: Situation ends
+[2020/11/20,3:54:3.091955184]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:3.091970205]Info-Level 1: .Output [count==>0]
+[2020/11/20,3:54:3.093908309]Info-Level 1: Situation ends
+[2020/11/20,3:54:3.123946666]Debug: In situation ask(Anything else?,supermarket_command,false,1,_G206819,_G206840) of type recursive.
+[2020/11/20,3:54:3.12399578]All: Situation to execute ask(Anything else?,supermarket_command,false,1,_G206819,_G206840).
+[2020/11/20,3:54:3.124026536]Info-Level 1: Executing dialogue: ask(Anything else?,supermarket_command,false,1,_G206819,_G206840)
+[2020/11/20,3:54:3.124289751]Info-Level 1: Defined local vars: [count==>0]
+[2020/11/20,3:54:3.124506235]All: Situtation: is
+[2020/11/20,3:54:3.124515771]Structs: Executing situtation: _G328500
+[2020/11/20,3:54:3.124530553]Debug: In situation is of type neutral.
+[2020/11/20,3:54:3.124547481]All: Situation to execute [id==> (is),type==>neutral,arcs==>[empty:say(Anything else?)=>listen_command]].
+[2020/11/20,3:54:3.1290102]Debug: In situation listen_command of type listening(supermarket_command).
+[2020/11/20,3:54:3.129034519]All: Situation to execute [id==>listen_command,type==>listening(supermarket_command),arcs==>[said(_G418902):empty=>apply(check_not_empty_hypothesys(_G418905,_G418908),[_G418902,false])]].
+[2020/11/20,3:54:3.129446744]Info-Level 1: Situation ends
+[2020/11/20,3:54:3.133621454]Debug: In situation confirm_hypothesis(no,false) of type neutral.
+[2020/11/20,3:54:3.133646965]All: Situation to execute [id==>confirm_hypothesis(no,false),type==>neutral,out_arg==>[no],arcs==>[empty:empty=>success]].
+[2020/11/20,3:54:3.133769989]Info-Level 1: Situation ends
+[2020/11/20,3:54:3.179445505]Debug: In situation [id==>success,type==>final,in_arg==>[_G315611],diag_mod==>ask(_G315635,_G315638,_G315641,_G315644,_G315611,ok)] of type final.
+[2020/11/20,3:54:3.179490804]All: Situation to execute success.
+[2020/11/20,3:54:3.179547548]Info-Level 1: Situation ends
+[2020/11/20,3:54:3.179556369]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:3.179574728]Info-Level 1: .Output [count==>0]
+[2020/11/20,3:54:3.180559635]Info-Level 1: Situation ends
+[2020/11/20,3:54:3.186983108]Debug: In situation answer_more_commands(no,[move(shelf_drinks),grasp(coke,left),move(start),deliver(coke,left)]) of type neutral.
+[2020/11/20,3:54:3.187007188]All: Situation to execute [id==>answer_more_commands(no,[move(shelf_drinks),grasp(coke,left),move(start),deliver(coke,left)]),type==>neutral,arcs==>[empty:empty=>dispatch(apply(action_reasoner_demo(_G509170),[[move(shelf_drinks),grasp(coke,left),move(start),deliver(coke,left)]]))]].
+[2020/11/20,3:54:3.187534809]Info-Level 1: Situation ends
+[2020/11/20,3:54:3.235782384]Debug: In situation consult_kb(value_object_property,[shelf_drinks,name],_G264573,_G264574) of type recursive.
+[2020/11/20,3:54:3.235823392]All: Situation to execute consult_kb(value_object_property,[shelf_drinks,name],_G264573,_G264574).
+[2020/11/20,3:54:3.235856056]Info-Level 1: Executing dialogue: consult_kb(value_object_property,[shelf_drinks,name],_G264573,_G264574)
+[2020/11/20,3:54:3.23611617]Info-Level 1: Defined local vars: []
+[2020/11/20,3:54:3.236313819]All: Situtation: is
+[2020/11/20,3:54:3.236323595]Structs: Executing situtation: _G397990
+[2020/11/20,3:54:3.236340284]Debug: In situation verify of type neutral.
+[2020/11/20,3:54:3.236348152]All: Situation to execute [id==>verify,type==>neutral,arcs==>[empty:empty=>kind_of_consult(value_object_property,[shelf_drinks,name])]].
+[2020/11/20,3:54:3.308909654]Debug: In situation kind_of_consult(value_object_property,[shelf_drinks,name]) of type neutral.
+[2020/11/20,3:54:3.308942794]All: Situation to execute [id==>kind_of_consult(value_object_property,[shelf_drinks,name]),out_arg==>[_G331636],type==>neutral,arcs==>[empty:apply(consult_kb_value_object_property(_G331639,_G331642,_G331645),[shelf_drinks,name,_G331636])=>success]].
+[2020/11/20,3:54:3.310369014]Info-Level 1: Situation ends
+[2020/11/20,3:54:3.387173414]Debug: In situation [id==>success,type==>final,in_arg==>[_G404746],diag_mod==>consult_kb(_G404749,_G404752,_G404746,ok)] of type final.
+[2020/11/20,3:54:3.387235164]All: Situation to execute success.
+[2020/11/20,3:54:3.387315273]Info-Level 1: Situation ends
+[2020/11/20,3:54:3.3873302929999998]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:3.387360334]Info-Level 1: .Output []
+[2020/11/20,3:54:3.443782329]Info-Level 1: Situation ends
+[2020/11/20,3:54:3.450414419]Debug: In situation say([I will move to,the shelf of drinks],_G291211) of type recursive.
+[2020/11/20,3:54:3.450454235]All: Situation to execute say([I will move to,the shelf of drinks],_G291211).
+[2020/11/20,3:54:3.450484037]Info-Level 1: Executing dialogue: say([I will move to,the shelf of drinks],_G291211)
+[2020/11/20,3:54:3.450734853]Info-Level 1: Defined local vars: []
+[2020/11/20,3:54:3.4508686060000002]All: Situtation: is
+[2020/11/20,3:54:3.45087862]Structs: Executing situtation: _G738964
+[2020/11/20,3:54:3.450894117]Debug: In situation is of type neutral.
+[2020/11/20,3:54:3.450901985]All: Situation to execute [id==> (is),type==>neutral,arcs==>[empty:say([I will move to,the shelf of drinks])=>success]].
+[2020/11/20,3:54:3.451483964]Debug: In situation [id==>success,type==>final,diag_mod==>say(_G753047,ok)] of type final.
+[2020/11/20,3:54:3.4514985080000002]All: Situation to execute success.
+[2020/11/20,3:54:3.451534748]Info-Level 1: Situation ends
+[2020/11/20,3:54:3.451542139]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:3.451553106]Info-Level 1: .Output []
+[2020/11/20,3:54:3.518295049]Info-Level 1: Situation ends
+[2020/11/20,3:54:3.594432115]Debug: In situation consult_kb(value_object_property,[shelf_drinks,position],_G360007,_G360009) of type recursive.
+[2020/11/20,3:54:3.594480514]All: Situation to execute consult_kb(value_object_property,[shelf_drinks,position],_G360007,_G360009).
+[2020/11/20,3:54:3.594510793]Info-Level 1: Executing dialogue: consult_kb(value_object_property,[shelf_drinks,position],_G360007,_G360009)
+[2020/11/20,3:54:3.5948596]Info-Level 1: Defined local vars: []
+[2020/11/20,3:54:3.595054626]All: Situtation: is
+[2020/11/20,3:54:3.595064401]Structs: Executing situtation: _G510593
+[2020/11/20,3:54:3.59507966]Debug: In situation verify of type neutral.
+[2020/11/20,3:54:3.595086812]All: Situation to execute [id==>verify,type==>neutral,arcs==>[empty:empty=>kind_of_consult(value_object_property,[shelf_drinks,position])]].
+[2020/11/20,3:54:3.686504364]Debug: In situation kind_of_consult(value_object_property,[shelf_drinks,position]) of type neutral.
+[2020/11/20,3:54:3.686538696]All: Situation to execute [id==>kind_of_consult(value_object_property,[shelf_drinks,position]),out_arg==>[_G466096],type==>neutral,arcs==>[empty:apply(consult_kb_value_object_property(_G466099,_G466102,_G466105),[shelf_drinks,position,_G466096])=>success]].
+[2020/11/20,3:54:3.688012599]Info-Level 1: Situation ends
+[2020/11/20,3:54:3.82109642]Debug: In situation [id==>success,type==>final,in_arg==>[_G711177],diag_mod==>consult_kb(_G711180,_G711183,_G711177,ok)] of type final.
+[2020/11/20,3:54:3.821149349]All: Situation to execute success.
+[2020/11/20,3:54:3.821202039]Info-Level 1: Situation ends
+[2020/11/20,3:54:3.821210861]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:3.821228981]Info-Level 1: .Output []
+[2020/11/20,3:54:3.90282464]Info-Level 1: Situation ends
+[2020/11/20,3:54:3.909083127]Debug: In situation move(shelf_drinks,_G425674) of type recursive.
+[2020/11/20,3:54:3.909127235]All: Situation to execute move(shelf_drinks,_G425674).
+[2020/11/20,3:54:3.9091556069999998]Info-Level 1: Executing dialogue: move(shelf_drinks,_G425674)
+[2020/11/20,3:54:3.9094066610000002]Info-Level 1: Defined local vars: []
+[2020/11/20,3:54:3.9097447389999997]All: Situtation: is
+[2020/11/20,3:54:3.909754514]Structs: Executing situtation: _G897994
+[2020/11/20,3:54:3.909769535]Debug: In situation is of type neutral.
+[2020/11/20,3:54:3.909791707]All: Situation to execute [id==> (is),type==>neutral,arcs==>[empty:apply(verify_type_of_move(_G894386,_G894389,_G894392),[shelf_drinks,_G894395,_G894398])=>verify_case(_G894395,_G894398)]].
+[2020/11/20,3:54:4.013599872]Debug: In situation verify_case(label,[shelf_drinks]) of type neutral.
+[2020/11/20,3:54:4.013643264]All: Situation to execute [id==>verify_case(label,[shelf_drinks]),type==>neutral,arcs==>[empty:[switcharm(0),robotheight(1.25),set(last_height,1.25),switchpose(nav)]=>go_to_point(apply(from_labels_to_coordinates(_G704666),[[shelf_drinks]]))]].
+[2020/11/20,3:54:4.015322446]Info-Level 1: Situation ends
+[2020/11/20,3:54:4.269135236]Debug: In situation go_to_point([shelf_drinks]) of type neutral.
+[2020/11/20,3:54:4.2691679]All: Situation to execute [id==>go_to_point([shelf_drinks]),type==>neutral,arcs==>[empty:navigate(shelf_drinks,_G592785)=>verify_result(_G592785,[])]].
+[2020/11/20,3:54:4.269419431]Info-Level 1: Situation ends
+[2020/11/20,3:54:4.403871059]Debug: In situation verify_result(ok,[]) of type neutral.
+[2020/11/20,3:54:4.403904676]All: Situation to execute [id==>verify_result(ok,[]),type==>neutral,arcs==>[empty:empty=>go_to_point([])]].
+[2020/11/20,3:54:4.404096603]Info-Level 1: Situation ends
+[2020/11/20,3:54:4.607892751]Debug: In situation go_to_point([]) of type neutral.
+[2020/11/20,3:54:4.6079277990000005]All: Situation to execute [id==>go_to_point([]),type==>neutral,arcs==>[empty:switchpose(grasp)=>success]].
+[2020/11/20,3:54:4.6081883900000005]Info-Level 1: Situation ends
+[2020/11/20,3:54:4.788411378]Debug: In situation [id==>success,type==>final,diag_mod==>move(_G781791,ok)] of type final.
+[2020/11/20,3:54:4.788454055]All: Situation to execute success.
+[2020/11/20,3:54:4.788501024]Info-Level 1: Situation ends
+[2020/11/20,3:54:4.788508892]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:4.78852725]Info-Level 1: .Output []
+[2020/11/20,3:54:4.798707723]Info-Level 1: Situation ends
+[2020/11/20,3:54:4.804898977]Debug: In situation consult_kb(change_object_property,[golem,position,shelf_drinks],_G969095,_G969098) of type recursive.
+[2020/11/20,3:54:4.804945468]All: Situation to execute consult_kb(change_object_property,[golem,position,shelf_drinks],_G969095,_G969098).
+[2020/11/20,3:54:4.804975748]Info-Level 1: Executing dialogue: consult_kb(change_object_property,[golem,position,shelf_drinks],_G969095,_G969098)
+[2020/11/20,3:54:4.805214881]Info-Level 1: Defined local vars: []
+[2020/11/20,3:54:4.805402278]All: Situtation: is
+[2020/11/20,3:54:4.805411338]Structs: Executing situtation: _G1421952
+[2020/11/20,3:54:4.80542612]Debug: In situation verify of type neutral.
+[2020/11/20,3:54:4.805433511]All: Situation to execute [id==>verify,type==>neutral,arcs==>[empty:empty=>kind_of_consult(change_object_property,[golem,position,shelf_drinks])]].
+[2020/11/20,3:54:4.91907382]Debug: In situation kind_of_consult(change_object_property,[golem,position,shelf_drinks]) of type neutral.
+[2020/11/20,3:54:4.919108152]All: Situation to execute [id==>kind_of_consult(change_object_property,[golem,position,shelf_drinks]),out_arg==>[_G672061],type==>neutral,arcs==>[empty:apply(consult_kb_change_object_property(_G672025,_G672028,_G672031),[golem,position,shelf_drinks])=>success]].
+[2020/11/20,3:54:4.920680284]Info-Level 1: Situation ends
+[2020/11/20,3:54:4.934325933]Debug: In situation [id==>success,type==>final,in_arg==>[_G1204904],diag_mod==>consult_kb(_G1204907,_G1204910,_G1204904,ok)] of type final.
+[2020/11/20,3:54:4.9343783850000005]All: Situation to execute success.
+[2020/11/20,3:54:4.934429645]Info-Level 1: Situation ends
+[2020/11/20,3:54:4.934437513]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:4.934456348]Info-Level 1: .Output []
+[2020/11/20,3:54:5.040796756]Info-Level 1: Situation ends
+[2020/11/20,3:54:5.046930551]Debug: In situation scan(object,_G545919,[0.0],[-30.0],object,_G545921,false,false,_G545924) of type recursive.
+[2020/11/20,3:54:5.04696393]All: Situation to execute scan(object,_G545919,[0.0],[-30.0],object,_G545921,false,false,_G545924).
+[2020/11/20,3:54:5.046994447]Info-Level 1: Executing dialogue: scan(object,_G545919,[0.0],[-30.0],object,_G545921,false,false,_G545924)
+[2020/11/20,3:54:5.047276973]Info-Level 1: Defined local vars: [baseh==>0.0,basev==>0.0]
+[2020/11/20,3:54:5.047598361]All: Situtation: is
+[2020/11/20,3:54:5.047608613]Structs: Executing situtation: _G954642
+[2020/11/20,3:54:5.047624588]Debug: In situation is of type neutral.
+[2020/11/20,3:54:5.047642946]All: Situation to execute [id==> (is),type==>neutral,arcs==>[empty:empty=>tilt_first(false)]].
+[2020/11/20,3:54:5.054324865]Debug: In situation tilt_first(false) of type neutral.
+[2020/11/20,3:54:5.054377317]All: Situation to execute [id==>tilt_first(false),type==>neutral,arcs==>[empty:[tilth(0.0),set(last_scan,0.0)]=>tilt([])]].
+[2020/11/20,3:54:5.054723978]Info-Level 1: Situation ends
+[2020/11/20,3:54:5.061043739]Debug: In situation tilt(object,_G545919,[-30.0],object,_G545921,false,_G1274838) of type recursive.
+[2020/11/20,3:54:5.061082363]All: Situation to execute tilt(object,_G545919,[-30.0],object,_G545921,false,_G1274838).
+[2020/11/20,3:54:5.06111288]Info-Level 1: Executing dialogue: tilt(object,_G545919,[-30.0],object,_G545921,false,_G1274838)
+[2020/11/20,3:54:5.0613451]Info-Level 1: Defined local vars: []
+[2020/11/20,3:54:5.061615228]All: Situtation: is
+[2020/11/20,3:54:5.061624526]Structs: Executing situtation: _G1443928
+[2020/11/20,3:54:5.061637639]Debug: In situation is of type neutral.
+[2020/11/20,3:54:5.061645269]All: Situation to execute [id==> (is),type==>neutral,arcs==>[empty:empty=>see_first(false)]].
+[2020/11/20,3:54:5.198537349]Debug: In situation see_first(false) of type neutral.
+[2020/11/20,3:54:5.198567867]All: Situation to execute [id==>see_first(false),type==>neutral,arcs==>[empty:[tiltv(-30.0),set(last_tilt,-30.0),sleep]=>see([])]].
+[2020/11/20,3:54:5.198971033]Info-Level 1: Situation ends
+[2020/11/20,3:54:5.203021049]Debug: In situation see(object,_G545919,object,_G545921,_G869297) of type recursive.
+[2020/11/20,3:54:5.203041076]All: Situation to execute see(object,_G545919,object,_G545921,_G869297).
+[2020/11/20,3:54:5.203065633]Info-Level 1: Executing dialogue: see(object,_G545919,object,_G545921,_G869297)
+[2020/11/20,3:54:5.203291654]Info-Level 1: Defined local vars: []
+[2020/11/20,3:54:5.203482627]All: Situtation: is
+[2020/11/20,3:54:5.203496217]Structs: Executing situtation: _G988389
+[2020/11/20,3:54:5.203510284]Debug: In situation is of type neutral.
+[2020/11/20,3:54:5.203517913]All: Situation to execute [id==> (is),type==>neutral,arcs==>[empty:empy=>see(object)]].
+[2020/11/20,3:54:5.20727539]Debug: In situation see_object(_G545919,object,_G545921,_G1063214) of type recursive.
+[2020/11/20,3:54:5.2073082920000004]All: Situation to execute see_object(_G545919,object,_G545921,_G1063214).
+[2020/11/20,3:54:5.207333564]Info-Level 1: Executing dialogue: see_object(_G545919,object,_G545921,_G1063214)
+[2020/11/20,3:54:5.207574605]Info-Level 1: Defined local vars: []
+[2020/11/20,3:54:5.207756519]All: Situtation: is
+[2020/11/20,3:54:5.207765102]Structs: Executing situtation: _G1168343
+[2020/11/20,3:54:5.2077775]Debug: In situation is of type neutral.
+[2020/11/20,3:54:5.207794427]All: Situation to execute [id==> (is),type==>neutral,arcs==>[empty:empty=>start_analyzing(object)]].
+[2020/11/20,3:54:5.214305162]Debug: In situation start_analyzing(object) of type neutral.
+[2020/11/20,3:54:5.214333772]All: Situation to execute [id==>start_analyzing(object),type==>neutral,arcs==>[empty:[get(last_tilt,_G1282531),get(object_recognition_mode,_G1282534),get(approaching,_G1282537)]=>seeing(_G545919,_G1282531,_G1282534,_G1282537)]].
+[2020/11/20,3:54:5.2148795119999996]Info-Level 1: Situation ends
+[2020/11/20,3:54:5.37279725]Debug: In situation seeing(_G913674,-30.0,moped,false) of type object_analyzing(-30.0,moped,false).
+[2020/11/20,3:54:5.372825384]All: Situation to execute [id==>seeing(_G913674,-30.0,moped,false),type==>object_analyzing(-30.0,moped,false),arcs==>[objects(_G919294):empty=>check(apply(objects_in_scene(_G919297,_G919300),[_G913674,_G919294])),status(_G828245):empty=>check(_G828245)]].
+[2020/11/20,3:54:5.373660802]Info-Level 1: Situation ends
+[2020/11/20,3:54:5.379901647]Debug: In situation check([object(noodles,0.2,2,0.55,4,5,6,7,8),object(malz,0.2,2,0.55,4,5,6,7,8)]) of type neutral.
+[2020/11/20,3:54:5.379931688]All: Situation to execute [id==>check([object(noodles,0.2,2,0.55,4,5,6,7,8),object(malz,0.2,2,0.55,4,5,6,7,8)]),type==>neutral,arcs==>[empty:empty=>success],diag_mod==>see_object(_G545919,_G1117783,[object(noodles,0.2,2,0.55,4,5,6,7,8),object(malz,0.2,2,0.55,4,5,6,7,8)],ok)].
+[2020/11/20,3:54:5.380135059]Info-Level 1: Situation ends
+[2020/11/20,3:54:5.386319875]Debug: In situation [id==>success,type==>final] of type final.
+[2020/11/20,3:54:5.386358976]All: Situation to execute success.
+[2020/11/20,3:54:5.386390447]Info-Level 1: Situation ends
+[2020/11/20,3:54:5.386397838]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:5.386423587]Info-Level 1: .Output []
+[2020/11/20,3:54:5.388886213]Info-Level 1: Situation ends
+[2020/11/20,3:54:5.536068439]Debug: In situation [id==>success,type==>final,in_arg==>[_G545919,[object(noodles,0.2,2,0.55,4,5,6,7,8),object(malz,0.2,2,0.55,4,5,6,7,8)],_G847937],diag_mod==>see(_G847952,_G545919,_G847955,[object(noodles,0.2,2,0.55,4,5,6,7,8),object(malz,0.2,2,0.55,4,5,6,7,8)],_G847937)] of type final.
+[2020/11/20,3:54:5.536136627]All: Situation to execute success.
+[2020/11/20,3:54:5.536247014]Info-Level 1: Situation ends
+[2020/11/20,3:54:5.536256074]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:5.536280155]Info-Level 1: .Output []
+[2020/11/20,3:54:5.537042379]Info-Level 1: Situation ends
+[2020/11/20,3:54:5.5412824149999995]Debug: In situation [id==>success,type==>final,in_arg==>[_G545919,[object(noodles,0.2,2,0.55,4,5,6,7,8),object(malz,0.2,2,0.55,4,5,6,7,8)],_G977378],diag_mod==>tilt(_G977384,_G545919,_G977387,_G977390,[object(noodles,0.2,2,0.55,4,5,6,7,8),object(malz,0.2,2,0.55,4,5,6,7,8)],_G977393,_G977378)] of type final.
+[2020/11/20,3:54:5.541332721]All: Situation to execute success.
+[2020/11/20,3:54:5.541429519]Info-Level 1: Situation ends
+[2020/11/20,3:54:5.541438102]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:5.541461944]Info-Level 1: .Output []
+[2020/11/20,3:54:5.542606592]Info-Level 1: Situation ends
+[2020/11/20,3:54:5.54883337]Debug: In situation [id==>success,type==>final,in_arg==>[_G545919,[object(noodles,0.2,2,0.55,4,5,6,7,8),object(malz,0.2,2,0.55,4,5,6,7,8)],_G1159546],diag_mod==>scan(_G1159561,_G545919,_G1159564,_G1159567,_G1159570,[object(noodles,0.2,2,0.55,4,5,6,7,8),object(malz,0.2,2,0.55,4,5,6,7,8)],_G1159573,_G1159576,_G1159546)] of type final.
+[2020/11/20,3:54:5.548891305]All: Situation to execute success.
+[2020/11/20,3:54:5.5490088459999996]Info-Level 1: Situation ends
+[2020/11/20,3:54:5.549019336]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:5.549044609]Info-Level 1: .Output [baseh==>0.0,basev==>0.0]
+[2020/11/20,3:54:5.556055307]Info-Level 1: Situation ends
+[2020/11/20,3:54:5.678481817]Debug: In situation consult_kb(value_object_property,[golem,position],shelf_drinks,_G601871) of type recursive.
+[2020/11/20,3:54:5.678521156]All: Situation to execute consult_kb(value_object_property,[golem,position],shelf_drinks,_G601871).
+[2020/11/20,3:54:5.67855978]Info-Level 1: Executing dialogue: consult_kb(value_object_property,[golem,position],shelf_drinks,_G601871)
+[2020/11/20,3:54:5.6788237089999996]Info-Level 1: Defined local vars: []
+[2020/11/20,3:54:5.679026365]All: Situtation: is
+[2020/11/20,3:54:5.679035186]Structs: Executing situtation: _G840319
+[2020/11/20,3:54:5.679048061]Debug: In situation verify of type neutral.
+[2020/11/20,3:54:5.679054975]All: Situation to execute [id==>verify,type==>neutral,arcs==>[empty:empty=>kind_of_consult(value_object_property,[golem,position])]].
+[2020/11/20,3:54:5.69377923]Debug: In situation kind_of_consult(value_object_property,[golem,position]) of type neutral.
+[2020/11/20,3:54:5.693811893]All: Situation to execute [id==>kind_of_consult(value_object_property,[golem,position]),out_arg==>[_G1051891],type==>neutral,arcs==>[empty:apply(consult_kb_value_object_property(_G1051894,_G1051897,_G1051900),[golem,position,_G1051891])=>success]].
+[2020/11/20,3:54:5.69525814]Info-Level 1: Situation ends
+[2020/11/20,3:54:5.851941108]Debug: In situation [id==>success,type==>final,in_arg==>[_G817870],diag_mod==>consult_kb(_G817873,_G817876,_G817870,ok)] of type final.
+[2020/11/20,3:54:5.851989746]All: Situation to execute success.
+[2020/11/20,3:54:5.852042436]Info-Level 1: Situation ends
+[2020/11/20,3:54:5.852050781]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:5.852070331]Info-Level 1: .Output []
+[2020/11/20,3:54:5.858236074]Info-Level 1: Situation ends
+[2020/11/20,3:54:5.864440441]Debug: In situation consult_kb(update_kb_demo,[shelf_drinks,[object(noodles,0.2,2,0.55,4,5,6,7,8),object(malz,0.2,2,0.55,4,5,6,7,8)]],_G1136460,_G1136463) of type recursive.
+[2020/11/20,3:54:5.864481687]All: Situation to execute consult_kb(update_kb_demo,[shelf_drinks,[object(noodles,0.2,2,0.55,4,5,6,7,8),object(malz,0.2,2,0.55,4,5,6,7,8)]],_G1136460,_G1136463).
+[2020/11/20,3:54:5.864519834]Info-Level 1: Executing dialogue: consult_kb(update_kb_demo,[shelf_drinks,[object(noodles,0.2,2,0.55,4,5,6,7,8),object(malz,0.2,2,0.55,4,5,6,7,8)]],_G1136460,_G1136463)
+[2020/11/20,3:54:5.864810228]Info-Level 1: Defined local vars: []
+[2020/11/20,3:54:5.865013599]All: Situtation: is
+[2020/11/20,3:54:5.865022659]Structs: Executing situtation: _G1547867
+[2020/11/20,3:54:5.865036249]Debug: In situation verify of type neutral.
+[2020/11/20,3:54:5.86504364]All: Situation to execute [id==>verify,type==>neutral,arcs==>[empty:empty=>kind_of_consult(update_kb_demo,[shelf_drinks,[object(noodles,0.2,2,0.55,4,5,6,7,8),object(malz,0.2,2,0.55,4,5,6,7,8)]])]].
+[2020/11/20,3:54:6.014430522]Debug: In situation kind_of_consult(update_kb_demo,[shelf_drinks,[object(noodles,0.2,2,0.55,4,5,6,7,8),object(malz,0.2,2,0.55,4,5,6,7,8)]]) of type neutral.
+[2020/11/20,3:54:6.014461517]All: Situation to execute [id==>kind_of_consult(update_kb_demo,[shelf_drinks,[object(noodles,0.2,2,0.55,4,5,6,7,8),object(malz,0.2,2,0.55,4,5,6,7,8)]]),type==>neutral,arcs==>[empty:apply(update_kb_demo_dlic(_G943121,_G943124),[shelf_drinks,[object(noodles,0.2,2,0.55,4,5,6,7,8),object(malz,0.2,2,0.55,4,5,6,7,8)]])=>success]].
+[2020/11/20,3:54:6.016873359]Info-Level 1: Situation ends
+[2020/11/20,3:54:6.190361499]Debug: In situation [id==>success,type==>final,in_arg==>[_G828794],diag_mod==>consult_kb(_G828797,_G828800,_G828794,ok)] of type final.
+[2020/11/20,3:54:6.190405845]All: Situation to execute success.
+[2020/11/20,3:54:6.190457344]Info-Level 1: Situation ends
+[2020/11/20,3:54:6.190465211]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:6.190489768]Info-Level 1: .Output []
+[2020/11/20,3:54:6.195781946]Info-Level 1: Situation ends
+[2020/11/20,3:54:6.201991081]Debug: In situation take(coke,left,_G1071616,_G1071619) of type recursive.
+[2020/11/20,3:54:6.202037811]All: Situation to execute take(coke,left,_G1071616,_G1071619).
+[2020/11/20,3:54:6.202066898]Info-Level 1: Executing dialogue: take(coke,left,_G1071616,_G1071619)
+[2020/11/20,3:54:6.202299356]Info-Level 1: Defined local vars: []
+[2020/11/20,3:54:6.202690839]All: Situtation: is
+[2020/11/20,3:54:6.202699899]Structs: Executing situtation: _G1465807
+[2020/11/20,3:54:6.202723264]Debug: In situation approach_object(coke,_G1460944,_G1460941) of type recursive.
+[2020/11/20,3:54:6.202732086]All: Situation to execute approach_object(coke,_G1460944,_G1460941).
+[2020/11/20,3:54:6.202760696]Info-Level 1: Executing dialogue: approach_object(coke,_G1460944,_G1460941)
+[2020/11/20,3:54:6.203040361]Info-Level 1: Defined local vars: [in_range==>[20.0,0.58,0.45],delta==>0]
+[2020/11/20,3:54:6.203232288]All: Situtation: is
+[2020/11/20,3:54:6.203240871]Structs: Executing situtation: _G1511211
+[2020/11/20,3:54:6.203254222]Debug: In situation is of type neutral.
+[2020/11/20,3:54:6.203261375]All: Situation to execute [id==> (is),type==>neutral,prog==>[set(approaching,true)],arcs==>[empty:tilth(0.0)=>compare(coke)]].
+[2020/11/20,3:54:6.368954896]Debug: In situation see_object([coke],object,[_G1016162],_G1016159) of type recursive.
+[2020/11/20,3:54:6.368996143]All: Situation to execute see_object([coke],object,[_G1016162],_G1016159).
+[2020/11/20,3:54:6.369027614]Info-Level 1: Executing dialogue: see_object([coke],object,[_G1016162],_G1016159)
+[2020/11/20,3:54:6.369274854]Info-Level 1: Defined local vars: []
+[2020/11/20,3:54:6.369451045]All: Situtation: is
+[2020/11/20,3:54:6.369460582]Structs: Executing situtation: _G1450767
+[2020/11/20,3:54:6.369475364]Debug: In situation is of type neutral.
+[2020/11/20,3:54:6.369482755]All: Situation to execute [id==> (is),type==>neutral,arcs==>[empty:empty=>start_analyzing(object)]].
+[2020/11/20,3:54:6.551472425]Debug: In situation start_analyzing(object) of type neutral.
+[2020/11/20,3:54:6.551507949]All: Situation to execute [id==>start_analyzing(object),type==>neutral,arcs==>[empty:[get(last_tilt,_G973258),get(object_recognition_mode,_G973261),get(approaching,_G973264)]=>seeing([coke],_G973258,_G973261,_G973264)]].
+[2020/11/20,3:54:6.55211234]Info-Level 1: Situation ends
+[2020/11/20,3:54:6.558185815]Debug: In situation seeing([coke],-30.0,moped,true) of type object_analyzing(-30.0,moped,true).
+[2020/11/20,3:54:6.558210849]All: Situation to execute [id==>seeing([coke],-30.0,moped,true),type==>object_analyzing(-30.0,moped,true),arcs==>[objects(_G1205361):empty=>check(apply(objects_in_scene(_G1205364,_G1205367),[[coke],_G1205361])),status(_G834282):empty=>check(_G834282)]].
+[2020/11/20,3:54:6.559077978]Info-Level 1: Situation ends
+[2020/11/20,3:54:6.56545639]Debug: In situation check(not_found) of type neutral.
+[2020/11/20,3:54:6.565486669]All: Situation to execute [id==>check(not_found),type==>neutral,arcs==>[empty:empty=>error],diag_mod==>see_object([coke],_G1442444,_G1442447,not_found)].
+[2020/11/20,3:54:6.565674066]Info-Level 1: Situation ends
+[2020/11/20,3:54:6.836211442]Debug: In situation [id==>error,type==>final] of type final.
+[2020/11/20,3:54:6.836250543]All: Situation to execute error.
+[2020/11/20,3:54:6.836283922]Info-Level 1: Situation ends
+[2020/11/20,3:54:6.83629179]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:6.836313247]Info-Level 1: .Output []
+[2020/11/20,3:54:6.837922573]Info-Level 1: Situation ends
+[2020/11/20,3:54:6.857024669]Debug: In situation [id==>error,type==>final,prog==>[set(approaching,false)],in_arg==>[_G1521136],diag_mod==>approach_object(_G1521139,_G1521142,_G1521136)] of type final.
+[2020/11/20,3:54:6.857069492]All: Situation to execute error.
+[2020/11/20,3:54:6.857186079]Info-Level 1: Situation ends
+[2020/11/20,3:54:6.857195615]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:6.857212066]Info-Level 1: .Output [in_range==>[20.0,0.58,0.45],delta==>0]
+[2020/11/20,3:54:6.863667249]Debug: In situation [id==>error,type==>final,in_arg==>[_G1970344,_G1970347],diag_mod==>take(_G1970350,_G1970353,_G1970356,_G1970347)] of type final.
+[2020/11/20,3:54:6.863704681]All: Situation to execute error.
+[2020/11/20,3:54:6.863757133]Info-Level 1: Situation ends
+[2020/11/20,3:54:6.863765954]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:6.863781452]Info-Level 1: .Output []
+[2020/11/20,3:54:7.015220403]Info-Level 1: Situation ends
+[2020/11/20,3:54:7.021497249]Debug: In situation error_manager_demo(take(coke,left,_G780348,not_found),[consult_kb(change_object_property,[golem,left_arm,coke],_G780351,_G780354),consult_kb(value_object_property,[start,name],_G780357,_G780360),say([I will move to,_G780357],_G780363),consult_kb(value_object_property,[_G780366,position],_G780369,_G780372),move(_G780369,_G780375),consult_kb(change_object_property,[golem,position,_G780369],_G780378,_G780381),say([I will deliver the,coke],_G780384),relieve_arg(20.0,0.45,left,_G780387),consult_kb(change_object_property,[golem,left_arm,free],_G780390,_G780393)],_G946289) of type recursive.
+[2020/11/20,3:54:7.021552085]All: Situation to execute error_manager_demo(take(coke,left,_G780348,not_found),[consult_kb(change_object_property,[golem,left_arm,coke],_G780351,_G780354),consult_kb(value_object_property,[start,name],_G780357,_G780360),say([I will move to,_G780357],_G780363),consult_kb(value_object_property,[_G780366,position],_G780369,_G780372),move(_G780369,_G780375),consult_kb(change_object_property,[golem,position,_G780369],_G780378,_G780381),say([I will deliver the,coke],_G780384),relieve_arg(20.0,0.45,left,_G780387),consult_kb(change_object_property,[golem,left_arm,free],_G780390,_G780393)],_G946289).
+[2020/11/20,3:54:7.021620988]Info-Level 1: Executing dialogue: error_manager_demo(take(coke,left,_G780348,not_found),[consult_kb(change_object_property,[golem,left_arm,coke],_G780351,_G780354),consult_kb(value_object_property,[start,name],_G780357,_G780360),say([I will move to,_G780357],_G780363),consult_kb(value_object_property,[_G780366,position],_G780369,_G780372),move(_G780369,_G780375),consult_kb(change_object_property,[golem,position,_G780369],_G780378,_G780381),say([I will deliver the,coke],_G780384),relieve_arg(20.0,0.45,left,_G780387),consult_kb(change_object_property,[golem,left_arm,free],_G780390,_G780393)],_G946289)
+[2020/11/20,3:54:7.021896123]Info-Level 1: Defined local vars: []
+[2020/11/20,3:54:7.02208805]All: Situtation: is
+[2020/11/20,3:54:7.022097587]Structs: Executing situtation: _G1097454
+[2020/11/20,3:54:7.022110223]Debug: In situation is of type neutral.
+[2020/11/20,3:54:7.022127389]All: Situation to execute [id==> (is),type==>neutral,arcs==>[empty:[say(Something went wrong)]=>analyze_error(take(coke,left,_G780348,not_found))]].
+[2020/11/20,3:54:7.289327621]Debug: In situation analyze_error(take(coke,left,_G833455,not_found)) of type neutral.
+[2020/11/20,3:54:7.289359331]All: Situation to execute [id==>analyze_error(take(coke,left,_G833455,not_found)),type==>neutral,out_arg==>[_G836207],arcs==>[empty:[apply(daily_life_inference_cicle_demo(_G836312,_G836315,_G836318,_G836321),[coke,_G836324,_G836327,_G836330]),apply(diagnosis_parser(_G836333,_G836336),[_G836324,_G836339]),say(My diagnosis for the current situation is),say(The human assistant),say(_G836339),apply(decision_parser(_G836342,_G836345),[_G836327,_G836348]),say(My decision is to),say(_G836348),apply(plan_parser(_G836351,_G836354),[_G836330,_G836357]),say(The plan that I will execute is to),say(_G836357),assign(_G836207,apply(action_reasoner_demo(_G836360),[_G836330]))]=>success]].
+[2020/11/20,3:54:7.594253778]Info-Level 1: Situation ends
+[2020/11/20,3:54:8.329893827]Debug: In situation [id==>success,type==>final,in_arg==>[_G1191938],diag_mod==>error_manager_demo(_G1192133,_G1192136,_G1191938)] of type final.
+[2020/11/20,3:54:8.329963922]All: Situation to execute success.
+[2020/11/20,3:54:8.330369472]Info-Level 1: Situation ends
+[2020/11/20,3:54:8.330379724]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:8.330454349]Info-Level 1: .Output []
+[2020/11/20,3:54:8.345752477]Info-Level 1: Situation ends
+[2020/11/20,3:54:8.352269172]Debug: In situation take(noodles,right,_G1814831,_G1814834) of type recursive.
+[2020/11/20,3:54:8.352307558]All: Situation to execute take(noodles,right,_G1814831,_G1814834).
+[2020/11/20,3:54:8.35233736]Info-Level 1: Executing dialogue: take(noodles,right,_G1814831,_G1814834)
+[2020/11/20,3:54:8.352592468]Info-Level 1: Defined local vars: []
+[2020/11/20,3:54:8.353000879]All: Situtation: is
+[2020/11/20,3:54:8.353010416]Structs: Executing situtation: _G2247373
+[2020/11/20,3:54:8.353037357]Debug: In situation approach_object(noodles,_G2242510,_G2242507) of type recursive.
+[2020/11/20,3:54:8.353046417]All: Situation to execute approach_object(noodles,_G2242510,_G2242507).
+[2020/11/20,3:54:8.353077888]Info-Level 1: Executing dialogue: approach_object(noodles,_G2242510,_G2242507)
+[2020/11/20,3:54:8.353338003]Info-Level 1: Defined local vars: [in_range==>[20.0,0.58,0.45],delta==>0]
+[2020/11/20,3:54:8.3535254]All: Situtation: is
+[2020/11/20,3:54:8.353533744]Structs: Executing situtation: _G2292777
+[2020/11/20,3:54:8.353547811]Debug: In situation is of type neutral.
+[2020/11/20,3:54:8.353565454]All: Situation to execute [id==> (is),type==>neutral,prog==>[set(approaching,true)],arcs==>[empty:tilth(0.0)=>compare(noodles)]].
+[2020/11/20,3:54:8.378822565]Debug: In situation see_object([noodles],object,[_G2753680],_G2753677) of type recursive.
+[2020/11/20,3:54:8.378871202]All: Situation to execute see_object([noodles],object,[_G2753680],_G2753677).
+[2020/11/20,3:54:8.378900527]Info-Level 1: Executing dialogue: see_object([noodles],object,[_G2753680],_G2753677)
+[2020/11/20,3:54:8.587895154]Info-Level 1: Defined local vars: []
+[2020/11/20,3:54:8.588133811]All: Situtation: is
+[2020/11/20,3:54:8.588146686]Structs: Executing situtation: _G1127040
+[2020/11/20,3:54:8.58817172]Debug: In situation is of type neutral.
+[2020/11/20,3:54:8.588180541]All: Situation to execute [id==> (is),type==>neutral,arcs==>[empty:empty=>start_analyzing(object)]].
+[2020/11/20,3:54:8.594702959]Debug: In situation start_analyzing(object) of type neutral.
+[2020/11/20,3:54:8.594769239]All: Situation to execute [id==>start_analyzing(object),type==>neutral,arcs==>[empty:[get(last_tilt,_G1241228),get(object_recognition_mode,_G1241231),get(approaching,_G1241234)]=>seeing([noodles],_G1241228,_G1241231,_G1241234)]].
+[2020/11/20,3:54:8.59535098]Info-Level 1: Situation ends
+[2020/11/20,3:54:8.602585792]Debug: In situation seeing([noodles],-30.0,moped,true) of type object_analyzing(-30.0,moped,true).
+[2020/11/20,3:54:8.602627992]All: Situation to execute [id==>seeing([noodles],-30.0,moped,true),type==>object_analyzing(-30.0,moped,true),arcs==>[objects(_G1478869):empty=>check(apply(objects_in_scene(_G1478872,_G1478875),[[noodles],_G1478869])),status(_G984971):empty=>check(_G984971)]].
+[2020/11/20,3:54:8.603992462]Info-Level 1: Situation ends
+[2020/11/20,3:54:8.615483283]Debug: In situation check([object(noodles,0.2,2,0.55,4,5,6,7,8)]) of type neutral.
+[2020/11/20,3:54:8.615524291]All: Situation to execute [id==>check([object(noodles,0.2,2,0.55,4,5,6,7,8)]),type==>neutral,arcs==>[empty:empty=>success],diag_mod==>see_object([noodles],_G1716107,[object(noodles,0.2,2,0.55,4,5,6,7,8)],ok)].
+[2020/11/20,3:54:8.615858554]Info-Level 1: Situation ends
+[2020/11/20,3:54:8.623342275]Debug: In situation [id==>success,type==>final] of type final.
+[2020/11/20,3:54:8.623378515]All: Situation to execute success.
+[2020/11/20,3:54:8.623411178]Info-Level 1: Situation ends
+[2020/11/20,3:54:8.623419046]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:8.62344098]Info-Level 1: .Output []
+[2020/11/20,3:54:8.625176906]Info-Level 1: Situation ends
+[2020/11/20,3:54:8.645004749]Debug: In situation compare(object(noodles,0.2,2,0.55,4,5,6,7,8)) of type neutral.
+[2020/11/20,3:54:8.645043134]All: Situation to execute [id==>compare(object(noodles,0.2,2,0.55,4,5,6,7,8)),type==>neutral,arcs==>[empty:[get(last_tilt,_G2294484),cam2nav([0.2,2,0.55],[_G2294484,0.1,-0.06],_G2294487)]=>check(object(noodles,0.2,2,0.55,4,5,6,7,8),_G2294487,apply(reachable(_G2294490,_G2294493),[_G2294487,get(in_range,_G2294496)]))]].
+[2020/11/20,3:54:8.645846605]Info-Level 1: Situation ends
+[2020/11/20,3:54:8.919132709]Debug: In situation check(object(noodles,0.2,2,0.55,4,5,6,7,8),[10.3049,0.559],true) of type neutral.
+[2020/11/20,3:54:8.919173002]All: Situation to execute [id==>check(object(noodles,0.2,2,0.55,4,5,6,7,8),[10.3049,0.559],true),type==>neutral,prog==>[set(approaching,false)],arcs==>[empty:empty=>success],diag_mod==>approach_object(_G1188861,object(noodles,0.2,2,0.55,4,5,6,7,8),ok)].
+[2020/11/20,3:54:8.919434309]Info-Level 1: Situation ends
+[2020/11/20,3:54:8.938328027]Debug: In situation [id==>success,type==>final] of type final.
+[2020/11/20,3:54:8.938366174]All: Situation to execute success.
+[2020/11/20,3:54:8.938397407]Info-Level 1: Situation ends
+[2020/11/20,3:54:8.938405036]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:8.938426256]Info-Level 1: .Output [in_range==>[20.0,0.58,0.45],delta==>0]
+[2020/11/20,3:54:8.949092388]Debug: In situation grasp(object(noodles,0.2,2,0.55,4,5,6,7,8),right,_G2099761) of type recursive.
+[2020/11/20,3:54:8.949132919]All: Situation to execute grasp(object(noodles,0.2,2,0.55,4,5,6,7,8),right,_G2099761).
+[2020/11/20,3:54:8.94916892]Info-Level 1: Executing dialogue: grasp(object(noodles,0.2,2,0.55,4,5,6,7,8),right,_G2099761)
+[2020/11/20,3:54:8.949464559]Info-Level 1: Defined local vars: []
+[2020/11/20,3:54:8.94988346]All: Situtation: is
+[2020/11/20,3:54:8.949896097]Structs: Executing situtation: _G2219929
+[2020/11/20,3:54:8.949912786]Debug: In situation is of type neutral.
+[2020/11/20,3:54:8.949920654]All: Situation to execute [id==> (is),type==>neutral,arcs==>[empty:empty=>decidearmpos(right)]].
+[2020/11/20,3:54:8.957898139]Debug: In situation decidearmpos(right) of type neutral.
+[2020/11/20,3:54:8.957926511]All: Situation to execute [id==>decidearmpos(right),type==>neutral,arcs==>[empty:empty=>is_act([0.21,0.22,0.2248])]].
+[2020/11/20,3:54:8.958122014]Info-Level 1: Situation ends
+[2020/11/20,3:54:8.966457843]Debug: In situation is_act([0.21,0.22,0.2248]) of type neutral.
+[2020/11/20,3:54:8.966497659]All: Situation to execute [id==>is_act([0.21,0.22,0.2248]),type==>neutral,arcs==>[empty:[get(last_tilt,_G2625056),get(last_height,_G2625059),cam2arm(right,_G2625059,[0.2,2,0.55],[_G2625056,0.11,0.1],[0.21,0.22,0.2248],[_G2625062,_G2625065,_G2625068]),say([Attempting to grab the ,noodles, with my ,right, arm]),switcharm(apply(get_number_of_arm(_G2625071),[right])),robotheight(_G2625062),set(last_height,_G2625062),assign(_G2625074,apply(when(_G2625077,_G2625080,_G2625083),[right==left,0.019,-0.035])),_G2625086 is _G2625068+_G2625074,assign(_G2625089,apply(when(_G2625092,_G2625095,_G2625098),[right==left,5.5,1.0])),_G2625101 is _G2625065+_G2625089,grasp(_G2625101,_G2625086,_G2625104),switcharm(0)]=>check_grasped(_G2625104)]].
+[2020/11/20,3:54:8.969495534]Info-Level 1: Situation ends
+[2020/11/20,3:54:8.977574348]Debug: In situation check_grasped(success) of type neutral.
+[2020/11/20,3:54:8.977603912]All: Situation to execute [id==>check_grasped(success),type==>neutral,arcs==>[empty:say([I took the ,noodles])=>success]].
+[2020/11/20,3:54:9.18991065]Info-Level 1: Situation ends
+[2020/11/20,3:54:9.197903394]Debug: In situation [id==>success,type==>final,diag_mod==>grasp(_G1219410,_G1219413,ok)] of type final.
+[2020/11/20,3:54:9.197960615]All: Situation to execute success.
+[2020/11/20,3:54:9.19802165]Info-Level 1: Situation ends
+[2020/11/20,3:54:9.198030233]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:9.19805026]Info-Level 1: .Output []
+[2020/11/20,3:54:9.200683355]Info-Level 1: Situation ends
+[2020/11/20,3:54:9.204235315]Debug: In situation [id==>success,type==>final,in_arg==>[_G1439925,_G1439928],diag_mod==>take(_G1439931,_G1439934,_G1439925,ok)] of type final.
+[2020/11/20,3:54:9.204270839]All: Situation to execute success.
+[2020/11/20,3:54:9.204320192]Info-Level 1: Situation ends
+[2020/11/20,3:54:9.204327583]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:9.204342365]Info-Level 1: .Output []
+[2020/11/20,3:54:9.217910766]Info-Level 1: Situation ends
+[2020/11/20,3:54:9.224541664]Debug: In situation consult_kb(change_object_property,[golem,right_arm,noodles],_G1602691,_G1602694) of type recursive.
+[2020/11/20,3:54:9.224577903]All: Situation to execute consult_kb(change_object_property,[golem,right_arm,noodles],_G1602691,_G1602694).
+[2020/11/20,3:54:9.224606275]Info-Level 1: Executing dialogue: consult_kb(change_object_property,[golem,right_arm,noodles],_G1602691,_G1602694)
+[2020/11/20,3:54:9.224858522]Info-Level 1: Defined local vars: []
+[2020/11/20,3:54:9.22503972]All: Situtation: is
+[2020/11/20,3:54:9.225047826]Structs: Executing situtation: _G2230150
+[2020/11/20,3:54:9.225060224]Debug: In situation verify of type neutral.
+[2020/11/20,3:54:9.225077152]All: Situation to execute [id==>verify,type==>neutral,arcs==>[empty:empty=>kind_of_consult(change_object_property,[golem,right_arm,noodles])]].
+[2020/11/20,3:54:9.238883972]Debug: In situation kind_of_consult(change_object_property,[golem,right_arm,noodles]) of type neutral.
+[2020/11/20,3:54:9.238923072]All: Situation to execute [id==>kind_of_consult(change_object_property,[golem,right_arm,noodles]),out_arg==>[_G2442091],type==>neutral,arcs==>[empty:apply(consult_kb_change_object_property(_G2442055,_G2442058,_G2442061),[golem,right_arm,noodles])=>success]].
+[2020/11/20,3:54:9.240524768]Info-Level 1: Situation ends
+[2020/11/20,3:54:9.480866432]Debug: In situation [id==>success,type==>final,in_arg==>[_G1071622],diag_mod==>consult_kb(_G1071625,_G1071628,_G1071622,ok)] of type final.
+[2020/11/20,3:54:9.480910301]All: Situation to execute success.
+[2020/11/20,3:54:9.480962753]Info-Level 1: Situation ends
+[2020/11/20,3:54:9.480971097]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:9.480990648]Info-Level 1: .Output []
+[2020/11/20,3:54:9.493897199]Info-Level 1: Situation ends
+[2020/11/20,3:54:9.500231742]Debug: In situation consult_kb(value_object_property,[shelf_food,name],_G1309799,_G1309802) of type recursive.
+[2020/11/20,3:54:9.500277042]All: Situation to execute consult_kb(value_object_property,[shelf_food,name],_G1309799,_G1309802).
+[2020/11/20,3:54:9.500326633]Info-Level 1: Executing dialogue: consult_kb(value_object_property,[shelf_food,name],_G1309799,_G1309802)
+[2020/11/20,3:54:9.500586032]Info-Level 1: Defined local vars: []
+[2020/11/20,3:54:9.500791549]All: Situtation: is
+[2020/11/20,3:54:9.500800609]Structs: Executing situtation: _G1912430
+[2020/11/20,3:54:9.500815153]Debug: In situation verify of type neutral.
+[2020/11/20,3:54:9.500832557]All: Situation to execute [id==>verify,type==>neutral,arcs==>[empty:empty=>kind_of_consult(value_object_property,[shelf_food,name])]].
+[2020/11/20,3:54:9.515004634]Debug: In situation kind_of_consult(value_object_property,[shelf_food,name]) of type neutral.
+[2020/11/20,3:54:9.51503539]All: Situation to execute [id==>kind_of_consult(value_object_property,[shelf_food,name]),out_arg==>[_G2124017],type==>neutral,arcs==>[empty:apply(consult_kb_value_object_property(_G2124020,_G2124023,_G2124026),[shelf_food,name,_G2124017])=>success]].
+[2020/11/20,3:54:9.516556262]Info-Level 1: Situation ends
+[2020/11/20,3:54:9.547552108]Debug: In situation [id==>success,type==>final,in_arg==>[_G2658401],diag_mod==>consult_kb(_G2658404,_G2658407,_G2658401,ok)] of type final.
+[2020/11/20,3:54:9.547595739]All: Situation to execute success.
+[2020/11/20,3:54:9.547650337]Info-Level 1: Situation ends
+[2020/11/20,3:54:9.547659873]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:9.547677516]Info-Level 1: .Output []
+[2020/11/20,3:54:9.781350612]Info-Level 1: Situation ends
+[2020/11/20,3:54:9.787579298]Debug: In situation say([I will move to,the shelf of food],_G1044517) of type recursive.
+[2020/11/20,3:54:9.787621498]All: Situation to execute say([I will move to,the shelf of food],_G1044517).
+[2020/11/20,3:54:9.787649869]Info-Level 1: Executing dialogue: say([I will move to,the shelf of food],_G1044517)
+[2020/11/20,3:54:9.78788948]Info-Level 1: Defined local vars: []
+[2020/11/20,3:54:9.788018226]All: Situtation: is
+[2020/11/20,3:54:9.788027048]Structs: Executing situtation: _G1516718
+[2020/11/20,3:54:9.788040637]Debug: In situation is of type neutral.
+[2020/11/20,3:54:9.78805232]All: Situation to execute [id==> (is),type==>neutral,arcs==>[empty:say([I will move to,the shelf of food])=>success]].
+[2020/11/20,3:54:9.788567066]Debug: In situation [id==>success,type==>final,diag_mod==>say(_G1530723,ok)] of type final.
+[2020/11/20,3:54:9.788580894]All: Situation to execute success.
+[2020/11/20,3:54:9.788614749]Info-Level 1: Situation ends
+[2020/11/20,3:54:9.78862214]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:9.788633107999999]Info-Level 1: .Output []
+[2020/11/20,3:54:9.801851511]Info-Level 1: Situation ends
+[2020/11/20,3:54:9.808801889]Debug: In situation consult_kb(value_object_property,[shelf_food,position],_G1608695,_G1608698) of type recursive.
+[2020/11/20,3:54:9.808885097]All: Situation to execute consult_kb(value_object_property,[shelf_food,position],_G1608695,_G1608698).
+[2020/11/20,3:54:9.808928966]Info-Level 1: Executing dialogue: consult_kb(value_object_property,[shelf_food,position],_G1608695,_G1608698)
+[2020/11/20,3:54:9.80930233]Info-Level 1: Defined local vars: []
+[2020/11/20,3:54:9.809554815]All: Situtation: is
+[2020/11/20,3:54:9.809567689]Structs: Executing situtation: _G2157590
+[2020/11/20,3:54:9.809587478]Debug: In situation verify of type neutral.
+[2020/11/20,3:54:9.809596776]All: Situation to execute [id==>verify,type==>neutral,arcs==>[empty:empty=>kind_of_consult(value_object_property,[shelf_food,position])]].
+[2020/11/20,3:54:9.823698282]Debug: In situation kind_of_consult(value_object_property,[shelf_food,position]) of type neutral.
+[2020/11/20,3:54:9.823731422]All: Situation to execute [id==>kind_of_consult(value_object_property,[shelf_food,position]),out_arg==>[_G2369297],type==>neutral,arcs==>[empty:apply(consult_kb_value_object_property(_G2369300,_G2369303,_G2369306),[shelf_food,position,_G2369297])=>success]].
+[2020/11/20,3:54:9.826012372]Info-Level 1: Situation ends
+[2020/11/20,3:54:10.123019456]Debug: In situation [id==>success,type==>final,in_arg==>[_G1317280],diag_mod==>consult_kb(_G1317283,_G1317286,_G1317280,ok)] of type final.
+[2020/11/20,3:54:10.123071193]All: Situation to execute success.
+[2020/11/20,3:54:10.123127698]Info-Level 1: Situation ends
+[2020/11/20,3:54:10.12313652]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:10.12315464]Info-Level 1: .Output []
+[2020/11/20,3:54:10.133339881]Info-Level 1: Situation ends
+[2020/11/20,3:54:10.140541791]Debug: In situation move(shelf_food,_G1483921) of type recursive.
+[2020/11/20,3:54:10.1405797]All: Situation to execute move(shelf_food,_G1483921).
+[2020/11/20,3:54:10.140610218]Info-Level 1: Executing dialogue: move(shelf_food,_G1483921)
+[2020/11/20,3:54:10.140875816]Info-Level 1: Defined local vars: []
+[2020/11/20,3:54:10.141213417]All: Situtation: is
+[2020/11/20,3:54:10.14122343]Structs: Executing situtation: _G2015803
+[2020/11/20,3:54:10.141238212]Debug: In situation is of type neutral.
+[2020/11/20,3:54:10.141255378]All: Situation to execute [id==> (is),type==>neutral,arcs==>[empty:apply(verify_type_of_move(_G2012195,_G2012198,_G2012201),[shelf_food,_G2012204,_G2012207])=>verify_case(_G2012204,_G2012207)]].
+[2020/11/20,3:54:10.156902551]Debug: In situation verify_case(label,[shelf_food]) of type neutral.
+[2020/11/20,3:54:10.156937122]All: Situation to execute [id==>verify_case(label,[shelf_food]),type==>neutral,arcs==>[empty:[switcharm(0),robotheight(1.25),set(last_height,1.25),switchpose(nav)]=>go_to_point(apply(from_labels_to_coordinates(_G2323183),[[shelf_food]]))]].
+[2020/11/20,3:54:10.158629179]Info-Level 1: Situation ends
+[2020/11/20,3:54:10.469068288]Debug: In situation go_to_point([shelf_food]) of type neutral.
+[2020/11/20,3:54:10.469112157]All: Situation to execute [id==>go_to_point([shelf_food]),type==>neutral,arcs==>[empty:navigate(shelf_food,_G1382373)=>verify_result(_G1382373,[])]].
+[2020/11/20,3:54:10.469396114]Info-Level 1: Situation ends
+[2020/11/20,3:54:10.484586954]Debug: In situation verify_result(ok,[]) of type neutral.
+[2020/11/20,3:54:10.484643697]All: Situation to execute [id==>verify_result(ok,[]),type==>neutral,arcs==>[empty:empty=>go_to_point([])]].
+[2020/11/20,3:54:10.484875917]Info-Level 1: Situation ends
+[2020/11/20,3:54:10.499299287]Debug: In situation go_to_point([]) of type neutral.
+[2020/11/20,3:54:10.499330282]All: Situation to execute [id==>go_to_point([]),type==>neutral,arcs==>[empty:switchpose(grasp)=>success]].
+[2020/11/20,3:54:10.499520301]Info-Level 1: Situation ends
+[2020/11/20,3:54:10.513896703]Debug: In situation [id==>success,type==>final,diag_mod==>move(_G2871718,ok)] of type final.
+[2020/11/20,3:54:10.513956308000001]All: Situation to execute success.
+[2020/11/20,3:54:10.514020204]Info-Level 1: Situation ends
+[2020/11/20,3:54:10.514029502]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:10.514047384]Info-Level 1: .Output []
+[2020/11/20,3:54:10.789096117]Info-Level 1: Situation ends
+[2020/11/20,3:54:10.795301675]Debug: In situation consult_kb(change_object_property,[golem,position,shelf_food],_G1322758,_G1322761) of type recursive.
+[2020/11/20,3:54:10.795348167]All: Situation to execute consult_kb(change_object_property,[golem,position,shelf_food],_G1322758,_G1322761).
+[2020/11/20,3:54:10.795377731]Info-Level 1: Executing dialogue: consult_kb(change_object_property,[golem,position,shelf_food],_G1322758,_G1322761)
+[2020/11/20,3:54:10.795635461]Info-Level 1: Defined local vars: []
+[2020/11/20,3:54:10.795833587]All: Situtation: is
+[2020/11/20,3:54:10.795843362]Structs: Executing situtation: _G1830600
+[2020/11/20,3:54:10.795858144]Debug: In situation verify of type neutral.
+[2020/11/20,3:54:10.795865535]All: Situation to execute [id==>verify,type==>neutral,arcs==>[empty:empty=>kind_of_consult(change_object_property,[golem,position,shelf_food])]].
+[2020/11/20,3:54:10.810205459]Debug: In situation kind_of_consult(change_object_property,[golem,position,shelf_food]) of type neutral.
+[2020/11/20,3:54:10.810253143]All: Situation to execute [id==>kind_of_consult(change_object_property,[golem,position,shelf_food]),out_arg==>[_G2042610],type==>neutral,arcs==>[empty:apply(consult_kb_change_object_property(_G2042574,_G2042577,_G2042580),[golem,position,shelf_food])=>success]].
+[2020/11/20,3:54:10.811837434]Info-Level 1: Situation ends
+[2020/11/20,3:54:10.826091289]Debug: In situation [id==>success,type==>final,in_arg==>[_G2576332],diag_mod==>consult_kb(_G2576335,_G2576338,_G2576332,ok)] of type final.
+[2020/11/20,3:54:10.826153278]All: Situation to execute success.
+[2020/11/20,3:54:10.826215982]Info-Level 1: Situation ends
+[2020/11/20,3:54:10.826225996]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:10.826247453]Info-Level 1: .Output []
+[2020/11/20,3:54:10.835529804]Info-Level 1: Situation ends
+[2020/11/20,3:54:11.12509799]Debug: In situation scan(object,_G1346652,[0.0],[-30.0],object,_G1346654,false,false,_G1346657) of type recursive.
+[2020/11/20,3:54:11.125141382]All: Situation to execute scan(object,_G1346652,[0.0],[-30.0],object,_G1346654,false,false,_G1346657).
+[2020/11/20,3:54:11.125174045]Info-Level 1: Executing dialogue: scan(object,_G1346652,[0.0],[-30.0],object,_G1346654,false,false,_G1346657)
+[2020/11/20,3:54:11.125426054]Info-Level 1: Defined local vars: [baseh==>0.0,basev==>0.0]
+[2020/11/20,3:54:11.12575674]All: Situtation: is
+[2020/11/20,3:54:11.125767469]Structs: Executing situtation: _G1651517
+[2020/11/20,3:54:11.125782251]Debug: In situation is of type neutral.
+[2020/11/20,3:54:11.12578988]All: Situation to execute [id==> (is),type==>neutral,arcs==>[empty:empty=>tilt_first(false)]].
+[2020/11/20,3:54:11.132107496]Debug: In situation tilt_first(false) of type neutral.
+[2020/11/20,3:54:11.132140398]All: Situation to execute [id==>tilt_first(false),type==>neutral,arcs==>[empty:[tilth(0.0),set(last_scan,0.0)]=>tilt([])]].
+[2020/11/20,3:54:11.132415294]Info-Level 1: Situation ends
+[2020/11/20,3:54:11.139591693]Debug: In situation tilt(object,_G1346652,[-30.0],object,_G1346654,false,_G1971713) of type recursive.
+[2020/11/20,3:54:11.13973236]All: Situation to execute tilt(object,_G1346652,[-30.0],object,_G1346654,false,_G1971713).
+[2020/11/20,3:54:11.139833927]Info-Level 1: Executing dialogue: tilt(object,_G1346652,[-30.0],object,_G1346654,false,_G1971713)
+[2020/11/20,3:54:11.140457868]Info-Level 1: Defined local vars: []
+[2020/11/20,3:54:11.140854835]All: Situtation: is
+[2020/11/20,3:54:11.140876054]Structs: Executing situtation: _G2140803
+[2020/11/20,3:54:11.140897274]Debug: In situation is of type neutral.
+[2020/11/20,3:54:11.14090991]All: Situation to execute [id==> (is),type==>neutral,arcs==>[empty:empty=>see_first(false)]].
+[2020/11/20,3:54:11.145176887]Debug: In situation see_first(false) of type neutral.
+[2020/11/20,3:54:11.145201683]All: Situation to execute [id==>see_first(false),type==>neutral,arcs==>[empty:[tiltv(-30.0),set(last_tilt,-30.0),sleep]=>see([])]].
+[2020/11/20,3:54:11.145476579]Info-Level 1: Situation ends
+[2020/11/20,3:54:11.14962697]Debug: In situation see(object,_G1346652,object,_G1346654,_G2377461) of type recursive.
+[2020/11/20,3:54:11.14965415]All: Situation to execute see(object,_G1346652,object,_G1346654,_G2377461).
+[2020/11/20,3:54:11.149681091]Info-Level 1: Executing dialogue: see(object,_G1346652,object,_G1346654,_G2377461)
+[2020/11/20,3:54:11.149914979]Info-Level 1: Defined local vars: []
+[2020/11/20,3:54:11.150106191]All: Situtation: is
+[2020/11/20,3:54:11.15011692]Structs: Executing situtation: _G2496553
+[2020/11/20,3:54:11.150131702]Debug: In situation is of type neutral.
+[2020/11/20,3:54:11.150142431]All: Situation to execute [id==> (is),type==>neutral,arcs==>[empty:empy=>see(object)]].
+[2020/11/20,3:54:11.154575109]Debug: In situation see_object(_G1346652,object,_G1346654,_G2571378) of type recursive.
+[2020/11/20,3:54:11.154614925]All: Situation to execute see_object(_G1346652,object,_G1346654,_G2571378).
+[2020/11/20,3:54:11.154644489]Info-Level 1: Executing dialogue: see_object(_G1346652,object,_G1346654,_G2571378)
+[2020/11/20,3:54:11.15489006]Info-Level 1: Defined local vars: []
+[2020/11/20,3:54:11.155084371]All: Situtation: is
+[2020/11/20,3:54:11.155099868]Structs: Executing situtation: _G2676507
+[2020/11/20,3:54:11.155124664]Debug: In situation is of type neutral.
+[2020/11/20,3:54:11.155134677]All: Situation to execute [id==> (is),type==>neutral,arcs==>[empty:empty=>start_analyzing(object)]].
+[2020/11/20,3:54:11.1616714]Debug: In situation start_analyzing(object) of type neutral.
+[2020/11/20,3:54:11.161703586]All: Situation to execute [id==>start_analyzing(object),type==>neutral,arcs==>[empty:[get(last_tilt,_G2790695),get(object_recognition_mode,_G2790698),get(approaching,_G2790701)]=>seeing(_G1346652,_G2790695,_G2790698,_G2790701)]].
+[2020/11/20,3:54:11.162246465]Info-Level 1: Situation ends
+[2020/11/20,3:54:11.168310165]Debug: In situation seeing(_G2910958,-30.0,moped,false) of type object_analyzing(-30.0,moped,false).
+[2020/11/20,3:54:11.168336153]All: Situation to execute [id==>seeing(_G2910958,-30.0,moped,false),type==>object_analyzing(-30.0,moped,false),arcs==>[objects(_G3028482):empty=>check(apply(objects_in_scene(_G3028485,_G3028488),[_G2910958,_G3028482])),status(_G2571378):empty=>check(_G2571378)]].
+[2020/11/20,3:54:11.509845495]Info-Level 1: Situation ends
+[2020/11/20,3:54:11.515936613000001]Debug: In situation check([object(kellogs,0.2,2,0.55,4,5,6,7,8)]) of type neutral.
+[2020/11/20,3:54:11.515977859]All: Situation to execute [id==>check([object(kellogs,0.2,2,0.55,4,5,6,7,8)]),type==>neutral,arcs==>[empty:empty=>success],diag_mod==>see_object(_G1346652,_G1879200,[object(kellogs,0.2,2,0.55,4,5,6,7,8)],ok)].
+[2020/11/20,3:54:11.516227483]Info-Level 1: Situation ends
+[2020/11/20,3:54:11.523027181]Debug: In situation [id==>success,type==>final] of type final.
+[2020/11/20,3:54:11.523075103]All: Situation to execute success.
+[2020/11/20,3:54:11.523124217]Info-Level 1: Situation ends
+[2020/11/20,3:54:11.523134231]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:11.523159265]Info-Level 1: .Output []
+[2020/11/20,3:54:11.525652885]Info-Level 1: Situation ends
+[2020/11/20,3:54:11.529618263]Debug: In situation [id==>success,type==>final,in_arg==>[_G1346652,[object(kellogs,0.2,2,0.55,4,5,6,7,8)],_G2303181],diag_mod==>see(_G2303196,_G1346652,_G2303199,[object(kellogs,0.2,2,0.55,4,5,6,7,8)],_G2303181)] of type final.
+[2020/11/20,3:54:11.529663801]All: Situation to execute success.
+[2020/11/20,3:54:11.529753208]Info-Level 1: Situation ends
+[2020/11/20,3:54:11.529762268]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:11.529782056]Info-Level 1: .Output []
+[2020/11/20,3:54:11.530372142000001]Info-Level 1: Situation ends
+[2020/11/20,3:54:11.534450054]Debug: In situation [id==>success,type==>final,in_arg==>[_G1346652,[object(kellogs,0.2,2,0.55,4,5,6,7,8)],_G2449704],diag_mod==>tilt(_G2449710,_G1346652,_G2449713,_G2449716,[object(kellogs,0.2,2,0.55,4,5,6,7,8)],_G2449719,_G2449704)] of type final.
+[2020/11/20,3:54:11.534492015]All: Situation to execute success.
+[2020/11/20,3:54:11.534570693]Info-Level 1: Situation ends
+[2020/11/20,3:54:11.534579515]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:11.534599542]Info-Level 1: .Output []
+[2020/11/20,3:54:11.535495281]Info-Level 1: Situation ends
+[2020/11/20,3:54:11.54248476]Debug: In situation [id==>success,type==>final,in_arg==>[_G1346652,[object(kellogs,0.2,2,0.55,4,5,6,7,8)],_G2628563],diag_mod==>scan(_G2628578,_G1346652,_G2628581,_G2628584,_G2628587,[object(kellogs,0.2,2,0.55,4,5,6,7,8)],_G2628590,_G2628593,_G2628563)] of type final.
+[2020/11/20,3:54:11.54253745]All: Situation to execute success.
+[2020/11/20,3:54:11.542643785]Info-Level 1: Situation ends
+[2020/11/20,3:54:11.54265356]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:11.542674779]Info-Level 1: .Output [baseh==>0.0,basev==>0.0]
+[2020/11/20,3:54:11.551638603]Info-Level 1: Situation ends
+[2020/11/20,3:54:11.854089021]Debug: In situation consult_kb(value_object_property,[golem,position],shelf_food,_G1413047) of type recursive.
+[2020/11/20,3:54:11.854127645]All: Situation to execute consult_kb(value_object_property,[golem,position],shelf_food,_G1413047).
+[2020/11/20,3:54:11.854157686]Info-Level 1: Executing dialogue: consult_kb(value_object_property,[golem,position],shelf_food,_G1413047)
+[2020/11/20,3:54:11.854412794]Info-Level 1: Defined local vars: []
+[2020/11/20,3:54:11.85460186]All: Situtation: is
+[2020/11/20,3:54:11.854611396]Structs: Executing situtation: _G1589470
+[2020/11/20,3:54:11.854634284]Debug: In situation verify of type neutral.
+[2020/11/20,3:54:11.854652166]All: Situation to execute [id==>verify,type==>neutral,arcs==>[empty:empty=>kind_of_consult(value_object_property,[golem,position])]].
+[2020/11/20,3:54:11.868700742]Debug: In situation kind_of_consult(value_object_property,[golem,position]) of type neutral.
+[2020/11/20,3:54:11.868736505]All: Situation to execute [id==>kind_of_consult(value_object_property,[golem,position]),out_arg==>[_G1801042],type==>neutral,arcs==>[empty:apply(consult_kb_value_object_property(_G1801045,_G1801048,_G1801051),[golem,position,_G1801042])=>success]].
+[2020/11/20,3:54:11.870369672]Info-Level 1: Situation ends
+[2020/11/20,3:54:11.884026527]Debug: In situation [id==>success,type==>final,in_arg==>[_G2335113],diag_mod==>consult_kb(_G2335116,_G2335119,_G2335113,ok)] of type final.
+[2020/11/20,3:54:11.88408041]All: Situation to execute success.
+[2020/11/20,3:54:11.88413906]Info-Level 1: Situation ends
+[2020/11/20,3:54:11.884148836]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:11.884167909]Info-Level 1: .Output []
+[2020/11/20,3:54:11.892017602]Info-Level 1: Situation ends
+[2020/11/20,3:54:11.898277044]Debug: In situation consult_kb(update_kb_demo,[shelf_food,[object(kellogs,0.2,2,0.55,4,5,6,7,8)]],_G2665709,_G2665712) of type recursive.
+[2020/11/20,3:54:11.898315191]All: Situation to execute consult_kb(update_kb_demo,[shelf_food,[object(kellogs,0.2,2,0.55,4,5,6,7,8)]],_G2665709,_G2665712).
+[2020/11/20,3:54:11.898349761]Info-Level 1: Executing dialogue: consult_kb(update_kb_demo,[shelf_food,[object(kellogs,0.2,2,0.55,4,5,6,7,8)]],_G2665709,_G2665712)
+[2020/11/20,3:54:11.898613691]Info-Level 1: Defined local vars: []
+[2020/11/20,3:54:11.898802042]All: Situtation: is
+[2020/11/20,3:54:11.898810863]Structs: Executing situtation: _G3119116
+[2020/11/20,3:54:11.898824691]Debug: In situation verify of type neutral.
+[2020/11/20,3:54:11.898842573]All: Situation to execute [id==>verify,type==>neutral,arcs==>[empty:empty=>kind_of_consult(update_kb_demo,[shelf_food,[object(kellogs,0.2,2,0.55,4,5,6,7,8)]])]].
+[2020/11/20,3:54:12.229254484]Debug: In situation kind_of_consult(update_kb_demo,[shelf_food,[object(kellogs,0.2,2,0.55,4,5,6,7,8)]]) of type neutral.
+[2020/11/20,3:54:12.229301214]All: Situation to execute [id==>kind_of_consult(update_kb_demo,[shelf_food,[object(kellogs,0.2,2,0.55,4,5,6,7,8)]]),type==>neutral,arcs==>[empty:apply(update_kb_demo_dlic(_G1773467,_G1773470),[shelf_food,[object(kellogs,0.2,2,0.55,4,5,6,7,8)]])=>success]].
+[2020/11/20,3:54:12.231817722]Info-Level 1: Situation ends
+[2020/11/20,3:54:12.247127771]Debug: In situation [id==>success,type==>final,in_arg==>[_G2320381],diag_mod==>consult_kb(_G2320384,_G2320387,_G2320381,ok)] of type final.
+[2020/11/20,3:54:12.247186899]All: Situation to execute success.
+[2020/11/20,3:54:12.247240781]Info-Level 1: Situation ends
+[2020/11/20,3:54:12.247249841]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:12.247271537]Info-Level 1: .Output []
+[2020/11/20,3:54:12.253830909]Info-Level 1: Situation ends
+[2020/11/20,3:54:12.261197328]Debug: In situation say([I will deliver the,noodles],_G2643849) of type recursive.
+[2020/11/20,3:54:12.261243343]All: Situation to execute say([I will deliver the,noodles],_G2643849).
+[2020/11/20,3:54:12.261276006]Info-Level 1: Executing dialogue: say([I will deliver the,noodles],_G2643849)
+[2020/11/20,3:54:12.261520862]Info-Level 1: Defined local vars: []
+[2020/11/20,3:54:12.261668205]All: Situtation: is
+[2020/11/20,3:54:12.261678218]Structs: Executing situtation: _G3069968
+[2020/11/20,3:54:12.261695384]Debug: In situation is of type neutral.
+[2020/11/20,3:54:12.261705636]All: Situation to execute [id==> (is),type==>neutral,arcs==>[empty:say([I will deliver the,noodles])=>success]].
+[2020/11/20,3:54:12.262310266]Debug: In situation [id==>success,type==>final,diag_mod==>say(_G3083970,ok)] of type final.
+[2020/11/20,3:54:12.262327671]All: Situation to execute success.
+[2020/11/20,3:54:12.262364864]Info-Level 1: Situation ends
+[2020/11/20,3:54:12.262372732]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:12.262393474]Info-Level 1: .Output []
+[2020/11/20,3:54:12.598131895]Info-Level 1: Situation ends
+[2020/11/20,3:54:12.60427618]Debug: In situation relieve_arg(-20.0,0.45,right,_G1585548) of type recursive.
+[2020/11/20,3:54:12.604307889]All: Situation to execute relieve_arg(-20.0,0.45,right,_G1585548).
+[2020/11/20,3:54:12.604339599]Info-Level 1: Executing dialogue: relieve_arg(-20.0,0.45,right,_G1585548)
+[2020/11/20,3:54:12.604589462]Info-Level 1: Defined local vars: [change_height==>true,tbl_height==>1.41]
+[2020/11/20,3:54:12.605375289]All: Situtation: is
+[2020/11/20,3:54:12.605386257]Structs: Executing situtation: _G2006261
+[2020/11/20,3:54:12.605401515]Debug: In situation is of type neutral.
+[2020/11/20,3:54:12.605419397]All: Situation to execute [id==> (is),type==>neutral,arcs==>[empty:[assign(_G1996312,get(change_height,_G1996315)),assign(_G1996318,apply(when(_G1996321,_G1996324,_G1996327),[_G1996312,get(tbl_height,_G1996330),get(last_height,_G1996333)])),robotheight(_G1996318),set(last_height,_G1996318)]=>relieving]].
+[2020/11/20,3:54:12.608995199]Debug: In situation relieving of type neutral.
+[2020/11/20,3:54:12.609027147]All: Situation to execute [id==>relieving,type==>neutral,arcs==>[empty:[switcharm(apply(get_number_of_arm(_G2075783),[right])),offer(-20.0,0.45),close_grip,apply(reset_hand(_G2075786),[right])]=>success]].
+[2020/11/20,3:54:12.610050439]Info-Level 1: Situation ends
+[2020/11/20,3:54:12.612571001]Debug: In situation [id==>success,type==>final,diag_mod==>relieve_arg(_G2177242,_G2177245,_G2177248,ok)] of type final.
+[2020/11/20,3:54:12.612608671]All: Situation to execute success.
+[2020/11/20,3:54:12.612658739]Info-Level 1: Situation ends
+[2020/11/20,3:54:12.612667322]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:12.612686157]Info-Level 1: .Output [change_height==>true,tbl_height==>1.41]
+[2020/11/20,3:54:12.617058277]Info-Level 1: Situation ends
+[2020/11/20,3:54:12.623134613]Debug: In situation consult_kb(change_object_property,[golem,right_arm,free],_G2255073,_G2255076) of type recursive.
+[2020/11/20,3:54:12.623164892]All: Situation to execute consult_kb(change_object_property,[golem,right_arm,free],_G2255073,_G2255076).
+[2020/11/20,3:54:12.623192787]Info-Level 1: Executing dialogue: consult_kb(change_object_property,[golem,right_arm,free],_G2255073,_G2255076)
+[2020/11/20,3:54:12.623453378]Info-Level 1: Defined local vars: []
+[2020/11/20,3:54:12.623636722]All: Situtation: is
+[2020/11/20,3:54:12.62364602]Structs: Executing situtation: _G2652204
+[2020/11/20,3:54:12.623660326]Debug: In situation verify of type neutral.
+[2020/11/20,3:54:12.623678445]All: Situation to execute [id==>verify,type==>neutral,arcs==>[empty:empty=>kind_of_consult(change_object_property,[golem,right_arm,free])]].
+[2020/11/20,3:54:13.015564918]Debug: In situation kind_of_consult(change_object_property,[golem,right_arm,free]) of type neutral.
+[2020/11/20,3:54:13.015599489]All: Situation to execute [id==>kind_of_consult(change_object_property,[golem,right_arm,free]),out_arg==>[_G1720806],type==>neutral,arcs==>[empty:apply(consult_kb_change_object_property(_G1720770,_G1720773,_G1720776),[golem,right_arm,free])=>success]].
+[2020/11/20,3:54:13.017342567]Info-Level 1: Situation ends
+[2020/11/20,3:54:13.032251596]Debug: In situation [id==>success,type==>final,in_arg==>[_G2059177],diag_mod==>consult_kb(_G2059180,_G2059183,_G2059177,ok)] of type final.
+[2020/11/20,3:54:13.032320499]All: Situation to execute success.
+[2020/11/20,3:54:13.032380342]Info-Level 1: Situation ends
+[2020/11/20,3:54:13.032389879]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:13.032414674]Info-Level 1: .Output []
+[2020/11/20,3:54:13.037662029]Info-Level 1: Situation ends
+[2020/11/20,3:54:13.043881416]Debug: In situation take(coke,right,_G2370450,_G2370453) of type recursive.
+[2020/11/20,3:54:13.043922424]All: Situation to execute take(coke,right,_G2370450,_G2370453).
+[2020/11/20,3:54:13.04395008]Info-Level 1: Executing dialogue: take(coke,right,_G2370450,_G2370453)
+[2020/11/20,3:54:13.044250488]Info-Level 1: Defined local vars: []
+[2020/11/20,3:54:13.04466772]All: Situtation: is
+[2020/11/20,3:54:13.044678688]Structs: Executing situtation: _G2762277
+[2020/11/20,3:54:13.044706106]Debug: In situation approach_object(coke,_G2757414,_G2757411) of type recursive.
+[2020/11/20,3:54:13.044716358]All: Situation to execute approach_object(coke,_G2757414,_G2757411).
+[2020/11/20,3:54:13.044739484]Info-Level 1: Executing dialogue: approach_object(coke,_G2757414,_G2757411)
+[2020/11/20,3:54:13.044982671]Info-Level 1: Defined local vars: [in_range==>[20.0,0.58,0.45],delta==>0]
+[2020/11/20,3:54:13.045177936]All: Situtation: is
+[2020/11/20,3:54:13.045186758]Structs: Executing situtation: _G2807819
+[2020/11/20,3:54:13.045200109]Debug: In situation is of type neutral.
+[2020/11/20,3:54:13.045219182]All: Situation to execute [id==> (is),type==>neutral,prog==>[set(approaching,true)],arcs==>[empty:tilth(0.0)=>compare(coke)]].
+[2020/11/20,3:54:13.437108516]Debug: In situation see_object([coke],object,[_G1804456],_G1804453) of type recursive.
+[2020/11/20,3:54:13.437150955]All: Situation to execute see_object([coke],object,[_G1804456],_G1804453).
+[2020/11/20,3:54:13.437180757]Info-Level 1: Executing dialogue: see_object([coke],object,[_G1804456],_G1804453)
+[2020/11/20,3:54:13.437424659]Info-Level 1: Defined local vars: []
+[2020/11/20,3:54:13.437616109]All: Situtation: is
+[2020/11/20,3:54:13.437626123]Structs: Executing situtation: _G2169905
+[2020/11/20,3:54:13.437642335]Debug: In situation is of type neutral.
+[2020/11/20,3:54:13.437649965]All: Situation to execute [id==> (is),type==>neutral,arcs==>[empty:empty=>start_analyzing(object)]].
+[2020/11/20,3:54:13.444090127]Debug: In situation start_analyzing(object) of type neutral.
+[2020/11/20,3:54:13.444112539]All: Situation to execute [id==>start_analyzing(object),type==>neutral,arcs==>[empty:[get(last_tilt,_G2289562),get(object_recognition_mode,_G2289565),get(approaching,_G2289568)]=>seeing([coke],_G2289562,_G2289565,_G2289568)]].
+[2020/11/20,3:54:13.444632768]Info-Level 1: Situation ends
+[2020/11/20,3:54:13.450978994]Debug: In situation seeing([coke],-30.0,moped,true) of type object_analyzing(-30.0,moped,true).
+[2020/11/20,3:54:13.451020479]All: Situation to execute [id==>seeing([coke],-30.0,moped,true),type==>object_analyzing(-30.0,moped,true),arcs==>[objects(_G2532813):empty=>check(apply(objects_in_scene(_G2532816,_G2532819),[[coke],_G2532813])),status(_G1804453):empty=>check(_G1804453)]].
+[2020/11/20,3:54:13.452182531]Info-Level 1: Situation ends
+[2020/11/20,3:54:13.458334922]Debug: In situation check(not_found) of type neutral.
+[2020/11/20,3:54:13.458367109]All: Situation to execute [id==>check(not_found),type==>neutral,arcs==>[empty:empty=>error],diag_mod==>see_object([coke],_G2775701,_G2775704,not_found)].
+[2020/11/20,3:54:13.458558082]Info-Level 1: Situation ends
+[2020/11/20,3:54:13.465636491]Debug: In situation [id==>error,type==>final] of type final.
+[2020/11/20,3:54:13.465677022]All: Situation to execute error.
+[2020/11/20,3:54:13.46571207]Info-Level 1: Situation ends
+[2020/11/20,3:54:13.465720176]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:13.465741157]Info-Level 1: .Output []
+[2020/11/20,3:54:13.467799186]Info-Level 1: Situation ends
+[2020/11/20,3:54:13.879321575]Debug: In situation [id==>error,type==>final,prog==>[set(approaching,false)],in_arg==>[_G2131077],diag_mod==>approach_object(_G2131080,_G2131083,_G2131077)] of type final.
+[2020/11/20,3:54:13.879367113]All: Situation to execute error.
+[2020/11/20,3:54:13.879484653]Info-Level 1: Situation ends
+[2020/11/20,3:54:13.879494189999999]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:13.879513025]Info-Level 1: .Output [in_range==>[20.0,0.58,0.45],delta==>0]
+[2020/11/20,3:54:13.885688304]Debug: In situation [id==>error,type==>final,in_arg==>[_G2583375,_G2583378],diag_mod==>take(_G2583381,_G2583384,_G2583387,_G2583378)] of type final.
+[2020/11/20,3:54:13.88572359]All: Situation to execute error.
+[2020/11/20,3:54:13.885771036]Info-Level 1: Situation ends
+[2020/11/20,3:54:13.885779857]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:13.885794639]Info-Level 1: .Output []
+[2020/11/20,3:54:13.888845682]Info-Level 1: Situation ends
+[2020/11/20,3:54:13.895957946]Debug: In situation error_manager_demo(take(coke,right,_G2731702,not_found),[consult_kb(change_object_property,[golem,right_arm,coke],_G2731705,_G2731708),consult_kb(value_object_property,[start,name],_G2731711,_G2731714),say([I will move to,_G2731711],_G2731717),consult_kb(value_object_property,[_G2731720,position],_G2731723,_G2731726),move(_G2731723,_G2731729),consult_kb(change_object_property,[golem,position,_G2731723],_G2731732,_G2731735),say([I will deliver the,coke],_G2731738),relieve_arg(-20.0,0.45,right,_G2731741),consult_kb(change_object_property,[golem,right_arm,free],_G2731744,_G2731747)],_G2901168) of type recursive.
+[2020/11/20,3:54:13.896044015]All: Situation to execute error_manager_demo(take(coke,right,_G2731702,not_found),[consult_kb(change_object_property,[golem,right_arm,coke],_G2731705,_G2731708),consult_kb(value_object_property,[start,name],_G2731711,_G2731714),say([I will move to,_G2731711],_G2731717),consult_kb(value_object_property,[_G2731720,position],_G2731723,_G2731726),move(_G2731723,_G2731729),consult_kb(change_object_property,[golem,position,_G2731723],_G2731732,_G2731735),say([I will deliver the,coke],_G2731738),relieve_arg(-20.0,0.45,right,_G2731741),consult_kb(change_object_property,[golem,right_arm,free],_G2731744,_G2731747)],_G2901168).
+[2020/11/20,3:54:13.89611268]Info-Level 1: Executing dialogue: error_manager_demo(take(coke,right,_G2731702,not_found),[consult_kb(change_object_property,[golem,right_arm,coke],_G2731705,_G2731708),consult_kb(value_object_property,[start,name],_G2731711,_G2731714),say([I will move to,_G2731711],_G2731717),consult_kb(value_object_property,[_G2731720,position],_G2731723,_G2731726),move(_G2731723,_G2731729),consult_kb(change_object_property,[golem,position,_G2731723],_G2731732,_G2731735),say([I will deliver the,coke],_G2731738),relieve_arg(-20.0,0.45,right,_G2731741),consult_kb(change_object_property,[golem,right_arm,free],_G2731744,_G2731747)],_G2901168)
+[2020/11/20,3:54:13.896437644]Info-Level 1: Defined local vars: []
+[2020/11/20,3:54:13.896667003]All: Situtation: is
+[2020/11/20,3:54:13.896677255]Structs: Executing situtation: _G3052468
+[2020/11/20,3:54:13.896692752]Debug: In situation is of type neutral.
+[2020/11/20,3:54:13.896702527]All: Situation to execute [id==> (is),type==>neutral,arcs==>[empty:[say(Something went wrong)]=>analyze_error(take(coke,right,_G2731702,not_found))]].
+[2020/11/20,3:54:14.737414836]Debug: In situation analyze_error(take(coke,right,_G1803788,not_found)) of type neutral.
+[2020/11/20,3:54:14.737459182]All: Situation to execute [id==>analyze_error(take(coke,right,_G1803788,not_found)),type==>neutral,out_arg==>[_G1806540],arcs==>[empty:[apply(daily_life_inference_cicle_demo(_G1806645,_G1806648,_G1806651,_G1806654),[coke,_G1806657,_G1806660,_G1806663]),apply(diagnosis_parser(_G1806666,_G1806669),[_G1806657,_G1806672]),say(My diagnosis for the current situation is),say(The human assistant),say(_G1806672),apply(decision_parser(_G1806675,_G1806678),[_G1806660,_G1806681]),say(My decision is to),say(_G1806681),apply(plan_parser(_G1806684,_G1806687),[_G1806663,_G1806690]),say(The plan that I will execute is to),say(_G1806690),assign(_G1806540,apply(action_reasoner_demo(_G1806693),[_G1806663]))]=>success]].
+[2020/11/20,3:54:14.751847267]Info-Level 1: Situation ends
+[2020/11/20,3:54:15.426371574]Debug: In situation [id==>success,type==>final,in_arg==>[_G2567179],diag_mod==>error_manager_demo(_G2567374,_G2567377,_G2567179)] of type final.
+[2020/11/20,3:54:15.426417112]All: Situation to execute success.
+[2020/11/20,3:54:15.426725864]Info-Level 1: Situation ends
+[2020/11/20,3:54:15.426736116]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:15.426805734]Info-Level 1: .Output []
+[2020/11/20,3:54:15.440163612]Info-Level 1: Situation ends
+[2020/11/20,3:54:15.878733873]Debug: In situation consult_kb(value_object_property,[shelf_snacks,name],_G1766611,_G1766613) of type recursive.
+[2020/11/20,3:54:15.878788471]All: Situation to execute consult_kb(value_object_property,[shelf_snacks,name],_G1766611,_G1766613).
+[2020/11/20,3:54:15.879023313]Info-Level 1: Executing dialogue: consult_kb(value_object_property,[shelf_snacks,name],_G1766611,_G1766613)
+[2020/11/20,3:54:15.879285811999999]Info-Level 1: Defined local vars: []
+[2020/11/20,3:54:15.879503726]All: Situtation: is
+[2020/11/20,3:54:15.879517316]Structs: Executing situtation: _G1919571
+[2020/11/20,3:54:15.879532337]Debug: In situation verify of type neutral.
+[2020/11/20,3:54:15.879550457]All: Situation to execute [id==>verify,type==>neutral,arcs==>[empty:empty=>kind_of_consult(value_object_property,[shelf_snacks,name])]].
+[2020/11/20,3:54:15.893325328]Debug: In situation kind_of_consult(value_object_property,[shelf_snacks,name]) of type neutral.
+[2020/11/20,3:54:15.893362045]All: Situation to execute [id==>kind_of_consult(value_object_property,[shelf_snacks,name]),out_arg==>[_G2139966],type==>neutral,arcs==>[empty:apply(consult_kb_value_object_property(_G2139969,_G2139972,_G2139975),[shelf_snacks,name,_G2139966])=>success]].
+[2020/11/20,3:54:15.894853115]Info-Level 1: Situation ends
+[2020/11/20,3:54:15.908607482]Debug: In situation [id==>success,type==>final,in_arg==>[_G2683923],diag_mod==>consult_kb(_G2683926,_G2683929,_G2683923,ok)] of type final.
+[2020/11/20,3:54:15.908658981]All: Situation to execute success.
+[2020/11/20,3:54:15.90871644]Info-Level 1: Situation ends
+[2020/11/20,3:54:15.908724784]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:15.908744812]Info-Level 1: .Output []
+[2020/11/20,3:54:15.91975069]Info-Level 1: Situation ends
+[2020/11/20,3:54:15.925915956]Debug: In situation say([I will move to,the shelf of bread],_G3030671) of type recursive.
+[2020/11/20,3:54:15.92595911]All: Situation to execute say([I will move to,the shelf of bread],_G3030671).
+[2020/11/20,3:54:15.926060438]Info-Level 1: Executing dialogue: say([I will move to,the shelf of bread],_G3030671)
+[2020/11/20,3:54:15.9263103]Info-Level 1: Defined local vars: []
+[2020/11/20,3:54:15.926434993]All: Situtation: is
+[2020/11/20,3:54:15.926443099]Structs: Executing situtation: _G3542227
+[2020/11/20,3:54:15.926455736]Debug: In situation is of type neutral.
+[2020/11/20,3:54:15.926472902]All: Situation to execute [id==> (is),type==>neutral,arcs==>[empty:say([I will move to,the shelf of bread])=>success]].
+[2020/11/20,3:54:15.927019596]Debug: In situation [id==>success,type==>final,diag_mod==>say(_G3556514,ok)] of type final.
+[2020/11/20,3:54:15.927031755]All: Situation to execute success.
+[2020/11/20,3:54:15.927063703]Info-Level 1: Situation ends
+[2020/11/20,3:54:15.927070856]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:15.927081346]Info-Level 1: .Output []
+[2020/11/20,3:54:15.934490442]Info-Level 1: Situation ends
+[2020/11/20,3:54:15.94080758]Debug: In situation consult_kb(value_object_property,[shelf_snacks,position],_G3622201,_G3622204) of type recursive.
+[2020/11/20,3:54:15.940849542]All: Situation to execute consult_kb(value_object_property,[shelf_snacks,position],_G3622201,_G3622204).
+[2020/11/20,3:54:15.940881013]Info-Level 1: Executing dialogue: consult_kb(value_object_property,[shelf_snacks,position],_G3622201,_G3622204)
+[2020/11/20,3:54:15.941141128]Info-Level 1: Defined local vars: []
+[2020/11/20,3:54:15.941350221]All: Situtation: is
+[2020/11/20,3:54:15.941360235]Structs: Executing situtation: _G4117208
+[2020/11/20,3:54:15.941375255]Debug: In situation verify of type neutral.
+[2020/11/20,3:54:15.941383361]All: Situation to execute [id==>verify,type==>neutral,arcs==>[empty:empty=>kind_of_consult(value_object_property,[shelf_snacks,position])]].
+[2020/11/20,3:54:16.370463848]Debug: In situation kind_of_consult(value_object_property,[shelf_snacks,position]) of type neutral.
+[2020/11/20,3:54:16.370497226]All: Situation to execute [id==>kind_of_consult(value_object_property,[shelf_snacks,position]),out_arg==>[_G2148537],type==>neutral,arcs==>[empty:apply(consult_kb_value_object_property(_G2148540,_G2148543,_G2148546),[shelf_snacks,position,_G2148537])=>success]].
+[2020/11/20,3:54:16.371977806]Info-Level 1: Situation ends
+[2020/11/20,3:54:16.385873079]Debug: In situation [id==>success,type==>final,in_arg==>[_G2692650],diag_mod==>consult_kb(_G2692653,_G2692656,_G2692650,ok)] of type final.
+[2020/11/20,3:54:16.385938167]All: Situation to execute success.
+[2020/11/20,3:54:16.385991811]Info-Level 1: Situation ends
+[2020/11/20,3:54:16.385999917]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:16.386018514]Info-Level 1: .Output []
+[2020/11/20,3:54:16.394482135]Info-Level 1: Situation ends
+[2020/11/20,3:54:16.400842666]Debug: In situation move(shelf_snacks,_G3028430) of type recursive.
+[2020/11/20,3:54:16.400882244]All: Situation to execute move(shelf_snacks,_G3028430).
+[2020/11/20,3:54:16.400915861]Info-Level 1: Executing dialogue: move(shelf_snacks,_G3028430)
+[2020/11/20,3:54:16.401221752]Info-Level 1: Defined local vars: []
+[2020/11/20,3:54:16.401631116]All: Situtation: is
+[2020/11/20,3:54:16.401642322]Structs: Executing situtation: _G3509865
+[2020/11/20,3:54:16.401658773]Debug: In situation is of type neutral.
+[2020/11/20,3:54:16.401676416]All: Situation to execute [id==> (is),type==>neutral,arcs==>[empty:apply(verify_type_of_move(_G3506257,_G3506260,_G3506263),[shelf_snacks,_G3506266,_G3506269])=>verify_case(_G3506266,_G3506269)]].
+[2020/11/20,3:54:16.416539669]Debug: In situation verify_case(label,[shelf_snacks]) of type neutral.
+[2020/11/20,3:54:16.416570663]All: Situation to execute [id==>verify_case(label,[shelf_snacks]),type==>neutral,arcs==>[empty:[switcharm(0),robotheight(1.25),set(last_height,1.25),switchpose(nav)]=>go_to_point(apply(from_labels_to_coordinates(_G3827709),[[shelf_snacks]]))]].
+[2020/11/20,3:54:16.418242454]Info-Level 1: Situation ends
+[2020/11/20,3:54:16.884605884]Debug: In situation go_to_point([shelf_snacks]) of type neutral.
+[2020/11/20,3:54:16.884647846]All: Situation to execute [id==>go_to_point([shelf_snacks]),type==>neutral,arcs==>[empty:navigate(shelf_snacks,_G2372303)=>verify_result(_G2372303,[])]].
+[2020/11/20,3:54:16.88491702]Info-Level 1: Situation ends
+[2020/11/20,3:54:16.899278402]Debug: In situation verify_result(ok,[]) of type neutral.
+[2020/11/20,3:54:16.899323463]All: Situation to execute [id==>verify_result(ok,[]),type==>neutral,arcs==>[empty:empty=>go_to_point([])]].
+[2020/11/20,3:54:16.899522542]Info-Level 1: Situation ends
+[2020/11/20,3:54:16.913913488]Debug: In situation go_to_point([]) of type neutral.
+[2020/11/20,3:54:16.913976907]All: Situation to execute [id==>go_to_point([]),type==>neutral,arcs==>[empty:switchpose(grasp)=>success]].
+[2020/11/20,3:54:16.91425538]Info-Level 1: Situation ends
+[2020/11/20,3:54:17.426549196]Debug: In situation [id==>success,type==>final,diag_mod==>move(_G2309979,ok)] of type final.
+[2020/11/20,3:54:17.426592588]All: Situation to execute success.
+[2020/11/20,3:54:17.426642656]Info-Level 1: Situation ends
+[2020/11/20,3:54:17.426651477]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:17.426668882]Info-Level 1: .Output []
+[2020/11/20,3:54:17.437144517]Info-Level 1: Situation ends
+[2020/11/20,3:54:17.443644762]Debug: In situation consult_kb(change_object_property,[golem,position,shelf_snacks],_G2513980,_G2513983) of type recursive.
+[2020/11/20,3:54:17.443681955]All: Situation to execute consult_kb(change_object_property,[golem,position,shelf_snacks],_G2513980,_G2513983).
+[2020/11/20,3:54:17.443712472]Info-Level 1: Executing dialogue: consult_kb(change_object_property,[golem,position,shelf_snacks],_G2513980,_G2513983)
+[2020/11/20,3:54:17.443969249]Info-Level 1: Defined local vars: []
+[2020/11/20,3:54:17.444157123]All: Situtation: is
+[2020/11/20,3:54:17.444166183]Structs: Executing situtation: _G2972834
+[2020/11/20,3:54:17.44418168]Debug: In situation verify of type neutral.
+[2020/11/20,3:54:17.444199562]All: Situation to execute [id==>verify,type==>neutral,arcs==>[empty:empty=>kind_of_consult(change_object_property,[golem,position,shelf_snacks])]].
+[2020/11/20,3:54:17.458453416]Debug: In situation kind_of_consult(change_object_property,[golem,position,shelf_snacks]) of type neutral.
+[2020/11/20,3:54:17.458494663]All: Situation to execute [id==>kind_of_consult(change_object_property,[golem,position,shelf_snacks]),out_arg==>[_G3193664],type==>neutral,arcs==>[empty:apply(consult_kb_change_object_property(_G3193628,_G3193631,_G3193634),[golem,position,shelf_snacks])=>success]].
+[2020/11/20,3:54:17.460321187]Info-Level 1: Situation ends
+[2020/11/20,3:54:17.474413394]Debug: In situation [id==>success,type==>final,in_arg==>[_G3736920],diag_mod==>consult_kb(_G3736923,_G3736926,_G3736920,ok)] of type final.
+[2020/11/20,3:54:17.474458217]All: Situation to execute success.
+[2020/11/20,3:54:17.474510669]Info-Level 1: Situation ends
+[2020/11/20,3:54:17.474519014]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:17.474537134]Info-Level 1: .Output []
+[2020/11/20,3:54:17.928686141]Info-Level 1: Situation ends
+[2020/11/20,3:54:17.934945821]Debug: In situation scan(object,_G2074557,[0.0],[-30.0],object,_G2074559,false,false,_G2074562) of type recursive.
+[2020/11/20,3:54:17.934987306]All: Situation to execute scan(object,_G2074557,[0.0],[-30.0],object,_G2074559,false,false,_G2074562).
+[2020/11/20,3:54:17.935019731]Info-Level 1: Executing dialogue: scan(object,_G2074557,[0.0],[-30.0],object,_G2074559,false,false,_G2074562)
+[2020/11/20,3:54:17.935280561]Info-Level 1: Defined local vars: [baseh==>0.0,basev==>0.0]
+[2020/11/20,3:54:17.935608625]All: Situtation: is
+[2020/11/20,3:54:17.935619592]Structs: Executing situtation: _G2412191
+[2020/11/20,3:54:17.935634613]Debug: In situation is of type neutral.
+[2020/11/20,3:54:17.935652732]All: Situation to execute [id==> (is),type==>neutral,arcs==>[empty:empty=>tilt_first(false)]].
+[2020/11/20,3:54:17.941993951]Debug: In situation tilt_first(false) of type neutral.
+[2020/11/20,3:54:17.942038297]All: Situation to execute [id==>tilt_first(false),type==>neutral,arcs==>[empty:[tilth(0.0),set(last_scan,0.0)]=>tilt([])]].
+[2020/11/20,3:54:17.942418813]Info-Level 1: Situation ends
+[2020/11/20,3:54:17.948813676]Debug: In situation tilt(object,_G2074557,[-30.0],object,_G2074559,false,_G2742101) of type recursive.
+[2020/11/20,3:54:17.948852062]All: Situation to execute tilt(object,_G2074557,[-30.0],object,_G2074559,false,_G2742101).
+[2020/11/20,3:54:17.948882102]Info-Level 1: Executing dialogue: tilt(object,_G2074557,[-30.0],object,_G2074559,false,_G2742101)
+[2020/11/20,3:54:17.949133634]Info-Level 1: Defined local vars: []
+[2020/11/20,3:54:17.949445247]All: Situtation: is
+[2020/11/20,3:54:17.949455261]Structs: Executing situtation: _G2911473
+[2020/11/20,3:54:17.949469566]Debug: In situation is of type neutral.
+[2020/11/20,3:54:17.949487209]All: Situation to execute [id==> (is),type==>neutral,arcs==>[empty:empty=>see_first(false)]].
+[2020/11/20,3:54:17.953847646]Debug: In situation see_first(false) of type neutral.
+[2020/11/20,3:54:17.953866481]All: Situation to execute [id==>see_first(false),type==>neutral,arcs==>[empty:[tiltv(-30.0),set(last_tilt,-30.0),sleep]=>see([])]].
+[2020/11/20,3:54:17.95416069]Info-Level 1: Situation ends
+[2020/11/20,3:54:17.958504676]Debug: In situation see(object,_G2074557,object,_G2074559,_G3155379) of type recursive.
+[2020/11/20,3:54:17.95858407]All: Situation to execute see(object,_G2074557,object,_G2074559,_G3155379).
+[2020/11/20,3:54:17.958627462]Info-Level 1: Executing dialogue: see(object,_G2074557,object,_G2074559,_G3155379)
+[2020/11/20,3:54:17.958915948]Info-Level 1: Defined local vars: []
+[2020/11/20,3:54:17.959123373]All: Situtation: is
+[2020/11/20,3:54:17.959135055]Structs: Executing situtation: _G3274660
+[2020/11/20,3:54:17.959152698]Debug: In situation is of type neutral.
+[2020/11/20,3:54:17.959164381]All: Situation to execute [id==> (is),type==>neutral,arcs==>[empty:empy=>see(object)]].
+[2020/11/20,3:54:17.962939739]Debug: In situation see_object(_G2074557,object,_G2074559,_G3352578) of type recursive.
+[2020/11/20,3:54:17.962966203]All: Situation to execute see_object(_G2074557,object,_G2074559,_G3352578).
+[2020/11/20,3:54:17.962993144]Info-Level 1: Executing dialogue: see_object(_G2074557,object,_G2074559,_G3352578)
+[2020/11/20,3:54:17.963235616]Info-Level 1: Defined local vars: []
+[2020/11/20,3:54:17.963416576]All: Situtation: is
+[2020/11/20,3:54:17.963425874]Structs: Executing situtation: _G3457869
+[2020/11/20,3:54:17.963449239]Debug: In situation is of type neutral.
+[2020/11/20,3:54:17.963461399]All: Situation to execute [id==> (is),type==>neutral,arcs==>[empty:empty=>start_analyzing(object)]].
+[2020/11/20,3:54:17.969729423]Debug: In situation start_analyzing(object) of type neutral.
+[2020/11/20,3:54:17.96975255]All: Situation to execute [id==>start_analyzing(object),type==>neutral,arcs==>[empty:[get(last_tilt,_G3577526),get(object_recognition_mode,_G3577529),get(approaching,_G3577532)]=>seeing(_G2074557,_G3577526,_G3577529,_G3577532)]].
+[2020/11/20,3:54:17.970242023]Info-Level 1: Situation ends
+[2020/11/20,3:54:17.976564884]Debug: In situation seeing(_G3698050,-30.0,moped,false) of type object_analyzing(-30.0,moped,false).
+[2020/11/20,3:54:17.976586818]All: Situation to execute [id==>seeing(_G3698050,-30.0,moped,false),type==>object_analyzing(-30.0,moped,false),arcs==>[objects(_G3821043):empty=>check(apply(objects_in_scene(_G3821046,_G3821049),[_G3698050,_G3821043])),status(_G3352578):empty=>check(_G3352578)]].
+[2020/11/20,3:54:17.977296113]Info-Level 1: Situation ends
+[2020/11/20,3:54:17.983549118]Debug: In situation check([object(coke,0.2,2,0.55,4,5,6,7,8)]) of type neutral.
+[2020/11/20,3:54:17.98357129]All: Situation to execute [id==>check([object(coke,0.2,2,0.55,4,5,6,7,8)]),type==>neutral,arcs==>[empty:empty=>success],diag_mod==>see_object(_G2074557,_G4062659,[object(coke,0.2,2,0.55,4,5,6,7,8)],ok)].
+[2020/11/20,3:54:17.983769416]Info-Level 1: Situation ends
+[2020/11/20,3:54:18.518800258]Debug: In situation [id==>success,type==>final] of type final.
+[2020/11/20,3:54:18.518847942]All: Situation to execute success.
+[2020/11/20,3:54:18.518885374]Info-Level 1: Situation ends
+[2020/11/20,3:54:18.518894672]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:18.518922328]Info-Level 1: .Output []
+[2020/11/20,3:54:18.520693778000002]Info-Level 1: Situation ends
+[2020/11/20,3:54:18.524330377]Debug: In situation [id==>success,type==>final,in_arg==>[_G2074557,[object(coke,0.2,2,0.55,4,5,6,7,8)],_G2814531],diag_mod==>see(_G2814546,_G2074557,_G2814549,[object(coke,0.2,2,0.55,4,5,6,7,8)],_G2814531)] of type final.
+[2020/11/20,3:54:18.524363517]All: Situation to execute success.
+[2020/11/20,3:54:18.524435043]Info-Level 1: Situation ends
+[2020/11/20,3:54:18.524442911]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:18.524459838]Info-Level 1: .Output []
+[2020/11/20,3:54:18.52500844]Info-Level 1: Situation ends
+[2020/11/20,3:54:18.529227972]Debug: In situation [id==>success,type==>final,in_arg==>[_G2074557,[object(coke,0.2,2,0.55,4,5,6,7,8)],_G2964498],diag_mod==>tilt(_G2964504,_G2074557,_G2964507,_G2964510,[object(coke,0.2,2,0.55,4,5,6,7,8)],_G2964513,_G2964498)] of type final.
+[2020/11/20,3:54:18.529263019]All: Situation to execute success.
+[2020/11/20,3:54:18.529336214]Info-Level 1: Situation ends
+[2020/11/20,3:54:18.52934432]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:18.529362678]Info-Level 1: .Output []
+[2020/11/20,3:54:18.530341386]Info-Level 1: Situation ends
+[2020/11/20,3:54:18.536749839]Debug: In situation [id==>success,type==>final,in_arg==>[_G2074557,[object(coke,0.2,2,0.55,4,5,6,7,8)],_G3148034],diag_mod==>scan(_G3148049,_G2074557,_G3148052,_G3148055,_G3148058,[object(coke,0.2,2,0.55,4,5,6,7,8)],_G3148061,_G3148064,_G3148034)] of type final.
+[2020/11/20,3:54:18.536815166]All: Situation to execute success.
+[2020/11/20,3:54:18.536906719]Info-Level 1: Situation ends
+[2020/11/20,3:54:18.536916971]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:18.536942243]Info-Level 1: .Output [baseh==>0.0,basev==>0.0]
+[2020/11/20,3:54:18.543377637]Info-Level 1: Situation ends
+[2020/11/20,3:54:18.549724578]Debug: In situation consult_kb(value_object_property,[golem,position],shelf_snacks,_G3313798) of type recursive.
+[2020/11/20,3:54:18.549786806]All: Situation to execute consult_kb(value_object_property,[golem,position],shelf_snacks,_G3313798).
+[2020/11/20,3:54:18.549819946]Info-Level 1: Executing dialogue: consult_kb(value_object_property,[golem,position],shelf_snacks,_G3313798)
+[2020/11/20,3:54:18.550097227]Info-Level 1: Defined local vars: []
+[2020/11/20,3:54:18.550309181]All: Situtation: is
+[2020/11/20,3:54:18.550319433]Structs: Executing situtation: _G3744640
+[2020/11/20,3:54:18.550335884]Debug: In situation verify of type neutral.
+[2020/11/20,3:54:18.550346374]All: Situation to execute [id==>verify,type==>neutral,arcs==>[empty:empty=>kind_of_consult(value_object_property,[golem,position])]].
+[2020/11/20,3:54:19.043278694]Debug: In situation kind_of_consult(value_object_property,[golem,position]) of type neutral.
+[2020/11/20,3:54:19.043321132]All: Situation to execute [id==>kind_of_consult(value_object_property,[golem,position]),out_arg==>[_G2224475],type==>neutral,arcs==>[empty:apply(consult_kb_value_object_property(_G2224478,_G2224481,_G2224484),[golem,position,_G2224475])=>success]].
+[2020/11/20,3:54:19.044796705]Info-Level 1: Situation ends
+[2020/11/20,3:54:19.058800458]Debug: In situation [id==>success,type==>final,in_arg==>[_G2596076],diag_mod==>consult_kb(_G2596079,_G2596082,_G2596076,ok)] of type final.
+[2020/11/20,3:54:19.058871746]All: Situation to execute success.
+[2020/11/20,3:54:19.058961868]Info-Level 1: Situation ends
+[2020/11/20,3:54:19.058977842]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:19.059012413]Info-Level 1: .Output []
+[2020/11/20,3:54:19.065775156]Info-Level 1: Situation ends
+[2020/11/20,3:54:19.072090387]Debug: In situation consult_kb(update_kb_demo,[shelf_snacks,[object(coke,0.2,2,0.55,4,5,6,7,8)]],_G2913925,_G2913928) of type recursive.
+[2020/11/20,3:54:19.072131633]All: Situation to execute consult_kb(update_kb_demo,[shelf_snacks,[object(coke,0.2,2,0.55,4,5,6,7,8)]],_G2913925,_G2913928).
+[2020/11/20,3:54:19.072168827]Info-Level 1: Executing dialogue: consult_kb(update_kb_demo,[shelf_snacks,[object(coke,0.2,2,0.55,4,5,6,7,8)]],_G2913925,_G2913928)
+[2020/11/20,3:54:19.072427272]Info-Level 1: Defined local vars: []
+[2020/11/20,3:54:19.072637557]All: Situtation: is
+[2020/11/20,3:54:19.072649002]Structs: Executing situtation: _G3321098
+[2020/11/20,3:54:19.072666406]Debug: In situation verify of type neutral.
+[2020/11/20,3:54:19.072674751]All: Situation to execute [id==>verify,type==>neutral,arcs==>[empty:empty=>kind_of_consult(update_kb_demo,[shelf_snacks,[object(coke,0.2,2,0.55,4,5,6,7,8)]])]].
+[2020/11/20,3:54:19.086749553]Debug: In situation kind_of_consult(update_kb_demo,[shelf_snacks,[object(coke,0.2,2,0.55,4,5,6,7,8)]]) of type neutral.
+[2020/11/20,3:54:19.086788415]All: Situation to execute [id==>kind_of_consult(update_kb_demo,[shelf_snacks,[object(coke,0.2,2,0.55,4,5,6,7,8)]]),type==>neutral,arcs==>[empty:apply(update_kb_demo_dlic(_G3543120,_G3543123),[shelf_snacks,[object(coke,0.2,2,0.55,4,5,6,7,8)]])=>success]].
+[2020/11/20,3:54:19.089060068]Info-Level 1: Situation ends
+[2020/11/20,3:54:19.608149528]Debug: In situation [id==>success,type==>final,in_arg==>[_G2351891],diag_mod==>consult_kb(_G2351894,_G2351897,_G2351891,ok)] of type final.
+[2020/11/20,3:54:19.608195066]All: Situation to execute success.
+[2020/11/20,3:54:19.608250141]Info-Level 1: Situation ends
+[2020/11/20,3:54:19.608258962]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:19.60828185]Info-Level 1: .Output []
+[2020/11/20,3:54:19.613529205]Info-Level 1: Situation ends
+[2020/11/20,3:54:19.619802474]Debug: In situation take(coke,right,_G2585803,_G2585806) of type recursive.
+[2020/11/20,3:54:19.61984229]All: Situation to execute take(coke,right,_G2585803,_G2585806).
+[2020/11/20,3:54:19.619874715]Info-Level 1: Executing dialogue: take(coke,right,_G2585803,_G2585806)
+[2020/11/20,3:54:19.620118856]Info-Level 1: Defined local vars: []
+[2020/11/20,3:54:19.620525598]All: Situtation: is
+[2020/11/20,3:54:19.620536088]Structs: Executing situtation: _G2980124
+[2020/11/20,3:54:19.62056446]Debug: In situation approach_object(coke,_G2975261,_G2975258) of type recursive.
+[2020/11/20,3:54:19.620573997]All: Situation to execute approach_object(coke,_G2975261,_G2975258).
+[2020/11/20,3:54:19.620598077]Info-Level 1: Executing dialogue: approach_object(coke,_G2975261,_G2975258)
+[2020/11/20,3:54:19.620825052]Info-Level 1: Defined local vars: [in_range==>[20.0,0.58,0.45],delta==>0]
+[2020/11/20,3:54:19.621032953]All: Situtation: is
+[2020/11/20,3:54:19.621042728]Structs: Executing situtation: _G3025666
+[2020/11/20,3:54:19.62105894]Debug: In situation is of type neutral.
+[2020/11/20,3:54:19.621070146]All: Situation to execute [id==> (is),type==>neutral,prog==>[set(approaching,true)],arcs==>[empty:tilth(0.0)=>compare(coke)]].
+[2020/11/20,3:54:19.639814615]Debug: In situation see_object([coke],object,[_G3270233],_G3270230) of type recursive.
+[2020/11/20,3:54:19.639882326]All: Situation to execute see_object([coke],object,[_G3270233],_G3270230).
+[2020/11/20,3:54:19.639912843]Info-Level 1: Executing dialogue: see_object([coke],object,[_G3270233],_G3270230)
+[2020/11/20,3:54:19.640231132]Info-Level 1: Defined local vars: []
+[2020/11/20,3:54:19.640438079]All: Situtation: is
+[2020/11/20,3:54:19.640448093]Structs: Executing situtation: _G3705000
+[2020/11/20,3:54:19.640463352]Debug: In situation is of type neutral.
+[2020/11/20,3:54:19.640470504]All: Situation to execute [id==> (is),type==>neutral,arcs==>[empty:empty=>start_analyzing(object)]].
+[2020/11/20,3:54:19.64679861]Debug: In situation start_analyzing(object) of type neutral.
+[2020/11/20,3:54:19.646837472]All: Situation to execute [id==>start_analyzing(object),type==>neutral,arcs==>[empty:[get(last_tilt,_G3824657),get(object_recognition_mode,_G3824660),get(approaching,_G3824663)]=>seeing([coke],_G3824657,_G3824660,_G3824663)]].
+[2020/11/20,3:54:19.647411584]Info-Level 1: Situation ends
+[2020/11/20,3:54:19.65352106]Debug: In situation seeing([coke],-30.0,moped,true) of type object_analyzing(-30.0,moped,true).
+[2020/11/20,3:54:19.653547525]All: Situation to execute [id==>seeing([coke],-30.0,moped,true),type==>object_analyzing(-30.0,moped,true),arcs==>[objects(_G4067908):empty=>check(apply(objects_in_scene(_G4067911,_G4067914),[[coke],_G4067908])),status(_G3270230):empty=>check(_G3270230)]].
+[2020/11/20,3:54:19.65426445]Info-Level 1: Situation ends
+[2020/11/20,3:54:20.184284448]Debug: In situation check([object(coke,0.2,2,0.55,4,5,6,7,8)]) of type neutral.
+[2020/11/20,3:54:20.184313535]All: Situation to execute [id==>check([object(coke,0.2,2,0.55,4,5,6,7,8)]),type==>neutral,arcs==>[empty:empty=>success],diag_mod==>see_object([coke],_G2678905,[object(coke,0.2,2,0.55,4,5,6,7,8)],ok)].
+[2020/11/20,3:54:20.184544563]Info-Level 1: Situation ends
+[2020/11/20,3:54:20.190633296]Debug: In situation [id==>success,type==>final] of type final.
+[2020/11/20,3:54:20.19066596]All: Situation to execute success.
+[2020/11/20,3:54:20.190696477]Info-Level 1: Situation ends
+[2020/11/20,3:54:20.190704107]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:20.190725326]Info-Level 1: .Output []
+[2020/11/20,3:54:20.192345142]Info-Level 1: Situation ends
+[2020/11/20,3:54:20.210948705]Debug: In situation compare(object(coke,0.2,2,0.55,4,5,6,7,8)) of type neutral.
+[2020/11/20,3:54:20.210977554]All: Situation to execute [id==>compare(object(coke,0.2,2,0.55,4,5,6,7,8)),type==>neutral,arcs==>[empty:[get(last_tilt,_G3272396),cam2nav([0.2,2,0.55],[_G3272396,0.1,-0.06],_G3272399)]=>check(object(coke,0.2,2,0.55,4,5,6,7,8),_G3272399,apply(reachable(_G3272402,_G3272405),[_G3272399,get(in_range,_G3272408)]))]].
+[2020/11/20,3:54:20.211735248]Info-Level 1: Situation ends
+[2020/11/20,3:54:20.802963495]Debug: In situation check(object(coke,0.2,2,0.55,4,5,6,7,8),[10.3049,0.559],true) of type neutral.
+[2020/11/20,3:54:20.803005218]All: Situation to execute [id==>check(object(coke,0.2,2,0.55,4,5,6,7,8),[10.3049,0.559],true),type==>neutral,prog==>[set(approaching,false)],arcs==>[empty:empty=>success],diag_mod==>approach_object(_G2561295,object(coke,0.2,2,0.55,4,5,6,7,8),ok)].
+[2020/11/20,3:54:20.803279161]Info-Level 1: Situation ends
+[2020/11/20,3:54:20.822577238]Debug: In situation [id==>success,type==>final] of type final.
+[2020/11/20,3:54:20.822618246]All: Situation to execute success.
+[2020/11/20,3:54:20.822651863]Info-Level 1: Situation ends
+[2020/11/20,3:54:20.82265973]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:20.822679996]Info-Level 1: .Output [in_range==>[20.0,0.58,0.45],delta==>0]
+[2020/11/20,3:54:20.831857681]Debug: In situation grasp(object(coke,0.2,2,0.55,4,5,6,7,8),right,_G3439463) of type recursive.
+[2020/11/20,3:54:20.831907987]All: Situation to execute grasp(object(coke,0.2,2,0.55,4,5,6,7,8),right,_G3439463).
+[2020/11/20,3:54:20.831943988]Info-Level 1: Executing dialogue: grasp(object(coke,0.2,2,0.55,4,5,6,7,8),right,_G3439463)
+[2020/11/20,3:54:20.832229852]Info-Level 1: Defined local vars: []
+[2020/11/20,3:54:20.832618951]All: Situtation: is
+[2020/11/20,3:54:20.832629919]Structs: Executing situtation: _G3560060
+[2020/11/20,3:54:20.832645654]Debug: In situation is of type neutral.
+[2020/11/20,3:54:20.832665443]All: Situation to execute [id==> (is),type==>neutral,arcs==>[empty:empty=>decidearmpos(right)]].
+[2020/11/20,3:54:20.840992927]Debug: In situation decidearmpos(right) of type neutral.
+[2020/11/20,3:54:20.841032028]All: Situation to execute [id==>decidearmpos(right),type==>neutral,arcs==>[empty:empty=>is_act([0.21,0.22,0.2248])]].
+[2020/11/20,3:54:20.841216802]Info-Level 1: Situation ends
+[2020/11/20,3:54:20.849654436]Debug: In situation is_act([0.21,0.22,0.2248]) of type neutral.
+[2020/11/20,3:54:20.849704265]All: Situation to execute [id==>is_act([0.21,0.22,0.2248]),type==>neutral,arcs==>[empty:[get(last_tilt,_G3976191),get(last_height,_G3976194),cam2arm(right,_G3976194,[0.2,2,0.55],[_G3976191,0.11,0.1],[0.21,0.22,0.2248],[_G3976197,_G3976200,_G3976203]),say([Attempting to grab the ,coke, with my ,right, arm]),switcharm(apply(get_number_of_arm(_G3976206),[right])),robotheight(_G3976197),set(last_height,_G3976197),assign(_G3976209,apply(when(_G3976212,_G3976215,_G3976218),[right==left,0.019,-0.035])),_G3976221 is _G3976203+_G3976209,assign(_G3976224,apply(when(_G3976227,_G3976230,_G3976233),[right==left,5.5,1.0])),_G3976236 is _G3976200+_G3976224,grasp(_G3976236,_G3976221,_G3976239),switcharm(0)]=>check_grasped(_G3976239)]].
+[2020/11/20,3:54:21.373070478]Info-Level 1: Situation ends
+[2020/11/20,3:54:21.381231546]Debug: In situation check_grasped(success) of type neutral.
+[2020/11/20,3:54:21.381261587]All: Situation to execute [id==>check_grasped(success),type==>neutral,arcs==>[empty:say([I took the ,coke])=>success]].
+[2020/11/20,3:54:21.381487131]Info-Level 1: Situation ends
+[2020/11/20,3:54:21.389736413]Debug: In situation [id==>success,type==>final,diag_mod==>grasp(_G2900635,_G2900638,ok)] of type final.
+[2020/11/20,3:54:21.389781713]All: Situation to execute success.
+[2020/11/20,3:54:21.389834642]Info-Level 1: Situation ends
+[2020/11/20,3:54:21.389843702]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:21.389864683]Info-Level 1: .Output []
+[2020/11/20,3:54:21.392611026]Info-Level 1: Situation ends
+[2020/11/20,3:54:21.396182775]Debug: In situation [id==>success,type==>final,in_arg==>[_G3124060,_G3124063],diag_mod==>take(_G3124066,_G3124069,_G3124060,ok)] of type final.
+[2020/11/20,3:54:21.3962121]All: Situation to execute success.
+[2020/11/20,3:54:21.396270275]Info-Level 1: Situation ends
+[2020/11/20,3:54:21.396278381]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:21.396291732]Info-Level 1: .Output []
+[2020/11/20,3:54:21.399619817]Info-Level 1: Situation ends
+[2020/11/20,3:54:21.406490325]Debug: In situation consult_kb(change_object_property,[golem,right_arm,coke],_G3222890,_G3222893) of type recursive.
+[2020/11/20,3:54:21.406528234]All: Situation to execute consult_kb(change_object_property,[golem,right_arm,coke],_G3222890,_G3222893).
+[2020/11/20,3:54:21.406559467]Info-Level 1: Executing dialogue: consult_kb(change_object_property,[golem,right_arm,coke],_G3222890,_G3222893)
+[2020/11/20,3:54:21.406813621]Info-Level 1: Defined local vars: []
+[2020/11/20,3:54:21.407006025]All: Situtation: is
+[2020/11/20,3:54:21.407015323]Structs: Executing situtation: _G3590344
+[2020/11/20,3:54:21.407030105]Debug: In situation verify of type neutral.
+[2020/11/20,3:54:21.40704751]All: Situation to execute [id==>verify,type==>neutral,arcs==>[empty:empty=>kind_of_consult(change_object_property,[golem,right_arm,coke])]].
+[2020/11/20,3:54:21.421950101]Debug: In situation kind_of_consult(change_object_property,[golem,right_arm,coke]) of type neutral.
+[2020/11/20,3:54:21.421989917]All: Situation to execute [id==>kind_of_consult(change_object_property,[golem,right_arm,coke]),out_arg==>[_G3810940],type==>neutral,arcs==>[empty:apply(consult_kb_change_object_property(_G3810904,_G3810907,_G3810910),[golem,right_arm,coke])=>success]].
+[2020/11/20,3:54:21.423661947]Info-Level 1: Situation ends
+[2020/11/20,3:54:21.953403949]Debug: In situation [id==>success,type==>final,in_arg==>[_G2602614],diag_mod==>consult_kb(_G2602617,_G2602620,_G2602614,ok)] of type final.
+[2020/11/20,3:54:21.953452825]All: Situation to execute success.
+[2020/11/20,3:54:21.953508377]Info-Level 1: Situation ends
+[2020/11/20,3:54:21.953517913]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:21.953538894]Info-Level 1: .Output []
+[2020/11/20,3:54:21.957710266]Info-Level 1: Situation ends
+[2020/11/20,3:54:21.964237689]Debug: In situation consult_kb(value_object_property,[start,name],_G2906387,_G2906390) of type recursive.
+[2020/11/20,3:54:21.964278697]All: Situation to execute consult_kb(value_object_property,[start,name],_G2906387,_G2906390).
+[2020/11/20,3:54:21.964311838]Info-Level 1: Executing dialogue: consult_kb(value_object_property,[start,name],_G2906387,_G2906390)
+[2020/11/20,3:54:21.964556217]Info-Level 1: Defined local vars: []
+[2020/11/20,3:54:21.964757442]All: Situtation: is
+[2020/11/20,3:54:21.964767694]Structs: Executing situtation: _G3263117
+[2020/11/20,3:54:21.964782953]Debug: In situation verify of type neutral.
+[2020/11/20,3:54:21.964790821]All: Situation to execute [id==>verify,type==>neutral,arcs==>[empty:empty=>kind_of_consult(value_object_property,[start,name])]].
+[2020/11/20,3:54:21.978832483]Debug: In situation kind_of_consult(value_object_property,[start,name]) of type neutral.
+[2020/11/20,3:54:21.978863954]All: Situation to execute [id==>kind_of_consult(value_object_property,[start,name]),out_arg==>[_G3483323],type==>neutral,arcs==>[empty:apply(consult_kb_value_object_property(_G3483326,_G3483329,_G3483332),[start,name,_G3483323])=>success]].
+[2020/11/20,3:54:21.980270385]Info-Level 1: Situation ends
+[2020/11/20,3:54:22.525891303999998]Debug: In situation [id==>success,type==>final,in_arg==>[_G2470357],diag_mod==>consult_kb(_G2470360,_G2470363,_G2470357,ok)] of type final.
+[2020/11/20,3:54:22.525954723]All: Situation to execute success.
+[2020/11/20,3:54:22.526028871]Info-Level 1: Situation ends
+[2020/11/20,3:54:22.526037693]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:22.526058435]Info-Level 1: .Output []
+[2020/11/20,3:54:22.530206203]Info-Level 1: Situation ends
+[2020/11/20,3:54:22.536493778]Debug: In situation say([I will move to,the start point],_G2645307) of type recursive.
+[2020/11/20,3:54:22.536534309]All: Situation to execute say([I will move to,the start point],_G2645307).
+[2020/11/20,3:54:22.536566019]Info-Level 1: Executing dialogue: say([I will move to,the start point],_G2645307)
+[2020/11/20,3:54:22.536809444]Info-Level 1: Defined local vars: []
+[2020/11/20,3:54:22.5369668]All: Situtation: is
+[2020/11/20,3:54:22.536979913]Structs: Executing situtation: _G2985656
+[2020/11/20,3:54:22.536996841]Debug: In situation is of type neutral.
+[2020/11/20,3:54:22.537004947]All: Situation to execute [id==> (is),type==>neutral,arcs==>[empty:say([I will move to,the start point])=>success]].
+[2020/11/20,3:54:22.537526369]Debug: In situation [id==>success,type==>final,diag_mod==>say(_G2999826,ok)] of type final.
+[2020/11/20,3:54:22.537540674]All: Situation to execute success.
+[2020/11/20,3:54:22.537576675]Info-Level 1: Situation ends
+[2020/11/20,3:54:22.537584066]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:22.537595272]Info-Level 1: .Output []
+[2020/11/20,3:54:22.539779424]Info-Level 1: Situation ends
+[2020/11/20,3:54:22.546778917]Debug: In situation consult_kb(value_object_property,[_G3021029,position],_G3021032,_G3021035) of type recursive.
+[2020/11/20,3:54:22.546833276]All: Situation to execute consult_kb(value_object_property,[_G3021029,position],_G3021032,_G3021035).
+[2020/11/20,3:54:22.546867132]Info-Level 1: Executing dialogue: consult_kb(value_object_property,[_G3021029,position],_G3021032,_G3021035)
+[2020/11/20,3:54:22.547121047]Info-Level 1: Defined local vars: []
+[2020/11/20,3:54:22.581662416]All: Situtation: is
+[2020/11/20,3:54:22.581694841]Structs: Executing situtation: _G3355149
+[2020/11/20,3:54:22.581717729]Debug: In situation verify of type neutral.
+[2020/11/20,3:54:22.581736564]All: Situation to execute [id==>verify,type==>neutral,arcs==>[empty:empty=>kind_of_consult(value_object_property,[_G3021029,position])]].
+[2020/11/20,3:54:22.596675872]Debug: In situation kind_of_consult(value_object_property,[_G3357144,position]) of type neutral.
+[2020/11/20,3:54:22.596706867]All: Situation to execute [id==>kind_of_consult(value_object_property,[_G3357144,position]),out_arg==>[_G3575826],type==>neutral,arcs==>[empty:apply(consult_kb_value_object_property(_G3575829,_G3575832,_G3575835),[_G3357144,position,_G3575826])=>success]].
+[2020/11/20,3:54:22.598837614]Info-Level 1: Situation ends
+[2020/11/20,3:54:23.174970865]Debug: In situation [id==>success,type==>final,in_arg==>[_G2540680],diag_mod==>consult_kb(_G2540683,_G2540686,_G2540680,ok)] of type final.
+[2020/11/20,3:54:23.175029516]All: Situation to execute success.
+[2020/11/20,3:54:23.175082445]Info-Level 1: Situation ends
+[2020/11/20,3:54:23.175090789]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:23.175109624]Info-Level 1: .Output []
+[2020/11/20,3:54:23.177982807]Info-Level 1: Situation ends
+[2020/11/20,3:54:23.184271574]Debug: In situation move(welcome_point,_G2778734) of type recursive.
+[2020/11/20,3:54:23.184314966]All: Situation to execute move(welcome_point,_G2778734).
+[2020/11/20,3:54:23.184343099]Info-Level 1: Executing dialogue: move(welcome_point,_G2778734)
+[2020/11/20,3:54:23.184597253]Info-Level 1: Defined local vars: []
+[2020/11/20,3:54:23.18494296]All: Situtation: is
+[2020/11/20,3:54:23.184952497]Structs: Executing situtation: _G3110524
+[2020/11/20,3:54:23.184966802]Debug: In situation is of type neutral.
+[2020/11/20,3:54:23.184974193]All: Situation to execute [id==> (is),type==>neutral,arcs==>[empty:apply(verify_type_of_move(_G3106916,_G3106919,_G3106922),[welcome_point,_G3106925,_G3106928])=>verify_case(_G3106925,_G3106928)]].
+[2020/11/20,3:54:23.200141906]Debug: In situation verify_case(label,[welcome_point]) of type neutral.
+[2020/11/20,3:54:23.200184822]All: Situation to execute [id==>verify_case(label,[welcome_point]),type==>neutral,arcs==>[empty:[switcharm(0),robotheight(1.25),set(last_height,1.25),switchpose(nav)]=>go_to_point(apply(from_labels_to_coordinates(_G3428404),[[welcome_point]]))]].
+[2020/11/20,3:54:23.202126502]Info-Level 1: Situation ends
+[2020/11/20,3:54:23.77916789]Debug: In situation go_to_point([welcome_point]) of type neutral.
+[2020/11/20,3:54:23.779212474]All: Situation to execute [id==>go_to_point([welcome_point]),type==>neutral,arcs==>[empty:navigate(welcome_point,_G2565607)=>verify_result(_G2565607,[])]].
+[2020/11/20,3:54:23.779488801]Info-Level 1: Situation ends
+[2020/11/20,3:54:23.79401803]Debug: In situation verify_result(ok,[]) of type neutral.
+[2020/11/20,3:54:23.794062137]All: Situation to execute [id==>verify_result(ok,[]),type==>neutral,arcs==>[empty:empty=>go_to_point([])]].
+[2020/11/20,3:54:23.794272899]Info-Level 1: Situation ends
+[2020/11/20,3:54:23.808452844]Debug: In situation go_to_point([]) of type neutral.
+[2020/11/20,3:54:23.808504819]All: Situation to execute [id==>go_to_point([]),type==>neutral,arcs==>[empty:switchpose(grasp)=>success]].
+[2020/11/20,3:54:23.808742761]Info-Level 1: Situation ends
+[2020/11/20,3:54:24.420620918]Debug: In situation [id==>success,type==>final,diag_mod==>move(_G2754613,ok)] of type final.
+[2020/11/20,3:54:24.42074418]All: Situation to execute success.
+[2020/11/20,3:54:24.420811414]Info-Level 1: Situation ends
+[2020/11/20,3:54:24.420821189]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:24.420839548]Info-Level 1: .Output []
+[2020/11/20,3:54:24.425896883]Info-Level 1: Situation ends
+[2020/11/20,3:54:24.43223071]Debug: In situation consult_kb(change_object_property,[golem,position,welcome_point],_G2974417,_G2974420) of type recursive.
+[2020/11/20,3:54:24.432276487]All: Situation to execute consult_kb(change_object_property,[golem,position,welcome_point],_G2974417,_G2974420).
+[2020/11/20,3:54:24.432308912]Info-Level 1: Executing dialogue: consult_kb(change_object_property,[golem,position,welcome_point],_G2974417,_G2974420)
+[2020/11/20,3:54:24.432555198]Info-Level 1: Defined local vars: []
+[2020/11/20,3:54:24.432762145]All: Situtation: is
+[2020/11/20,3:54:24.432772636]Structs: Executing situtation: _G3291771
+[2020/11/20,3:54:24.432788133]Debug: In situation verify of type neutral.
+[2020/11/20,3:54:24.432807683]All: Situation to execute [id==>verify,type==>neutral,arcs==>[empty:empty=>kind_of_consult(change_object_property,[golem,position,welcome_point])]].
+[2020/11/20,3:54:24.447041034]Debug: In situation kind_of_consult(change_object_property,[golem,position,welcome_point]) of type neutral.
+[2020/11/20,3:54:24.44707632]All: Situation to execute [id==>kind_of_consult(change_object_property,[golem,position,welcome_point]),out_arg==>[_G3512634],type==>neutral,arcs==>[empty:apply(consult_kb_change_object_property(_G3512598,_G3512601,_G3512604),[golem,position,welcome_point])=>success]].
+[2020/11/20,3:54:24.448843717]Info-Level 1: Situation ends
+[2020/11/20,3:54:25.021980285]Debug: In situation [id==>success,type==>final,in_arg==>[_G2607790],diag_mod==>consult_kb(_G2607793,_G2607796,_G2607790,ok)] of type final.
+[2020/11/20,3:54:25.022024393]All: Situation to execute success.
+[2020/11/20,3:54:25.022089242]Info-Level 1: Situation ends
+[2020/11/20,3:54:25.022098541]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:25.022126674]Info-Level 1: .Output []
+[2020/11/20,3:54:25.024492502]Info-Level 1: Situation ends
+[2020/11/20,3:54:25.030611038]Debug: In situation say([I will deliver the,coke],_G2792450) of type recursive.
+[2020/11/20,3:54:25.030639648]All: Situation to execute say([I will deliver the,coke],_G2792450).
+[2020/11/20,3:54:25.030666112]Info-Level 1: Executing dialogue: say([I will deliver the,coke],_G2792450)
+[2020/11/20,3:54:25.030926942]Info-Level 1: Defined local vars: []
+[2020/11/20,3:54:25.03105998]All: Situtation: is
+[2020/11/20,3:54:25.031069755]Structs: Executing situtation: _G3102149
+[2020/11/20,3:54:25.031083583]Debug: In situation is of type neutral.
+[2020/11/20,3:54:25.031100988]All: Situation to execute [id==> (is),type==>neutral,arcs==>[empty:say([I will deliver the,coke])=>success]].
+[2020/11/20,3:54:25.031617403]Debug: In situation [id==>success,type==>final,diag_mod==>say(_G3116034,ok)] of type final.
+[2020/11/20,3:54:25.031630516]All: Situation to execute success.
+[2020/11/20,3:54:25.031663417]Info-Level 1: Situation ends
+[2020/11/20,3:54:25.03167057]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:25.03168106]Info-Level 1: .Output []
+[2020/11/20,3:54:25.032186508]Info-Level 1: Situation ends
+[2020/11/20,3:54:25.038629531]Debug: In situation relieve_arg(-20.0,0.45,right,_G3125714) of type recursive.
+[2020/11/20,3:54:25.038665533]All: Situation to execute relieve_arg(-20.0,0.45,right,_G3125714).
+[2020/11/20,3:54:25.038695573]Info-Level 1: Executing dialogue: relieve_arg(-20.0,0.45,right,_G3125714)
+[2020/11/20,3:54:25.038950204]Info-Level 1: Defined local vars: [change_height==>true,tbl_height==>1.41]
+[2020/11/20,3:54:25.039714097]All: Situtation: is
+[2020/11/20,3:54:25.039724349]Structs: Executing situtation: _G3456381
+[2020/11/20,3:54:25.039738416]Debug: In situation is of type neutral.
+[2020/11/20,3:54:25.039756536]All: Situation to execute [id==> (is),type==>neutral,arcs==>[empty:[assign(_G3446432,get(change_height,_G3446435)),assign(_G3446438,apply(when(_G3446441,_G3446444,_G3446447),[_G3446432,get(tbl_height,_G3446450),get(last_height,_G3446453)])),robotheight(_G3446438),set(last_height,_G3446438)]=>relieving]].
+[2020/11/20,3:54:25.042909383]Debug: In situation relieving of type neutral.
+[2020/11/20,3:54:25.04293251]All: Situation to execute [id==>relieving,type==>neutral,arcs==>[empty:[switcharm(apply(get_number_of_arm(_G3525903),[right])),offer(-20.0,0.45),close_grip,apply(reset_hand(_G3525906),[right])]=>success]].
+[2020/11/20,3:54:25.04354453]Info-Level 1: Situation ends
+[2020/11/20,3:54:25.045961141]Debug: In situation [id==>success,type==>final,diag_mod==>relieve_arg(_G3627362,_G3627365,_G3627368,ok)] of type final.
+[2020/11/20,3:54:25.045983552]All: Situation to execute success.
+[2020/11/20,3:54:25.046025037]Info-Level 1: Situation ends
+[2020/11/20,3:54:25.046032667]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:25.046046257]Info-Level 1: .Output [change_height==>true,tbl_height==>1.41]
+[2020/11/20,3:54:25.046675443]Info-Level 1: Situation ends
+[2020/11/20,3:54:25.053107976]Debug: In situation consult_kb(change_object_property,[golem,right_arm,free],_G3672970,_G3672973) of type recursive.
+[2020/11/20,3:54:25.053136825]All: Situation to execute consult_kb(change_object_property,[golem,right_arm,free],_G3672970,_G3672973).
+[2020/11/20,3:54:25.053165197]Info-Level 1: Executing dialogue: consult_kb(change_object_property,[golem,right_arm,free],_G3672970,_G3672973)
+[2020/11/20,3:54:25.053419589]Info-Level 1: Defined local vars: []
+[2020/11/20,3:54:25.053615331]All: Situtation: is
+[2020/11/20,3:54:25.053624391]Structs: Executing situtation: _G3975303
+[2020/11/20,3:54:25.05363965]Debug: In situation verify of type neutral.
+[2020/11/20,3:54:25.053646802]All: Situation to execute [id==>verify,type==>neutral,arcs==>[empty:empty=>kind_of_consult(change_object_property,[golem,right_arm,free])]].
+[2020/11/20,3:54:25.622622728]Debug: In situation kind_of_consult(change_object_property,[golem,right_arm,free]) of type neutral.
+[2020/11/20,3:54:25.622667312]All: Situation to execute [id==>kind_of_consult(change_object_property,[golem,right_arm,free]),out_arg==>[_G2661966],type==>neutral,arcs==>[empty:apply(consult_kb_change_object_property(_G2661930,_G2661933,_G2661936),[golem,right_arm,free])=>success]].
+[2020/11/20,3:54:25.624364137]Info-Level 1: Situation ends
+[2020/11/20,3:54:25.63853693]Debug: In situation [id==>success,type==>final,in_arg==>[_G3205414],diag_mod==>consult_kb(_G3205417,_G3205420,_G3205414,ok)] of type final.
+[2020/11/20,3:54:25.638601064]All: Situation to execute success.
+[2020/11/20,3:54:25.638700723]Info-Level 1: Situation ends
+[2020/11/20,3:54:25.638709783]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:25.638729333]Info-Level 1: .Output []
+[2020/11/20,3:54:25.64064598]Info-Level 1: Situation ends
+[2020/11/20,3:54:25.647047281]Debug: In situation say(Your request has been completed good bye,_G3635603) of type recursive.
+[2020/11/20,3:54:25.647083997]All: Situation to execute say(Your request has been completed good bye,_G3635603).
+[2020/11/20,3:54:25.647112369]Info-Level 1: Executing dialogue: say(Your request has been completed good bye,_G3635603)
+[2020/11/20,3:54:25.647364139]Info-Level 1: Defined local vars: []
+[2020/11/20,3:54:25.647521257]All: Situtation: is
+[2020/11/20,3:54:25.647543191]Structs: Executing situtation: _G3783319
+[2020/11/20,3:54:25.64755845]Debug: In situation is of type neutral.
+[2020/11/20,3:54:25.647575378]All: Situation to execute [id==> (is),type==>neutral,arcs==>[empty:say(Your request has been completed good bye)=>success]].
+[2020/11/20,3:54:25.648091077]Debug: In situation [id==>success,type==>final,diag_mod==>say(_G3797284,ok)] of type final.
+[2020/11/20,3:54:25.64810419]All: Situation to execute success.
+[2020/11/20,3:54:25.648138523]Info-Level 1: Situation ends
+[2020/11/20,3:54:25.648145437]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:25.648155689]Info-Level 1: .Output []
+[2020/11/20,3:54:25.648303985]Info-Level 1: Situation ends
+[2020/11/20,3:54:25.654528141]Debug: In situation [id==>fs,type==>final] of type final.
+[2020/11/20,3:54:25.654565095]All: Situation to execute fs.
+[2020/11/20,3:54:25.654604911]Info-Level 1: Situation ends
+[2020/11/20,3:54:25.654613733]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:25.654635906]Info-Level 1: .Output []
+[2020/11/20,3:54:25.686245679]Info-Level 1: Situation ends
+[2020/11/20,3:54:25.688152551]Debug: In situation final of type neutral.
+[2020/11/20,3:54:25.688166379]All: Situation to execute [id==>final,type==>neutral,arcs==>[empty:screen(Dialogue model finished, type ok to try again)=>fs]].
+[2020/11/20,3:54:25.688337564]Info-Level 1: Situation ends
+[2020/11/20,3:54:25.704557895]Debug: In situation [id==>fs,type==>final] of type final.
+[2020/11/20,3:54:25.704601287]All: Situation to execute fs.
+[2020/11/20,3:54:25.70465064]Info-Level 1: Situation ends
+[2020/11/20,3:54:25.704660415]Info-Level 1: Dialogue ends
+[2020/11/20,3:54:25.704680919]Info-Level 1: .Output [dishwasher==>dishwasher_main,receptionist==>receptionist_main,serving_drinks==>serving_drinks_main,carry==>carry_main,garbage==>garbage_main,whereis==>where_is_main,handme==>hand_me_that_main,demo_supermarket==>demo_supermarket_main,test==>test]
+[2020/11/20,3:54:25.705073595]Info-Level 1: Ending dialogue: main
+[2020/11/20,3:54:25.708617687]Info-Level 1: History: _G177601.

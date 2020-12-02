@@ -1,5 +1,5 @@
 % Main Dialogue Model
-diag_mod(sample_main,
+diag_mod(example_main,
  %Second argument: List of Situations
  [
      % Initial situation
@@ -7,18 +7,18 @@ diag_mod(sample_main,
       type ==> speech,
       % Situation’s arguments
       in_arg ==> In_Arg,
-      out_arg ==> Out_Arg,
+      out_arg ==> apply(when(If,True,False),[In_Arg=='monday','tuesday','monday']),
       % Local program
       prog ==> [inc(count_init,Count_Init)],
       % Situation’s content
       arcs ==>
 	   [ % Examples of Grounded forms
-	       finish:txt('Good Bye') => fs,
-	       % Example of predicate input and output
+	       finish:screen('Good Bye') => fs,
+	       % Example of predicate expectation and action
 	       [day(X)]:[date(get(day,Y)), next_date(set(day,X))] => is,
                % Example of functional specification of
 	       % expectation, action and next situation
-	       [Out_Arg,apply(f(X),[In_Arg])]: apply(g(X),[_]) => apply(h(X,Y),[In_Arg,Out_Arg])
+	       [get(day,Day),apply(f(X),[In_Arg])]: [apply(g(X),[_])] => apply(h(X,Y),[In_Arg,Day])
 	   ]
      ],
      
@@ -26,17 +26,17 @@ diag_mod(sample_main,
      [id ==> rs,
       type ==> recursive,
       prog ==> [inc(count_rec, Count_Rec)],
-      embedded_dm ==> sample_wait,
+      embedded_dm ==> example_wait,
       arcs ==>
 	   [
-	    fs1:txt('Back to initial sit') => is,
-	    fs2:txt('Cont. recursive sit') => rs
+	    fs1:screen('Back to initial sit') => is,
+	    fs2:screen('Cont. recursive sit') => rs
 	   ]
      ],
 
      % Final Situation
      [id ==> fs, type ==> final]
- % End list of siuations
+ % End list of situations
  ],
  
  % Third Argument: List of Local Variables
