@@ -1,0 +1,129 @@
+[2015/12/3,21:29:47.289723873]Info-Level 1: Running models from     : models
+[2015/12/3,21:29:47.289753437]Info-Level 1: Project directory       : apps/explore
+[2015/12/3,21:29:47.289765357]Info-Level 1: Knowledge base          : knowledge_base/knowledge_base_robocup.pl
+[2015/12/3,21:29:47.289775609]Info-Level 1: User Functions          : user_functions.pl
+[2015/12/3,21:29:47.289785623]Info-Level 1: Expectation Types       : expectation_types.pl
+[2015/12/3,21:29:47.289795398]Info-Level 1: Basic acts              : basic_actions.pl
+[2015/12/3,21:29:47.289804935]Info-Level 1: Templates               : templates.pl
+[2015/12/3,21:29:47.28981471]Info-Level 1: Running dialogue        : main
+[2015/12/3,21:29:47.289824485]Info-Level 1: Writing debug file to   : logfile.log
+[2015/12/3,21:29:47.289834022]Info-Level 1: Saving log file to      : apps/explore/log
+[2015/12/3,21:29:47.317986965]Info-Level 1: Starting dialogue: main
+[2015/12/3,21:29:47.31805396]Info-Level 1: Saving log in: apps/explore/log/dm.txt
+[2015/12/3,21:29:47.318089723]Info-Level 1: Executing dialogue: main
+[2015/12/3,21:29:47.318181276]Info-Level 1: Defined local vars: []
+[2015/12/3,21:29:47.318958759]All: Situtation: is
+[2015/12/3,21:29:47.318969249]Structs: Executing situtation: _G27158
+[2015/12/3,21:29:47.3189857]Debug: In situation is of type neutral.
+[2015/12/3,21:29:47.318992376]All: Situation to execute [id==> (is),type==>neutral,arcs==>[empty:[initSpeech,say(Hello I am Golem and I will explore some places),apply(initialize_KB,[])]=>behavior]].
+[2015/12/3,21:29:51.198067903]Debug: In situation explore of type recursive.
+[2015/12/3,21:29:51.198096036]All: Situation to execute explore.
+[2015/12/3,21:29:51.19811511]Info-Level 1: Executing dialogue: explore
+[2015/12/3,21:29:51.198201417]Info-Level 1: Defined local vars: []
+[2015/12/3,21:29:51.198254108]All: Situtation: is
+[2015/12/3,21:29:51.198260307]Structs: Executing situtation: _G60143
+[2015/12/3,21:29:51.198270559]Debug: In situation is of type neutral.
+[2015/12/3,21:29:51.198276758]All: Situation to execute [id==> (is),type==>neutral,arcs==>[empty:empty=>send]].
+[2015/12/3,21:29:51.202114582]Debug: In situation send of type neutral.
+[2015/12/3,21:29:51.202141046]All: Situation to execute [id==>send,type==>neutral,arcs==>[empty:empty=>visit([columna,compus1])]].
+[2015/12/3,21:29:51.202441453]Info-Level 1: Situation ends
+[2015/12/3,21:29:51.204477787]Debug: In situation move(columna,_G101912) of type recursive.
+[2015/12/3,21:29:51.204502344]All: Situation to execute move(columna,_G101912).
+[2015/12/3,21:29:51.20454216]Info-Level 1: Executing dialogue: move(columna,_G101912)
+[2015/12/3,21:29:51.204769372]Info-Level 1: Defined local vars: []
+[2015/12/3,21:29:51.209964513]All: Situtation: is
+[2015/12/3,21:29:51.209991216]Structs: Executing situtation: _G62479
+[2015/12/3,21:29:51.210026741]Debug: In situation is of type neutral.
+[2015/12/3,21:29:51.210041522]All: Situation to execute [id==> (is),type==>neutral,arcs==>[empty:apply(verify_type_of_move(_G59251,_G59254,_G59257),[columna,_G59260,_G59263])=>verify_case(_G59260,_G59263)]].
+[2015/12/3,21:29:51.229055881]Debug: In situation verify_case(label,[columna]) of type neutral.
+[2015/12/3,21:29:51.22907567]All: Situation to execute [id==>verify_case(label,[columna]),type==>neutral,arcs==>[empty:[robotheight(1.35),set(last_height,1.35),switchpose(nav)]=>go_to_point(apply(from_labels_to_coordinates(_G116505),[[columna]]))]].
+[2015/12/3,21:29:52.358800888]Info-Level 1: Situation ends
+[2015/12/3,21:29:52.387576103]Debug: In situation go_to_point([columna]) of type neutral.
+[2015/12/3,21:29:52.387609004]All: Situation to execute [id==>go_to_point([columna]),type==>neutral,arcs==>[empty:navigate(columna,_G96516)=>verify_result(_G96516,[])]].
+[2015/12/3,21:30:4.137200355]Info-Level 1: Situation ends
+[2015/12/3,21:30:4.183479309]Debug: In situation verify_result(ok,[]) of type neutral.
+[2015/12/3,21:30:4.183511257]All: Situation to execute [id==>verify_result(ok,[]),type==>neutral,arcs==>[empty:empty=>go_to_point([])]].
+[2015/12/3,21:30:4.183698415]Info-Level 1: Situation ends
+[2015/12/3,21:30:4.251400709]Debug: In situation go_to_point([]) of type neutral.
+[2015/12/3,21:30:4.25145626]All: Situation to execute [id==>go_to_point([]),type==>neutral,arcs==>[empty:switchpose(grasp)=>success]].
+[2015/12/3,21:30:4.853958845]Info-Level 1: Situation ends
+[2015/12/3,21:30:4.91267991]Debug: In situation [id==>success,type==>final,diag_mod==>move(_G294841,ok)] of type final.
+[2015/12/3,21:30:4.912714242]All: Situation to execute success.
+[2015/12/3,21:30:4.912766695]Info-Level 1: Situation ends
+[2015/12/3,21:30:4.912774324]Info-Level 1: Dialogue ends
+[2015/12/3,21:30:4.9128043649999995]Info-Level 1: .Output []
+[2015/12/3,21:30:4.914982557]Info-Level 1: Situation ends
+[2015/12/3,21:30:4.9158825870000005]Debug: In situation inspect([compus1]) of type neutral.
+[2015/12/3,21:30:4.915893554]All: Situation to execute [id==>inspect([compus1]),type==>neutral,arcs==>[empty:[say(I will inspect here for some text),take_photo]=>visit([compus1])]].
+[2015/12/3,21:30:7.841511249]Info-Level 1: Situation ends
+[2015/12/3,21:30:7.842649459]Debug: In situation move(compus1,_G512325) of type recursive.
+[2015/12/3,21:30:7.842679023]All: Situation to execute move(compus1,_G512325).
+[2015/12/3,21:30:7.842710971]Info-Level 1: Executing dialogue: move(compus1,_G512325)
+[2015/12/3,21:30:7.847438335]Info-Level 1: Defined local vars: []
+[2015/12/3,21:30:7.848073482]All: Situtation: is
+[2015/12/3,21:30:7.848091602]Structs: Executing situtation: _G79852
+[2015/12/3,21:30:7.84812808]Debug: In situation is of type neutral.
+[2015/12/3,21:30:7.848151922]All: Situation to execute [id==> (is),type==>neutral,arcs==>[empty:apply(verify_type_of_move(_G76244,_G76247,_G76250),[compus1,_G76253,_G76256])=>verify_case(_G76253,_G76256)]].
+[2015/12/3,21:30:7.8664550779999995]Debug: In situation verify_case(label,[compus1]) of type neutral.
+[2015/12/3,21:30:7.866518259]All: Situation to execute [id==>verify_case(label,[compus1]),type==>neutral,arcs==>[empty:[robotheight(1.35),set(last_height,1.35),switchpose(nav)]=>go_to_point(apply(from_labels_to_coordinates(_G283876),[[compus1]]))]].
+[2015/12/3,21:30:8.978852987]Info-Level 1: Situation ends
+[2015/12/3,21:30:9.010658264]Debug: In situation go_to_point([compus1]) of type neutral.
+[2015/12/3,21:30:9.010690689]All: Situation to execute [id==>go_to_point([compus1]),type==>neutral,arcs==>[empty:navigate(compus1,_G241320)=>verify_result(_G241320,[])]].
+[2015/12/3,21:30:22.954200744]Info-Level 1: Situation ends
+[2015/12/3,21:30:22.991231203]Debug: In situation verify_result(ok,[]) of type neutral.
+[2015/12/3,21:30:22.991272687]All: Situation to execute [id==>verify_result(ok,[]),type==>neutral,arcs==>[empty:empty=>go_to_point([])]].
+[2015/12/3,21:30:22.991466999]Info-Level 1: Situation ends
+[2015/12/3,21:30:23.026146411]Debug: In situation go_to_point([]) of type neutral.
+[2015/12/3,21:30:23.026197433]All: Situation to execute [id==>go_to_point([]),type==>neutral,arcs==>[empty:switchpose(grasp)=>success]].
+[2015/12/3,21:30:23.628719806]Info-Level 1: Situation ends
+[2015/12/3,21:30:23.67868781]Debug: In situation [id==>success,type==>final,diag_mod==>move(_G252137,ok)] of type final.
+[2015/12/3,21:30:23.678735733]All: Situation to execute success.
+[2015/12/3,21:30:23.678780317]Info-Level 1: Situation ends
+[2015/12/3,21:30:23.678787231]Info-Level 1: Dialogue ends
+[2015/12/3,21:30:23.678816795]Info-Level 1: .Output []
+[2015/12/3,21:30:23.681158542]Info-Level 1: Situation ends
+[2015/12/3,21:30:23.682114601]Debug: In situation inspect([]) of type neutral.
+[2015/12/3,21:30:23.682133913]All: Situation to execute [id==>inspect([]),type==>neutral,arcs==>[empty:[say(I will inspect here for some text),take_photo]=>visit([])]].
+[2015/12/3,21:30:26.611102581]Info-Level 1: Situation ends
+[2015/12/3,21:30:26.612234115]Debug: In situation visit([]) of type neutral.
+[2015/12/3,21:30:26.612245798]All: Situation to execute [id==>visit([]),type==>neutral,arcs==>[empty:[say(I had finished to visit the points)]=>success]].
+[2015/12/3,21:30:29.42859435]Info-Level 1: Situation ends
+[2015/12/3,21:30:29.435102701]Debug: In situation [id==>success,type==>final] of type final.
+[2015/12/3,21:30:29.435158729]All: Situation to execute success.
+[2015/12/3,21:30:29.435218811]Info-Level 1: Situation ends
+[2015/12/3,21:30:29.4352324]Info-Level 1: Dialogue ends
+[2015/12/3,21:30:29.435261011]Info-Level 1: .Output []
+[2015/12/3,21:30:33.142795085]Info-Level 1: Situation ends
+[2015/12/3,21:30:33.143577098]Debug: In situation move([0.0,0.0,0.0],_G111407) of type recursive.
+[2015/12/3,21:30:33.143593788]All: Situation to execute move([0.0,0.0,0.0],_G111407).
+[2015/12/3,21:30:33.143619298]Info-Level 1: Executing dialogue: move([0.0,0.0,0.0],_G111407)
+[2015/12/3,21:30:33.143726348]Info-Level 1: Defined local vars: []
+[2015/12/3,21:30:33.144043207]All: Situtation: is
+[2015/12/3,21:30:33.14405179]Structs: Executing situtation: _G138281
+[2015/12/3,21:30:33.144063472]Debug: In situation is of type neutral.
+[2015/12/3,21:30:33.144069671]All: Situation to execute [id==> (is),type==>neutral,arcs==>[empty:apply(verify_type_of_move(_G134673,_G134676,_G134679),[[0.0,0.0,0.0],_G134682,_G134685])=>verify_case(_G134682,_G134685)]].
+[2015/12/3,21:30:33.152459144]Debug: In situation verify_case(coordinate,[[0.0,0.0,0.0]]) of type neutral.
+[2015/12/3,21:30:33.152474403]All: Situation to execute [id==>verify_case(coordinate,[[0.0,0.0,0.0]]),type==>neutral,arcs==>[empty:[robotheight(1.35),set(last_height,1.35),switchpose(nav)]=>go_to_point([[0.0,0.0,0.0]])]].
+[2015/12/3,21:30:34.260000944]Info-Level 1: Situation ends
+[2015/12/3,21:30:34.282744407]Debug: In situation go_to_point([[0.0,0.0,0.0]]) of type neutral.
+[2015/12/3,21:30:34.28277564]All: Situation to execute [id==>go_to_point([[0.0,0.0,0.0]]),type==>neutral,arcs==>[empty:navigate([0.0,0.0,0.0],_G238043)=>verify_result(_G238043,[])]].
+[2015/12/3,21:30:46.822695493]Info-Level 1: Situation ends
+[2015/12/3,21:30:46.852309465]Debug: In situation verify_result(ok,[]) of type neutral.
+[2015/12/3,21:30:46.852349519]All: Situation to execute [id==>verify_result(ok,[]),type==>neutral,arcs==>[empty:empty=>go_to_point([])]].
+[2015/12/3,21:30:46.852544069]Info-Level 1: Situation ends
+[2015/12/3,21:30:46.886637687]Debug: In situation go_to_point([]) of type neutral.
+[2015/12/3,21:30:46.886675596]All: Situation to execute [id==>go_to_point([]),type==>neutral,arcs==>[empty:switchpose(grasp)=>success]].
+[2015/12/3,21:30:47.488525629]Info-Level 1: Situation ends
+[2015/12/3,21:30:47.536035776]Debug: In situation [id==>success,type==>final,diag_mod==>move(_G179342,ok)] of type final.
+[2015/12/3,21:30:47.536074876]All: Situation to execute success.
+[2015/12/3,21:30:47.536159276]Info-Level 1: Situation ends
+[2015/12/3,21:30:47.536179065]Info-Level 1: Dialogue ends
+[2015/12/3,21:30:47.536211013]Info-Level 1: .Output []
+[2015/12/3,21:30:49.342813253]Info-Level 1: Situation ends
+[2015/12/3,21:30:49.343604803]Debug: In situation [id==>fs,type==>final] of type final.
+[2015/12/3,21:30:49.343625307]All: Situation to execute fs.
+[2015/12/3,21:30:49.343661069]Info-Level 1: Situation ends
+[2015/12/3,21:30:49.343669891]Info-Level 1: Dialogue ends
+[2015/12/3,21:30:49.343681097]Info-Level 1: .Output []
+[2015/12/3,21:30:49.343734979]Info-Level 1: Ending dialogue: main
+[2015/12/3,21:30:49.344054698]Info-Level 1: History: _G313643.

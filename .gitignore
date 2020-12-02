@@ -1,3 +1,2 @@
-**/log
-**/logfile.log
-
+**/dm_*_*:*.txt
+**/dm_*_*_*.txt
