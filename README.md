@@ -45,7 +45,7 @@ At this point, a basic version of swipl has been installed, however, some extra 
     $ sudo make install
 
 
-Download and unzipped, or clone, this repository. Finally, add an environment variable indicating the path of this repository in your computer. Append the following to the file ~/.bashrc
+Download and unzipped, or clone, this repository. Finally, add an environment variable indicating the path of this repository in your computer by appending the following to the file ~/.bashrc
 
     export SITLOG_HOME=/path_in_your_computer_to_SitLog_source_code/
 
@@ -92,7 +92,7 @@ This corresponds to the second arc, so the variable ```g_count_fs2``` is assigne
     tuesday.
 
 
-Since the value of ```in_arg``` was piped  from one dialogue model to the other, the first arc is matched. So, the variable ```g_count_fs1``` is assigned to 1, the final situation ```fs1``` is reached and the execution flow is back to the embedding situation ```rs``` in ```example_main.dm```. Here, the expectation of the first arc is satisfied, the text ```'Back to initial sit'``` is printed on the screen and the control is passed to the initial situation ```is```. The variable ```count_init``` is assigned to 3 and the expectation that is met has to be typed, e.g.,
+Since the value of ```in_arg``` was piped  from one dialogue model to the other, the first arc is matched. So, the variable ```g_count_fs1``` is assigned to 1, the final situation ```fs1``` is reached and the execution flow is back to the embedding situation ```rs``` in ```example_main.dm```. Here, the expectation of the first arc is satisfied, the text ```'Back to initial sit'``` is printed on the screen and the control is passed to the initial situation ```is``` of ```example_main.dm``. The variable ```count_init``` is assigned to 3 and the expectation that is met has to be typed, e.g.,
 
     [day(monday)].
 
