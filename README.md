@@ -45,10 +45,12 @@ At this point, a basic version of swipl has been installed, however, some extra 
     $ sudo make install
 
 
-The final setting that must be perfomed to have SitLog running is to add an environment variable indicating the path of this repository on your computer. Append the following to the file ~/.bashrc
+Download and unzipped, or clone, this repository. Finally, add an environment variable indicating the path of this repository in your computer. Append the following to the file ~/.bashrc
 
-    export SITLOG_HOME=/path_in_your_computer/source_code/
+    export SITLOG_HOME=/path_in_your_computer_to_SitLog_source_code/
 
+
+Do not forget to change ```/path_in_your_computer_to_SitLog_source_code/``` to the actual path in your computer pointing to SitLog source code. For instance, ```/home/foo/source_code-master/```.
 
 You are ready to run SitLog programs in test mode!
 
@@ -66,7 +68,7 @@ Open a terminal, change the directory to the one with this repository and run:
 
 Since the execution mode is test, you will be prompted to enter the dialogue model to be run by Sitlog. So, type
 
-    |: res(example).
+    res(example).
 
 
 Type ```ok.``` as confirmation. The ```example_main.dm``` file is loaded.
@@ -85,12 +87,12 @@ The third arc is matched, so the last transition is retrieved from the execution
     loop.
 
 
-This corresponds to the second arc, so the variable ```g_count_fs2``` is assigned to 1, the final situation ```fs2``` is reached and the execution flow is back to the embedding situation ```rs```. Thus, its second arc is matched, the text ```'Cont. recursive sit'``` is printed on the screen and the situation ```rs``` is considered again. The variable ```count_rec``` is assigned to 2 and the execution flow is passed to the embedded dialogue model ```example_wait.dm```. The expectation of its initial situacion has to be typed, e.g.,
+This corresponds to the second arc, so the variable ```g_count_fs2``` is assigned to 1, the final situation ```fs2``` is reached and the execution flow is back to the embedding situation ```rs``` in ```example_main.dm```. Thus, its second arc is matched, the text ```'Cont. recursive sit'``` is printed on the screen and the situation ```rs``` is considered again. The variable ```count_rec``` is assigned to 2 and the execution flow is passed to the embedded dialogue model ```example_wait.dm```. The expectation of its initial situation has to be typed, e.g.,
 
     tuesday.
 
 
-Since the value of ```in_arg``` was piped  from one dialogue model to the other, the first arc is matched. So, the variable ```g_count_fs1``` is assigned to 1, the final situation ```fs1``` is reached and the execution flow is back to the embedding situation ```rs```. Here, the expectation of the first arc is satisfied, the text ```'Back to initial sit'``` is printed on the screen and the control is passed to the situation ```is```. The variable ```count_init``` is assigned to 3 and the expectation that is met has to be typed, e.g.,
+Since the value of ```in_arg``` was piped  from one dialogue model to the other, the first arc is matched. So, the variable ```g_count_fs1``` is assigned to 1, the final situation ```fs1``` is reached and the execution flow is back to the embedding situation ```rs``` in ```example_main.dm```. Here, the expectation of the first arc is satisfied, the text ```'Back to initial sit'``` is printed on the screen and the control is passed to the initial situation ```is```. The variable ```count_init``` is assigned to 3 and the expectation that is met has to be typed, e.g.,
 
     [day(monday)].
 
@@ -107,3 +109,4 @@ The third arc is matched, then the last transition is retrieved from the executi
 
 The first arc is matched, so the text ```Good bye``` is printed on the screen and the control is passed to the final situation ```fs```, ending the execution of the example dialogue model.
 
+After a successful execution of a dilogue model in SitLog, type ```halt.``` to exit the interpreter.
