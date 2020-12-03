@@ -50,7 +50,7 @@ Download and unzipped, or clone, this repository. Finally, add an environment va
     export SITLOG_HOME=/path_in_your_computer_to_SitLog_source_code/
 
 
-Do not forget to change ```/path_in_your_computer_to_SitLog_source_code/``` to the actual path in your computer pointing to SitLog source code. For instance, ```/home/foo/source_code-master/```.
+Do not forget to change ```/path_in_your_computer_to_SitLog_source_code/``` to the actual path in your computer pointing to the SitLog source code. For instance, ```/home/foo/source_code-master/```.
 
 You are ready to run SitLog programs in test mode!
 
