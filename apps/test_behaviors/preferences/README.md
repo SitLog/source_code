@@ -13,7 +13,7 @@ The code that implements the conceptual inference demo, relying on the knowledge
 - [user_functions.pl](https://github.com/SitLog/source_code/blob/master/apps/test_behaviors/user_functions.pl): several user functions needed in the conceptual inference demo are defined here among many others for a wide range of dialogue models. Some of the user functions used by the conceptual inference demo are: the parser for the human-robot conversation, the choice between ordered and preferred items and the abduction reasoning to determined a possible cause for the misplaced objects.
 - [preferences_KB.txt](https://github.com/SitLog/source_code/blob/master/knowledge_base/preferences_KB.txt): holds the KB for the conceptual inference demo.
 
-If the demo wants to be executed on SitLog test mode, run the command ```./scripts/test_behaviors test``` on a terminal with present directory the source of this repository (see also the instructions [here](https://github.com/SitLog/source_code#sitlog)). Then you can enter the following answers when prompted by the interpreter.
+If the demo wants to be executed on SitLog test mode, run the command ```./scripts/test_behaviors test``` on a terminal with present directory the root of this repository (see also the instructions [here](https://github.com/SitLog/source_code#sitlog)). Then you can enter the following answers when prompted by the interpreter.
 
     res(preferences).
     ok.
